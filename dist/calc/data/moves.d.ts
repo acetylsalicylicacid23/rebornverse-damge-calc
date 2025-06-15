@@ -22,7 +22,6 @@ export interface MoveData {
     readonly isZ?: boolean;
     readonly isMax?: boolean;
     readonly multihit?: number | number[];
-    readonly multiaccuracy?: boolean;
     readonly bp: number;
     readonly zp?: number;
     readonly maxPower?: number;
@@ -79,7 +78,6 @@ declare class Move implements I.Move {
     readonly zp?: number;
     readonly maxPower?: number;
     readonly multihit?: number | number[];
-    readonly multiaccuracy?: boolean;
     private static readonly FLAGS;
     constructor(name: string, data: MoveData, gen: number);
 }
