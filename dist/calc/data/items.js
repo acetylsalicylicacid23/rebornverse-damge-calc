@@ -146,7 +146,6 @@ var GSC_ONLY = [
     'Pink Bow',
     'Polkadot Bow',
     'PSN Cure Berry',
-    'Enigma Berry',
 ];
 var ADV = GSC.filter(function (i) { return !GSC_ONLY.includes(i); }).concat([
     'Aguav Berry',
@@ -318,6 +317,7 @@ var DPP = ADV.concat([
 var BW = DPP.concat([
     'Absorb Bulb',
     'Air Balloon',
+    'Big Nugget',
     'Binding Band',
     'Bug Gem',
     'Burn Drive',
@@ -421,6 +421,12 @@ var XY = BW.concat(__spreadArray(__spreadArray([], __read(Object.keys(exports.ME
     'Whipped Dream',
 ], false).sort());
 var SM = XY.filter(function (i) { return i !== 'Old Amber'; }).concat([
+    'PULSE',
+    'Telluric Seed',
+    'Synthetic Seed',
+    'Elemental Seed',
+    'Magical Seed',
+    'Amplifield Rock',
     'Adrenaline Orb',
     'Aloraichium Z',
     'Beast Ball',
@@ -523,14 +529,22 @@ var SV = SS.concat([
     'Ability Shield',
     'Booster Energy',
     'Clear Amulet',
+    'Cornerstone Mask',
     'Covert Cloak',
+    'Fairy Feather',
+    'Hearthflame Mask',
     'Loaded Dice',
     'Malicious Armor',
+    'Masterpiece Teacup',
+    'Metal Alloy',
     'Mirror Herb',
     'Punching Glove',
     'Lustrous Globe',
     'Griseous Core',
     'Strange Ball',
+    'Syrupy Apple',
+    'Unremarkable Teacup',
+    'Wellspring Mask',
 ]);
 var BERRIES = {
     'Aguav Berry': { t: 'Dragon', p: 80 },
