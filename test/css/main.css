@@ -13,10 +13,12 @@ a img {
 
     border-bottom: 1px solid #AAA;
     box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .6), 0px 2px 2px rgba(0, 0, 0, .15);
-    min-height: 50px;
+}
+.header-color {
+    margin: 0 auto;
 }
 .header-inner {
-    max-width: 605px;
+    max-width: 565px;
     margin: 0 auto;
 }
 .nav, .nav li, .nav-play, .nav-play li {
@@ -159,7 +161,7 @@ html, body {
     box-sizing: border-box;
 }
 
-.trainer-pok:hover,  .opposite-pok:hover{
+.trainer-pok:hover {
     outline: 2px solid;
     outline-color: #1abc9c;
 }
@@ -231,7 +233,7 @@ th {
 .poke-info {
     width: 30em;
 }
-.field-info, .poke-import , .note-button{
+.field-info, .poke-import {
     text-align: center;
     width: 27.5em;
 }
@@ -537,7 +539,6 @@ table.field {
     border: solid;
     border-color: #7ee1ff;
     border-radius: 20%;
-    border-width: var(--spe-bor-width)
 }
 .mon-speed-T{
     box-sizing: border-box;
@@ -546,7 +547,6 @@ table.field {
     border: solid;
     border-color: #894197;
     border-radius: 20%;
-    border-width: var(--spe-bor-width)
 }
 .mon-speed-S{
     box-sizing: border-box;
@@ -555,7 +555,6 @@ table.field {
     border: solid;
     border-color: #1c1414;;
     border-radius: 20%;
-    border-width: var(--spe-bor-width);
 }
 .mon-speed-none{
     border: none !important; 
@@ -605,12 +604,8 @@ table.field {
     background: linear-gradient(to right, #daff08 50%, #dd0b0b 0%);
 }
 
-.box-poke, #trainer-pok-list-opposing2, #trainer-pok-list-opposing{
+.box-poke{
     min-height: 30px;
-}
-.dropzone::before{
-    content:attr(data-placeholder);
-    color:gray
 }
 
 .deadzone:hover{
@@ -656,7 +651,7 @@ table.field {
     float: none;
 }
 
-#p2mon, #p1mon, #monSingle, #monDouble{
+#p2mon, #p1mon, #monSingle, #monDouble {
     min-height: 30px;
 }
 
@@ -666,154 +661,4 @@ table.field {
 .info-paragraph > b:hover{
     background: var(--fieldset-color);
     color: unset;
-}
-
-.box-frame{
-    position: absolute;
-    background: var(--fieldset-color);
-    border: 1px solid #AAA;
-    padding: 3px;
-}
-#item-box-frame{
-    z-index: 3;
-    width: 650px;
-    height: 400px;
-    top: 500px;
-    left: 500px;
-}
-#note-box-frame{
-    z-index: 2;
-    width: fit-content;
-    height: fit-content;
-    top: 200px;
-    left: 1220px;
-    overflow: visible;
-}
-.screen-box-frame{
-    position: absolute !important;
-    z-index: 1;
-    width: fit-content;
-    height: fit-content;
-    top: 250px;
-    left: 500px;
-}
-.screen-box-frame-header{
-    position: relative;
-    min-height: 30px;
-}
-.box-frame-header{
-    position: relative;
-    min-height: 30px;
-}
-.box-frame-header>legend{
-    font-size: larger;
-    text-align: unset;
-}
-
-.close-frame{
-    width: 25px;
-    height: 25px;
-    background-color: red;
-    border: 1px solid black;
-    margin-left: auto;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    cursor: pointer;
-}
-
-#close-item-box:hover{
-    background-color: white;
-    overflow: auto;
-    
-}
-
-.mdiv {
-  height: 25px;
-  width: 2px;
-  margin-left: 12px;
-  background-color: black;
-  transform: rotate(45deg);
-  Z-index: 4;
-}
-
-.md {
-  height: 25px;
-  width: 2px;
-  background-color: black;
-  transform: rotate(90deg);
-  Z-index: 5;
-}
-
-.box-item-list>img:hover{
-    background: var(--button-hover);
-}
-
-
-.berry-bb{
-    background:#B8B8D0; 
-} 
-.berry-cr{
-    background:#B8A038;
-}   
-.berry-cl{
-    background:#A8A878;
-}   
-.berry-cp{
-    background:#C03028; 
-}   
-.berry-co{
-    background:#A890F0; 
-}   
-.berry-cb{
-    background:#705848; 
-}   
-.berry-ha{
-    background:#7038F8;
-}   
-.berry-ka{
-    background:#705898; 
-}   
-.berry-ke{
-    background:#A040A0; 
-}   
-.berry-oc{
-    background:#F08030;
-}   
-.berry-ps{
-    background:#6890F0;
-}   
-.berry-py{
-    background:#F85888;
-    
-}   
-.berry-ri{
-    background:#78C850;
-    
-}  
-.berry-ro{
-    background:#EE99AC; 
-}   
-.berry-sh{
-    background:#E0C068; 
-}   
-.berry-ta{
-    background:#A8B820; 
-}   
-.berry-wa{
-    background:#F8D030;
-}   
-.berry-ya{
-    background:#98D8D8; 
-}
-
-#sets > a {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#screen-calc{
-    float: right;
-    margin-top: 22px;
-    margin-right: 41px;
 }
