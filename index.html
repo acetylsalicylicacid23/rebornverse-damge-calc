@@ -58,6 +58,14 @@
             <input class="gen visually-hidden" type="radio" name="gen" value="8" id="gen8" /><label class="btn btn-small btn-mid" for="gen8">Postgame</label>
             <input class="gen visually-hidden" type="radio" name="gen" value="9" id="gen9" /><label class="btn btn-small btn-right" for="gen9">Gen 9</label>
         </span>
+        <span class="notationSelection" aria-labelledby="selectNotationInstruction" role="radiogroup" title="Select the output notation.">
+            <span class="visually-hidden" id="selectNotationInstruction">Select the output notation.</span>
+            <input class="notation visually-hidden" type="radio" name="notation" id="percentage" value="%" checked="checked"/>
+        </span>
+        <span class="modeSelection" aria-labelledby="selectModeInstruction" role="radiogroup" title="Select the calculator's mode of function.">
+            <span class="visually-hidden" id="selectModeInstruction">Select the calculator's mode of function.</span>
+            <input class="mode visually-hidden" type="radio" name="mode" id="one-vs-one" checked="checked" />
+        </span>
     </div>
     <hr />
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
