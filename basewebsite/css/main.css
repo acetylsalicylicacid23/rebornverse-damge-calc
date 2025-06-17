@@ -44,7 +44,7 @@ a img {
 .nav .button img {
     position: absolute;
     top: -8px;
-    left: -150px;
+    left: -70px;
 }
 .nav .button.cur,
 .nav .button.cur:hover {
