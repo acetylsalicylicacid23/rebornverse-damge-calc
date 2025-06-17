@@ -2089,7 +2089,6 @@ $(document).ready(function () {
 	$('.ic').click(selectItem);
 	$('#save-change').click(saveTrainerPokemon);
 	$('#double-legacy-mode').click(toggleDoubleLegacyMode);
-	$('#screen-calc').click(onClickScreenCalc)
 	for (let dropzone of document.getElementsByClassName("dropzone")){
 		dropzone.ondragenter=handleDragEnter;
 		dropzone.ondragleave=handleDragLeave;
