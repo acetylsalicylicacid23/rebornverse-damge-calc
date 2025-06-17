@@ -261,7 +261,7 @@ th {
     border-radius: 8px;
 }
 .btn-wide {
-    width: 7em;
+    width: 6em;
 }
 .btn-xwide {
     width: 8em;
@@ -813,10 +813,4 @@ table.field {
 #sets > a {
     margin-left: 5px;
     margin-right: 5px;
-}
-
-#screen-calc{
-    float: right;
-    margin-top: 22px;
-    margin-right: 41px;
 }
