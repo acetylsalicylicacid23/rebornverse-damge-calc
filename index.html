@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Pok&eacute;mon Reborn Damage Calculator</title>
-	<link rel="icon" type="image/x-icon" href="./basewebsite/imgnew/reblogo.png">
-    <link type="text/css" rel="stylesheet" href="./basewebsite/js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./basewebsite/css/main.css?36705df8" />
-    <link type="text/css" rel="stylesheet" href="./basewebsite/css/vendor/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="./basewebsite/css/dark-theme.css" id="dark-theme-styles">
+	<link rel="icon" type="image/x-icon" href="./imgnew/rebornlogo.png">
+    <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+    <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26211653-3"></script>
     <script>
@@ -40,7 +40,7 @@
 <body class="dark-theme">
     <nav><div class="header"><div class="header-color"><div class="header-inner">
         <ul class="nav">
-            <li><a class="button nav-first" href="//rebornevo.com"><img src="./basewebsite/imgnew/rebornevologo.png" alt="RebornEvo" />RebornEvo</a></li>
+            <li><a class="button nav-first" href="//rebornevo.com"><img src="./imgnew/rebornevologo.png" alt="RebornEvo" />RebornEvo</a></li>
             <li><a class="button" href="//reborn.rebornversecalc.com">Reborn Calc</a></li>
             <li><a class="button" href="//rejuv.rebornversecalc.com">Rejuvenation Calc</a></li>
             <li><a class="button nav-last" href="//deso.rebornversecalc.com">Desolation Calc</a></li>
@@ -49,15 +49,12 @@
     </div></div></div></nav>
 
 <div class="wrapper">
-
     <span class="title-text main-title-text">Pok&eacute;mon Reborn Damage Calculator</span>
     <div aria-label="Settings" role="region">
         <span class="genSelection" aria-labelledby="selectGenInstruction" role="radiogroup" title="Select the generation.">
-            <span class="visually-hidden" id="selectGenInstruction">Select the generation.</span>
-            <input class="gen visually-hidden" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-wide btn-left" for="gen6">Nightclub</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn btn-mid" for="gen7">Reborn</label>
+            <input class="gen visually-hidden" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn btn-left" for="gen7">Reborn</label>
             <input class="gen visually-hidden" type="radio" name="gen" value="8" id="gen8" /><label class="btn btn-wide btn-mid" for="gen8">Postgame</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="9" id="gen9" /><label class="btn btn-small btn-right" for="gen9">S/V</label>
+            <input class="gen visually-hidden" type="radio" name="gen" value="9" id="gen9" /><label class="btn btn-wide btn-right" for="gen9">Gen 9</label>
         </span>
         <span class="notationSelection" aria-labelledby="selectNotationInstruction" role="radiogroup" title="Select the output notation.">
             <span class="visually-hidden" id="selectNotationInstruction">Select the output notation.</span>
@@ -66,12 +63,11 @@
         </span>
         <span class="modeSelection" aria-labelledby="selectModeInstruction" role="radiogroup" title="Select the calculator's mode of function.">
             <span class="visually-hidden" id="selectModeInstruction">Select the calculator's mode of function.</span>
-            <input class="mode visually-hidden" type="radio" name="mode" id="one-vs-one" checked="checked" />
-            <input class="mode visually-hidden" type="radio" name="mode" id="one-vs-all" />
-            <input class="mode visually-hidden" type="radio" name="mode" id="all-vs-one" />
-            <input class="mode visually-hidden" type="radio" name="mode" id="randoms" />
+            <input class="mode visually-hidden" type="radio" name="mode" id="one-vs-one" checked="checked" /><label class="btn btn-left btn-wide" for="one-vs-one">Story</label>
+            <input class="mode visually-hidden" type="radio" name="mode" id="randoms" /><label class="btn btn-right btn-wide" for="randoms">Nightclub</label>
         </span>
     </div>
+    <span class="text">When changing the generation, reload the page to reload trainers.</span>
     <hr />
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
         <div  aria-labelledby="resultHeaderL" class="move-result-subgroup" role="radiogroup">
@@ -191,7 +187,7 @@
             <span id="damageValues2"></span>
         </div>
     </div>
-    <div class="left-side-pannel side-pannel">
+    <div class="left-side-pannel side-pannel" hidden>
         <button data-set="i-f-type" class="l-side-button">
             <i class="s-arrow arrowdown"></i>
             <span>Type</span>
@@ -607,8 +603,9 @@
                     <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL1" />
                     <label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL1"/>
-                    <label class="btn z-btn gen-specific g6 g7 g8 g9" for="zL1" title="Make this attack a Z-move?">Z</label>
+                    <label class="btn z-btn gen-specific g7 g8 g9" for="zL1" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -641,8 +638,9 @@
                     <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL2" />
                     <label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL2"/>
-                    <label class="btn z-btn gen-specific g6 g7 g8 g9" for="zL2" title="Make this attack a Z-move?">Z</label>
+                    <label class="btn z-btn gen-specific g7 g8 g9" for="zL2" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -675,8 +673,9 @@
                     <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL3" />
                     <label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL3"/>
-                    <label class="btn z-btn gen-specific g6 g7 g8 g9" for="zL3" title="Make this attack a Z-move?">Z</label>
+                    <label class="btn z-btn gen-specific g7 g8 g9" for="zL3" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -709,8 +708,9 @@
                     <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL4" />
                     <label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL4"/>
-                    <label class="btn z-btn gen-specific g6 g7 g8 g9" for="zL4" title="Make this attack a Z-move?">Z</label>
+                    <label class="btn z-btn gen-specific g7 g8 g9" for="zL4" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -751,8 +751,8 @@
                 <div>
                     <legend class="dropzone" align="center">Box 2</legend>
                     <div id="box-poke-list2" class="box-poke dropzone">
-                    </div>
-                    <button class="dropzone" align= "center" id="clearSets">Remove Pokémon from all boxes</button>
+                    </div>                    
+                    <button class="deadzone" id="clearSets">Remove Pokémon from all boxes</button>
                 </div>
                 <hr>
                 <div>
@@ -797,6 +797,14 @@
                         <input min="1" max="5" type="range" name="cc-spe-width" id="cc-spe-width">Speed Border width
                     </div>
                 </div>
+                <hr>
+                <div>
+                    <legend class="dropzone" align="center">Selective Removal</legend>
+                    <div id="trash-box" class="box-poke dropzone" data-placeholder="">
+                        
+                    </div>
+                    <button class="deadzone" id="trash-pok">Remove Chosen Pokemon</button>
+                </div>
             </fieldset>
         </div>
     </div>
@@ -804,8 +812,8 @@
         <div aria-label="Field information" role="region">
             <fieldset class="field-info">
                 <legend align="center">Field
-                    <img id="monSingle" src="https://raw.githubusercontent.com/May8th1995/sprites/master/Minun.png" alt="">
-                    <img id="monDouble" src="https://raw.githubusercontent.com/May8th1995/sprites/master/Plusle.png" alt="" hidden>
+                    <img id="monSingle" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main/Minun.png" alt="">
+                    <img id="monDouble" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main/Plusle.png" alt="" hidden>
                 </legend>
                 <div aria-labelledby="selectBattleFormatInstruction" class="gen-specific g3 g4 g5 g6 g7 g8 g9" role="radiogroup" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                     <span class="visually-hidden" id="selectBattleFormatInstruction">Select the battle format.</span>
@@ -817,67 +825,72 @@
                 <div aria-labelledby="selectTerrainInstruction" class="gen-specific g6 g7 g8 g9" role="group" title="Select the current terrain.">
                     <span class="visually-hidden" id="selectTerrainInstruction">Select the current terrain.</span>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Ashen Beach" id="ashenbeach" /><label class="btn btn-xxxwide btn-left" for="ashenbeach">Ashen Beach</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top" id="bigtop" /><label class="btn btn-xxxwide btn-mid" for="bigtop">Big Top</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Burning" id="burning" /><label class="btn btn-xxxwide btn-right" for="burning">Burning</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Cave" id="cave" /><label class="btn btn-xxxwide btn-left" for="cave">Cave</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Chess Board" id="chessboard" /><label class="btn btn-xxxwide btn-mid" for="chessboard">Chess Board</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Corrosive" id="corrosive" /><label class="btn btn-xxxwide btn-right" for="corrosive">Corrosive</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Corrosive Mist" id="corrosivemist" /><label class="btn btn-xxxwide btn-left" for="corrosivemist">Corrosive Mist</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Dark Crystal" id="darkcrystal" /><label class="btn btn-xxxwide btn-mid" for="darkcrystal">Dark Crystal</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Desert" id="desert" /><label class="btn btn-xxxwide btn-right" for="desert">Desert</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Dragon's Den" id="dragonden" /><label class="btn btn-xxxwide btn-left" for="dragonden">Dragon's Den</label>
-                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxxwide btn-mid" for="electric">Electric</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Factory" id="factory" /><label class="btn btn-xxxwide btn-right" for="factory">Factory</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Fairy Tale" id="fairytale" /><label class="btn btn-xxxwide btn-left" for="fairytale">Fairy Tale</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Forest" id="forest" /><label class="btn btn-xxxwide btn-mid" for="forest">Forest</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Glitch" id="glitch" /><label class="btn btn-xxxwide btn-right" for="glitch">Glitch</label>
-                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxxwide btn-left" for="grassy">Grassy</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Holy" id="holy" /><label class="btn btn-xxxwide btn-mid" for="holy">Holy</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Icy" id="icy" /><label class="btn btn-xxxwide btn-right" for="icy">Icy</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Inverse" id="inverse" /><label class="btn btn-xxxwide btn-left" for="inverse">Inverse</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Mirror" id="mirror" /><label class="btn btn-xxxwide btn-mid" for="mirror">Mirror</label>
-                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xxxwide btn-right" for="misty">Misty</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Mountain" id="mountain" /><label class="btn btn-xxxwide btn-left" for="mountain">Mountain</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Murkwater" id="murkwater" /><label class="btn btn-xxxwide btn-mid" for="murkwater">Murkwater</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="New World" id="newworld" /><label class="btn btn-xxxwide btn-right" for="newworld">New World</label>
-                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Psychic" id="psychic" /><label class="btn btn-xxxwide btn-left" for="psychic">Psychic</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Rainbow" id="rainbow" /><label class="btn btn-xxxwide btn-mid" for="rainbow">Rainbow</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Rocky" id="rocky" /><label class="btn btn-xxxwide btn-right" for="rocky">Rocky</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Snowy Mt" id="snowymt" /><label class="btn btn-xxxwide btn-left" for="snowymt">Snowy Mountain</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Starlight" id="starlight" /><label class="btn btn-xxxwide btn-mid" for="starlight">Starlight</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Superheated" id="superheated" /><label class="btn btn-xxxwide btn-right" for="superheated">Super-Heated</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Swamp" id="swamp" /><label class="btn btn-xxxwide btn-left" for="swamp">Swamp</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Underwater" id="underwater" /><label class="btn btn-xxxwide btn-mid" for="underwater">Underwater</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Wasteland" id="wasteland" /><label class="btn btn-xxxwide btn-right" for="wasteland">Wasteland</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Water" id="water" /><label class="btn btn-xxwide btn-left" for="water">Water Surface</label>
-					<label class="btn btn-xwide btn-mid">Flower Garden</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Burning" id="burning" /><label class="btn btn-xxxwide btn-mid" for="burning">Burning</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Cave" id="cave" /><label class="btn btn-xxxwide btn-right" for="cave">Cave</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Chess Board" id="chessboard" /><label class="btn btn-xxxwide btn-left" for="chessboard">Chess Board</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Corrosive" id="corrosive" /><label class="btn btn-xxxwide btn-mid" for="corrosive">Corrosive</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Corrosive Mist" id="corrosivemist" /><label class="btn btn-xxxwide btn-right" for="corrosivemist">Corrosive Mist</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Dark Crystal" id="darkcrystal" /><label class="btn btn-xxxwide btn-left" for="darkcrystal">Dark Crystal</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Desert" id="desert" /><label class="btn btn-xxxwide btn-mid" for="desert">Desert</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Dragon's Den" id="dragonden" /><label class="btn btn-xxxwide btn-right" for="dragonden">Dragon's Den</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxxwide btn-left" for="electric">Electric</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Factory" id="factory" /><label class="btn btn-xxxwide btn-mid" for="factory">Factory</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Fairy Tale" id="fairytale" /><label class="btn btn-xxxwide btn-right" for="fairytale">Fairy Tale</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Forest" id="forest" /><label class="btn btn-xxxwide btn-left" for="forest">Forest</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Glitch" id="glitch" /><label class="btn btn-xxxwide btn-mid" for="glitch">Glitch</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxxwide btn-right" for="grassy">Grassy</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Holy" id="holy" /><label class="btn btn-xxxwide btn-left" for="holy">Holy</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Icy" id="icy" /><label class="btn btn-xxxwide btn-mid" for="icy">Icy</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Inverse" id="inverse" /><label class="btn btn-xxxwide btn-right" for="inverse">Inverse</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Mirror" id="mirror" /><label class="btn btn-xxxwide btn-left" for="mirror">Mirror</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xxxwide btn-mid" for="misty">Misty</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Mountain" id="mountain" /><label class="btn btn-xxxwide btn-right" for="mountain">Mountain</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Murkwater" id="murkwater" /><label class="btn btn-xxxwide btn-left" for="murkwater">Murkwater</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="New World" id="newworld" /><label class="btn btn-xxxwide btn-mid" for="newworld">New World</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Psychic" id="psychic" /><label class="btn btn-xxxwide btn-right" for="psychic">Psychic</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Rainbow" id="rainbow" /><label class="btn btn-xxxwide btn-left" for="rainbow">Rainbow</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Rocky" id="rocky" /><label class="btn btn-xxxwide btn-mid" for="rocky">Rocky</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Snowy Mt" id="snowymt" /><label class="btn btn-xxxwide btn-right" for="snowymt">Snowy Mountain</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Starlight" id="starlight" /><label class="btn btn-xxxwide btn-left" for="starlight">Starlight</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Superheated" id="superheated" /><label class="btn btn-xxxwide btn-mid" for="superheated">Super-Heated</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Swamp" id="swamp" /><label class="btn btn-xxxwide btn-right" for="swamp">Swamp</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Underwater" id="underwater" /><label class="btn btn-xxxwide btn-left" for="underwater">Underwater</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Wasteland" id="wasteland" /><label class="btn btn-xxxwide btn-mid" for="wasteland">Wasteland</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Water" id="water" /><label class="btn btn-xxxwide btn-right" for="water">Water Surface</label>
+                    <label class="btn btn-xwide btn-left">Big Top</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top WEAK" id="bigtopweak"/><label class="btn btn-small btn-mid" for="bigtopweak">WEAK</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top OK" id="bigtopok" /><label class="btn btn-small btn-mid" for="bigtopok">OK</label>
+                    <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top NICE" id="bigtopnice" /><label class="btn btn-small btn-mid" for="bigtopnice">NICE</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top POWER" id="bigtoppowerful" /><label class="btn btn-small btn-mid" for="bigtoppowerful">POWER</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top 9000" id="bigtopover9000" /><label class="btn btn-small btn-right" for="bigtopover9000">9000</label>
+					<label class="btn btn-xwide btn-left">Flower Garden</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 1" id="flowergarden1"/><label class="btn btn-xsmall btn-mid" for="flowergarden1">1</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 2" id="flowergarden2" /><label class="btn btn-xsmall btn-mid" for="flowergarden2">2</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 3" id="flowergarden3" /><label class="btn btn-xsmall btn-mid" for="flowergarden3">3</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 4" id="flowergarden4" /><label class="btn btn-xsmall btn-mid" for="flowergarden4">4</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 5" id="flowergarden5" /><label class="btn btn-xsmall btn-right" for="flowergarden5">5</label>
-					<label class="btn btn-xwide btn-left">Short-Circuit</label>
+					<br><label class="btn btn-xwide btn-left">Short-Circuit</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 0.8" id="shortcicuit0.8"/><label class="btn btn-small btn-mid" for="shortcicuit0.8">0.8</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 1.5" id="shortcicuit1.5"/><label class="btn btn-small btn-mid" for="shortcicuit1.5">1.5</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 0.5" id="shortcicuit0.5"/><label class="btn btn-small btn-mid" for="shortcicuit0.5">0.5</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 1.2" id="shortcicuit1.2"/><label class="btn btn-small btn-mid" for="shortcicuit1.2">1.2</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 2" id="shortcicuit2"/><label class="btn btn-small btn-right" for="shortcicuit2">2</label>
-					<label class="btn btn-xwide btn-left">Crystal Cavern</label>					
+					<br><label class="btn btn-xwide btn-left">Crystal Cavern</label>					
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Fire" id="crystalfire"/><label class="btn btn-small btn-mid" for="crystalfire">fire</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Water" id="crystalwater" /><label class="btn btn-small btn-mid" for="crystalwater">water</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Grass" id="crystalgrass" /><label class="btn btn-small btn-mid" for="crystalgrass">grass</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Psychic" id="crystalpsychic" /><label class="btn btn-small btn-right" for="crystalpsychic">psychic</label>
                 </div>
-					 <div aria-labelledby="selectRuinInstruction" class="gen-specific g9 format-specific doubles" role="group" style="margin: 5px auto auto;" title="Select the ruin abilities from other Pok&eacute;mon on the field.">
+                <div aria-labelledby="selectRuinInstruction" class="gen-specific g9 format-specific doubles" role="group" style="margin: 5px auto auto;" title="Select the ruin abilities from other Pok&eacute;mon on the field.">
                     <span class="visually-hidden" id="selectRuinInstruction">Select the active Ruin abilities from other Poke&eacute;mon on the field.</span>
                     <input class="visually-hidden calc-trigger" type="checkbox" name="ruin" value="Beads" id="beads" />
-						  <label class="btn btn-xxxwide btn-left" for="beads">Beads of Ruin</label>
+                            <label class="btn btn-xxxwide btn-left" for="beads">Beads of Ruin</label>
                     <input class="visually-hidden calc-trigger" type="checkbox" name="ruin" value="Tablets" id="tablets" />
-						  <label class="btn btn-xxxwide btn-mid" for="tablets">Tablets of Ruin</label>
+                            <label class="btn btn-xxxwide btn-mid" for="tablets">Tablets of Ruin</label>
                     <input class="visually-hidden calc-trigger" type="checkbox" name="ruin" value="Sword" id="sword" />
-						  <label class="btn btn-xxxwide btn-right" for="sword">Sword of Ruin</label>
+                            <label class="btn btn-xxxwide btn-right" for="sword">Sword of Ruin</label>
                     <input class="visually-hidden calc-trigger" type="checkbox" name="ruin" value="Vessel" id="vessel" />
-						  <label class="btn btn-xxxwide btn-mid" for="vessel">Vessel of Ruin</label>
+                        <label class="btn btn-xxxwide btn-mid" for="vessel">Vessel of Ruin</label>
                 </div>
                 <hr class="gen-specific g6 g7 g8 g9" />
                 <div aria-labelledby="selectWeatherInstruction" role="radiogroup">
@@ -959,7 +972,7 @@
                                 <label class="btn btn-xwide" for="srR">Stealth Rock</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific">
+                        <tr class="gen-specific g8 hide">
                             <div hidden id="selectSteelsurgeInstruction">Is Steelsurge affecting this side of the field?</div>
                             <td><div class="left" title="Is Steelsurge affecting this side of the field?">
                                 <input aria-describedby="selectSteelsurgeInstruction" class="visually-hidden calc-trigger" type="checkbox" id="steelsurgeL" />
@@ -970,7 +983,7 @@
                                 <label class="btn btn-xwide" for="steelsurgeR">Steelsurge</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific">
+                        <tr class="gen-specific g8 hide">
                             <div hidden id="selectVinefireInstruction">Is Vine Lash and/or Wildfire affecting this side of the field?</div>
                             <td><div class="left" title="Is Vine Lash/Wildfire affecting this side of the field?">
                                 <input aria-describedby="selectVinefireInstruction" class="visually-hidden calc-trigger" type="checkbox" id="vinelashL" />
@@ -985,7 +998,7 @@
                                 <label class="btn btn-wide btn-right" for="vinelashR">Vine Lash</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific">
+                        <tr class="gen-specific g8 hide">
                             <div hidden id="selectCannonlithInstruction">Is Cannonade and/or Volcalith affecting this side of the field?</div>
                             <td><div class="left" title="Is Cannonade/Volcalith affecting this side of the field?">
                                 <input aria-describedby="selectCannonlithInstruction" class="visually-hidden calc-trigger" type="checkbox" id="cannonadeL" />
@@ -1115,6 +1128,28 @@
                             </div></td>
                         </tr>
                         <tr class="gen-specific g5 g6 g7 g8 g9">
+                            <td><div class="left" title="Is the Pok&eacute;mon affected by an ally's Victory Star?">
+                                <div hidden id="selectVictoryStarInstruction">Is the Pok&eacute;mon affected by an ally's Victory Star?</div>
+                                <input aria-describedby="selectVictoryStarInstruction" class="visually-hidden calc-trigger" type="checkbox" id="victoryStarL" />
+                                <label class="btn btn-xxwide" for="victoryStarL">Victory Star</label>
+                            </div></td>
+                            <td><div class="right" title="Is the Pok&eacute;mon affected by an ally's Victory Star?">
+                                <input aria-describedby="selectVictoryStarInstruction" class="visually-hidden calc-trigger" type="checkbox" id="victoryStarR" />
+                                <label class="btn btn-xxwide" for="victoryStarR">Victory Star</label>
+                            </div></td>
+                        </tr>
+                        <tr class="gen-specific g9">
+                            <td><div class="left" title="Is the Pok&eacute;mon affected by an ally's Steely Spirit?">
+                                <div hidden id="selectSteelySpiritInstruction">Is the Pok&eacute;mon affected by an ally's Steely Spirit?</div>
+                                <input aria-describedby="selectSteelySpiritInstruction" class="visually-hidden calc-trigger" type="checkbox" id="steelySpiritL" />
+                                <label class="btn btn-xxwide" for="steelySpiritL">Steely Spirit</label>
+                            </div></td>
+                            <td><div class="right" title="Is the Pok&eacute;mon affected by an ally's Steely Spirit?">
+                                <input aria-describedby="selectSteelySpiritInstruction" class="visually-hidden calc-trigger" type="checkbox" id="steelySpiritR" />
+                                <label class="btn btn-xxwide" for="steelySpiritR">Steely Spirit</label>
+                            </div></td>
+                        </tr>
+                        <tr class="gen-specific g5 g6 g7 g8 g9">
                             <td><div class="left" title="Is the Pok&eacute;mon protected by an ally's Friend Guard?">
                                 <div hidden id="selectFriendGuardInstruction">Is the Pok&eacute;mon protected by an ally's Friend Guard?</div>
                                 <input aria-describedby="selectFriendGuardInstruction" class="visually-hidden calc-trigger" type="checkbox" id="friendGuardL" />
@@ -1125,7 +1160,7 @@
                                 <label class="btn btn-xxwide" for="friendGuardR">Friend Guard</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g6 g7 g8 g9">
+                        <tr class="gen-specific g7 g8 g9">
                             <td><div class="left" title="Is the Pok&eacute;mon protected by an ally's Aurora Veil?">
                                 <div hidden id="selectAuroraVeilInstruction">Is the Pok&eacute;mon protected by an ally's Aurora Veil?</div>
                                 <input aria-describedby="selectAuroraVeilInstruction" class="visually-hidden calc-trigger" type="checkbox" id="auroraVeilL" />
@@ -1136,7 +1171,7 @@
                                 <label class="btn btn-xxwide" for="auroraVeilR">Aurora Veil</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific">
+                        <tr class="gen-specific hide">
                           <td><div class="left" title="Has the Pok&eacute;mon boosted all its stats one stage?">
                               <div hidden id="selectStatBoostInstruction">Has the Pok&eacute;mon boosted all its stats one stage?</div>
                                 <input aria-describedby="selectStatBoostInstruction" class="visually-hidden calc-trigger" type="checkbox" id="StatBoostL" />
@@ -1147,7 +1182,7 @@
                                 <label class="btn btn-xxwide" for="StatBoostR">+1 All Stats</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g6 g7 g8 g9">
+                        <tr class="gen-specific g7 g8 g9">
                           <td><div class="left" title="Is the Pok&eacute;mon boosted by an ally's Battery ability?">
                               <div hidden id="selectBatteryInstruction">Is the Pok&eacute;mon boosted by an ally's Battery ability?</div>
                                 <input aria-describedby="selectBatteryInstruction" class="visually-hidden calc-trigger" type="checkbox" id="batteryL" />
@@ -1158,7 +1193,7 @@
                                 <label class="btn btn-xxwide" for="batteryR">Battery</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g6 g7 g8 g9">
+                        <tr class="gen-specific g9">
                           <td><div class="left" title="Is the Pok&eacute;mon boosted by an ally's Power Spot ability?">
                               <div hidden id="selectPowerSpotInstruction">Is the Pok&eacute;mon boosted by an ally's Power Spot ability?</div>
                                 <input aria-describedby="selectPowerSpotInstruction" class="visually-hidden calc-trigger" type="checkbox" id="powerSpotL" />
@@ -1167,6 +1202,17 @@
                             <td><div class="right" title="Is the Pok&eacute;mon boosted by an ally's Power Spot ability?">
                                 <input aria-describedby="selectPowerSpotInstruction" class="visually-hidden calc-trigger" type="checkbox" id="powerSpotR" />
                                 <label class="btn btn-xxwide" for="powerSpotR">Power Spot</label>
+                            </div></td>
+                        </tr>
+                        <tr class="gen-specific g9">
+                          <td><div class="left" title="Is the Pok&eacute;mon protected by an ally's Pastel Veil ability?">
+                              <div hidden id="selectPastelVeilInstruction">Is the Pok&eacute;mon protected by an ally's Pastel Veil ability?</div>
+                                <input aria-describedby="selectPastelVeilInstruction" class="visually-hidden calc-trigger" type="checkbox" id="pastelVeilL" />
+                                <label class="btn btn-xxwide" for="pastelVeilL">Pastel Veil</label>
+                              </div></td>
+                            <td><div class="right" title="Is the Pok&eacute;mon protected by an ally's Pastel Veil ability?">
+                                <input aria-describedby="selectPastelVeilInstruction" class="visually-hidden calc-trigger" type="checkbox" id="pastelVeilR" />
+                                <label class="btn btn-xxwide" for="pastelVeilR">Pastel Veil</label>
                             </div></td>
                         </tr>
                         <tr class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
@@ -1601,6 +1647,7 @@
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR1"/>
                     <label class="btn z-btn gen-specific g7 g8 g9" for="zR1" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -1635,6 +1682,7 @@
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR2"/>
                     <label class="btn z-btn gen-specific g7 g8 g9" for="zR2" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -1669,6 +1717,7 @@
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
                     <label class="btn z-btn gen-specific g7 g8 g9" for="zR3" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -1703,6 +1752,7 @@
                     <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
                     <label class="btn z-btn gen-specific g7 g8 g9" for="zR4" title="Make this attack a Z-move?">Z</label>
                     <select class="move-hits calc-trigger hide">
+                        <option value="1">1 hit</option>
                         <option value="2">2 hits</option>
                         <option value="3">3 hits</option>
                         <option value="4">4 hits</option>
@@ -1734,7 +1784,7 @@
                     </div>
                     <div id="trainer-pok-list-opposing2" class="dropzone calc-trigger" 
                     data-placeholder=" For doubles you can drag & drop the opposing pokemons here,
-                     only the first one off each row will be calculated against." hidden>
+                     only the first one off each row will be calculated against. Top left always top calc and Bot left always bot calc" hidden>
                     </div>
                 </div>
                 <!--hr>
@@ -1746,7 +1796,7 @@
             </fieldset>
         </div>
     </div>
-    <div class="right-side-pannel side-pannel">
+    <div class="right-side-pannel side-pannel" hidden>
         <button data-set="i-f-o-type" class="r-side-button">
             <i class="s-arrow arrowdown"></i>
             <span>Type</span>
@@ -1767,10 +1817,10 @@
     <script type="text/javascript">
         var linkExtension = '.html';
     </script>
-    <script type="text/javascript" src="./basewebsite/js/vendor/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/vendor/select2/select2.min.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/vendor/url-search-params-0.1.2.min.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/vendor/interact.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/select2/select2.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/url-search-params-0.1.2.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/interact.min.js"></script>
     <script type="text/javascript">
         this.__createBinding = function(o, m, k) {
             o[k] = m[k];
@@ -1778,46 +1828,46 @@
         var calc = exports = {};
         function require() { return exports };
     </script>
-    <script type="text/javascript" src="./basewebsite/calc/util.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/stats.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/species.js"></script>
-	<script type="text/javascript" src="./basewebsite/js/data/sets/gen9.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen8.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen7.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen6.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen5.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen4.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen3.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen2.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/sets/gen1.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/data/truck.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/types.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/natures.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/abilities.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/moves.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/items.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/data/index.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/move.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/pokemon.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/field.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/items.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/util.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/gen789.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/gen56.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/gen4.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/gen3.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/mechanics/gen12.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/calc.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/desc.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/result.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/adaptable.js"></script>
-    <script type="text/javascript" src="./basewebsite/calc/index.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/shared_controls.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/index_randoms_controls.js"></script>
-    <script type="text/javascript" src="./basewebsite/js/moveset_import.js"></script>
+    <script type="text/javascript" src="./calc/util.js"></script>
+    <script type="text/javascript" src="./calc/stats.js"></script>
+    <script type="text/javascript" src="./calc/data/species.js"></script>
+	<script type="text/javascript" src="./js/data/sets/gen9.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js"></script>
+    <script type="text/javascript" src="./js/data/truck.js"></script>
+    <script type="text/javascript" src="./calc/data/types.js"></script>
+    <script type="text/javascript" src="./calc/data/natures.js"></script>
+    <script type="text/javascript" src="./calc/data/abilities.js"></script>
+    <script type="text/javascript" src="./calc/data/moves.js"></script>
+    <script type="text/javascript" src="./calc/data/items.js"></script>
+    <script type="text/javascript" src="./calc/data/index.js"></script>
+    <script type="text/javascript" src="./calc/move.js"></script>
+    <script type="text/javascript" src="./calc/pokemon.js"></script>
+    <script type="text/javascript" src="./calc/field.js"></script>
+    <script type="text/javascript" src="./calc/items.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/util.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen789.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen56.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen4.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen3.js"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen12.js"></script>
+    <script type="text/javascript" src="./calc/calc.js"></script>
+    <script type="text/javascript" src="./calc/desc.js"></script>
+    <script type="text/javascript" src="./calc/result.js"></script>
+    <script type="text/javascript" src="./calc/adaptable.js"></script>
+    <script type="text/javascript" src="./calc/index.js"></script>
+    <script type="text/javascript" src="./js/shared_controls.js"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js"></script>
+    <script type="text/javascript" src="./js/moveset_import.js"></script>
 </div>
 
-<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by <br> Special thanks to ForwardFeed and the Run and Bun Calc Modification
+<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by <br> Special thanks to Ander for the original Reborn Damage Calculator, Kater for helping debug, and ForwardFeed and the Run and Bun Calc Modification
     <!-- To all the people who help, add what you want to be credited by here -->
     <ul>
         <li><a href="https://github.com/acetylsalicylicacid23/rebornverse-damge-calc" class="links-lighten" target="_blank">Rebornverse Modification Repository</a></li>
@@ -1828,7 +1878,8 @@
     </ul>
     <div id="sets">
         <button type="button" id="dark-theme-toggle"></button>
-        <script type="text/javascript" src="./basewebsite/js/dark-theme-toggle.js?be118517"></script>
+        <script type="text/javascript" src="./js/dark-theme-toggle.js?be118517"></script>
+        <button id="side-arrow-toggle" data-id="true">Show Side Arrows</button>
         <button id="double-legacy-mode">Doubles Modern</button>
     </div>
 </div>
