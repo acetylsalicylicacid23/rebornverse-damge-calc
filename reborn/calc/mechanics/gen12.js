@@ -30,6 +30,7 @@ var items_1 = require("../items");
 var result_1 = require("../result");
 var util_1 = require("./util");
 function calculateRBYGSC(gen, attacker, defender, move, field) {
+    var _a;
     (0, util_1.computeFinalStats)(gen, attacker, defender, field, 'atk', 'def', 'spa', 'spd', 'spe');
     var desc = {
         attackerName: attacker.name,
@@ -44,23 +45,57 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
         desc.isProtected = true;
         return result;
     }
+    if (move.name === 'Pain Split') {
+        var average = Math.floor((attacker.curHP() + defender.curHP()) / 2);
+        var damage = Math.max(0, defender.curHP() - average);
+        result.damage = damage;
+        return result;
+    }
     if (gen.num === 1) {
-        var fixedDamage = (0, util_1.handleFixedDamageMoves)(attacker, move, defender);
+        var fixedDamage = (0, util_1.handleFixedDamageMoves)(attacker, move);
         if (fixedDamage) {
             result.damage = fixedDamage;
             return result;
         }
     }
-    var type1Effectiveness = (0, util_1.getMoveEffectiveness)(gen, move, defender.types[0], field.defenderSide.isForesight);
-    var type2Effectiveness = defender.types[1]
-        ? (0, util_1.getMoveEffectiveness)(gen, move, defender.types[1], field.defenderSide.isForesight)
+    var typeEffectivenessPrecedenceRules = [
+        'Normal',
+        'Fire',
+        'Water',
+        'Electric',
+        'Grass',
+        'Ice',
+        'Fighting',
+        'Poison',
+        'Ground',
+        'Flying',
+        'Psychic',
+        'Bug',
+        'Rock',
+        'Ghost',
+        'Dragon',
+        'Dark',
+        'Steel',
+    ];
+    var firstDefenderType = defender.types[0];
+    var secondDefenderType = defender.types[1];
+    if (secondDefenderType && firstDefenderType !== secondDefenderType && gen.num === 2) {
+        var firstTypePrecedence = typeEffectivenessPrecedenceRules.indexOf(firstDefenderType);
+        var secondTypePrecedence = typeEffectivenessPrecedenceRules.indexOf(secondDefenderType);
+        if (firstTypePrecedence > secondTypePrecedence) {
+            _a = __read([secondDefenderType, firstDefenderType], 2), firstDefenderType = _a[0], secondDefenderType = _a[1];
+        }
+    }
+    var type1Effectiveness = (0, util_1.getMoveEffectiveness)(gen, move, firstDefenderType, field.defenderSide.isForesight);
+    var type2Effectiveness = secondDefenderType
+        ? (0, util_1.getMoveEffectiveness)(gen, move, secondDefenderType, field.defenderSide.isForesight)
         : 1;
     var typeEffectiveness = type1Effectiveness * type2Effectiveness;
     if (typeEffectiveness === 0) {
         return result;
     }
     if (gen.num === 2) {
-        var fixedDamage = (0, util_1.handleFixedDamageMoves)(attacker, move, defender);
+        var fixedDamage = (0, util_1.handleFixedDamageMoves)(attacker, move);
         if (fixedDamage) {
             result.damage = fixedDamage;
             return result;
@@ -68,6 +103,10 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
     }
     if (move.hits > 1) {
         desc.hits = move.hits;
+    }
+    if (move.name === 'Triple Kick') {
+        move.bp = move.hits === 2 ? 15 : move.hits === 3 ? 20 : 10;
+        desc.moveBP = move.bp;
     }
     if (move.named('Flail', 'Reversal')) {
         move.isCrit = false;
@@ -197,6 +236,33 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
             else {
                 result.damage[i - 217] = Math.floor((baseDamage * i) / 255);
             }
+        }
+    }
+    if (move.hits > 1) {
+        var _loop_1 = function (times) {
+            var damageMultiplier = 217;
+            result.damage = result.damage.map(function (affectedAmount) {
+                if (times) {
+                    var newFinalDamage = 0;
+                    if (gen.num === 2) {
+                        newFinalDamage = Math.max(1, Math.floor((baseDamage * damageMultiplier) / 255));
+                    }
+                    else {
+                        if (baseDamage === 1) {
+                            newFinalDamage = 1;
+                        }
+                        else {
+                            newFinalDamage = Math.floor((baseDamage * damageMultiplier) / 255);
+                        }
+                    }
+                    damageMultiplier++;
+                    return affectedAmount + newFinalDamage;
+                }
+                return affectedAmount;
+            });
+        };
+        for (var times = 0; times < move.hits; times++) {
+            _loop_1(times);
         }
     }
     return result;

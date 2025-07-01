@@ -4,10 +4,8 @@ function placeBsBtn() {
 
 	$("#import.bs-btn").click(function () {
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
-		var name = "Custom Set";
+		var name = document.getElementsByClassName("import-name-text")[0].value.trim() === "" ? "Custom Set" : document.getElementsByClassName("import-name-text")[0].value;
 		addSets(pokes, name);
-		//erase the import text area
-		document.getElementsByClassName("import-team-text")[0].value="";
 	});
 }
 

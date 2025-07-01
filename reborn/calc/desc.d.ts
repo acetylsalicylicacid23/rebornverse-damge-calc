@@ -19,6 +19,7 @@ export interface RawDesc {
     defenseEVs?: string;
     hits?: number;
     alliesFainted?: number;
+    isStellarFirstUse?: boolean;
     isBeadsOfRuin?: boolean;
     isSwordOfRuin?: boolean;
     isTabletsOfRuin?: boolean;
@@ -26,6 +27,8 @@ export interface RawDesc {
     isAuroraVeil?: boolean;
     isFlowerGiftAttacker?: boolean;
     isFlowerGiftDefender?: boolean;
+    isSteelySpiritAttacker?: boolean;
+    isVictoryStarAttacker?: boolean;
     isFriendGuard?: boolean;
     isHelpingHand?: boolean;
     isCritical?: boolean;
@@ -33,6 +36,7 @@ export interface RawDesc {
     isBurned?: boolean;
     isProtected?: boolean;
     isReflect?: boolean;
+    isPastelVeilDefender?: boolean;
     isBattery?: boolean;
     isPowerSpot?: boolean;
     isWonderRoom?: boolean;
@@ -47,8 +51,8 @@ export interface RawDesc {
     isDefenderDynamaxed?: boolean;
 }
 export declare function display(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, field: Field, damage: Damage, rawDesc: RawDesc, notation?: string, err?: boolean): string;
-export declare function displayMove(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, damage: Damage, notation?: string): string;
-export declare function getRecovery(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, damage: Damage, notation?: string): {
+export declare function displayMove(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, damage: Damage, notation: string | undefined, field: Field): string;
+export declare function getRecovery(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, damage: Damage, notation: string | undefined, field: Field): {
     recovery: [number, number];
     text: string;
 };
@@ -57,11 +61,7 @@ export declare function getRecoil(gen: Generation, attacker: Pokemon, defender: 
     text: string;
 };
 export declare function getKOChance(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, field: Field, damage: Damage, err?: boolean): {
-    chance: number;
+    chance: number | undefined;
     n: number;
     text: string;
-} | {
-    n: number;
-    text: string;
-    chance?: undefined;
 };

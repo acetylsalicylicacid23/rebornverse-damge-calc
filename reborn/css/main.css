@@ -312,6 +312,12 @@ th {
     cursor: default;
 }
 
+.modeSelection .btn {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
 /* Hide element visually, but not from screen readers. See http://adrianroselli.com/2017/05/under-engineered-custom-radio-buttons-and-checkboxen.html */
 .visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);

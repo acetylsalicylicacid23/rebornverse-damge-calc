@@ -420,7 +420,13 @@ var XY = BW.concat(__spreadArray(__spreadArray([], __read(Object.keys(exports.ME
     'Weakness Policy',
     'Whipped Dream',
 ], false).sort());
-var SM = XY.filter(function (i) { return i !== 'Old Amber'; }).concat([
+var SM = XY.concat([
+    'PULSE',
+    'Telluric Seed',
+    'Synthetic Seed',
+    'Elemental Seed',
+    'Magical Seed',
+    'Amplifield Rock',
     'Adrenaline Orb',
     'Aloraichium Z',
     'Beast Ball',
@@ -485,13 +491,22 @@ var SM = XY.filter(function (i) { return i !== 'Old Amber'; }).concat([
     'Water Memory',
     'Waterium Z',
 ]);
-var SS = SM.concat([
+var SS = SM.concat([]);
+var SV = SS.concat([
+    'Ability Shield',
+    'Adamant Crystal',
+    'Auspicious Armor',
     'Berry Sweet',
     'Blunder Policy',
+    'Booster Energy',
     'Chipped Pot',
+    'Clear Amulet',
     'Clover Sweet',
+    'Cornerstone Mask',
+    'Covert Cloak',
     'Cracked Pot',
     'Eject Pack',
+    'Fairy Feather',
     'Flower Sweet',
     'Fossilized Bird',
     'Fossilized Dino',
@@ -499,39 +514,33 @@ var SS = SM.concat([
     'Fossilized Fish',
     'Galarica Cuff',
     'Galarica Wreath',
+    'Griseous Core',
+    'Hearthflame Mask',
     'Heavy-Duty Boots',
     'Leek',
+    'Loaded Dice',
     'Love Sweet',
+    'Lustrous Globe',
+    'Malicious Armor',
+    'Masterpiece Teacup',
+    'Metal Alloy',
+    'Mirror Herb',
+    'Punching Glove',
     'Ribbon Sweet',
     'Room Service',
     'Rusted Shield',
     'Rusted Sword',
     'Star Sweet',
+    'Strange Ball',
     'Strawberry Sweet',
     'Sweet Apple',
+    'Syrupy Apple',
     'Tart Apple',
     'Throat Spray',
+    'Unremarkable Teacup',
+    'Wellspring Mask',
 ]);
-for (var i = 0; i < 100; i++) {
-    SS.push("TR".concat(i < 10 ? "0".concat(i) : i));
-}
-SS.push('Utility Umbrella', 'Vile Vial');
-SS.push.apply(SS, __spreadArray(__spreadArray([], __read(GSC_ONLY), false), ['Old Amber'], false));
-var SV = SS.concat([
-    'Adamant Crystal',
-    'Auspicious Armor',
-    'Ability Shield',
-    'Booster Energy',
-    'Clear Amulet',
-    'Covert Cloak',
-    'Loaded Dice',
-    'Malicious Armor',
-    'Mirror Herb',
-    'Punching Glove',
-    'Lustrous Globe',
-    'Griseous Core',
-    'Strange Ball',
-]);
+SV.push('Utility Umbrella', 'Vile Vial');
 var BERRIES = {
     'Aguav Berry': { t: 'Dragon', p: 80 },
     'Apicot Berry': { t: 'Ground', p: 100 },

@@ -99,6 +99,9 @@ var Side = (function () {
         this.isAuroraVeil = !!side.isAuroraVeil;
         this.isBattery = !!side.isBattery;
         this.isPowerSpot = !!side.isPowerSpot;
+        this.isSteelySpirit = !!side.isSteelySpirit;
+        this.isVictoryStar = !!side.isVictoryStar;
+        this.isPastelVeil = !!side.isPastelVeil;
         this.isSwitching = side.isSwitching;
     }
     Side.prototype.clone = function () {
