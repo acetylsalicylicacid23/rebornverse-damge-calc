@@ -31,3 +31,6 @@ Set Importing: I'm rather proud of this spreadsheet.
 		This format can be long, and wrap around, causing the calc website to shift down, so if that happens in testing, try to shorten the set name. However, for full trainer teams, the calc checks the parts before the first
 			parenthesis, and if it starts with the same words (e.g. "Hoopa Julia/Archer" and "Hoopa Julia") it counts it as the same trainer, so use a different character. I like using cyrillic vowels.
 		For tag battles, I include both trainers in the name separated by a slash, with the right opponent first.
+		
+Interface/Index:
+	Change the index when adding buttons, code should be self-explanatory and/or copy-pastable.
