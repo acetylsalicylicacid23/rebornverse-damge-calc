@@ -9,8 +9,8 @@ Assorted side/field boosts: if you're using VSCode, Ctrl+Shift+F, otherwise try 
 
 Trainer teams: Do not touch the code unless it is straight up broken. The names before fields must be the same in case of tag battles, though feel free to use the Reborn Calc for formatting.
 
-Shared Controls.js: Do not touch as much as possible! This file sucks to mess with! The main stuff that I can say is safe to touch is the "var bounds" at line ~70-80, which determines min/max for various parameters and
-	the "value" section in the "selectTrainer" function, which just determines min and max index (more on index in the Sets section).
+Shared Controls.js: Do not touch as much as possible! This file sucks to mess with! The main stuff that I can say is safe to touch is the "var bounds" at line ~70-80, which determines min/max for various parameters,
+	the "value" section in the "selectTrainer" function, which just determines min and max index (more on index in the Sets section), and various definitions of "gen" and gennew for determining the base generation selection.
 	
 Truck.js: Change the message to reflect the first trainer.
 
