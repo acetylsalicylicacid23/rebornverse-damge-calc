@@ -1,0 +1,33 @@
+How to Edit:
+Try not to touch anything not mentioned here, though if you find that a function is needed, mess with it. Test using the "index.html" file within the Rejuv calc folder.
+
+Various Data:
+In the "data" folder, there's a list of abilities, moves, species, blah blah. Everything there should be pretty self explanatory, with the format being relatively simple to understand by looking.
+Adding stuff to anything there is just a matter of naming, adding data, and testing. However, those files are very barebones, and a lot of changes should occur in the mechanics file.
+
+Assorted side/field boosts: if you're using VSCode, Ctrl+Shift+F, otherwise try to search all files. Just search "Flower Gift" and copy that file, changing variables as needed.
+
+Trainer teams: Do not touch the code unless it is straight up broken. The names before fields must be the same in case of tag battles, though feel free to use the Reborn Calc for formatting.
+
+Shared Controls.js: Do not touch as much as possible! This file sucks to mess with! The main stuff that I can say is safe to touch is the "var bounds" at line ~70-80, which determines min/max for various parameters and
+	the "value" section in the "selectTrainer" function, which just determines min and max index (more on index in the Sets section).
+	
+Truck.js: Change the message to reflect the first trainer.
+
+Mechanics: Generally self-explanatory. Use the gen789 files, "desc" files, and "util" files in the mechanics folder, and make sure to familiarize or reference the "pbCalcDamage" file in the calc repository.
+	The actual games currently use incorrect calculation methods, which are fixed in upcoming releases, and the current calc should reflect the accurate methods. Look at existing modifiers for examples of how to format field/move changes.
+	Abilities that raise stats on switch-in are handled in util in "IntrepidSword" or "DauntlessShield", though this is finicky. Look at existing examples for formatting, and be sure to test.
+	Make sure to declare exported functions in the ".d.ts" files.
+	There are some sections outlined by "if 1 === 1". Those are for Glitch field handling to accurately determine the Special stat, and suck. If you have modifiers that affect specific stats, make sure to add them there.
+	Modifiers use a base of 4096, and all modifiers are just imprecise numbers based off of 4096 (e.g. x1.3 becomes a 5325 value). Stick to this format, and look at existing stuff for examples.
+	IDK what to do for crests, I'd recommend just having them be a direct modifier to the "typeEffectiveness" variables or possibly separate forms, IDK.
+	
+Set Importing: I'm rather proud of this spreadsheet.
+	Anyway, if you add new abilities, moves, or items, make sure to add them to the Excel VBA code included in the file. The formatting is already in an example, the code just fixes certain names automatically for minimal editing.
+	e.g. ":EJECTBUTTON" in the trainertext file becomes ""Eject Button"", which the calc formatting can read.
+	Otherwise, start the index from wherever, copy the trainertext code into the blank cells right of "parameters" and copy paste the pink "set" cell into the main code. Make sure to press the clear button when messing with
+		a new Pokemon, as the index is important for the trainer team functionality.
+	For set names, look at the Reborn calc for examples, but feel free to choose whatever names you like for each fight. I just like the "Location, Trainer, (TagTrainer, Field, Mega Ability) Doubles" format.
+		This format can be long, and wrap around, causing the calc website to shift down, so if that happens in testing, try to shorten the set name. However, for full trainer teams, the calc checks the parts before the first
+			parenthesis, and if it starts with the same words (e.g. "Hoopa Julia/Archer" and "Hoopa Julia") it counts it as the same trainer, so use a different character. I like using cyrillic vowels.
+		For tag battles, I include both trainers in the name separated by a slash, with the right opponent first.

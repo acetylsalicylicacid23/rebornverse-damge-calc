@@ -205,7 +205,6 @@ function calculationsColors(p1info, p2) {
 	return {speed: fastest, code: p1KO + p2KO};
 }
 
-
 $(".result-move").change(function (ev) {
 	if (damageResults) {
 		var result = findDamageResult(ev.target);
@@ -229,6 +228,7 @@ $(".result-move2").change(function (ev) {
 		}
 	}
 });
+
 function displayDamageHits(damage) {
 	// Fixed Damage
 	if (typeof damage === 'number') return damage;
