@@ -1,5 +1,6 @@
 How to Edit:
 Try not to touch anything not mentioned here, though if you find that a function is needed, mess with it. Test using the "index.html" file within the Rejuv calc folder.
+DO NOT TOUCH THE RUBY FILES. Those are for reference only. Use pbCalcDamage for most things, and look through local Reborn/Rejuv/Deso scripts as needed for field effects/etc.
 
 Various Data:
 In the "data" folder, there's a list of abilities, moves, species, blah blah. Everything there should be pretty self explanatory, with the format being relatively simple to understand by looking.
