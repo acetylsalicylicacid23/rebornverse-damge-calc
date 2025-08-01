@@ -50,6 +50,16 @@ var CALC_STATUS = {
 	'Frozen': 'frz'
 };
 
+var CALC_PIECE = {
+	'None': '',
+	'Pawn': 'P',
+	'Knight': 'N',
+	'Rook': 'R',
+	'Bishop': 'B',
+	'King': 'K',
+	'Queen': 'Q'
+};
+
 function legacyStatToStat(st) {
 	switch (st) {
 	case 'hp':
@@ -73,7 +83,7 @@ function legacyStatToStat(st) {
 var bounds = {
 	"level": [0, 150],
 	"base": [1, 255],
-	"evs": [0, 5000],
+	"evs": [0, 252],
 	"ivs": [0, 31],
 	"dvs": [0, 15],
 	"move-bp": [0, 65535]
@@ -139,6 +149,9 @@ $(".sd .base, .sd .evs, .sd .ivs").bind("keyup change", function () {
 });
 $(".sp .base, .sp .evs, .sp .ivs").bind("keyup change", function () {
 	calcStat($(this).closest(".poke-info"), 'sp');
+});
+$(".evs").bind('keyup change', function () {
+	totalEVs($(this).closest(".poke-info"));
 });
 $(".sl .base").keyup(function () {
 	calcStat($(this).closest(".poke-info"), 'sl');
@@ -355,11 +368,12 @@ var lastManualStatus = { "#p1": "Healthy" };
 var lastAutoStatus = { "#p1": "Healthy" };
 function autosetStatus(p, item) {
 	var currentStatus = $(p + " .status").val();
+	var currentTerrain = $("input:checkbox[name='terrain']:checked").val() || "No terrain";
 	if (item === "Flame Orb") {
 		lastAutoStatus[p] = "Burned";
 		$(p + " .status").val("Burned");
 		$(p + " .status").change();
-	} else if (item === "Toxic Orb") {
+	} else if ((item === "Toxic Orb") || (item === "Elemental Seed" && currentTerrain === "Corrosive Mist")) {
 		lastAutoStatus[p] = "Badly Poisoned";
 		$(p + " .status").val("Badly Poisoned");
 		$(p + " .status").change();
@@ -372,6 +386,12 @@ $(".status").bind("keyup change", function () {
 	} else {
 		$(this).parent().children(".toxic-counter").hide();
 	}
+});
+
+var lastManualChessPiece = { "#p1": "None" };
+var lastAutoChessPiece = { "#p1": "None" };
+$(".piece").bind("keyup change", function () {
+	
 });
 
 var lockerMove = "";
@@ -548,7 +568,9 @@ $(".set-selector").change(function () {
 		pokeObj.find(".boost").val(0);
 		pokeObj.find(".percent-hp").val(100);
 		pokeObj.find(".status").val("Healthy");
+		pokeObj.find(".piece").val("None");
 		$(".status").change();
+		$(".piece").change();
 		var moveObj;
 		var abilityObj = pokeObj.find(".ability");
 		var itemObj = pokeObj.find(".item");
@@ -662,6 +684,7 @@ $(".set-selector").change(function () {
 				$(this).closest('.poke-info').find(".move-pool").hide();
 			}
 		}
+		totalEVs(pokeObj);
 		if (typeof getSelectedTiers === "function") { // doesn't exist when in 1vs1 mode
 			var format = getSelectedTiers()[0];
 			var is50lvl = startsWith(format, "VGC") || startsWith(format, "Battle Spot");
@@ -776,11 +799,7 @@ $(".forme").change(function () {
 	}
 	container.find(".ability").keyup();
 
-	if ($(this).val().indexOf("-Mega") !== -1 && $(this).val() !== "Rayquaza-Mega") {
-		container.find(".item").val("").keyup();
-	} else {
-		container.find(".item").prop("disabled", false);
-	}
+	container.find(".item").prop("disabled", false);
 });
 
 function correctHiddenPower(pokemon) {
@@ -930,6 +949,7 @@ function createPokemon(pokeInfo) {
 			curHP: curHP,
 			status: CALC_STATUS[pokeInfo.find(".status").val()],
 			toxicCounter: status === 'Badly Poisoned' ? ~~pokeInfo.find(".toxic-counter").val() : 0,
+			piece: CALC_PIECE[pokeInfo.find(".piece").val()],
 			moves: [
 				getMoveDetails(pokeInfo.find(".move1"), name, ability, item, isDynamaxed),
 				getMoveDetails(pokeInfo.find(".move2"), name, ability, item, isDynamaxed),
@@ -977,6 +997,7 @@ function createField() {
 	var isMagicRoom = $("#magicroom").prop("checked");
 	var isWonderRoom = $("#wonderroom").prop("checked");
 	var isGravity = $("#gravity").prop("checked");
+	var isInverseMode = $("#inversemode").prop("checked");
 	var isSR = [$("#srL").prop("checked"), $("#srR").prop("checked")];
 	var weather;
 	var spikes;
@@ -1024,7 +1045,7 @@ function createField() {
 	};
 	return new calc.Field({
 		gameType: gameType, weather: weather, terrain: terrain,
-		isMagicRoom: isMagicRoom, isWonderRoom: isWonderRoom, isGravity: isGravity,
+		isMagicRoom: isMagicRoom, isWonderRoom: isWonderRoom, isGravity: isGravity, isInverseMode: isInverseMode,
 		isBeadsOfRuin: isBeadsOfRuin, isTabletsOfRuin: isTabletsOfRuin,
 		isSwordOfRuin: isSwordOfRuin, isVesselOfRuin: isVesselOfRuin,
 		attackerSide: createSide(0), defenderSide: createSide(1)
@@ -1048,6 +1069,18 @@ function calcHP(poke) {
 	calcPercentHP(poke, total, newCurrentHP);
 
 	$currentHP.attr('data-set', true);
+}
+
+function totalEVs(poke) {
+	var totalEVs = 0;
+	for (var i = 0; i < LEGACY_STATS[gen].length; i++) {
+		var statName = LEGACY_STATS[gen][i];
+		var stat = poke.find("." + statName);
+		var evs = ~~stat.find(".evs").val();
+		totalEVs += evs;
+	}
+	poke.find(".totalevs").find(".evs").text(totalEVs);
+	return totalEVs;
 }
 
 function calcStat(poke, StatID) {
@@ -1179,6 +1212,7 @@ function clearField() {
 	$("#clear").prop("checked", true);
 	$("#gscClear").prop("checked", true);
 	$("#gravity").prop("checked", false);
+	$("#inversemode").prop("checked", false);
 	$("#srL").prop("checked", false);
 	$("#srR").prop("checked", false);
 	$("#spikesL0").prop("checked", true);
@@ -1458,12 +1492,16 @@ function loadCustomList(id) {
 
 function get_trainer_names() {
 	params = new URLSearchParams(window.location.search);
-	gen = params.get('gen') || 7;
-	var all_poks = SETDEX_SM;
-	if (gen == 8) {
+	var gennew = params.get('gen') || 7;
+	var nightclub = params.get('mode') === 'randoms'
+	var all_poks = [];
+	if (gennew == 7) {
+		all_poks = SETDEX_SM;
+	} 
+	if (gennew == 8) {
 		all_poks = SETDEX_SS
 	}
-	if (gen == 9) {
+	if (gennew == 9) {
 		all_poks = SETDEX_SV;
 	}
 	var trainer_names = []
@@ -1549,13 +1587,24 @@ function truckMessage(){
 		truckMsgId = -1;
 	} 
 	truckMsgId+=1;
-	if(truckMsgId >= TRUCK_MESSAGES.length){
-		truckMsgId = 2;
+	params = new URLSearchParams(window.location.search);
+	var nightclub = params.get('mode') === 'randoms'
+	if (nightclub == false) {
+		if(truckMsgId >= TRUCK_MESSAGES.length){
+			truckMsgId = 2;
+		}
+		localStorage.setItem("truckMsg", truckMsgId);
+		//yaayy dynamic strings
+		return typeof TRUCK_MESSAGES[truckMsgId] === 'string' ? TRUCK_MESSAGES[truckMsgId] : TRUCK_MESSAGES[truckMsgId]() ;
 	}
-	localStorage.setItem("truckMsg", truckMsgId);
-	//yaayy dynamic strings
-	return typeof TRUCK_MESSAGES[truckMsgId] === 'string' ? TRUCK_MESSAGES[truckMsgId] : TRUCK_MESSAGES[truckMsgId]() ;
-	
+	else if (nightclub == true) {
+		if(truckMsgId >= TRUCK_MESSAGES2.length){
+			truckMsgId = 2;
+		}
+		localStorage.setItem("truckMsg", truckMsgId);
+		//yaayy dynamic strings
+		return typeof TRUCK_MESSAGES2[truckMsgId] === 'string' ? TRUCK_MESSAGES2[truckMsgId] : TRUCK_MESSAGES2[truckMsgId]() ;
+	}
 }
 
 //select first mon of the box when loading
@@ -1573,19 +1622,53 @@ function selectFirstMon() {
 function selectTrainer(value) {
 	document.getElementById("trainer-pok-list-opposing2").textContent="";
 	document.getElementById("trainer-pok-list-opposing").textContent="";
-	if(value >= 2000){
-		value = 2000;
-	}else if(value<=0){
-		value=1;
+	params = new URLSearchParams(window.location.search);
+	gennew = params.get('gen') || 7;
+	nightclub = params.get('mode') === 'randoms'
+	var capvalue;
+	if (nightclub == false) {
+		if (gennew == 7) {
+			capvalue = 2244;
+		}
+		else if (gennew == 8) {
+			capvalue = 1091;
+		}
+		else if (gennew == 9) {
+			capvalue = 3335;
+		}
+		if(value >= capvalue){
+			value = capvalue;
+		}
+		else if(value<=0){
+			value=1;
+		}
+	}
+	else if (nightclub == true) {
+		if (gennew == 7) {
+			capvalue = 253;
+		}
+		else if (gennew == 8) {
+			capvalue = 960;
+		}
+		else if (gennew == 9) {
+			capvalue = 1213;
+		}
+		if(value >= capvalue){
+			value = capvalue;
+		}
+		else if(value<=0){
+			value=1;
+		}
 	}
 	localStorage.setItem("lasttimetrainer", value);
-	params = new URLSearchParams(window.location.search);
-	gen = params.get('gen') || 7;
-	all_poks = SETDEX_SM;
-	if (gen == 8) {
+	all_poks = [];
+	if (gennew == 7) {
+		all_poks = SETDEX_SM;
+	} 
+	if (gennew == 8) {
 		all_poks = SETDEX_SS
 	}
-	if (gen == 9) {
+	if (gennew == 9) {
 		all_poks = SETDEX_SV;
 	}
 	for (const [pok_name, poks] of Object.entries(all_poks)) {
@@ -1708,11 +1791,12 @@ function TrashPokemon() {
 		return;
 	}
 	var customSets = JSON.parse(localStorage.customsets);
-	var length= maybeMultiple.length;
+	var length = maybeMultiple.length;
 	for( let i = 0; i<length; i++){
 		var pokeTrashed = maybeMultiple[i];
-		var name = pokeTrashed.getAttribute("data-id").split(" (")[0];
-		delete customSets[name];
+		var name = pokeTrashed.getAttribute("data-id").split(' (')[0];
+		var setname = pokeTrashed.getAttribute("data-id").split(' (')[1].split(")")[0];
+		delete customSets[name][setname];
 	}
 	document.getElementById("trash-box").innerHTML="";
 	localStorage.setItem("customsets", JSON.stringify(customSets));

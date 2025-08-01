@@ -18,6 +18,7 @@ export declare namespace State {
         boosts?: Partial<I.StatsTable>;
         originalCurHP?: number;
         status?: I.StatusName | '';
+        piece?: I.ChessPiece | '';
         teraType?: I.TypeName;
         toxicCounter?: number;
         moves?: I.MoveName[];
@@ -41,6 +42,7 @@ export declare namespace State {
         isMagicRoom?: boolean;
         isWonderRoom?: boolean;
         isGravity?: boolean;
+        isInverseMode?: boolean;
         isAuraBreak?: boolean;
         isFairyAura?: boolean;
         isDarkAura?: boolean;

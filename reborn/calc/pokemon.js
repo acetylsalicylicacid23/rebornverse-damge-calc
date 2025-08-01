@@ -84,6 +84,7 @@ var Pokemon = (function () {
         var curHP = options.curHP || options.originalCurHP;
         this.originalCurHP = curHP && curHP <= this.rawStats.hp ? curHP : this.rawStats.hp;
         this.status = options.status || '';
+        this.piece = options.piece;
         this.toxicCounter = options.toxicCounter || 0;
         this.moves = options.moves || [];
     }
@@ -121,6 +122,13 @@ var Pokemon = (function () {
             statuses[_i] = arguments[_i];
         }
         return !!(this.status && statuses.includes(this.status));
+    };
+    Pokemon.prototype.hasPiece = function () {
+        var pieces = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            pieces[_i] = arguments[_i];
+        }
+        return !!(this.piece && pieces.includes(this.piece));
     };
     Pokemon.prototype.hasType = function () {
         var e_2, _a;
@@ -191,6 +199,7 @@ var Pokemon = (function () {
             boosts: (0, util_1.extend)(true, {}, this.boosts),
             originalCurHP: this.originalCurHP,
             status: this.status,
+            piece: this.piece,
             teraType: this.teraType,
             toxicCounter: this.toxicCounter,
             moves: this.moves.slice(),

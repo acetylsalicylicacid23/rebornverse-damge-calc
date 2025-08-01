@@ -130,6 +130,10 @@
         </div>
     </div>
     <div aria-label="Move selection" class="move-result-group for-doubles" role="region" title="Select a move to show detailed results." hidden>
+        <div class="text"><span>When using the doubles calc functionality with both parties in use, the calc does not respond to changes in stat stages (+/- stats), item, ability, move, or form. <br>
+            If said changes are needed, switch to Singles mode or move all Pokemon to party 1.
+            </span></div>
+        <div><br></div>
         <div aria-labelledby="resultHeader2L" class="move-result-subgroup " role="radiogroup">
             <div class="result-move-header"><span id="resultHeader2L">Pok&eacute;mon 1's Moves (select one to show detailed results)</span>
             </div><!--ADDED FOR DOUBLES-->
@@ -493,6 +497,16 @@
                                 <td><span class="totalMod">---</span>
                                 </td>
                             </tr>
+                            <tr class="totalevs">
+                                <th scope="row">
+                                    <label>Total</label>
+                                </th>
+                                <td></td>
+                                <td></td>
+                                <td class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                                    <span class="evs calc-trigger">0</span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -571,6 +585,18 @@
                             <option value="13">13/16</option>
                             <option value="14">14/16</option>
                             <option value="15">15/16</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pieceL1">Chess</label>
+                        <select class="piece calc-trigger" id="pieceL1">
+                            <option value="None">None</option>
+                            <option value="Pawn">Pawn</option>
+                            <option value="Knight">kNight</option>
+                            <option value="Rook">Rook</option>
+                            <option value="Bishop">Bishop</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
                         </select>
                     </div>
                 </div>
@@ -813,8 +839,8 @@
         <div aria-label="Field information" role="region">
             <fieldset class="field-info">
                 <legend align="center">Field
-                    <img id="monSingle" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main//Minun.png" alt="">
-                    <img id="monDouble" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main//Plusle.png" alt="" hidden>
+                    <img id="monSingle" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main/Minun.png" alt="">
+                    <img id="monDouble" src="https://raw.githubusercontent.com/acetylsalicylicacid23/reborniansprites/refs/heads/main/Plusle.png" alt="" hidden>
                 </legend>
                 <div aria-labelledby="selectBattleFormatInstruction" class="gen-specific g3 g4 g5 g6 g7 g8 g9" role="radiogroup" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                     <span class="visually-hidden" id="selectBattleFormatInstruction">Select the battle format.</span>
@@ -857,7 +883,7 @@
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Swamp" id="swamp" /><label class="btn btn-xxxwide btn-right" for="swamp">Swamp</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Underwater" id="underwater" /><label class="btn btn-xxxwide btn-left" for="underwater">Underwater</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Wasteland" id="wasteland" /><label class="btn btn-xxxwide btn-mid" for="wasteland">Wasteland</label>
-					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Water" id="water" /><label class="btn btn-xxwide btn-right" for="water">Water Surface</label>
+					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Water" id="water" /><label class="btn btn-xxxwide btn-right" for="water">Water Surface</label>
                     <label class="btn btn-xwide btn-left">Big Top</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top WEAK" id="bigtopweak"/><label class="btn btn-small btn-mid" for="bigtopweak">WEAK</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Big Top OK" id="bigtopok" /><label class="btn btn-small btn-mid" for="bigtopok">OK</label>
@@ -870,13 +896,13 @@
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 3" id="flowergarden3" /><label class="btn btn-xsmall btn-mid" for="flowergarden3">3</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 4" id="flowergarden4" /><label class="btn btn-xsmall btn-mid" for="flowergarden4">4</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Flower Garden 5" id="flowergarden5" /><label class="btn btn-xsmall btn-right" for="flowergarden5">5</label>
-					<label class="btn btn-xwide btn-left">Short-Circuit</label>
+					<br><label class="btn btn-xwide btn-left">Short-Circuit</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 0.8" id="shortcicuit0.8"/><label class="btn btn-small btn-mid" for="shortcicuit0.8">0.8</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 1.5" id="shortcicuit1.5"/><label class="btn btn-small btn-mid" for="shortcicuit1.5">1.5</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 0.5" id="shortcicuit0.5"/><label class="btn btn-small btn-mid" for="shortcicuit0.5">0.5</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 1.2" id="shortcicuit1.2"/><label class="btn btn-small btn-mid" for="shortcicuit1.2">1.2</label>
 					<input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Short-Circuit 2" id="shortcicuit2"/><label class="btn btn-small btn-right" for="shortcicuit2">2</label>
-					<label class="btn btn-xwide btn-left">Crystal Cavern</label>					
+					<br><label class="btn btn-xwide btn-left">Crystal Cavern</label>					
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Fire" id="crystalfire"/><label class="btn btn-small btn-mid" for="crystalfire">fire</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Water" id="crystalwater" /><label class="btn btn-small btn-mid" for="crystalwater">water</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Crystal Grass" id="crystalgrass" /><label class="btn btn-small btn-mid" for="crystalgrass">grass</label>
@@ -948,10 +974,13 @@
                     <input aria-describedby="wonderRoomInstruction" class="visually-hidden calc-trigger" type="checkbox" id="wonderroom" />
                     <label class="btn btn-xxxwide btn-right" for="wonderroom">Wonder Room</label>
                 </div>
-                <div class="gen-specific g4 g5 g6 g7 g8 g9" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
+                <div class="gen-specific g4 g5 g6 g7 g8 g9" style="width: 22.2em; margin: 5px auto; display: inline-block;">
                     <span hidden id="gravityInstruction">Is gravity in effect?</span>
+                    <span hidden id="inverseInstruction">Is inversemode in effect?</span>
                     <input aria-describedby="gravityInstruction" class="visually-hidden calc-trigger" type="checkbox" id="gravity" />
-                    <label class="btn" for="gravity">Gravity</label>
+                    <label class="btn btn-xwide btn-left" for="gravity">Gravity</label>
+                    <input aria-describedby="inverseInstruction" class="visually-hidden calc-trigger" type="checkbox" id="inversemode" />
+                    <label class="btn btn-xwide btn-right" for="inversemode">Inverse PW</label>
                 </div>
                 <hr class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9" />
                 <table class="field">
@@ -973,7 +1002,7 @@
                                 <label class="btn btn-xwide" for="srR">Stealth Rock</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectSteelsurgeInstruction">Is Steelsurge affecting this side of the field?</div>
                             <td><div class="left" title="Is Steelsurge affecting this side of the field?">
                                 <input aria-describedby="selectSteelsurgeInstruction" class="visually-hidden calc-trigger" type="checkbox" id="steelsurgeL" />
@@ -984,7 +1013,7 @@
                                 <label class="btn btn-xwide" for="steelsurgeR">Steelsurge</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectVinefireInstruction">Is Vine Lash and/or Wildfire affecting this side of the field?</div>
                             <td><div class="left" title="Is Vine Lash/Wildfire affecting this side of the field?">
                                 <input aria-describedby="selectVinefireInstruction" class="visually-hidden calc-trigger" type="checkbox" id="vinelashL" />
@@ -999,7 +1028,7 @@
                                 <label class="btn btn-wide btn-right" for="vinelashR">Vine Lash</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectCannonlithInstruction">Is Cannonade and/or Volcalith affecting this side of the field?</div>
                             <td><div class="left" title="Is Cannonade/Volcalith affecting this side of the field?">
                                 <input aria-describedby="selectCannonlithInstruction" class="visually-hidden calc-trigger" type="checkbox" id="cannonadeL" />
@@ -1262,6 +1291,7 @@
                 <span id="importedSetsOptions" style="width:auto; display:none">
                     <input type="checkbox" id="importedSets"> Only show imported sets</input>
                 </span>
+                <div class="small-text">Set Name Format: [Location/Quest, Trainer, (Field)].<br> Mega Evolutions' base abilities are in set names if applicable.</div>
                 <div class="info-group top i-f-o-type">
                     <div>
                         <label>Type</label>
@@ -1537,6 +1567,16 @@
                                 <td><span class="totalMod">---</span>
                                 </td>
                             </tr>
+                            <tr class="totalevs">
+                                <th scope="row">
+                                    <label>Total</label>
+                                </th>
+                                <td></td>
+                                <td></td>
+                                <td class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                                    <span class="evs calc-trigger">0</span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -1615,6 +1655,18 @@
                             <option value="13">13/16</option>
                             <option value="14">14/16</option>
                             <option value="15">15/16</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pieceR1">Chess</label>
+                        <select class="piece calc-trigger" id="pieceR1">
+                            <option value="None">None</option>
+                            <option value="Pawn">Pawn</option>
+                            <option value="Knight">kNight</option>
+                            <option value="Rook">Rook</option>
+                            <option value="Bishop">Bishop</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
                         </select>
                     </div>
                 </div>
@@ -1874,7 +1926,7 @@
     <script type="text/javascript" src="./js/moveset_import.js"></script>
 </div>
 
-<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by <br> Special thanks to Ander for the original Reborn Damage Calculator and ForwardFeed and the Run and Bun Calc Modification
+<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by Salix, <br> Special thanks to Ander for the original Reborn Damage Calculator, Kater for helping debug, and ForwardFeed and the Run and Bun Calc Modification
     <!-- To all the people who help, add what you want to be credited by here -->
     <ul>
         <li><a href="https://github.com/acetylsalicylicacid23/rebornverse-damge-calc" class="links-lighten" target="_blank">Rebornverse Modification Repository</a></li>

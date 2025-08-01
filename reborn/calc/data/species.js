@@ -4880,6 +4880,7 @@ var XY_PATCH = {
     Jumpluff: { bs: { sd: 95 } },
     Kangaskhan: { otherFormes: ['Kangaskhan-Mega'] },
     Kirlia: { types: ['Psychic', 'Fairy'] },
+    Kecleon: { otherFormes: ['Kecleon-Purple']},
     Krookodile: { bs: { df: 80 } },
     Kyogre: { otherFormes: ['Kyogre-Primal'] },
     Latias: { otherFormes: ['Latias-Mega'] },
@@ -4893,7 +4894,7 @@ var XY_PATCH = {
     Manectric: { otherFormes: ['Manectric-Mega'] },
     Mantine: { bs: { hp: 85 } },
     Marill: { types: ['Water', 'Fairy'] },
-    Marowak: { otherFormes: ['Marowak-Alola', 'Marowak-Alola-Totem'] },
+    Marowak: { otherFormes: ['Marowak-Alola'] },
     Masquerain: { bs: { sa: 100, sp: 80 } },
     Mawile: { types: ['Steel', 'Fairy'], otherFormes: ['Mawile-Mega'] },
     Medicham: { otherFormes: ['Medicham-Mega'] },
@@ -4902,7 +4903,7 @@ var XY_PATCH = {
     Mewtwo: { otherFormes: ['Mewtwo-Mega-X', 'Mewtwo-Mega-Y'] },
     'Mime Jr.': { types: ['Psychic', 'Fairy'] },
     Mismagius: { otherFormes: ['Mismagius-Aevian'] },
-    'Mr. Mime': { types: ['Psychic', 'Fairy'], otherFormes: ['Mime-Pulse'] },
+    'Mr. Mime': { types: ['Psychic', 'Fairy'], otherFormes: ['Mr. Mime-Pulse'] },
     Muk: { otherFormes: ['Muk-Alola', 'Muk-Pulse'] },
     Nidoking: { bs: { at: 102 } },
     Nidoqueen: { bs: { at: 92 } },
@@ -4922,7 +4923,7 @@ var XY_PATCH = {
     Qwilfish: { bs: { df: 85 } },
     Raichu: { bs: { sp: 110 }, otherFormes: ['Raichu-Alola'] },
     Ralts: { types: ['Psychic', 'Fairy'] },
-    Raticate: { otherFormes: ['Raticate-Alola', 'Raticate-Alola-Totem'] },
+    Raticate: { otherFormes: ['Raticate-Alola'] },
     Rattata: { otherFormes: ['Rattata-Alola'] },
     Rayquaza: { otherFormes: ['Rayquaza-Mega'] },
     Roserade: { bs: { df: 65 } },
@@ -4998,14 +4999,6 @@ var XY_PATCH = {
         bs: { hp: 68, at: 70, df: 92, sa: 50, sd: 132, sp: 42 },
         abilities: { 0: 'Water Bubble' },
         weightkg: 82,
-        otherFormes: ['Araquanid-Totem']
-    },
-    'Araquanid-Totem': {
-        types: ['Water', 'Bug'],
-        bs: { hp: 68, at: 70, df: 92, sa: 50, sd: 132, sp: 42 },
-        abilities: { 0: 'Water Bubble' },
-        weightkg: 217.5,
-        baseSpecies: 'Araquanid'
     },
     'Arceus-Fairy': {
         types: ['Fairy'],
@@ -5523,15 +5516,7 @@ var XY_PATCH = {
         types: ['Normal'],
         bs: { hp: 88, at: 110, df: 60, sa: 55, sd: 60, sp: 45 },
         weightkg: 14.2,
-        otherFormes: ['Gumshoos-Totem'],
         abilities: { 0: 'Stakeout' }
-    },
-    'Gumshoos-Totem': {
-        types: ['Normal'],
-        bs: { hp: 88, at: 110, df: 60, sa: 55, sd: 60, sp: 45 },
-        weightkg: 60,
-        baseSpecies: 'Gumshoos',
-        abilities: { 0: 'Adaptability' }
     },
     Guzzlord: {
         types: ['Dark', 'Dragon'],
@@ -5616,6 +5601,12 @@ var XY_PATCH = {
         abilities: { 0: 'Beast Boost' },
         gender: 'N'
     },
+    'Kecleon-Purple': {
+        types: ['Normal'],
+        bs: { hp: 130, at: 120, df: 90, sa: 60, sd: 130, sp: 95},
+        weightkg: 22,
+        abilities: { 0: 'Color Change' }
+    },
     Komala: {
         types: ['Normal'],
         bs: { hp: 65, at: 115, df: 65, sa: 75, sd: 95, sp: 65 },
@@ -5626,15 +5617,7 @@ var XY_PATCH = {
         types: ['Dragon', 'Fighting'],
         bs: { hp: 75, at: 110, df: 125, sa: 100, sd: 105, sp: 85 },
         weightkg: 78.2,
-        otherFormes: ['Kommo-o-Totem'],
         abilities: { 0: 'Bulletproof' }
-    },
-    'Kommo-o-Totem': {
-        types: ['Dragon', 'Fighting'],
-        bs: { hp: 75, at: 110, df: 125, sa: 100, sd: 105, sp: 85 },
-        weightkg: 207.5,
-        abilities: { 0: 'Overcoat' },
-        baseSpecies: 'Kommo-o'
     },
     Klefki: {
         types: ['Steel', 'Fairy'],
@@ -5667,15 +5650,7 @@ var XY_PATCH = {
         types: ['Grass'],
         bs: { hp: 70, at: 105, df: 90, sa: 80, sd: 90, sp: 45 },
         weightkg: 18.5,
-        otherFormes: ['Lurantis-Totem'],
         abilities: { 0: 'Leaf Guard' }
-    },
-    'Lurantis-Totem': {
-        types: ['Grass'],
-        bs: { hp: 70, at: 105, df: 90, sa: 80, sd: 90, sp: 45 },
-        weightkg: 58,
-        abilities: { 0: 'Leaf Guard' },
-        baseSpecies: 'Lurantis'
     },
     Lycanroc: {
         types: ['Rock'],
@@ -5723,13 +5698,6 @@ var XY_PATCH = {
         bs: { hp: 60, at: 80, df: 110, sa: 50, sd: 80, sp: 45 },
         weightkg: 34,
         abilities: { 0: 'Cursed Body' },
-        baseSpecies: 'Marowak'
-    },
-    'Marowak-Alola-Totem': {
-        types: ['Fire', 'Ghost'],
-        bs: { hp: 60, at: 80, df: 110, sa: 50, sd: 80, sp: 45 },
-        weightkg: 98,
-        abilities: { 0: 'Rock Head' },
         baseSpecies: 'Marowak'
     },
     Marshadow: {
@@ -6120,27 +6088,13 @@ var XY_PATCH = {
         types: ['Ghost', 'Fairy'],
         bs: { hp: 55, at: 90, df: 80, sa: 50, sd: 105, sp: 96 },
         weightkg: 0.7,
-        otherFormes: ['Mimikyu-Busted', 'Mimikyu-Busted-Totem', 'Mimikyu-Totem'],
+        otherFormes: ['Mimikyu-Busted'],
         abilities: { 0: 'Disguise' }
     },
     'Mimikyu-Busted': {
         types: ['Ghost', 'Fairy'],
         bs: { hp: 55, at: 90, df: 80, sa: 50, sd: 105, sp: 96 },
         weightkg: 0.7,
-        baseSpecies: 'Mimikyu',
-        abilities: { 0: 'Disguise' }
-    },
-    'Mimikyu-Busted-Totem': {
-        types: ['Ghost', 'Fairy'],
-        bs: { hp: 55, at: 90, df: 80, sa: 50, sd: 105, sp: 96 },
-        weightkg: 2.8,
-        baseSpecies: 'Mimikyu',
-        abilities: { 0: 'Disguise' }
-    },
-    'Mimikyu-Totem': {
-        types: ['Ghost', 'Fairy'],
-        bs: { hp: 55, at: 90, df: 80, sa: 50, sd: 105, sp: 96 },
-        weightkg: 2.8,
         baseSpecies: 'Mimikyu',
         abilities: { 0: 'Disguise' }
     },
@@ -6553,13 +6507,6 @@ var XY_PATCH = {
         baseSpecies: 'Raticate',
         abilities: { 0: 'Gluttony' }
     },
-    'Raticate-Alola-Totem': {
-        types: ['Dark', 'Normal'],
-        bs: { hp: 75, at: 71, df: 70, sa: 40, sd: 80, sp: 77 },
-        weightkg: 105,
-        abilities: { 0: 'Thick Fat' },
-        baseSpecies: 'Raticate'
-    },
     'Rattata-Alola': {
         types: ['Dark', 'Normal'],
         bs: { hp: 30, at: 56, df: 35, sa: 25, sd: 35, sp: 72 },
@@ -6572,15 +6519,7 @@ var XY_PATCH = {
         types: ['Bug', 'Fairy'],
         bs: { hp: 60, at: 55, df: 60, sa: 95, sd: 70, sp: 124 },
         weightkg: 0.5,
-        otherFormes: ['Ribombee-Totem'],
         abilities: { 0: 'Honey Gather' }
-    },
-    'Ribombee-Totem': {
-        types: ['Bug', 'Fairy'],
-        bs: { hp: 60, at: 55, df: 60, sa: 95, sd: 70, sp: 124 },
-        weightkg: 2,
-        abilities: { 0: 'Sweet Veil' },
-        baseSpecies: 'Ribombee'
     },
     Rockruff: {
         types: ['Rock'],
@@ -6607,15 +6546,7 @@ var XY_PATCH = {
         types: ['Poison', 'Fire'],
         bs: { hp: 68, at: 64, df: 60, sa: 111, sd: 60, sp: 117 },
         weightkg: 22.2,
-        otherFormes: ['Salazzle-Totem'],
         abilities: { 0: 'Corrosion' }
-    },
-    'Salazzle-Totem': {
-        types: ['Poison', 'Fire'],
-        bs: { hp: 68, at: 64, df: 60, sa: 111, sd: 60, sp: 117 },
-        weightkg: 81,
-        abilities: { 0: 'Corrosion' },
-        baseSpecies: 'Salazzle'
     },
     'Sandshrew-Alola': {
         types: ['Ice', 'Steel'],
@@ -6935,14 +6866,6 @@ var XY_PATCH = {
         bs: { hp: 65, at: 98, df: 63, sa: 40, sd: 73, sp: 96 },
         weightkg: 3.3,
         abilities: { 0: 'Iron Barbs' },
-        otherFormes: ['Togedemaru-Totem']
-    },
-    'Togedemaru-Totem': {
-        types: ['Electric', 'Steel'],
-        bs: { hp: 65, at: 98, df: 63, sa: 40, sd: 73, sp: 96 },
-        weightkg: 13,
-        abilities: { 0: 'Sturdy' },
-        baseSpecies: 'Togedemaru'
     },
     Torracat: {
         types: ['Fire'],
@@ -7014,35 +6937,12 @@ var XY_PATCH = {
         bs: { hp: 77, at: 70, df: 90, sa: 145, sd: 75, sp: 43 },
         weightkg: 45,
         abilities: { 0: 'Levitate' },
-        otherFormes: ['Vikavolt-Totem']
-    },
-    'Vikavolt-Totem': {
-        types: ['Bug', 'Electric'],
-        bs: { hp: 77, at: 70, df: 90, sa: 145, sd: 75, sp: 43 },
-        weightkg: 147.5,
-        abilities: { 0: 'Levitate' },
-        baseSpecies: 'Vikavolt'
     },
     Vivillon: {
         types: ['Bug', 'Flying'],
         bs: { hp: 80, at: 52, df: 50, sa: 90, sd: 50, sp: 89 },
         weightkg: 17,
         abilities: { 0: 'Shield Dust' },
-        otherFormes: ['Vivillon-Fancy', 'Vivillon-Pokeball']
-    },
-    'Vivillon-Fancy': {
-        types: ['Bug', 'Flying'],
-        bs: { hp: 80, at: 52, df: 50, sa: 90, sd: 50, sp: 89 },
-        weightkg: 17,
-        abilities: { 0: 'Shield Dust' },
-        baseSpecies: 'Vivillon'
-    },
-    'Vivillon-Pokeball': {
-        types: ['Bug', 'Flying'],
-        bs: { hp: 80, at: 52, df: 50, sa: 90, sd: 50, sp: 89 },
-        weightkg: 17,
-        abilities: { 0: 'Shield Dust' },
-        baseSpecies: 'Vivillon'
     },
     Volcanion: {
         types: ['Fire', 'Water'],

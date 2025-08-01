@@ -129,6 +129,10 @@
         </div>
     </div>
     <div aria-label="Move selection" class="move-result-group for-doubles" role="region" title="Select a move to show detailed results." hidden>
+        <div class="text"><span>When using the doubles calc functionality with both parties in use, the calc does not respond to changes in stat stages (+/- stats), item, ability, move, or form. <br>
+            If said changes are needed, switch to Singles mode or move all Pokemon to party 1.
+            </span></div>
+        <div><br></div>
         <div aria-labelledby="resultHeader2L" class="move-result-subgroup " role="radiogroup">
             <div class="result-move-header"><span id="resultHeader2L">Pok&eacute;mon 1's Moves (select one to show detailed results)</span>
             </div><!--ADDED FOR DOUBLES-->
@@ -492,6 +496,16 @@
                                 <td><span class="totalMod">---</span>
                                 </td>
                             </tr>
+                            <tr class="totalevs">
+                                <th scope="row">
+                                    <label>Total</label>
+                                </th>
+                                <td></td>
+                                <td></td>
+                                <td class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                                    <span class="evs calc-trigger">0</span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -570,6 +584,18 @@
                             <option value="13">13/16</option>
                             <option value="14">14/16</option>
                             <option value="15">15/16</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pieceL1">Chess</label>
+                        <select class="piece calc-trigger" id="pieceL1">
+                            <option value="None">None</option>
+                            <option value="Pawn">Pawn</option>
+                            <option value="Knight">kNight</option>
+                            <option value="Rook">Rook</option>
+                            <option value="Bishop">Bishop</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
                         </select>
                     </div>
                 </div>
@@ -947,10 +973,13 @@
                     <input aria-describedby="wonderRoomInstruction" class="visually-hidden calc-trigger" type="checkbox" id="wonderroom" />
                     <label class="btn btn-xxxwide btn-right" for="wonderroom">Wonder Room</label>
                 </div>
-                <div class="gen-specific g4 g5 g6 g7 g8 g9" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
+                <div class="gen-specific g4 g5 g6 g7 g8 g9" style="width: 22.2em; margin: 5px auto; display: inline-block;">
                     <span hidden id="gravityInstruction">Is gravity in effect?</span>
+                    <span hidden id="inverseInstruction">Is inversemode in effect?</span>
                     <input aria-describedby="gravityInstruction" class="visually-hidden calc-trigger" type="checkbox" id="gravity" />
-                    <label class="btn" for="gravity">Gravity</label>
+                    <label class="btn btn-xwide btn-left" for="gravity">Gravity</label>
+                    <input aria-describedby="inverseInstruction" class="visually-hidden calc-trigger" type="checkbox" id="inversemode" />
+                    <label class="btn btn-xwide btn-right" for="inversemode">Inverse PW</label>
                 </div>
                 <hr class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9" />
                 <table class="field">
@@ -972,7 +1001,7 @@
                                 <label class="btn btn-xwide" for="srR">Stealth Rock</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectSteelsurgeInstruction">Is Steelsurge affecting this side of the field?</div>
                             <td><div class="left" title="Is Steelsurge affecting this side of the field?">
                                 <input aria-describedby="selectSteelsurgeInstruction" class="visually-hidden calc-trigger" type="checkbox" id="steelsurgeL" />
@@ -983,7 +1012,7 @@
                                 <label class="btn btn-xwide" for="steelsurgeR">Steelsurge</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectVinefireInstruction">Is Vine Lash and/or Wildfire affecting this side of the field?</div>
                             <td><div class="left" title="Is Vine Lash/Wildfire affecting this side of the field?">
                                 <input aria-describedby="selectVinefireInstruction" class="visually-hidden calc-trigger" type="checkbox" id="vinelashL" />
@@ -998,7 +1027,7 @@
                                 <label class="btn btn-wide btn-right" for="vinelashR">Vine Lash</label>
                             </div></td>
                         </tr>
-                        <tr class="gen-specific g8 hide">
+                        <tr class="gen-specific hide">
                             <div hidden id="selectCannonlithInstruction">Is Cannonade and/or Volcalith affecting this side of the field?</div>
                             <td><div class="left" title="Is Cannonade/Volcalith affecting this side of the field?">
                                 <input aria-describedby="selectCannonlithInstruction" class="visually-hidden calc-trigger" type="checkbox" id="cannonadeL" />
@@ -1261,6 +1290,7 @@
                 <span id="importedSetsOptions" style="width:auto; display:none">
                     <input type="checkbox" id="importedSets"> Only show imported sets</input>
                 </span>
+                <div class="small-text">Set Name Format: [Location/Quest, Trainer, (Field)].<br> Mega Evolutions' base abilities are in set names if applicable.</div>
                 <div class="info-group top i-f-o-type">
                     <div>
                         <label>Type</label>
@@ -1536,6 +1566,16 @@
                                 <td><span class="totalMod">---</span>
                                 </td>
                             </tr>
+                            <tr class="totalevs">
+                                <th scope="row">
+                                    <label>Total</label>
+                                </th>
+                                <td></td>
+                                <td></td>
+                                <td class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                                    <span class="evs calc-trigger">0</span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -1614,6 +1654,18 @@
                             <option value="13">13/16</option>
                             <option value="14">14/16</option>
                             <option value="15">15/16</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pieceR1">Chess</label>
+                        <select class="piece calc-trigger" id="pieceR1">
+                            <option value="None">None</option>
+                            <option value="Pawn">Pawn</option>
+                            <option value="Knight">kNight</option>
+                            <option value="Rook">Rook</option>
+                            <option value="Bishop">Bishop</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
                         </select>
                     </div>
                 </div>
@@ -1867,7 +1919,7 @@
     <script type="text/javascript" src="./js/moveset_import.js"></script>
 </div>
 
-<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by <br> Special thanks to Ander for the original Reborn Damage Calculator, Kater for helping debug, and ForwardFeed and the Run and Bun Calc Modification
+<div class="credits">Modification by Salix; Original Showdown version created by Honko, maintained by Austin and Kris, Reborn Modification maintained by Salix, <br> Special thanks to Ander for the original Reborn Damage Calculator, Kater for helping debug, and ForwardFeed and the Run and Bun Calc Modification
     <!-- To all the people who help, add what you want to be credited by here -->
     <ul>
         <li><a href="https://github.com/acetylsalicylicacid23/rebornverse-damge-calc" class="links-lighten" target="_blank">Rebornverse Modification Repository</a></li>

@@ -19,6 +19,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     (0, util_2.checkWonderRoom)(defender, field.isWonderRoom);
     (0, util_2.checkSeedBoost)(attacker, field);
     (0, util_2.checkSeedBoost)(defender, field);
+    (0, util_2.checkTypeChange)(attacker, field);
+    (0, util_2.checkTypeChange)(defender, field);
     (0, util_2.checkDauntlessShield)(attacker, gen, field);
     (0, util_2.checkDauntlessShield)(defender, gen, field);
     (0, util_2.checkEmbody)(attacker, gen);
@@ -73,10 +75,6 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     if (move.flags.punch && attacker.hasItem("Punching Glove")) {
         desc.attackerItem = attacker.item;
         move.flags.contact = 0;
-    }
-    if (move.named("Shell Side Arm") &&
-        (0, util_2.getShellSideArmCategory)(offense, defense, spoffense, spdefense) === "Physical") {
-        move.flags.contact = 1;
     }
     var breaksProtect = move.breaksProtect ||
         move.isZ ||
@@ -179,10 +177,12 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         type = (0, items_1.getTechnoBlast)(attacker.item);
         desc.moveType = type;
     }
-    else if (move.originalName === "Multi-Attack" &&
-        attacker.item &&
-        attacker.item.includes("Memory")) {
+    else if (move.originalName === "Multi-Attack" && attacker.item && attacker.item.includes("Memory")) {
         type = (0, items_1.getMultiAttack)(attacker.item);
+        desc.moveType = type;
+    }
+    else if (move.originalName === "Multi-Attack" && attacker.name.includes('Silvally') && !attacker.item.includes("Memory")) {
+        type = attacker.types[0];
         desc.moveType = type;
     }
     else if (move.named("Natural Gift") && ((_a = attacker.item) === null || _a === void 0 ? void 0 : _a.endsWith("Berry"))) {
@@ -369,7 +369,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
             move.category = "Special";
         }
     }
-    if ((attacker.hasAbility("Triage") && move.drain) ||
+    if ((attacker.hasPiece('K') && field.hasTerrain('Chess Board')) ||
+        (attacker.hasAbility("Triage") && move.drain) ||
         (attacker.hasAbility("Gale Wings") &&
             move.hasType("Flying") &&
             attacker.curHP() === attacker.maxHP())) {
@@ -381,18 +382,155 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         field.defenderSide.isForesight;
     var isRingTarget = defender.hasItem("Ring Target") && !defender.hasAbility("Klutz");
     var type1Effectiveness = (0, util_2.getMoveEffectiveness)(gen, move, defender.types[0], isGhostRevealed, field.isGravity, isRingTarget);
+    if (field.hasTerrain('Inverse') !== field.isInverseMode) {
+        if (type1Effectiveness === 0) {
+            type1Effectiveness = 2;
+        }
+        else if (type1Effectiveness === 0.5) {
+            type1Effectiveness = 2;
+        }
+        else if (type1Effectiveness === 2) {
+            type1Effectiveness = 0.5;
+        }
+        if (move.named('Freeze Dry') && defender.types[0] === 'Water') {
+            type1Effectiveness = 2;
+        }
+    }
     if (type1Effectiveness === 0 && move.hasType('Ground') && field.hasTerrain('Cave')) {
         type1Effectiveness = 1
     }
-    var type2Effectiveness = defender.types[1]
-        ? (0, util_2.getMoveEffectiveness)(gen, move, defender.types[1], isGhostRevealed, field.isGravity, isRingTarget)
-        : 1;
-    if (type2Effectiveness === 0 && move.hasType('Ground') && field.hasTerrain('Cave')) {
-        type2Effectiveness = 1
+    if (field.hasWeather("Strong Winds") && defender.types[0] === 'Flying' && type1Effectiveness > 1) {
+        type1Effectiveness = 1;
+        desc.weather = field.weather;
+    }
+    if (field.hasTerrain("Dragon's Den") && defender.hasAbility("Multiscale") && defender.types[0] === 'Dragon' && type1Effectiveness > 1) {
+        type1Effectiveness = 1;
+    }
+    if (field.hasTerrain("Flower Garden 4", "Flower Garden 5") && defender.types[0] === "Grass" && type1Effectiveness > 1) {
+        type1Effectiveness = 1;
+    }
+    if (field.hasTerrain('Underwater') && move.hasType('Water') && defender.types[0] === "Water") {
+        type1Effectiveness = 1;
+    }
+    if (field.hasTerrain('Fairy Tale') && move.hasType('Steel') && defender.types[0] === "Dragon") {
+        type1Effectiveness = 2;
+    }
+    if (field.hasTerrain('Glitch')) {
+        if (move.hasType('Bug') && defender.types[0] === 'Poison') {
+            type1Effectiveness = 2;
+        }
+        if (move.hasType('Poison') && defender.types[0] === 'Bug') {
+            type1Effectiveness = 2;
+        }
+        if (move.hasType('Ice') && defender.types[0] === 'Fire') {
+            type1Effectiveness = 1;
+        }
+        if (move.hasType('Dragon')) {
+            if (defender.types[0] === "Fairy") {
+                type1Effectiveness = 1;
+            }
+            if (defender.types[0] === "Steel") {
+                type1Effectiveness = 1;
+            }
+            if (defender.types[0] === "Dragon") {
+                type1Effectiveness = 1;
+            }
+        }
+        if (defender.hasItem("Synthetic Seed")) {
+            type1Effectiveness = 1;
+        }
+        if (move.hasType('Ghost') && defender.types[0] === 'Psychic') {
+            type1Effectiveness = 0;
+        }
+    }
+    if (field.hasTerrain('Holy') && move.hasType('Normal')) {
+        if (defender.types[0] === 'Ghost') {
+            type1Effectiveness = 2;
+        }
+        if (defender.types[0] === 'Dark') {
+            type1Effectiveness = 2;
+        }
+    }
+    var type2Effectiveness = defender.types[1] ? (0, util_2.getMoveEffectiveness)(gen, move, defender.types[1], isGhostRevealed, field.isGravity, isRingTarget) : 1;
+    if (defender.types[1]) {
+        if (field.hasTerrain('Inverse') !== field.isInverseMode) {
+            if (type2Effectiveness === 0) {
+                type2Effectiveness = 2;
+            }
+            else if (type2Effectiveness === 0.5) {
+                type2Effectiveness = 2;
+            }
+            else if (type2Effectiveness === 2) {
+                type2Effectiveness = 0.5;
+            }
+            if (move.named('Freeze Dry') && defender.types[1] === 'Water') {
+                type2Effectiveness = 2;
+            }
+        }
+        if (type2Effectiveness === 0 && move.hasType('Ground') && field.hasTerrain('Cave')) {
+            type2Effectiveness = 1
+        }
+        if (field.hasWeather("Strong Winds") && defender.types[1] === 'Flying' && type2Effectiveness > 1) {
+            type2Effectiveness = 1;
+            desc.weather = field.weather;
+        }
+        if (field.hasTerrain("Dragon's Den") && defender.hasAbility("Multiscale") && defender.types[1] === 'Dragon' && type2Effectiveness > 1) {
+            type2Effectiveness = 1;
+        }
+        if (field.hasTerrain("Flower Garden 4", "Flower Garden 5") && defender.types[1] === "Grass" && type2Effectiveness > 1) {
+            type2Effectiveness = 1;
+        }
+        if (field.hasTerrain('Underwater') && move.hasType('Water') && defender.types[1] === "Water") {
+            type2Effectiveness = 1;
+        }
+        if (field.hasTerrain('Fairy Tale') && move.hasType('Steel') && defender.types[1] === "Dragon") {
+            type2Effectiveness = 2;
+        }
+        if (field.hasTerrain('Glitch')) {
+            if (move.hasType('Bug') && defender.types[1] === 'Poison') {
+                type2Effectiveness = 2;
+            }
+            if (move.hasType('Poison') && defender.types[1] === 'Bug') {
+                type2Effectiveness = 2;
+            }
+            if (move.hasType('Ice') && defender.types[1] === 'Fire') {
+                type2Effectiveness = 1;
+            }
+            if (move.hasType('Dragon')) {
+                if (defender.types[1] === "Fairy") {
+                    type2Effectiveness = 1;
+                }
+                if (defender.types[1] === "Steel") {
+                    type2Effectiveness = 1;
+                }
+                if (defender.types[1] === "Dragon") {
+                    type2Effectiveness = 1;
+                }
+            }
+            if (defender.hasItem("Synthetic Seed")) {
+                type2Effectiveness = 1;
+            }
+            if (move.hasType('Ghost') && defender.types[1] === 'Psychic') {
+                type2Effectiveness = 0;
+            }
+        }
+        if (field.hasTerrain('Holy') && move.hasType('Normal')) {
+            if (defender.types[1] === 'Ghost') {
+                type2Effectiveness = 2;
+            }
+            if (defender.types[1] === 'Dark') {
+                type2Effectiveness = 2;
+            }
+        }
     }
     var typeEffectiveness = type1Effectiveness * type2Effectiveness;
     if (defender.teraType && defender.teraType !== "Stellar") {
         typeEffectiveness = (0, util_2.getMoveEffectiveness)(gen, move, defender.teraType, isGhostRevealed, field.isGravity, isRingTarget);
+    }
+    if (field.hasTerrain('Forest','Flower Garden 2','Flower Garden 3','Flower Garden 4','Flower Garden 5') && move.named('Cut')) {
+        if (defender.hasType('Grass')) {
+            typeEffectiveness *= 2;
+        }
     }
     if (typeEffectiveness === 0 &&
         move.hasType("Ground") &&
@@ -421,41 +559,19 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (field.hasWeather("Heavy Rain") && move.hasType("Fire"))) {
         desc.weather = field.weather;
         return result;
-    }
-    if (field.hasWeather("Strong Winds") &&
-        defender.hasType("Flying") &&
-        gen.types.get((0, util_1.toID)(move.type)).effectiveness["Flying"] > 1) {
-        typeEffectiveness /= 2;
-        desc.weather = field.weather;
-    }
+        }
     if (move.type === "Stellar") {
         desc.defenderTera = defender.teraType;
         typeEffectiveness = !defender.teraType ? 1 : 2;
     }
-    if (field.hasTerrain("Dragon's Den") &&
-        defender.hasAbility("Multiscale") &&
-        gen.types.get((0, util_1.toID)(move.type)).effectiveness["Dragon"] > 1) {
-        typeEffectiveness /= 2;
-        desc.terrain = field.terrain;
-    }
-    if (field.hasTerrain("Flower Garden 4", "Flower Garden 5") &&
-        defender.hasType("Grass") &&
-        gen.types.get((0, util_1.toID)(move.type)).effectiveness["Grass"] > 1) {
-        typeEffectiveness /= 2;
-        desc.terrain = field.terrain;
-    }
-    var moveType = gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] * (defender.types[1] ? gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] : 1);
+    var moveType = typeEffectiveness;
     var addedType;
-    switch (field.terrain) {
+    var laterCalc = false;
+    switch (field.terrain) {        
         case "Ashen Beach":
             addedType = gen.types.get("psychic");
             if (move.named("Strength")) {
-                typeEffectiveness =
-                    (attacker.hasAbility("Scrappy") && defender.hasType("Ghost")
-                        ? 1
-                        : moveType) *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Burning":
@@ -463,42 +579,36 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         case "Dragon's Den":
             addedType = gen.types.get("fire");
             if (move.named("Doom Desire") && field.hasTerrain("New World")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                moveType =
+                    laterCalc = true;
                 if (defender.hasAbility("Flash Fire") ||
                     field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (move.named("Smack Down", "Thousand Arrows", "Clear Smog", "Smog") &&
                 field.hasTerrain("Burning")) {
-                if (move.named("Thousand Arrows") && typeEffectiveness === 1) {
-                    typeEffectiveness = 1 * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                if (move.named("Thousand Arrows") && moveType === 1) {
+                    laterCalc = true;
                 }
                 else {
-                    typeEffectiveness = moveType * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                    laterCalc = true;
                 }
                 if (defender.hasAbility("Flash Fire") || field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (move.named("Smack Down", "Thousand Arrows", "Continental Crush", "Tectonic Rage") &&
                 field.hasTerrain("Dragon's Den")) {
-                if (move.named("Thousand Arrows") && typeEffectiveness === 1) {
-                    typeEffectiveness = 1 * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                if (move.named("Thousand Arrows") && moveType === 1) {
+                    laterCalc = true;
                 }
                 else {
-                    typeEffectiveness = moveType * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                    laterCalc = true;
                 }
                 if (defender.hasAbility("Flash Fire", "Magma Armor") ||
                     field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             break;
@@ -507,46 +617,32 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         case "Corrosive Mist":
             addedType = gen.types.get("poison");
             if ((move.named("Mud Bomb", "Mud Shot", "Mud-Slap", "Muddy Water", "Smack Down", "Thousand Arrows", "Whirlpool") || move.hasType("Grass")) && field.hasTerrain("Corrosive")) {
-                if (move.named("Thousand Arrows") && typeEffectiveness === 1) {
-                    typeEffectiveness = 1 * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                if (move.named("Thousand Arrows") && moveType === 1) {
+                    laterCalc = true;
                 }
                 else {
-                    typeEffectiveness = moveType * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                    laterCalc = true;
                 }
             }
             else if (move.named("Mud Bomb", "Mud-Slap", "Mud Shot") && field.hasTerrain("Wasteland")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             if ((move.named("Bubble", "Bubble Beam", "Sparkling Aria", "Energy Ball") ||
                 (move.hasType("Flying") && move.category === "Special")) &&
                 field.hasTerrain("Corrosive Mist")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Chess Board":
         case "Rocky":
             addedType = gen.types.get("rock");
-            if (move.named("AncientPower", "Nature Power", "Psychic", "SecretPower", "Strength", "Continental Crush", "Sahttered Psyche") &&
+            if (move.named("Ancient Power", "Nature Power", "Psychic", "Secret Power", "Strength", "Continental Crush", "Shattered Psyche") &&
                 field.hasTerrain("Chess Board")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             else if (move.named("Bulldoze", "Earthquake", "Magnitude", "Rock Climb", "Strength") &&
                 field.hasTerrain("Rocky")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Crystal Fire":
@@ -557,103 +653,77 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
                 (move.named("Judgment", "Multi-Attack", "Rock Climb", "Strength", "Prismatic Laser") ||
                     move.hasType("Rock"))) {
                 addedType = gen.types.get("fire");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Flash Fire") ||
                     field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (field.hasTerrain("Crystal Water") &&
                 (move.named("Judgment", "Multi-Attack", "Rock Climb", "Strength", "Prismatic Laser") ||
                     move.hasType("Rock"))) {
                 addedType = gen.types.get("water");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Water Absorb", "Dry Skin", "Storm Drain") ||
                     field.hasWeather("Harsh Sunshine")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (field.hasTerrain("Crystal Grass") &&
                 (move.named("Judgment", "Multi-Attack", "Rock Climb", "Strength", "Prismatic Laser") ||
                     move.hasType("Rock"))) {
                 addedType = gen.types.get("grass");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Sap Sipper")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (field.hasTerrain("Crystal Psychic") &&
                 (move.named("Judgment", "Multi-Attack", "Rock Climb", "Strength", "Prismatic Laser") ||
                     move.hasType("Rock"))) {
                 addedType = gen.types.get("psychic");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Electric":
             addedType = gen.types.get("electric");
             if (move.named("Explosion", "Hurricane", "Muddy Water", "Self-Destruct", "Smack Down", "Surf", "Thousand Arrows", "Hydro Vortex")) {
-                if (move.named("Thousand Arrows") && typeEffectiveness === 1) {
-                    typeEffectiveness = 1 * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                if (move.named("Thousand Arrows") && moveType === 1) {
+                    laterCalc = true;
                 }
                 else {
-                    typeEffectiveness = moveType * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                    laterCalc = true;
                 }
                 if (defender.hasAbility("Volt Absorb", "Lightning Rod", "Motor Drive")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             break;
         case "Fairy Tale":
             addedType = gen.types.get("dragon");
             if (move.hasType("Fire")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Icy":
         case "Snowy Mt":
             addedType = gen.types.get("ice");
             if (move.hasType("Rock")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Murkwater":
             if (move.named("Sludge Wave", "Nature Power")) {
                 addedType = gen.types.get("water");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Water Absorb", "Dry Skin", "Storm Drain") ||
                     field.hasWeather("Harsh Sunshine")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (move.hasType("Water") || move.named("Smack Down")) {
                 addedType = gen.types.get("poison");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             break;
         case "Short-Circuit 0.5":
@@ -664,45 +734,33 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
             if (move.named("Flash Cannon", "Gear Grind", "Gyro Ball", "Magnet Bomb", "Muddy Water", "Surf") ||
                 (attacker.hasAbility("Steelworker") && move.hasType("Steel"))) {
                 addedType = gen.types.get("electric");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Volt Absorb", "Lightning Rod", "Motor Drive")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             break;
         case "Starlight":
             if (move.hasType("Dark")) {
                 addedType = gen.types.get("fairy");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
             }
             else if (move.named("Doom Desire")) {
                 addedType = gen.types.get("fire");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Flash Fire") ||
                     field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             break;
         case "New World":
             if (move.named("Doom Desire")) {
                 addedType = gen.types.get("fire");
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Flash Fire") ||
                     field.hasWeather("Heavy Rain")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             break;
@@ -711,116 +769,174 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
             addedType = gen.types.get("water");
             if (move.named("Smack Down", "Thousand Arrows") &&
                 field.hasTerrain("Swamp")) {
-                if (move.named("Thousand Arrows") && typeEffectiveness === 1) {
-                    typeEffectiveness = 1 * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                if (move.named("Thousand Arrows") && moveType === 1) {
+                    laterCalc = true;
                 }
                 else {
-                    typeEffectiveness = moveType * addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                    laterCalc = true;
                 }
                 if (defender.hasAbility("Water Absorb", "Dry Skin", "Storm Drain") ||
                     field.hasWeather("Harsh Sunshine")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
             else if (move.hasType("Ground") && field.hasTerrain("Underwater")) {
-                typeEffectiveness =
-                    moveType *
-                        addedType.effectiveness[defender.types[0]] *
-                        (defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1);
+                laterCalc = true;
                 if (defender.hasAbility("Water Absorb", "Dry Skin", "Storm Drain") ||
                     field.hasWeather("Harsh Sunshine")) {
-                    typeEffectiveness *= 0;
+                    moveType *= 0;
                 }
             }
+            
             break;
         default:
             typeEffectiveness = typeEffectiveness;
     }
-    if (field.hasTerrain('Underwater') && move.hasType('Water') && defender.hasType('Water')) {
-        typeEffectiveness *= 2;
-        desc.terrain = field.terrain;
-    }
-    else if (field.hasTerrain('Holy') && move.hasType('Normal')) {
-        if (typeEffectiveness === 0) {
-            typeEffectiveness = gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] +
-                (defender.types[1] ? gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] : 1);
-        }
-        if (defender.hasType('Ghost')) {
-            typeEffectiveness *= 2;
-        }
-        if (defender.hasType('Dark')) {
-            typeEffectiveness *= 2;
-        }
-    }
-    else if (field.hasTerrain('Fairy Tale') && move.hasType('Steel') && defender.hasType('Dragon')) {
-        typeEffectiveness *= 2;
-    }
-    else if (field.hasTerrain('Glitch')) {
-        if (move.hasType('Bug') && defender.hasType('Poison')) {
-            typeEffectiveness *= 4;
-        }
-        if (move.hasType('Poison') && defender.hasType('Bug')) {
-            typeEffectiveness *= 2;
-        }
-        if (move.hasType('Ice') && defender.hasType('Fire')) {
-            typeEffectiveness *= 2;
-        }
-        if (move.hasType('Dragon')) {
-            if (typeEffectiveness === 0) {
-                typeEffectiveness = gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] +
-                    (defender.types[1] ? gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] : 1);
+    if (laterCalc === true) {
+        var typeAdd1Effectiveness = addedType.effectiveness[defender.types[0]];
+        if (field.hasTerrain('Inverse') !== field.isInverseMode) {
+            if (typeAdd1Effectiveness === 0) {
+                typeAdd1Effectiveness = 2;
             }
-            if (defender.hasType('Steel')) {
-                typeEffectiveness *= 2;
+            else if (typeAdd1Effectiveness === 0.5) {
+                typeAdd1Effectiveness = 2;
             }
-            if (defender.hasType('Dragon')) {
-                typeEffectiveness /= 2;
+            else if (typeAdd1Effectiveness === 2) {
+                typeAdd1Effectiveness = 0.5;
+            }
+            if (move.named('Freeze Dry') && defender.types[0] === 'Water') {
+                typeAdd1Effectiveness = 2;
             }
         }
-        if (defender.hasItem("Synthetic Seed")) {
-            typeEffectiveness = 1;
+        if (typeAdd1Effectiveness === 0 && move.hasType('Ground') && field.hasTerrain('Cave')) {
+            typeAdd1Effectiveness = 1
         }
-        if (move.hasType('Ghost') && defender.hasType('Psychic')) {
-            typeEffectiveness = 0;
-        }
-    }
-    else if (field.hasTerrain('Inverse')) {
-        typeEffectiveness = 1;
-        if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] === 0) {
-            typeEffectiveness *= 2;
-        }
-        else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] === 0.5) {
-            typeEffectiveness *= 2;
-        }
-        else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] === 1) {
-            typeEffectiveness *= 1;
-        }
-        else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[0]] === 2) {
-            typeEffectiveness *= 0.5;
-        }
-        if (defender.types[1] != undefined) {
-            if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] === 0) {
-                typeEffectiveness *= 2;
-            }
-            else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] === 0.5) {
-                typeEffectiveness *= 2;
-            }
-            else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] === 1) {
-                typeEffectiveness *= 1;
-            }
-            else if (gen.types.get((0, util_1.toID)(move.type)).effectiveness[defender.types[1]] === 2) {
-                typeEffectiveness *= 0.5;
-            }
-        }
-        if (move.named('Freeze Dry') && defender.hasType('Water')) {
-            typeEffectiveness *= 4;
-        }
-        if (defender.hasType('Flying') && field.hasWeather('Strong Winds') && typeEffectiveness > 1) {
-            typeEffectiveness /= 2;
+        if (field.hasWeather("Strong Winds") && defender.types[0] === 'Flying' && typeAdd1Effectiveness > 1) {
+            typeAdd1Effectiveness = 1;
             desc.weather = field.weather;
         }
+        if (field.hasTerrain("Dragon's Den") && defender.hasAbility("Multiscale") && defender.types[0] === 'Dragon' && typeAdd1Effectiveness > 1) {
+            typeAdd1Effectiveness = 1;
+        }
+        if (field.hasTerrain("Flower Garden 4", "Flower Garden 5") && defender.types[0] === "Grass" && typeAdd1Effectiveness > 1) {
+            typeAdd1Effectiveness = 1;
+        }
+        if (field.hasTerrain('Underwater') && move.hasType('Water') && defender.types[0] === "Water") {
+            typeAdd1Effectiveness = 1;
+        }
+        if (field.hasTerrain('Fairy Tale') && move.hasType('Steel') && defender.types[0] === "Dragon") {
+            typeAdd1Effectiveness = 2;
+        }
+        if (field.hasTerrain('Glitch')) {
+            if (move.hasType('Bug') && defender.types[0] === 'Poison') {
+                typeAdd1Effectiveness = 2;
+            }
+            if (move.hasType('Poison') && defender.types[0] === 'Bug') {
+                typeAdd1Effectiveness = 2;
+            }
+            if (move.hasType('Ice') && defender.types[0] === 'Fire') {
+                typeAdd1Effectiveness = 1;
+            }
+            if (move.hasType('Dragon')) {
+                if (defender.types[0] === "Fairy") {
+                    typeAdd1Effectiveness = 1;
+                }
+                if (defender.types[0] === "Steel") {
+                    typeAdd1Effectiveness = 1;
+                }
+                if (defender.types[0] === "Dragon") {
+                    typeAdd1Effectiveness = 1;
+                }
+            }
+            if (defender.hasItem("Synthetic Seed")) {
+                typeAdd1Effectiveness = 1;
+            }
+            if (move.hasType('Ghost') && defender.types[0] === 'Psychic') {
+                typeAdd1Effectiveness = 0;
+            }
+        }
+        if (field.hasTerrain('Holy') && move.hasType('Normal')) {
+            if (defender.types[0] === 'Ghost') {
+                typeAdd1Effectiveness = 2;
+            }
+            if (defender.types[0] === 'Dark') {
+                typeAdd1Effectiveness = 2;
+            }
+        }
+        var typeAdd2Effectiveness = defender.types[1] ? addedType.effectiveness[defender.types[1]] : 1;
+        if (defender.types[1]) {
+            if (field.hasTerrain('Inverse') !== field.isInverseMode) {
+                if (typeAdd2Effectiveness === 0) {
+                    typeAdd2Effectiveness = 2;
+                }
+                else if (typeAdd2Effectiveness === 0.5) {
+                    typeAdd2Effectiveness = 2;
+                }
+                else if (typeAdd2Effectiveness === 2) {
+                    typeAdd2Effectiveness = 0.5;
+                }
+                if (move.named('Freeze Dry') && defender.types[1] === 'Water') {
+                    typeAdd2Effectiveness = 2;
+                }
+            }
+            if (typeAdd2Effectiveness === 0 && move.hasType('Ground') && field.hasTerrain('Cave')) {
+                typeAdd2Effectiveness = 1
+            }
+            if (field.hasWeather("Strong Winds") && defender.types[1] === 'Flying' && typeAdd2Effectiveness > 1) {
+                typeAdd2Effectiveness = 1;
+                desc.weather = field.weather;
+            }
+            if (field.hasTerrain("Dragon's Den") && defender.hasAbility("Multiscale") && defender.types[1] === 'Dragon' && typeAdd2Effectiveness > 1) {
+                typeAdd2Effectiveness = 1;
+            }
+            if (field.hasTerrain("Flower Garden 4", "Flower Garden 5") && defender.types[1] === "Grass" && typeAdd2Effectiveness > 1) {
+                typeAdd2Effectiveness = 1;
+            }
+            if (field.hasTerrain('Underwater') && move.hasType('Water') && defender.types[1] === "Water") {
+                typeAdd2Effectiveness = 1;
+            }
+            if (field.hasTerrain('Fairy Tale') && move.hasType('Steel') && defender.types[1] === "Dragon") {
+                typeAdd2Effectiveness = 2;
+            }
+            if (field.hasTerrain('Glitch')) {
+                if (move.hasType('Bug') && defender.types[1] === 'Poison') {
+                    typeAdd2Effectiveness = 2;
+                }
+                if (move.hasType('Poison') && defender.types[1] === 'Bug') {
+                    typeAdd2Effectiveness = 2;
+                }
+                if (move.hasType('Ice') && defender.types[1] === 'Fire') {
+                    typeAdd2Effectiveness = 1;
+                }
+                if (move.hasType('Dragon')) {
+                    if (defender.types[1] === "Fairy") {
+                        typeAdd2Effectiveness = 1;
+                    }
+                    if (defender.types[1] === "Steel") {
+                        typeAdd2Effectiveness = 1;
+                    }
+                    if (defender.types[1] === "Dragon") {
+                        typeAdd2Effectiveness = 1;
+                    }
+                }
+                if (defender.hasItem("Synthetic Seed")) {
+                    typeAdd2Effectiveness = 1;
+                }
+                if (move.hasType('Ghost') && defender.types[1] === 'Psychic') {
+                    typeAdd2Effectiveness = 0;
+                }
+            }
+            if (field.hasTerrain('Holy') && move.hasType('Normal')) {
+                if (defender.types[1] === 'Ghost') {
+                    typeAdd2Effectiveness = 2;
+                }
+                if (defender.types[1] === 'Dark') {
+                    typeAdd2Effectiveness = 2;
+                }
+            }
+        }
+        var typeAddEffectiveness = typeAdd1Effectiveness * typeAdd2Effectiveness;
+        typeEffectiveness = moveType * typeAddEffectiveness
     }
     var turn2typeEffectiveness = typeEffectiveness;
     if (defender.hasAbility("Tera Shell") &&
@@ -1183,9 +1299,13 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         spdefDefenderPrelim = (0, util_2.OF16)(Math.max(1, (0, util_2.pokeRound)((spdefDefenderPrelim * (0, util_2.chainMods)(spdefDefenderPrelimMods, 1, 524288)) / 4096)));
         var spdefense = spdefDefenderPrelim;
     }
+    if (move.named("Shell Side Arm") &&
+        (0, util_2.getShellSideArmCategory)(offense, defense, spoffense, spdefense) === "Physical") {
+        move.flags.contact = 1;
+    }
     // Glitch Field Special Stat
     var attackerUseSpdef = false;
-    if (field.hasTerrain('Glitch')) {
+    if (field.hasTerrain('Glitch') && move.category === "Special") {
         attackerUseSpdef = spdefAttackerPrelim > spatkPrelim;
     }
     // ACTUAL FUCKING CODE
@@ -1635,7 +1755,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
             break;
         case 'Acrobatics':
             basePower = move.bp * (attacker.hasItem('Flying Gem') ||
-                (!attacker.item || (0, util_2.isQPActive)(attacker, field)) ? 2 : 1);
+                (field.hasTerrain("Big Top WEAK", "Big Top OK", "Big Top NICE", "Big Top POWER", "Big Top 9000") || !attacker.item || (0, util_2.isQPActive)(attacker, field)) ? 2 : 1);
             desc.moveBP = basePower;
             break;
         case 'Assurance':
@@ -1781,6 +1901,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                 case 'Flower Garden 5':
                     basePower = 90;
                     move.category = 'Physical';
+                    move.target = 'allAdjacent';
                     desc.moveName = 'Petal Blizzard';
                     break;
                 case 'Forest':
@@ -1819,10 +1940,12 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                 case 'Mountain':
                     basePower = 75;
                     move.category = 'Physical';
+                    move.target = 'allAdjacentFoes';
                     desc.moveName = 'Rock Slide';
                     break;
                 case 'Murkwater':
                     basePower = 95;
+                    move.target = 'allAdjacent';
                     desc.moveName = 'Sludge Wave';
                     break;
                 case 'New World':
@@ -1848,6 +1971,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                 case 'Short-Circuit 1.5':
                 case 'Short-Circuit 2':
                     basePower = 80;
+                    move.target = 'allAdjacent';
                     desc.moveName = 'Discharge';
                     break;
                 case 'Snowy Mt':
@@ -1861,10 +1985,12 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                     break;
                 case 'Superheated':
                     basePower = 95;
+                    move.target = 'allAdjacentFoes';
                     desc.moveName = 'Heat Wave';
                     break;
                 case 'Swamp':
                     basePower = 90;
+                    move.target = 'allAdjacent';
                     desc.moveName = 'Muddy Water';
                     break;
                 case 'Underwater':
@@ -1887,18 +2013,15 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
             break;
         case 'Plasma Fists':
             basePower = move.bp;
-            if (!field.hasTerrain('Underwater', 'New World') && !attacker.hasItem('Everstone')) {
-                basePower = move.bp * 1.3;
-            }
             desc.moveBP = basePower;
             break;
         case 'Stoked Sparksurfer':
         case 'Genesis Supernova':
-            basePower = move.bp * (field.hasTerrain('Underwater', 'New World') ? 1 : 1.3);
+            basePower = move.bp;
             desc.moveBP = basePower;
             break;
         case 'Bloom Doom':
-            basePower = move.bp * (field.hasTerrain('Underwater', 'New World', 'Forest', 'Flower Garden 1', 'Flower Garden 2', 'Flower Garden 3', 'Flower Garden 4', 'Flower Garden 5') ? 1 : 1.3);
+            basePower = move.bp;
             desc.moveBP = basePower;
             break;
         case 'Water Shuriken':
@@ -1982,6 +2105,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
     }
     var bpMods = calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, basePower, hasAteAbilityTypeChange, turnOrder, hit);
     basePower = (0, util_2.OF16)(Math.max(1, (0, util_2.pokeRound)((basePower * (0, util_2.chainMods)(bpMods, 41, 2097152)) / 4096)));
+    desc.moveBP = Math.floor(basePower);
     if (attacker.teraType && move.type === attacker.teraType &&
         attacker.hasType(attacker.teraType) && move.hits === 1 && !move.multiaccuracy &&
         move.priority <= 0 && move.bp > 0 && !move.named('Dragon Energy', 'Eruption', 'Water Spout') &&
@@ -2013,12 +2137,27 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (defender.name.includes('Ogerpon-Wellspring') && defenderItem === 'Wellspring Mask') ||
         (defender.named('Venomicon-Epilogue') && defenderItem === 'Vile Vial');
     if (!resistedKnockOffDamage && defenderItem) {
-        var item = gen.items.get((0, util_1.toID)(defenderItem));
+        var item = gen.items.get(util_1.toID(defenderItem));
         resistedKnockOffDamage = !!item.megaEvolves && defender.name.includes(item.megaEvolves);
+    }
+    if (!resistedKnockOffDamage && defenderItem) {
+        var item = gen.items.get((0, util_1.toID)(defenderItem));
+        if (item.name == "Elemental Seed" && field.hasTerrain('Electric', 'Grassy', 'Misty', 'Burning', 'Corrosive Mist', 'Icy', 'Water', 'Underwater', 'Murkwater', "Dragon's Den")) {
+            resistedKnockOffDamage = true;
+        }
+        else if (item.name == "Synthetic Seed" && field.hasTerrain('Chess Board', 'Factory', 'Glitch', 'Mirror', 'Short-Circuit 0.5', 'Short-Circuit 0.8', 'Short-Circuit 1.2', 'Short-Circuit 1.5', 'Short-Circuit 2', 'Flower Garden 1', 'Flower Garden 2', 'Flower Garden 3', 'Flower Garden 4', 'Flower Garden 5', "Big Top WEAK", "Big Top OK", "Big Top NICE", "Big Top POWER", "Big Top 9000")) {
+            resistedKnockOffDamage = true;
+        }
+        else if (item.name == "Telluric Seed" && field.hasTerrain('Swamp', 'Corrosive', 'Desert', 'Rocky', 'Forest', 'Superheated', 'Wasteland', 'Ashen Beach', 'Cave', 'Mountain', 'Snowy Mt')) {
+            resistedKnockOffDamage = true;
+        }
+        else if (item.name == "Magical Seed" && field.hasTerrain('Dark Crystal', 'Rainbow', 'Crystal Fire', 'Crystal Water', 'Crystal Grass', 'Crystal Psychic', 'Holy', 'Fairy Tale', 'Starlight', 'New World', 'Inverse', 'Psychic')) {
+            resistedKnockOffDamage = true;
+        }
     }
     if (!resistedKnockOffDamage && hit > 1 && !defender.hasAbility('Sticky Hold')) {
         resistedKnockOffDamage = true;
-    }
+    }    
     if ((move.named('Facade') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
         (move.named('Brine') && defender.curHP() <= defender.maxHP() / 2) ||
         (move.named('Venoshock') && (defender.hasStatus('psn', 'tox') || field.hasTerrain('Corrosive', 'Corrosive Mist', 'Murkwater', 'Wasteland'))) ||
@@ -2232,24 +2371,21 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.named('Psychic')) {
              bpMods.push(4915);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain("Big Top WEAK", "Big Top OK", "Big Top NICE", "Big Top POWER", "Big Top 9000")) {
-        if (move.flags.sound || move.named('Fiery Dance', 'Fire Lash', 'First Impresion', 'Fly', 'Petal Dance', 'Power Whip', 'Revelation Dance', 'VineW hip')) {
+        if (move.flags.sound || move.named('Fiery Dance', 'Fire Lash', 'First Impression', 'Fly', 'Petal Dance', 'Power Whip', 'Revelation Dance', 'Vine Whip')) {
             bpMods.push(6144);
-        }
-        else if (move.named('Acrobatics', 'Nature Power')) {
-            basePower = 110 * 1.5;
         }
         else if (move.named('Pay Day')) {
             bpMods.push(8192);
         }
+        if (move.named('Acrobatics', 'Nature Power')) {
+            bpMods.push(6144);
+        }
         if (move.named('Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        if (move.named('Blaze Kick', 'Body Slam', 'Bounce', 'Brutal Swing', 'Bulldoze', 'Crabhammer', 'Dragon Hammer', 'Dragon Rush', 'Dual Chop', 'Earthquake', 'Giga Impact', 'Heat Crash', 'Heavy Slam', 'High Horsepower', 'Ice Hammer', 'Icicle Crash', 'Iron Tail', 'Magnitude', 'Meteor Mash', 'Pound', 'Sky Drop', 'Smack Down', 'Stomp', 'Stomping Tantrum', 'Strength', 'Wood Hammer') || (move.hasType('Fighting') && move.category == 'Physical')) {
+        if (move.named('Blaze Kick', 'Body Slam', 'Bounce', 'Brutal Swing', 'Bulldoze', 'Crabhammer', 'Dragon Hammer', 'Dragon Rush', 'Dual Chop', 'Earthquake', 'Giga Impact', 'Heat Crash', 'Heavy Slam', 'High Horsepower', 'Ice Hammer', 'Icicle Crash', 'Iron Tail', 'Magnitude', 'Meteor Mash', 'Pound', 'Sky Drop', 'Slam', 'Smack Down', 'Stomp', 'Stomping Tantrum', 'Strength', 'Wood Hammer') || (move.hasType('Fighting') && move.category == 'Physical')) {
             if (field.hasTerrain('Big Top WEAK')) {
                 bpMods.push(2048);
             }
@@ -2263,9 +2399,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
                 bpMods.push(12288);
             }
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Burning')) {
             if (move.named('Smack Down', 'Thousand Arrows')) {
@@ -2274,7 +2407,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
             else if (move.named('Clear Smog', 'Smog')) {
                 bpMods.push(6144);
             }
-            else if (move.named('Blizzard', 'Subzero Slammer', 'Splintered Stormshards', 'Gust', 'Hurricane', 'Muddy Water', 'Razor Wind', 'Sand Tomb', 'Sludge Wave', 'Sparkling Area', 'Surf', 'Twister', 'Water Pledge', 'Water Spout', 'Continental Crush', 'Hydro Vortex', 'Oceanic Operetta', 'Splintered Stormshards', 'Supersonic Skystrike')) {
+            else if (move.named('Blizzard', 'Subzero Slammer', 'Splintered Stormshards', 'Gust', 'Hurricane', 'Muddy Water', 'Razor Wind', 'Sand Tomb', 'Sludge Wave', 'Sparkling Aria', 'Surf', 'Twister', 'Water Pledge', 'Water Spout', 'Continental Crush', 'Hydro Vortex', 'Oceanic Operetta', 'Splintered Stormshards', 'Supersonic Skystrike')) {
                 bpMods.push(5325);
             }
             if ((0, util_2.isGrounded)(attacker, field) && move.hasType('Fire')) {
@@ -2283,9 +2416,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
             if ((move.hasType('Grass') && (0, util_2.isGrounded)(defender, field)) || move.hasType('Ice')) {
                 bpMods.push(2048);
             }
-            desc.moveBP = basePower;
-            desc.terrain = field.terrain;
-            desc.moveType = move.type;
         }
     else if (field.hasTerrain('Cave')) {
         if (move.named('Rock Tomb', 'Nature Power')) {
@@ -2303,12 +2433,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Flying') && !move.flags.contact) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Chess Board')) {
-        if (move.named('Ancient Power', 'Psychic', 'Secret Power', 'Strength', 'Continental Crush', 'Shattered Psyche', 'Fake Out', 'Feint', 'Feint Attack', 'First Impression', 'Nature Power', 'Shadow Sneak', 'Smart Strike', 'Sucker Punch')) {
+        if (move.named('Ancient Power', 'Nature Power', 'Psychic', 'Secret Power', 'Strength', 'Continental Crush', 'Shattered Psyche', 'Fake Out', 'Feint', 'Feint Attack', 'First Impression', 'Shadow Sneak', 'Smart Strike', 'Sucker Punch')) {
             bpMods.push(6144);
         }
         if (move.named('Stomping Tantrum', 'Tectonic Rage', 'Splintered Stormshards')) {
@@ -2320,15 +2447,15 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Ancient Power', 'Psychic', 'Secret Power', 'Strength', 'Continental Crush', 'Shattered Psyche') && defender.hasAbility('Adaptability', 'Synchronize', 'Anticipation', 'Telepathy')) {
             bpMods.push(2048);
         }
-        if (attacker.hasAbility('Queenly Majesty')) {
+        if (attacker.hasAbility('Queenly Majesty') || attacker.hasPiece('Q')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
+        if (attacker.hasPiece('N') && defender.hasPiece('Q')) {
+            bpMods.push(12288);
+        }
     }
     else if (field.hasTerrain('Corrosive')) {
-        if (move.named('Acid', 'Acid Spray', 'Nature Power', "Grass Knot")) {
+        if (move.named('Acid', 'Acid Spray', "Grass Knot", 'Nature Power')) {
             bpMods.push(8192);
         }
         else if (move.named('Mud Bomb', 'Mud Shot', 'Mud-Slap', 'Muddy Water', 'Smack Down', 'Thousand Arrows', 'Whirlpool')) {
@@ -2337,26 +2464,20 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Seed Flare', 'Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Corrosive Mist')) {
         if (move.named('Bubble', 'Bubble Beam', 'Sparkling Aria', 'Acid Spray', 'Clear Smog', 'Smog')) {
             bpMods.push(6144);
         }
-        else if (move.named('Splintered Stormshards', 'Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive', 'Explosion', 'Self-Destruct', 'Gust', 'Huricane', 'Razor Wind', 'Seed Flare', 'Twister', 'Supersonic Skystrike')) {
+        else if (move.named('Splintered Stormshards', 'Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive', 'Explosion', 'Self-Destruct', 'Gust', 'Hurricane', 'Razor Wind', 'Seed Flare', 'Twister', 'Supersonic Skystrike')) {
             bpMods.push(5325);
         }
         if (move.hasType('Fire')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Crystal Fire', 'Crystal Water', 'Crystal Grass', 'Crystal Psychic')) {
-        if (move.named('Judgment', 'Multi-Attack', 'Rock Climb', 'Strength', 'Ancient Power', 'Diamond Storm', 'Nature Power', 'Power Gem', 'Rock Smash', 'Rock Tomb')) {
+        if (move.named('Judgment', 'Multi-Attack', 'Rock Climb', 'Strength', 'Ancient Power', 'Diamond Storm', 'Power Gem', 'Nature Power', 'Rock Smash', 'Rock Tomb')) {
             bpMods.push(6144);
         }
         else if (move.named('Splintered Stormshards', 'Dark Pulse', 'Night Daze', 'Light That Burns the Sky', 'Bulldoze', 'Earthquake', 'Magnitude', 'Tectonic Rage', 'Aurora Beam', 'Dazzling Gleam', 'Doom Desire', 'Luster Purge', 'Mirror Shot', 'Moongeist Beam', 'Photon Geyser', 'Signal Beam', 'Techno Blast', 'Menacing Moonraze Maelstrom')) {
@@ -2365,9 +2486,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Rock') || move.hasType('Dragon')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Dark Crystal')) {
         if (move.named('Prismatic Laser', 'Black Hole Eclipse')) {
@@ -2382,9 +2500,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Light That Burns the Sky')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Desert')) {
         if (move.named('Burn Up', 'Dig', 'Heat Wave', 'Needle Arm', 'Pin Missile', 'Sand Tomb', 'Nature Power', 'Solar Beam', 'Solar Blade', 'Thousand Waves', 'Searing Sunraze Smash')) {
@@ -2396,9 +2511,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if ((move.hasType('Water') && (0, util_2.isGrounded)(attacker, field)) || (move.hasType('Electric') && (0, util_2.isGrounded)(defender, field))) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain("Dragon's Den")) {
         if (move.named('Smack Down', 'Thousand Arrows', 'Continental Crush', 'Tectonic Rage', 'Dragon Ascent', 'Pay Day')) {
@@ -2416,9 +2528,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Water', 'Ice')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Electric')) {
         if (move.named('Magnet Bomb')) {
@@ -2433,9 +2542,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if ((0, util_2.isGrounded)(attacker, field) && move.hasType('Electric')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Factory')) {
         if (move.named('Flash Cannon', 'Gear Grind', 'Nature Power', 'Gyro Ball', 'Magnet Bomb')) {
@@ -2450,9 +2556,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Electric')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Fairy Tale')) {
         if (move.hasType('Dragon')) {
@@ -2461,7 +2564,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.named('Draining Kiss')) {
             bpMods.push(8192);
         }
-        else if (move.named('AirSlash', 'Ancient Power', 'Fleur Cannon', 'Leaf Blade', 'Magical Leaf', 'Moongeist Beam', 'Mystical Fire', 'Night Slash', 'Psycho Cut', 'Relic Song', 'Smart Strike', 'Solar Blade', 'Sparkling Aria', 'Menacing Moonraze Maelstrom', 'Oceanic Operetta')) {
+        else if (move.named('Air Slash', 'Ancient Power', 'Fleur Cannon', 'Leaf Blade', 'Magical Leaf', 'Moongeist Beam', 'Mystical Fire', 'Night Slash', 'Psycho Cut', 'Relic Song', 'Smart Strike', 'Solar Blade', 'Sparkling Aria', 'Menacing Moonraze Maelstrom', 'Oceanic Operetta')) {
             bpMods.push(6144);
         }
         else if (move.named('Splintered Stormshards')) {
@@ -2470,30 +2573,27 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Fairy', 'Steel')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Flower Garden 1', 'Flower Garden 2', 'Flower Garden 3', 'Flower Garden 4', 'Flower Garden 5')) {
         if (field.hasTerrain('Flower Garden 3', 'Flower Garden 4', 'Flower Garden 5') && !field.hasWeather('Rain', 'Heavy Rain') && move.named('Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive')) {
             bpMods.push(5325);
         }
-        else if (move.named('Splintered Stormshards')) {
+        if (move.named('Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        else if (move.named('Cut') && !field.hasTerrain('Flower Garden 1')) {
+        if (move.named('Cut') && !field.hasTerrain('Flower Garden 1')) {
             bpMods.push(6144);
-            if (defender.hasType('Grass')) {
-                bpMods.push(8192);
-            }
         }
-        else if (move.named('Petal Blizzard', 'Nature Power', 'Fleur Cannon', 'Petal Dance')) {
+        if (move.named('Petal Blizzard', 'Fleur Cannon', 'Petal Dance')) {
             if (field.hasTerrain('Flower Garden 3')) {
                 bpMods.push(4915);
             }
             else if (field.hasTerrain('Flower Garden 4', 'Flower Garden 5')) {
                 bpMods.push(6144);
             }
+        }
+        if (move.named('Nature Power') && field.hasTerrain('Flower Garden 5')) {
+            bpMods.push(6144);
         }
         if (move.hasType('Grass')) {
             if (field.hasTerrain('Flower Garden 2')) {
@@ -2520,16 +2620,10 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Fire') && field.hasTerrain('Flower Garden 3', 'Flower Garden 4', 'Flower Garden 5')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Forest')) {
-        if (move.named('Attack order', 'Cut', 'Electroweb')) {
-            if (move.named('Cut') && defender.hasType('Grass')) {
-                bpMods.push(12288);
-            }
-            else {
+        if (move.named('Attack Order', 'Cut', 'Electroweb')) {
+            if (move.named('Cut')) {
                 bpMods.push(6144);
             }
         }
@@ -2539,12 +2633,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Splintered Stormshards', 'Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive') && !field.hasWeather('Rain', 'Heavy Rain')) {
             bpMods.push(5325);
         }
-        if (move.hasType('Grass') || (move.hasType('Bug')) && move.category === 'Special') {
+        if (move.hasType('Grass') || (move.hasType('Bug') && move.category === 'Special')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Glitch')) {
         if (move.hasType('Psychic')) {
@@ -2553,9 +2644,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Grassy')) {
         if (move.named('Fairy Wind', 'Silver Wind')) {
@@ -2570,12 +2658,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if ((0, util_2.isGrounded)(defender, field) && move.hasType('Fire')) {
             bpMods.push(6144);
         }
-        if (move.named('Sludge Wave', 'Acid Downpour') || (move.named('Gust', 'Hurricane', 'Razor Wind', 'Twister', 'Supersonic Skystrike', 'Splintered Stormshards', 'Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive') && !field.hasWeather('Rain', 'Heavy Rain'))) {
+        if (move.named('Sludge Wave', 'Acid Downpour') || (move.named('Splintered Stormshards', 'Eruption', 'Fire Pledge', 'Flame Burst', 'Heat Wave', 'Incinerate', 'Lava Plume', 'Mind Blown', 'Searing Shot', 'Inferno Overdrive') && !field.hasWeather('Rain', 'Heavy Rain'))) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Holy')) {
         if (move.named('Ancient Power', 'Extreme Speed', 'Judgment', 'Nature Power', 'Magical Leaf', 'Mystical Fire', 'Return', 'Sacred Fire', 'Sacred Sword')) {
@@ -2593,9 +2678,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Ghost') || (move.hasType('Dark') && move.category === 'Special')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Icy')) {
         if (move.named('Scald', 'Steam Eruption')) {
@@ -2610,17 +2692,11 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Fire')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Inverse')) {
         if (move.named('Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Mirror')) {
         if (move.named('Mirror Shot', 'Nature Power')) {
@@ -2632,15 +2708,12 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Splintered Stormshards', 'Boomburst', 'Bulldoze', 'Earthquake', 'Explosion', 'Hyper Voice', 'Magnitude', 'Self-Destruct', 'Tectonic Rage')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Misty')) {
         if (move.named('Dark Pulse', 'Night Daze', 'Shadow Ball')) {
             bpMods.push(2048);
         }
-        else if (move.named('Aura Sphere', 'Dazzling Gleam', 'Doom Desire', 'Fairy Wind', 'Icy Wind', 'Magical Leaf', 'Mist Ball', 'Nature Power', 'Moonblast', 'Moongeist Beam', 'Mystical Fire', 'Sylver Wind', 'Steam Eruption')) {
+        else if (move.named('Aura Sphere', 'Dazzling Gleam', 'Doom Desire', 'Fairy Wind', 'Icy Wind', 'Magical Leaf', 'Mist Ball', 'Nature Power', 'Moonblast', 'Moongeist Beam', 'Mystical Fire', 'Silver Wind', 'Steam Eruption')) {
             bpMods.push(6144);
         }
         else if (move.named('Acid Downpour')) {
@@ -2649,12 +2722,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Dragon')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Mountain')) {
-        if (move.named('Avalanche', 'Circle Throw', 'Eruption', 'Fairy Wind', 'Hyper Voice', 'Icy Wind', 'Ominous Wind', 'Razor Wind', "Nature Power", 'Silver Wind', 'Storm Throw', 'Thunder', 'Twister', 'Vital Throw')) {
+        if (move.named('Avalanche', 'Circle Throw', 'Eruption', 'Fairy Wind', 'Hyper Voice', 'Icy Wind', 'Ominous Wind', 'Razor Wind', 'Silver Wind', 'Storm Throw', 'Thunder', 'Twister', 'Vital Throw')) {
             bpMods.push(6144);
         }
         if (move.named('Fairy Wind', 'Gust', 'Icy Wind', 'Ominous Wind', 'Razor Wind', 'Silver Wind', 'Twister') && field.hasWeather('Strong Winds')) {
@@ -2669,9 +2739,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Rock', "Flying")) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Murkwater')) {
         if (move.named('Mud Bomb', 'Mud Shot', 'Mud-Slap', 'Thousand Waves', 'Acid', 'Acid Spray', 'Brine', 'Smack Down')) {
@@ -2689,9 +2756,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Electric') && (0, util_2.isGrounded)(defender, field)) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('New World')) {
         if (move.named('Doom Desire')) {
@@ -2709,9 +2773,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Dark')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Psychic')) {
         if (move.named('Aura Sphere', 'Hex', 'Magical Leaf', 'Mind Blown', 'Moonblast', 'Mystical Fire')) {
@@ -2723,12 +2784,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if ((0, util_2.isGrounded)(attacker, field) && move.hasType('Psychic')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Rainbow')) {
-        if (move.named('Aurora Beam', 'Nature Power', 'Dazzling Gleam', 'Dragon Pulse', 'Fire Pledge', 'Fleur Cannon', 'Grass Pledge', 'Heart Stamp', 'Hidden Power', 'Hidden Power Bug', 'Hidden Power Dark', 'Hidden Power Dragon', 'Hidden Power Electric', 'Hidden Power Fairy', 'Hidden Power Fighting', 'Hidden Power Fire', 'Hidden Power Flying', 'Hidden Power Ghost', 'Hidden Power Grass', 'Hidden Power Ground', 'Hidden Power Ice', 'Hidden Power Poison', 'Hidden Power Psychic', 'Hidden Power Rock', 'Hidden Power Steel', 'Hidden Power Water', 'Judgment', 'Mist Ball', 'Moonblast', 'Mystica lFire', 'Prismatic Laser', 'Relic Song', 'Sacred Fire', 'Secret Power', 'Silver Wind', 'Solar Beam', 'Solar Blade', 'Sparkling Aria', 'Tri Attack', 'Water Pledge', 'Weather Ball', 'Zen Headbutt', 'Oceanic Operetta', 'Twinkle Tackle')) {
+        if (move.named('Aurora Beam', 'Nature Power', 'Dazzling Gleam', 'Dragon Pulse', 'Fire Pledge', 'Fleur Cannon', 'Grass Pledge', 'Heart Stamp', 'Hidden Power', 'Hidden Power Bug', 'Hidden Power Dark', 'Hidden Power Dragon', 'Hidden Power Electric', 'Hidden Power Fairy', 'Hidden Power Fighting', 'Hidden Power Fire', 'Hidden Power Flying', 'Hidden Power Ghost', 'Hidden Power Grass', 'Hidden Power Ground', 'Hidden Power Ice', 'Hidden Power Poison', 'Hidden Power Psychic', 'Hidden Power Rock', 'Hidden Power Steel', 'Hidden Power Water', 'Judgment', 'Mist Ball', 'Moonblast', 'Mystical Fire', 'Prismatic Laser', 'Relic Song', 'Sacred Fire', 'Secret Power', 'Silver Wind', 'Solar Beam', 'Solar Blade', 'Sparkling Aria', 'Tri Attack', 'Water Pledge', 'Weather Ball', 'Zen Headbutt', 'Oceanic Operetta', 'Twinkle Tackle')) {
             bpMods.push(6144);
         }
         else if (move.named('Dark Pulse', 'Night Daze', 'Shadow Ball', 'Never-Ending Nightmare')) {
@@ -2740,9 +2798,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Normal') && move.category === 'Special') {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Rocky')) {
         if (move.named('Rock Smash', 'Nature Power')) {
@@ -2757,9 +2812,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Rock')) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Short-Circuit 2', 'Short-Circuit 0.5', 'Short-Circuit 0.8', 'Short-Circuit 1.2', 'Short-Circuit 1.5')) {
         if (move.named('Flash Cannon', 'Gear Grind', 'Gyro Ball', 'Magnet Bomb', 'Magnet Bomb', 'Muddy Water', 'Surf', 'Dazzling Gleam', 'Hydro Vortex')) {
@@ -2788,9 +2840,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
                 bpMods.push(8192);
             }
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Snowy Mt')) {
         if (move.named('Icy Wind')) {
@@ -2820,9 +2869,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Fire')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Starlight')) {
         if (!field.hasWeather('Sun', 'Harsh Sunshine', 'Rain', 'Heavy Rain', 'Hail', 'Strong Winds', 'Sand')) {
@@ -2832,7 +2878,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
             else if (move.named('Comet Punch', 'Draco Meteor', 'Hyperspace Fury', 'Hyperspace Hole', 'Meteor Mash', 'Moongeist Beam', 'Spacial Rend', 'Swift', 'Black Hole Eclipse', 'Menacing Moonraze Maelstrom', 'Searing Sunraze Smash')) {
                 bpMods.push(8192);
             }
-            else if (move.named('Aurora Beam', 'Dazzling Gleam', 'Flash Cannon', 'Luster Purge', 'Mirro Shot', 'Moonblast', 'Nature Power', 'Photon Geyser', 'Signal Beam', 'Solar Beam', 'Techno Blast')) {
+            else if (move.named('Aurora Beam', 'Dazzling Gleam', 'Flash Cannon', 'Luster Purge', 'Mirror Shot', 'Moonblast', 'Nature Power', 'Photon Geyser', 'Signal Beam', 'Solar Beam', 'Techno Blast')) {
                 bpMods.push(6144);
             }
             if (move.hasType('Dark', 'Psychic')) {
@@ -2845,9 +2891,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.named('Splintered Stormshards', 'Light That Burns the Sky')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Superheated')) {
         if (move.named('Scald', 'Steam Eruption')) {
@@ -2868,9 +2911,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Ice')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Swamp')) {
         if (move.named('Smack Down', 'Thousand Arrows', 'Brine', 'Mud Bomb', 'Gunk Shot', 'Mud Shot', 'Mud-Slap', 'Muddy Water', 'Nature Power', 'Sludge Wave', 'Surf', 'Hydro Vortex')) {
@@ -2885,9 +2925,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.hasType('Poison') && (0, util_2.isGrounded)(defender, field)) {
             bpMods.push(6144);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Underwater')) {
         if (move.named('Anchor Shot')) {
@@ -2908,9 +2945,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.category === 'Physical' && !move.hasType('Water', "Ground") && !attacker.hasAbility('Steelworker')) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Wasteland')) {
         if (move.named('Spit Up')) {
@@ -2928,9 +2962,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         if (move.named('Splintered Stormshards')) {
             bpMods.push(5325);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     else if (field.hasTerrain('Water')) {
         if (move.named('Dive', 'Muddy Water', 'Surf', 'Whirlpool', 'Nature Power', 'Hydro Vortex')) {
@@ -2945,9 +2976,6 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         else if (move.hasType('Fire') && (0, util_2.isGrounded)(defender, field)) {
             bpMods.push(2048);
         }
-        desc.moveBP = basePower;
-        desc.terrain = field.terrain;
-        desc.moveType = move.type;
     }
     return bpMods;
 }
@@ -3202,7 +3230,7 @@ function calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCri
     }
     // Glitch Field Special Stat
     var attackerUseSpdef = false;
-    if (field.hasTerrain('Glitch')) {
+    if (field.hasTerrain('Glitch') && move.category === "Special") {
         attackerUseSpdef = spdefAttackerPrelim > spatkPrelim;
     }
     // ACTUAL FUCKING CODE
@@ -3259,6 +3287,10 @@ function calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc, attac
             atMods.push(6144);
             desc.weather = field.weather;
             desc.isFlowerGiftAttacker = true;
+        }
+        if (field.hasWeather('Sand') && attacker.hasType('Rock')) {
+            atMods.push(6144);
+            desc.weather = field.weather;
         }
         if ((0, util_2.isQPActive)(attacker, field)) {
             if ((0, util_2.getQPBoostedStat)(attacker) === 'spd') {
@@ -3951,7 +3983,8 @@ function calculateBaseDamageSMSSSV(gen, attacker, defender, basePower, attack, d
     var isSpread = field.gameType !== 'Singles' &&
         ['allAdjacent', 'allAdjacentFoes'].includes(move.target);
     if (isSpread) {
-        baseDamage = (0, util_2.pokeRound)((0, util_2.OF32)(baseDamage * 3072) / 4096);
+        var spreadMod = (field.hasTerrain('Chess Board') && attacker.hasPiece('N')) ? 5120 : 3072
+        baseDamage = (0, util_2.pokeRound)((0, util_2.OF32)(baseDamage * spreadMod) / 4096);
     }
     if (attacker.hasAbility('Parental Bond (Child)')) {
         baseDamage = (0, util_2.pokeRound)((0, util_2.OF32)(baseDamage * 1024) / 4096);
@@ -4011,11 +4044,8 @@ function calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, is
     if (defender.isDynamaxed && move.named('Dynamax Cannon', 'Behemoth Blade', 'Behemoth Bash')) {
         finalMods.push(8192);
     }
-    if (defender.hasAbility('Multiscale') &&
-        defender.curHP() === defender.maxHP() &&
-        hitCount === 0 &&
-        (!field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) ||
-            defender.hasItem('Heavy-Duty Boots')) && !attacker.hasAbility('Parental Bond (Child)')) {
+    if (defender.hasAbility('Multiscale') && defender.curHP() === defender.maxHP() && hitCount === 0 &&
+        (!field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) || defender.hasItem('Heavy-Duty Boots')) && !attacker.hasAbility('Parental Bond (Child)')) {
         finalMods.push(2048);
         desc.defenderAbility = defender.ability;
     }
@@ -4028,21 +4058,12 @@ function calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, is
         desc.defenderAbility = defender.ability;
     }
     if (defender.hasAbility('Shadow Shield')) {
-        if (field.hasTerrain('Dark Crystal', 'Starlight', 'New World')) {
-            if (defender.curHP() === defender.maxHP() &&
-                !field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) &&
-                !attacker.hasAbility('Parental Bond (Child)') && typeEffectiveness > 1) {
-                finalMods.push(1536);
-                desc.defenderAbility = defender.ability;
-            }
-            else if (typeEffectiveness > 1) {
+        if (field.hasTerrain('Dark Crystal', 'Starlight', 'New World') && typeEffectiveness > 1) {
                 finalMods.push(3072);
                 desc.defenderAbility = defender.ability;
             }
-        }
-        else if (defender.curHP() === defender.maxHP() &&
-            !field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) &&
-            !attacker.hasAbility('Parental Bond (Child)')) {
+        if (defender.curHP() === defender.maxHP() && hitCount === 0 &&
+        (!field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) || defender.hasItem('Heavy-Duty Boots')) && !attacker.hasAbility('Parental Bond (Child)')) {
             finalMods.push(2048);
             desc.defenderAbility = defender.ability;
         }

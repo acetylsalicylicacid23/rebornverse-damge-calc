@@ -26,6 +26,7 @@ export declare class Pokemon implements State.Pokemon {
     stats: I.StatsTable;
     originalCurHP: number;
     status: I.StatusName | '';
+    piece: I.ChessPiece | '';
     toxicCounter: number;
     moves: I.MoveName[];
     constructor(gen: I.Generation, name: string, options?: Partial<State.Pokemon> & {
@@ -45,6 +46,7 @@ export declare class Pokemon implements State.Pokemon {
     hasAbility(...abilities: string[]): boolean;
     hasItem(...items: string[]): boolean;
     hasStatus(...statuses: I.StatusName[]): boolean;
+    hasPiece(...pieces: I.ChessPiece[]): boolean;
     hasType(...types: I.TypeName[]): boolean;
     hasOriginalType(...types: I.TypeName[]): boolean;
     named(...names: string[]): boolean;

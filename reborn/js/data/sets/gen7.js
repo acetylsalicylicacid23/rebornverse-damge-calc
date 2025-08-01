@@ -1,1528 +1,4551 @@
-var SETDEX_SM = {
-	"Abra-Pulse":{
-		"Tanzan ZEL (Factory)":{"level": 75, "item": "Silk Scarf", "moves": ["Hyper Beam","Dark Pulse","Hyper Beam","Hyper Beam"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 205},																									
-
-	},
-	"Absol":{
-		"Gym Luna (Dark Crystal)":{"level": 64, "item": "Life Orb", "moves": ["Swords Dance","Sucker Punch","Play Rough","Night Slash"], "ability": "Pressure", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 244},																									
-
-	},
-	"Absol-Mega":{
-		"Glass 2 ??? (Factory)":{"level": 85, "item": "Absolite", "moves": ["Swords Dance","Superpower","Play Rough","Knock Off"], "ability": "Pressure", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 481},																									
-
-	},
-	"Aegislash-Blade":{
-		"WTC Titania (Factory) Doubles":{"level": 80, "item": "Leftovers", "moves": ["Flash Cannon","King's Shield","Shadow Ball","Wide Guard"], "ability": "Stance Change", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 314},																									
-		"Gym Titania (Fairy Tale, Hail)":{"level": 90, "item": "Magical Seed", "moves": ["King's Shield","Shadow Sneak","Swords Dance","Sacred Sword"], "ability": "Stance Change", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index": 434},																									
-
-	},
-	"Aerodactyl":{
-		"Agate Partner Hardy (Various) Doubles":{"level": 92, "moves": ["Aqua Tail","Rock Slide","Aerial Ace","Rock Smash"], "ability": "Pressure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 500},																									
-
-	},
-	"Aerodactyl-Mega":{
-		"Gym Hardy (Rocky) Doubles":{"level": 92, "item": "Aerodactylite", "moves": ["Aqua Tail","Rock Slide","Aerial Ace","Rock Smash"], "ability": "Tough Claws", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 510},																									
-
-	},
-	"Alakazam":{
-		"Subseven Ace (Holy)":{"level": 60, "item": "Choice Scarf", "moves": ["Psychic","Signal Beam","Trick","Energy Ball"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 231},																									
-		"Devon ZEL (Factory)":{"level": 74, "item": "Twisted Spoon", "moves": ["Psyshock","Recover","Shadow Ball","Charge Beam"], "ability": "Magic Guard", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 404},																									
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 82, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Psychic","Calm Mind","Dazzling Gleam"], "ability": "Magic Guard", "nature": "Modest", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 492},																									
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Life Orb", "moves": ["Psychic","Shadow Ball","Grass Knot","Dazzling Gleam"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 609},																									
-
-	},
-	"Alakazam-Mega":{
-		"Calc. Connal/Mime (Con, Sh-Circ) Doub":{"level": 95, "item": "Alakazite", "moves": ["Dazzling Gleam","Psychic","Signal Beam","Shadow Ball"], "ability": "Trace", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index": 587},																									
-
-	},
-	"Altaria-Mega":{
-		"Gym Ciel (Big Top)":{"level": 78, "item": "Altarianite", "moves": ["Earthquake","Hyper Voice","Roost","Sing"], "ability": "Pixilate", "nature": "Rash", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index": 377},																									
-
-	},
-	"Ampharos-Mega":{
-		"Devon Partner Arclight (Factory) Doubles":{"level": 78, "item": "Ampharosite", "moves": ["Discharge","Zap Cannon","Dragon Pulse","Agility"], "ability": "Mold Breaker", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 32, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 224}, "index": 389},																									
-		"Devon VS Arclight (Factory)":{"level": 79, "item": "Ampharosite", "moves": ["Discharge","Zap Cannon","Dragon Pulse","Agility"], "ability": "Mold Breaker", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 32, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 224}, "index": 401},																									
-
-	},
-	"Anorith":{
-		"Gym Shelly (Forest) Doubles":{"level": 32, "item": "Telluric Seed", "moves": ["Aqua Jet","Rapid Spin","Knock Off","Rock Slide"], "ability": "Swift Swim", "nature": "Quirky", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 78},																									
-		"Orphanage Shelly (None) Doubles":{"level": 32, "item": "Muscle Band", "moves": ["Aqua Jet","Rapid Spin","Knock Off","Rock Slide"], "ability": "Swift Swim", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 89},																									
-
-	},
-	"Araquanid":{
-		"Gym Shelly (Forest) Doubles":{"level": 31, "item": "Damp Rock", "moves": ["Rain Dance","Bubble Beam","Icy Wind","Bug Bite"], "ability": "Water Bubble", "nature": "Bashful", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 79},																									
-		"Orphanage Shelly (None) Doubles":{"level": 32, "moves": ["Rain Dance","Bubble Beam","Icy Wind","Bug Bite"], "ability": "Water Bubble", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 90},																									
-
-	},
-	"Arcanine":{
-		"Ametrine Cal (Various) Doubles":{"level": 70, "moves": ["Extreme Speed","Flare Blitz","Crunch","Outrage"], "ability": "Intimidate", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 291},																									
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Life Orb", "moves": ["Extreme Speed","Flare Blitz","Close Combat","Outrage"], "ability": "Intimidate", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 590},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Life Orb", "moves": ["Extreme Speed","Flare Blitz","Close Combat","Outrage"], "ability": "Intimidate", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 614},																									
-
-	},
-	"Arceus":{
-		"Citae Astrae El (Crystal Cavern)":{"level": 75, "item": "Leftovers", "moves": ["Recover","Judgment","Shadow Ball","Focus Blast"], "ability": "Multitype", "nature": "Quiet", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 224},																									
-
-	},
-	"Archeops":{
-		"Agate Partner Hardy (Various) Doubles":{"level": 91, "item": "Sitrus Berry", "moves": ["Rock Slide","Aqua Tail","Endeavor","Acrobatics"], "ability": "Defeatist", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 498},																									
-		"Gym Hardy (Rocky) Doubles":{"level": 91, "item": "Flying Gem", "moves": ["Rock Slide","Aqua Tail","Endeavor","Acrobatics"], "ability": "Defeatist", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index": 512},																									
-		"E4 Heather (Mountain)":{"level": 100, "item": "Flying Gem", "moves": ["Tailwind","Stone Edge","Acrobatics","Earthquake"], "ability": "Defeatist", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 659},																									
-
-	},
-	"Aromatisse":{
-		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 93, "item": "Amplifield Rock", "moves": ["Dazzling Gleam","Psychic","Flash Cannon","Thunder"], "ability": "Aroma Veil", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 200, "at": 0, "df": 56, "sa": 252, "sd": 0, "sp": 0}, "index": 583},																									
-
-	},
-	"Aurorus":{
-		"Devon ZEL (Factory)":{"level": 74, "item": "Focus Sash", "moves": ["Flash Cannon","Stealth Rock","Ice Beam","Thunderbolt"], "ability": "Snow Warning", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 402},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Choice Specs", "moves": ["Blizzard","Earth Power","Flash Cannon","Hidden Power Rock"], "ability": "Snow Warning", "nature": "Modest", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index": 604},																									
-
-	},
-	"Avalugg-Pulse":{
-		"PULSE Avalugg (Icy)":{"level": 70, "item": "Leftovers", "moves": ["Hammer Arm","Earthquake","Recover","Avalanche"], "ability": "Solid Rock", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 282},																									
-
-	},
-	"Baltoy":{
-		"Rhodocrine Ace (Forest)":{"level": 26, "moves": ["Psybeam","Rock Tomb","Mud-Slap","Grass Knot"], "ability": "Levitate", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 39},																									
-
-	},
-	"Banette":{
-		"Gym Shade (Short Circuit)":{"level": 36, "item": "Synthetic Seed", "moves": ["Shadow Claw","Knock Off","Dazzling Gleam","Destiny Bond"], "ability": "Cursed Body", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index": 100},																									
-
-	},
-	"Barbaracle":{
-		"Pyrous Cal (Super-Heated)":{"level": 38, "moves": ["Stealth Rock","Slash","Scald","Rock Slide"], "ability": "Tough Claws", "nature": "Brave", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 113},																									
-
-	},
-	"Bewear":{
-		"Gym Noel (Grassy)":{"level": 54, "item": "Muscle Band", "moves": ["Hammer Arm","Zen Headbutt","Stomping Tantrum","Ice Punch"], "ability": "Fluffy", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 208},																									
-
-	},
-	"Bisharp":{
-		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Rocky Helmet", "moves": ["Iron Head","Night Slash","Sucker Punch","Stealth Rock"], "ability": "Defiant", "nature": "Impish", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 243},																									
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 83, "item": "Dread Plate", "moves": ["Knock Off","Iron Head","Brick Break","Sucker Punch"], "ability": "Defiant", "nature": "Adamant", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 490},																									
-
-	},
-	"Blastoise":{
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 88, "item": "Fightinium Z", "moves": ["Aura Sphere","Surf","Ice Beam","Whirlpool"], "ability": "Torrent", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 445},																									
-
-	},
-	"Blastoise-Mega":{
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 88, "item": "Blastoisinite", "moves": ["Aura Sphere","Surf","Ice Beam","Whirlpool"], "ability": "Mega Launcher", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 457},																									
-
-	},
-	"Blaziken":{
-		"Circus Alistasia (Big Top)":{"level": 67, "item": "Focus Sash", "moves": ["Swords Dance","Acrobatics","Brick Break","Bulldoze"], "ability": "Speed Boost", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index": 253},																									
-		"Gym Samson (Big Top)":{"level": 69, "item": "Synthetic Seed", "moves": ["Acrobatics","Protect","Brick Break","Blaze Kick"], "ability": "Speed Boost", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 258},																									
-
-	},
-	"Braixen":{
-		"Rhodocrine Ace (Forest)":{"level": 28, "item": "Sitrus Berry", "moves": ["Psybeam","Fire Spin","Hypnosis","Flame Charge"], "ability": "Magician", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 42, "at": 42, "df": 42, "sa": 42, "sd": 42, "sp": 42}, "index": 41},																									
-
-	},
-	"Breloom":{
-		"Gym Florinia (Desert)":{"level": 23, "moves": ["Leech Seed","Spore","Mach Punch","Mega Drain"], "ability": "Poison Heal", "nature": "Bashful", "ivs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index": 33},																																			
-		"Fiore Florinia (None) Doubles":{"level": 70, "item": "Toxic Orb", "moves": ["Spore","Drain Punch","Leech Seed","Seed Bomb"], "ability": "Poison Heal", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 331},																									
-
-	},
-	"Brionne":{
-		"Lapis/Orphanage Cain (None)":{"level": 32, "item": "Zoom Lens", "moves": ["Icy Wind","Disarming Voice","Bubble Beam","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 82},																									
-
-	},
-	"Bronzong":{
-		"Byxbysion Ace (Wasteland)":{"level": 42, "item": "Telluric Seed", "moves": ["Gyro Ball","Zen Headbutt","Toxic","Protect"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "happiness": 0, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 144},																									
-		"Fiore Julia (None) Doubles":{"level": 67, "item": "Light Clay", "moves": ["Light Screen","Reflect","Gyro Ball","Toxic"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 335},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Gyro Ball","Zen Headbutt","Psywave","Rock Slide"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 485},																									
-
-	},
-	"Budew":{
-		"Peridot/Mosswater Fern (None)":{"level": 13, "item": "Oran Berry", "moves": ["Mega Drain","Natural Gift","Stun Spore","Covet"], "ability": "Poison Point", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index": 3},																																			
-
-	},
-	"Butterfree":{
-		"Spinel Bennet (Mirror)":{"level": 50, "item": "Synthetic Seed", "moves": ["Sleep Powder","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index": 185},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 64, "item": "Leftovers", "moves": ["Sleep Powder","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 242},																									
-
-	},
-	"Cacnea":{
-		"Gym Florinia (Desert)":{"level": 23, "item": "Big Root", "moves": ["Sandstorm","Needle Arm","Leech Seed","Nature Power"], "ability": "Sand Veil", "nature": "Jolly", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index": 30},																																			
-
-	},
-	"Cacturne":{
-		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Seed Bomb","Sucker Punch","Swords Dance","Brick Break"], "ability": "Water Absorb", "nature": "Adamant", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 559},																									
-		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Seed Bomb","Sucker Punch","Swords Dance","Brick Break"], "ability": "Water Absorb", "nature": "Adamant", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 567},																									
-
-	},
-	"Camerupt":{
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Leftovers", "moves": ["Flash Cannon","Heat Wave","Earth Power","Yawn"], "ability": "Magma Armor", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 591},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Elemental Seed", "moves": ["Nature Power","Lava Plume","Earth Power","Yawn"], "ability": "Magma Armor", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 615},																									
-
-	},
-	"Chandelure":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 48, "item": "Synthetic Seed", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 179},																									
-		"Belrose Sirius (None)":{"level": 52, "item": "Wise Glasses", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index": 203},																									
-		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Wise Glasses", "moves": ["Heat Wave","Shadow Ball","Energy Ball","Psychic"], "ability": "Flash Fire", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 533},																									
-		"VR Sirius (Dragon's Den) Doubles":{"level": 100, "item": "Elemental Seed", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 649},																									
-
-	},
-	"Chansey":{
-		"Labradorra Terra (Glitch)":{"level": 96, "item": "Eviolite", "moves": ["Blizzard","Thunderbolt","Psychic","Soft-Boiled"], "ability": "Serene Grace", "nature": "Calm", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 252, "sa": 0, "sd": 252, "sp": 0}, "index": 634},																									
-
-	},
-	"Charizard":{
-		"Pyrous Cal (Super-Heated)":{"level": 39, "moves": ["Thunder Punch","Fire Punch","Dragon Claw","Wing Attack"], "ability": "Blaze", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 117},																									
-		"Ametrine Cal (Various) Doubles":{"level": 73, "moves": ["Flamethrower","Dragon Pulse","Air Slash","Ancient Power"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 294},																									
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Heat Wave","Dragon Pulse","Focus Blast","Air Slash"], "ability": "Blaze", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 593},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 94, "item": "Choice Scarf", "moves": ["Fire Blast","Dragon Pulse","Focus Blast","Air Slash"], "ability": "Blaze", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 617},																									
-
-	},
-	"Charizard-Mega-X":{
-		"Gym Gargantuan (Dragon's Den)":{"level": 97, "item": "Charizardite X", "moves": ["Dragon Dance","Dragon Claw","Flare Blitz","Earthquake"], "ability": "Tough Claws", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 630},																									
-
-	},
-	"Charmeleon":{
-		"Lapis Cal (Rainbow)":{"level": 33, "moves": ["Flame Burst","Dragon Rage","Mega Punch","Smokescreen"], "ability": "Blaze", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 74},																									
-
-	},
-	"Chatot":{
-		"Malchous Taka (Rocky)":{"level": 25, "item": "Wide Lens", "moves": ["Sing","Nasty Plot","Chatter","Taunt"], "ability": "Keen Eye", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index": 36},																									
-		"Azurine Taka (Factory)":{"level": 45, "item": "Sitrus Berry", "moves": ["Heat Wave","Nasty Plot","Chatter","Roost"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 134},																									
-		"WTC Taka (Factory)":{"level": 73, "item": "Synthetic Seed", "moves": ["Heat Wave","Nasty Plot","Hyper Voice","Roost"], "ability": "Keen Eye", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 321},																									
-		"Tourmaline Taka (Desert)":{"level": 83, "item": "Normalium Z", "moves": ["Heat Wave","Nasty Plot","Boomburst","Encore"], "ability": "Keen Eye", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 419},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 83, "moves": ["Heat Wave","Nasty Plot","Hyper Voice","Encore"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 420},																									
-
-	},
-	"Cinccino":{
-		"Gym Noel (Grassy)":{"level": 54, "item": "King'S Rock", "moves": ["Tail Slap","U-Turn","Rock Blast","Bullet Seed"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 206},																									
-
-	},
-	"Clawitzer-Pulse":{
-		"Labradorra Zero (None)":{"level": 95, "item": "Wise Glasses", "moves": ["Overheat","Origin Pulse","Draco Meteor","Fleur Cannon"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 581},																									
-
-	},
-	"Clefable":{
-		"Byxbysion Ace (Wasteland)":{"level": 41, "item": "Sitrus Berry", "moves": ["Belly Drum","Drain Punch","Ice Punch","Meteor Mash"], "ability": "Magic Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 142},																									
-		"Gym Noel (Grassy)":{"level": 55, "item": "Elemental Seed", "moves": ["Moonblast","Calm Mind","Moonlight","Stored Power"], "ability": "Magic Guard", "nature": "Calm", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 204, "sa": 52, "sd": 0, "sp": 0}, "index": 211},																									
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 81, "item": "Leftovers", "moves": ["Blizzard","Dazzling Gleam","Fire Blast","Thunder Wave"], "ability": "Magic Guard", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index": 489},																									
-
-	},
-	"Conkeldurr":{
-		"Gym Samson (Big Top)":{"level": 71, "item": "Synthetic Seed", "moves": ["Drain Punch","Poison Jab","Knock Off","Bulk Up"], "ability": "Guts", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 259},																									
-
-	},
-	"Corsola":{
-		"Labradorra Audrey (None)":{"level": 89, "item": "Rindo Berry", "moves": ["Recover","Scald","Toxic","Power Gem"], "ability": "Regenerator", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 543},																									
-
-	},
-	"Cottonee":{
-		"Gym Florinia (Desert)":{"level": 24, "moves": ["Leech Seed","Poison Powder","Nature Power","Protect"], "ability": "Prankster", "nature": "Impish", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index": 31},																																			
-
-	},
-	"Cradily":{
-		"Gym Florinia (Desert)":{"level": 24, "moves": ["Stockpile","Smack Down","Recover","Sandstorm"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index": 34},																																			
-		"Fiore Florinia (None) Doubles":{"level": 71, "item": "Leftovers", "moves": ["Curse","Rock Slide","Recover","Seed Bomb"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 333},																									
-		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Stealth Rock","Earth Power","Rock Slide","Giga Drain"], "ability": "Storm Drain", "nature": "Quiet", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 557},																									
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Stockpile","Giga Drain","Recover","Stone Edge"], "ability": "Suction Cups", "nature": "Careful", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index": 600},																									
-		"Labr. VS Florinia (Glitch)":{"level": 95, "item": "Synthetic Seed", "moves": ["Stockpile","Giga Drain","Recover","Stone Edge"], "ability": "Suction Cups", "nature": "Careful", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index": 624},																									
-
-	},
-	"Croagunk":{
-		"Agent Corey (Corrosive)":{"level": 27, "item": "Black Glasses", "moves": ["Sucker Punch","Drain Punch","Venoshock","Mud Bomb"], "ability": "Dry Skin", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 46},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Sucker Punch","Drain Punch","Venoshock","Mud Bomb"], "ability": "Dry Skin", "nature": "Bashful", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 52},																									
-
-	},
-	"Crobat":{
-		"Agent Corey (Corrosive)":{"level": 30, "moves": ["Venom Drench","Venoshock","Air Cutter","Roost"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 48},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 30, "moves": ["Venom Drench","Venoshock","Air Cutter","Nasty Plot"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 6, "at": 6, "df": 6, "sa": 6, "sd": 6, "sp": 6}, "happiness": 255, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 54},																									
-		"E4 Heather (Mountain)":{"level": 100, "item": "Focus Sash", "moves": ["U-Turn","Tailwind","Brave Bird","Cross Poison"], "ability": "Infiltrator", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 656},																									
-
-	},
-	"Cubone":{
-		"Coral Cain (Misty)":{"level": 17, "moves": ["Bone Club","Double Kick","Skull Bash","Confide"], "ability": "Rock Head", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index": 22},																																			
-
-	},
-	"Darmanitan":{
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 68, "moves": ["Rock Slide","Flare Blitz","U-Turn","Hammer Arm"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 276},																									
-
-	},
-	"Dartrix":{
-		"Onyx Fern (None)":{"level": 25, "moves": ["Pluck","Razor Leaf","Ominous Wind","Nature Power"], "ability": "Overgrow", "nature": "Bashful", "ivs": {"hp": 28, "at": 28, "df": 28, "sa": 28, "sd": 28, "sp": 28}, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index": 28},																																			
-		"N. Obsidia Fern (None)":{"level": 32, "moves": ["Synthesis","Pluck","Ominous Wind","Razor Leaf"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 69},																									
-
-	},
-	"Decidueye":{
-		"Byxbysion Fern (Wasteland)":{"level": 45, "item": "Lum Berry", "moves": ["Leaf Blade","Swords Dance","Sucker Punch","Spirit Shackle"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 152},																									
-		"Route 1 Fern (Grassy)":{"level": 54, "item": "Elemental Seed", "moves": ["Swords Dance","Leaf Blade","Spirit Shackle","Shadow Sneak"], "ability": "Long Reach", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index": 217},																									
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 73, "moves": ["Spirit Shackle","Shadow Sneak","Brave Bird","Leaf Blade"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index": 360},																									
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Decidium Z", "moves": ["Spirit Shackle","Shadow Sneak","Swords Dance","Leaf Blade"], "ability": "Overgrow", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 655},																									
-
-	},
-	"Delphox":{
-		"Byxbysion Ace (Wasteland)":{"level": 43, "moves": ["Mystical Fire","Psyshock","Thunder Punch","Foul Play"], "ability": "Magician", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index": 146},																									
-		"Subseven Ace (Holy)":{"level": 62, "item": "Sitrus Berry", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Foul Play"], "ability": "Magician", "nature": "Modest", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 236},																									
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 69, "item": "Light Clay", "moves": ["Light Screen","Heat Wave","Flamethrower","Psyshock"], "ability": "Blaze", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 279},																									
-		"WTC Ace (Factory)":{"level": 72, "item": "Synthetic Seed", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Shadow Ball"], "ability": "Magician", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 324},																									
-
-	},
-	"Dhelmise":{
-		"Gym Shade (Short Circuit)":{"level": 35, "item": "Lum Berry", "moves": ["Brick Break","Giga Drain","Anchor Shot","Shadow Claw"], "ability": "Steelworker", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 98},																									
-
-	},
-	"Ditto":{
-		"E4 Elias (Holy)":{"level": 100, "item": "Choice Scarf", "moves": ["Transform"], "ability": "Imposter", "nature": "Timid", "hptypes": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "index": 672},																									
-
-	},
-	"Donphan":{
-		"Circus Alistasia (Big Top)":{"level": 66, "item": "Synthetic Seed", "moves": ["Earthquake","Ice Shard","Heavy Slam","Brutal Swing"], "ability": "Sturdy", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 251},																									
-		"Labradorra Terra (Glitch)":{"level": 1, "item": "Shell Bell", "moves": ["Ice Shard","Endeavor"], "ability": "Sturdy", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 0, "evs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "index": 633},																									
-
-	},
-	"Doublade":{
-		"Gym Shade (Short Circuit)":{"level": 37, "item": "Synthetic Seed", "moves": ["Gyro Ball","Shadow Claw","Brick Break","Swords Dance"], "ability": "No Guard", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 101},																									
-
-	},
-	"Dragalge":{
-		"Gym Aya (Wasteland) Doubles":{"level": 45, "item": "Black Sludge", "moves": ["Sludge Wave","Shadow Ball","Hydro Pump","Dragon Pulse"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 158},																									
-		"LCCC Aya (Various) Doubles":{"level": 69, "item": "Black Sludge", "moves": ["Sludge Bomb","Thunderbolt","Hydro Pump","Dragon Pulse"], "ability": "Adaptability", "nature": "Modest", "}s": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 260},																									
-
-	},
-	"Dragonite":{
-		"Gym Gargantuan (Dragon's Den)":{"level": 100, "item": "Iapapa Berry", "moves": ["Dragon Dance","Dragon Claw","Fire Punch","Extreme Speed"], "ability": "Multiscale", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 64, "df": 0, "sa": 0, "sd": 0, "sp": 192}, "index": 631},																									
-		"E4 Elias (Holy)":{"level": 100, "item": "Choice Band", "moves": ["Outrage","Extreme Speed","Earthquake","Brick Break"], "ability": "Multiscale", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 670},																									
-
-	},
-	"Drampa":{
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 46, "moves": ["Thunderbolt","Dragon Pulse","Nature Power","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 170},																									
-		"Belrose Connal (None)":{"level": 49, "moves": ["Thunderbolt","Dragon Pulse","Nature Power","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 193},																									
-		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Heat Wave","Blizzard","Surf","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 556},																									
-		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Heat Wave","Blizzard","Surf","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 565},																									
-		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Life Orb", "moves": ["Hyper Voice","Surf","Heat Wave","Roost"], "ability": "Berserk", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 584},																									
-		"E4 Elias (Holy)":{"level": 100, "item": "Wiki Berry", "moves": ["Nature Power","Dragon Pulse","Surf","Flamethrower"], "ability": "Berserk", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 671},																									
-
-	},
-	"Drapion":{
-		"Gym Aya (Wasteland) Doubles":{"level": 42, "item": "Muscle Band", "moves": ["Knock Off","Fire Fang","Cross Poison","Aqua Tail"], "ability": "Battle Armor", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 156},																									
-		"LCCC Aya (Various) Doubles":{"level": 67, "item": "Black Sludge", "moves": ["Throat Chop","Confuse Ray","Cross Poison","Aqua Tail"], "ability": "Battle Armor", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 265},																									
-
-	},
-	"Dustox":{
-		"Spinel Bennet (Mirror)":{"level": 49, "item": "Bright Powder", "moves": ["Moonlight","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Shield Dust", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 183},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Leftovers", "moves": ["Quiver Dance","Shadow Ball","Signal Beam","Moonlight"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 239},																									
-
-	},
-	"Eelektross":{
-		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Assault Vest", "moves": ["Thunderbolt","Giga Drain","Flamethrower","Acid Spray"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 363},																									
-
-	},
-	"Electivire":{
-		"Orphanage Connal (None)":{"level": 38, "moves": ["Volt Switch","Thunder Wave","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 92},																									
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 48, "moves": ["Thunder Punch","Fire Punch","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 173},																									
-		"Belrose Connal (None)":{"level": 51, "moves": ["Thunder Punch","Fire Punch","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 76, "at": 76, "df": 76, "sa": 76, "sd": 76, "sp": 76}, "index": 197},																									
-		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 95, "item": "Life Orb", "moves": ["Thunder Punch","Cross Chop","Earthquake","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index": 588},																									
-
-	},
-	"Electrode":{
-		"Gym Julia (Electric)":{"level": 15, "moves": ["Charge Beam","Sonic Boom","Rollout","Charge"], "ability": "Aftermath", "nature": "Bashful", "ivs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "evs": {"hp": 22, "at": 22, "df": 22, "sa": 22, "sd": 22, "sp": 22}, "index": 13},																																			
-		"Fiore Julia (None) Doubles":{"level": 70, "item": "Air Balloon", "moves": ["Foul Play","Thunderbolt","Hidden Power Ice","Explosion"], "ability": "Aftermath", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 334},																									
-
-	},
-	"Empoleon":{
-		"Gym Titania (Fairy Tale, Hail)":{"level": 85, "item": "Petaya Berry", "moves": ["Agility","Scald","Flash Cannon","Blizzard"], "ability": "Torrent", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index": 430},																									
-
-	},
-	"Espeon":{
-		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Twisted Spoon", "moves": ["Morning Sun","Psychic","Signal Beam","Yawn"], "ability": "Magic Bounce", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 105},																									
-		"Devon ZEL (Factory)":{"level": 77, "item": "Synthetic Seed", "moves": ["Dazzling Gleam","Light Screen","Reflect","Psyshock"], "ability": "Magic Bounce", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index": 405},																									
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 83, "item": "Twisted Spoon", "moves": ["Dazzling Gleam","Psyshock","Calm Mind","Signal Beam"], "ability": "Magic Bounce", "nature": "Timid", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 493},																									
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 95, "item": "Normal Gem", "moves": ["Psychic","Shadow Ball","Hyper Beam","Grass Knot"], "ability": "Magic Bounce", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 612},																									
-
-	},
-	"Excadrill":{
-		"Gym Terra (Glitch)":{"level": 73, "item": "Life Orb", "moves": ["Earthquake","X-Scissor","Rock Slide","Swords Dance"], "ability": "Sand Rush", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 310},																									
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "item": "Life Orb", "moves": ["Earthquake","Rock Slide","Swords Dance","Iron Head"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 370},																									
-		"Gym Titania (Fairy Tale, Hail)":{"level": 86, "item": "Magical Seed", "moves": ["Sandstorm","Earthquake","Swords Dance","Smartstrike"], "ability": "Sand Rush", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 431},																									
-		"Agate Solaris (None)":{"level": 90, "item": "Focus Sash", "moves": ["Earthquake","Rock Slide","Swords Dance","Iron Head"], "ability": "Sand Rush", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 507},																									
-		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Chople Berry", "moves": ["Drill Run","Rock Slide","Iron Head","Swords Dance"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 538},																									
-		"Labradorra Terra (Glitch)":{"level": 96, "item": "Life Orb", "moves": ["Earthquake","X-Scissor","Rock Slide","Swords Dance"], "ability": "Mold Breaker", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 632},																									
-
-	},
-	"Exeggcute":{
-		"Malchous Taka (Rocky)":{"level": 22, "moves": ["Poison Powder","Leech Seed","Barrage","Bullet Seed"], "ability": "Harvest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index": 35},																									
-
-	},
-	"Exeggutor-Alola":{
-		"Azurine Taka (Factory)":{"level": 41, "item": "Sitrus Berry", "moves": ["Dragon Hammer","Wood Hammer","Hypnosis","Nature Power"], "ability": "Harvest", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 132},																									
-		"WTC Taka (Factory)":{"level": 71, "item": "Sitrus Berry", "moves": ["Trick Room","Dragon Hammer","Stomping Tantrum","Seed Bomb"], "ability": "Harvest", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 317},																									
-		"Tourmaline Taka (Desert)":{"level": 77, "item": "Telluric Seed", "moves": ["Nature Power","Dragon Hammer","Earthquake","Wood Hammer"], "ability": "Harvest", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 416},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 77, "moves": ["Nature Power","Dragon Hammer","Earthquake","Wood Hammer"], "ability": "Harvest", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 421},																									
-
-	},
-	"Exploud":{
-		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "moves": ["Boomburst","Ice Beam","Earthquake","Surf"], "ability": "Soundproof", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 52, "df": 0, "sa": 200, "sd": 0, "sp": 0}, "index": 387},																									
-		"Devon VS Arclight (Factory)":{"level": 75, "item": "Sitrus Berry", "moves": ["Boomburst","Ice Beam","Earthquake","Surf"], "ability": "Soundproof", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 52, "df": 0, "sa": 200, "sd": 0, "sp": 0}, "index": 398},																									
-
-	},
-	"Ferroseed":{
-		"Gym Florinia (Desert)":{"level": 22, "item": "Telluric Seed", "moves": ["Leech Seed","Nature Power","Pin Missile","Secret Power"], "ability": "Iron Barbs", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index": 32},																																			
-
-	},
-	"Ferrothorn":{
-		"Fiore Florinia (None) Doubles":{"level": 69, "item": "Rocky Helmet", "moves": ["Leech Seed","Thunder Wave","Power Whip","Gyro Ball"], "ability": "Iron Barbs", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 330},																									
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 93, "item": "Normal Gem", "moves": ["Explosion","Thunder Wave","Power Whip","Gyro Ball"], "ability": "Iron Barbs", "nature": "Brave", "evs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 597},																									
-		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Assault Vest", "moves": ["Explosion","Hidden Power Water","Giga Drain","Nature Power"], "ability": "Iron Barbs", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 621},																									
-
-	},
-	"Florges":{
-		"Gym Adrienn (Misty) Doubles":{"level": 84, "item": "Leftovers", "moves": ["Dazzling Gleam","Hidden Power Ground","Wish","Nature Power"], "ability": "Flower Veil", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 413},																									
-		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Synthesis","Dazzling Gleam","Light Screen","Energy Ball"], "ability": "Flower Veil", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 561},																									
-		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Synthesis","Dazzling Gleam","Light Screen","Energy Ball"], "ability": "Flower Veil", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 569},																									
-
-	},
-	"Fraxure":{
-		"Byxbysion Fern (Wasteland)":{"level": 42, "moves": ["Taunt","Dual Chop","Dragon Dance","Stomping Tantrum"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 150},																									
-
-	},
-	"Froslass":{
-		"Gym Serra (Mirror)":{"level": 50, "item": "Bright Powder", "moves": ["Ice Beam","Double Team","Pain Split","Shadow Ball"], "ability": "Snow Cloak", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 191},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 84, "item": "Icium Z", "moves": ["Blizzard","Destiny Bond","Thunderbolt","Shadow Ball"], "ability": "Snow Cloak", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 488},																									
-
-	},
-	"Gallade":{
-		"Apophyll Victoria (Ashen Beach)":{"level": 40, "item": "Shell Bell", "moves": ["Leaf Blade","Night Slash","Psycho Cut","Swords Dance"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index": 111},																									
-		"Apophyll Kiki (Ashen Beach)":{"level": 41, "item": "Telluric Seed", "moves": ["Night Slash","Strength","Poison Jab","Rock Slide"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 122},																									
-		"Pyrous Victoria (Super-Heated)":{"level": 39, "moves": ["Leaf Blade","Night Slash","Psycho Cut","Swords Dance"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 139},																									
-		"Gym Radomus (Chess: Bishop) Doubles":{"level": 58, "item": "Muscle Band", "moves": ["Strength","Close Combat","Knock Off","Fire Punch"], "ability": "Justified", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 227},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 76, "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 378},																									
-		"Devon VS Victoria (Factory)":{"level": 77, "item": "Salac Berry", "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 392},																									
+var SETDEX_SM = {		
+	"Abomasnow":{	
+		"Route 4 Nature Girl Ellen (Forest)":{"level":69,"moves":["Wood Hammer","Earthquake","Blizzard","Protect"],"ability":"Snow Warning","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2170},
 		
-	},
-	"Gallade-Mega":{
-		"Labradorra Tag Victoria (None) Doubles":{"level": 92, "item": "Galladite", "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Inner Focus", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 527},																									
-
-	},
-	"Galvantula":{
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Sticky Web","Bug Buzz","Thunder","Electroweb"], "ability": "Swarm", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 662},																									
-
-	},
-	"Garchomp":{
-		"Pyrous Solaris (Super-Heated)":{"level": 75, "item": "Leftovers", "moves": ["Dragon Rush","Earthquake","Fire Fang","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "gender": "M", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 140},																									
-		"Gym Terra (Glitch)":{"level": 75, "item": "Assault Vest", "moves": ["Draco Meteor","Bulldoze","Stone Edge","Flamethrower"], "ability": "Rough Skin", "nature": "Jolly", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 0, "sd": 252, "sp": 252}, "index": 313},																									
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 76, "moves": ["Dragon Rush","Earthquake","Fire Fang","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 371},																									
-		"Statuary Garchomp (None)":{"level": 75, "item": "Muscle Band", "moves": ["Earthquake","Dragon Rush","Crunch","Stone Edge"], "ability": "Sand Veil", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 426},																									
-		"Gym Gargantuan (Dragon's Den)":{"level": 96, "item": "Choice Scarf", "moves": ["Earthquake","Dragon Claw","Poison Jab","Iron Head"], "ability": "Rough Skin", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 628},																									
-		"Labradorra Terra (Glitch)":{"level": 98, "item": "Assault Vest", "moves": ["Draco Meteor","Bulldoze","Stone Edge","Flamethrower"], "ability": "Rough Skin", "nature": "Jolly", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 0, "sd": 252, "sp": 252}, "index": 637},																									
-
-	},
-	"Garchomp-Mega":{
-		"Agate Solaris (None)":{"level": 93, "item": "Garchompite", "moves": ["Swords Dance","Earthquake","Dragon Claw","Stone Edge"], "ability": "Sand Force", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 508},																									
-
-	},
-	"Gardevoir":{
-		"Gym Radomus (Chess: Queen) Doubles":{"level": 60, "item": "Sitrus Berry", "moves": ["Calm Mind","Wish","Psychic","Moonblast"], "ability": "Trace", "nature": "Sassy", "names": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 5, "sp": 0}, "index": 230},																									
-		"Gym Adrienn (Misty) Doubles":{"level": 77, "item": "Wise Glasses", "moves": ["Icy Wind","Dazzling Gleam","Psychic","Focus Blast"], "ability": "Telepathy", "nature": "Timid", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index": 409},																									
-
-	},
-	"Gardevoir-Mega":{
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 85, "item": "Gardevoirite", "moves": ["Calm Mind","Thunderbolt","Psychic","Hyper Voice"], "ability": "Pixilate", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 494},																									
-
-	},
-	"Gengar":{
-		"Gym Shade (Short Circuit)":{"level": 35, "item": "Wide Lens", "moves": ["Hypnosis","Dream Eater","Shadow Ball","Thunderbolt"], "ability": "Cursed Body", "nature": "Bashful", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 97},																									
-		"E4 Heather (Mountain)":{"level": 100, "item": "Life Orb", "moves": ["Thunder","Shadow Ball","Icy Wind","Sludge Bomb"], "ability": "Cursed Body", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 660},																									
-
-	},
-	"Geodude-Alola":{
-		"Gym Julia (Electric)":{"level": 12, "moves": ["Self-Destruct","Tackle","Charge","Rollout"], "ability": "Galvanize", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index": 9},																																			
-
-	},
-	"Gigalith":{
-		"Agate Partner Hardy (Various) Doubles":{"level": 90, "moves": ["Stomping Tantrum","Rock Slide","Rock Smash","Throat Chop"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 497},																									
-		"Gym Hardy (Rocky) Doubles":{"level": 90, "item": "Choice Band", "moves": ["Stomping Tantrum","Rock Slide","Rock Smash","Throat Chop"], "ability": "Sand Stream", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 509},																									
-
-	},
-	"Girafarig":{
-		"Gym Noel (Grassy)":{"level": 54, "item": "Twisted Spoon", "moves": ["Psychic","Thunderbolt","Thunder Wave","Hidden Power Fire"], "ability": "Sap Sipper", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 209},																									
-
-	},
-	"Glaceon":{
-		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Never-Melt Ice", "moves": ["Ice Shard","Icy Wind","Mirror Coat","Bite"], "ability": "Snow Cloak", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 104},																									
-		"Gym Serra (Mirror)":{"level": 48, "item": "Light Clay", "moves": ["Wish","Ice Beam","Signal Beam","Aurora Veil"], "ability": "Snow Cloak", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 186},																									
-		"Devon ZEL (Factory)":{"level": 77, "item": "Synthetic Seed", "moves": ["Blizzard","Shadow Ball","Yawn","Wish"], "ability": "Snow Cloak", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 403},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 83, "item": "Light Clay", "moves": ["Aurora Veil","Blizzard","Signal Beam","Shadow Ball"], "ability": "Snow Cloak", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 156, "sd": 0, "sp": 252}, "index": 487},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Blizzard","Wish","Hyper Voice","Helping Hand"], "ability": "Snow Cloak", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 252}, "index": 606},																									
-
-	},
-	"Gligar":{
-		"Azurine Taka (Factory)":{"level": 42, "moves": ["U-Turn","Acrobatics","Night Slash","Roost"], "ability": "Sand Veil", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 133},																									
-
-	},
-	"Gliscor":{
-		"WTC Taka (Factory)":{"level": 71, "item": "Toxic Orb", "moves": ["Protect","Earthquake","Acrobatics","Roost"], "ability": "Poison Heal", "nature": "Brave", "evs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 319},																									
-		"Gym Ciel (Big Top)":{"level": 75, "item": "Toxic Orb", "moves": ["Earthquake","Acrobatics","Roost","Defog"], "ability": "Poison Heal", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 375},																									
-		"Tourmaline Taka (Desert)":{"level": 78, "item": "Toxic Orb", "moves": ["Stealth Rock","Earthquake","U-Turn","Roost"], "ability": "Poison Heal", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 415},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 78, "item": "Toxic Orb", "moves": ["Stealth Rock","Earthquake","U-Turn","Roost"], "ability": "Poison Heal", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 423},																									
-
-	},
-	"Golem":{
-		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 70, "moves": ["Explosion","Earthquake","Rock Slide","Gyro Ball"], "ability": "Sturdy", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 348},																									
-		"Labradorra Kenan (None)":{"level": 88, "item": "Custap Berry", "moves": ["Explosion","Earthquake","Rock Slide","Gyro Ball"], "ability": "Sturdy", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 516},																									
-
-	},
-	"Golem-Alola":{
-		"Fiore Julia (None) Doubles":{"level": 67, "item": "Assault Vest", "moves": ["Rock Slide","Explosion","Double-Edge","Heavy Slam"], "ability": "Galvanize", "nature": "Adamant", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 338},																									
-
-	},
-	"Golisopod":{
-		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Muscle Band", "moves": ["Liquidation","First Impression","Leech Life","Brick Break"], "ability": "Emergency Exit", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 534},																									
-
-	},
-	"Golurk":{
-		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 66, "moves": ["Dynamic Punch","Bulldoze","Rock Slide","Phantom Force"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 267},																									
-		"Ametrine Aster (Icy)":{"level": 68, "moves": ["Dynamic Punch","Earthquake","Stone Edge","Shadow Punch"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 296},																									
-		"Glass Aster (Factory)":{"level": 84, "moves": ["Dynamic Punch","Earthquake","Thunder Punch","Shadow Punch"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 460},																									
-
-	},
-	"Goodra":{
-		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Wide Lens", "moves": ["Muddy Water","Blizzard","Power Whip","Fire Blast"], "ability": "Gooey", "nature": "Mild", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 558},																									
-		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Wide Lens", "moves": ["Muddy Water","Blizzard","Power Whip","Fire Blast"], "ability": "Gooey", "nature": "Mild", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 566},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Dragon Pulse","Muddy Water","Thunderbolt","Focus Blast"], "ability": "Sap Sipper", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index": 605},																									
-
-	},
-	"Gothitelle":{
-		"Glass 2 ??? (Factory)":{"level": 83, "item": "Leftovers", "moves": ["Calm Mind","Charge Beam","Foul Play","Psychic"], "ability": "Shadow Tag", "nature": "Calm", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 478},																									
-		"Labradorra Avril/Steven (A, None) Doubles":{"level": 90, "item": "Wise Glasses", "moves": ["Psychic","Dark Pulse","Calm Mind","Thunderbolt"], "ability": "Frisk", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 535},																									
+	},	
+	"Abra-Pulse":{	
+		"Tanzan ZEL (Factory)":{"level": 75, "item": "Silk Scarf", "moves": ["Hyper Beam","Dark Pulse","Hyper Beam","Hyper Beam"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":214},
+		"Meteor Lin 1 Zek. (None)":{"level": 100, "item": "Life Orb", "moves": ["Psyshock","Flash Cannon","Aura Sphere","Shadow Ball"], "ability": "Magic Guard", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":695},
+		"Meteor Lin 1 Resh. (None)":{"level": 100, "item": "Life Orb", "moves": ["Psyshock","Flash Cannon","Aura Sphere","Shadow Ball"], "ability": "Magic Guard", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":701},
+		
+	},	
+	"Absol":{	
+		"Gym Luna (Dark Crystal)":{"level": 64, "item": "Life Orb", "moves": ["Swords Dance","Sucker Punch","Play Rough","Night Slash"], "ability": "Pressure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":253},
+		"Klefki Mattie/Maddie (Mad, None)":{"level":73,"item":"White Herb","moves":["Sucker Punch","Play Rough","Fire Blast","Superpower"],"ability":"Super Luck","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":999},
+		"Desert Ace Trainer Altimis (Desert)":{"level":76,"moves":["Night Slash","Psycho Cut","Stone Edge","Shadow Claw"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2217},
+		
+	},	
+	"Absol-Mega":{	
+		"Glass 2 ??? (Factory, Pressure)":{"level": 85, "item": "Absolite", "moves": ["Swords Dance","Superpower","Play Rough","Knock Off"], "ability": "Magic Bounce", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":491},
+		
+	},	
+	"Accelgor":{	
+		"Museum Devin/Sanchez (S, Cave) Doubles":{"level":45,"moves":["Agility","Giga Drain","U-turn","Bug Buzz"],"ability":"Hydration","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":948},
+		"Glass Meteor Sanchez (Factory)":{"level":81,"moves":["Encore","Struggle Bug","Sludge Bomb","Giga Drain"],"ability":"Hydration","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1571},
+		
+	},	
+	"Aegislash-Blade":{	
+		"WTC Titania (Factory) Doubles":{"level": 80, "item": "Leftovers", "moves": ["Flash Cannon","King's Shield","Shadow Ball","Wide Guard"], "ability": "Stance Change", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":323},
+		"Gym Titania (Fairy Tale, Hail)":{"level": 90, "item": "Magical Seed", "moves": ["King's Shield","Shadow Sneak","Swords Dance","Sacred Sword"], "ability": "Stance Change", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":444},
+		"Spirit Fezz (Swamp)":{"level": 95, "item": "Leftovers", "moves": ["Swords Dance","Shadow Sneak","Iron Head","King's Shield"], "ability": "Stance Change", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":736},
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Leftovers", "moves": ["Sacred Sword","King's Shield","Shadow Sneak","Rock Slide"], "ability": "Stance Change", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 0, "at": 252, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":785},
+		"Agate Meteor Christopher (None)":{"level":86,"moves":["Autotomize","King's Shield","Shadow Ball","Flash Cannon"],"ability":"Stance Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1601},
+		"Opal Grind Ch8 Fawkes (None)":{"level":57,"moves":["Swords Dance","Aerial Ace","King's Shield","Sacred Sword"],"ability":"Stance Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1795},
+		"Opal Grind Ch14 Fawkes (None)":{"level":83,"item":"Leftovers","moves":["King's Shield","Shadow Sneak","Iron Head","Shadow Ball"],"ability":"Stance Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1911},
+		
+	},	
+	"Aerodactyl":{	
+		"Agate Partner Hardy (Various) Doubles":{"level": 92, "moves": ["Aqua Tail","Rock Slide","Aerial Ace","Rock Smash"], "ability": "Pressure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":510},
+		"Spirit Josh (Big Top)":{"level": 95, "item": "Focus Sash", "moves": ["Stealth Rock","Taunt","Stone Edge","Earthquake"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":817},
+		"Amet. Meteor Demian/Antoine (D, SnowM) 2":{"level":73,"moves":["Stone Edge","Earthquake","Aqua Tail","Roost"],"ability":"Unnerve","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1458},
+		"Glitch World 'M (Glitch)":{"level":73,"moves":["Hyper Beam","Earthquake","Stone Edge","Hone Claws"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1477},
+		
+	},	
+	"Aerodactyl-Mega":{	
+		"Gym Hardy (Rocky) Doubles":{"level": 92, "item": "Aerodactylite", "moves": ["Aqua Tail","Rock Slide","Aerial Ace","Rock Smash"], "ability": "Tough Claws", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":520},
+		
+	},	
+	"Aggron":{	
+		"Railnet Resto Aggrons (L1, Cave) Doubles":{"level":75,"item":"Rockium Z","moves":["Rock Slide","Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1069},
+		"Railnet Resto Aggrons (L2, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1070},
+		"Railnet Resto Aggrons (L3, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1071},
+		"Railnet Resto Aggrons (L4, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1072},
+		"Railnet Resto Aggrons (R1, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1073},
+		"Railnet Resto Aggrons (R2, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1074},
+		"Railnet Resto Aggrons (R3, Cave) Doubles":{"level":75,"item":"Telluric Seed","moves":["Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1075},
+		"Railnet Resto Aggrons (R4, Cave) Doubles":{"level":75,"item":"Rockium Z","moves":["Rock Slide","Bulldoze"],"ability":"Rock Head","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1076},
+		"Tanzan Meteor Ricardo (Factory)":{"level":53,"moves":["Iron Tail","Iron Defense","Double-Edge","Autotomize"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1341},
+		"Vanhanen Meteor Ricardo (Grassy)":{"level":57,"moves":["Iron Defense","Double-Edge","Autotomize","Heavy Slam"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1375},
+		"Amet. Meteor Ricardo/Hilda (R, SnowM) Doub":{"level":73,"moves":["Iron Head","Head Smash","Earthquake","Curse"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1467},
+		"Glass Meteor Geoff (Factory)":{"level":80,"moves":["Heavy Slam","Head Smash","Ice Punch","Earthquake"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1560},
+		"Agate Meteor Ricardo (None)":{"level":88,"moves":["Iron Head","Head Smash","Earthquake","Curse"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1596},
+		
+	},	
+	"Aipom":{	
+		"Opal Street Rat Andreas (None)":{"level":5,"moves":["Scratch","Tail Whip","Sand Attack"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1954},
+		
+	},	
+	"Alakazam":{	
+		"Subseven Ace (Holy)":{"level": 60, "item": "Choice Scarf", "moves": ["Psychic","Signal Beam","Trick","Energy Ball"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":240},
+		"Devon ZEL (Factory)":{"level": 74, "item": "Twisted Spoon", "moves": ["Psyshock","Recover","Shadow Ball","Charge Beam"], "ability": "Magic Guard", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":413},
+		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 82, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Psychic","Calm Mind","Dazzling Gleam"], "ability": "Magic Guard", "nature": "Modest", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":502},
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Life Orb", "moves": ["Psychic","Shadow Ball","Grass Knot","Dazzling Gleam"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":619},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Magical Seed", "moves": ["Psychic","Focus Blast","Shadow Ball","Energy Ball"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":716},
+		"Spirit Kamina (Chess: Pawn)":{"level": 95, "item": "Life Orb", "moves": ["Psyshock","Focus Blast","Shadow Ball","Hidden Power Ice"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":751},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Life Orb", "moves": ["Psyshock","Focus Blast","Shadow Ball","Hidden Power Ice"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":803},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "Magical Seed", "moves": ["Psychic","Focus Blast","Shadow Ball","Energy Ball"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":842},
+		"Mega-Z Ring Eustace (None)":{"level":84,"item":"Life Orb","moves":["Psychic","Focus Blast","Recover","Charge Beam"],"ability":"Magic Guard","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1024},
+		"Subseven Acolyte Wes (Holy)":{"level":61,"moves":["Psychic","Calm Mind","Future Sight","Trick"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1418},
+		"WTC Meteor Angela/Wes (W, Factory) Doub":{"level":74,"moves":["Dazzling Gleam","Psychic","Hidden Power Fire","Energy Ball"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1490},
+		"Devon Meteor Allyssa/Bishop (A, Factory) Doub":{"level":75,"moves":["Dazzling Gleam","Psychic","Charge Beam","Focus Blast"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1510},
+		
+	},	
+	"Alakazam-Mega":{	
+		"Calc. Connal/Mime (C, ShCirc, Syn) Doub":{"level": 95, "item": "Alakazite", "moves": ["Dazzling Gleam","Psychic","Signal Beam","Shadow Ball"], "ability": "Trace", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":597},
+		
+	},	
+	"Alomomola":{	
+		"Azurine Lake Swimmer Tsuki (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Wish","Protect","Scald","Knock Off"],"ability":"Regenerator","nature":"Bold","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2189},
+		
+	},	
+	"Altaria":{	
+		"Route 4 Hiker Karim (Forest)":{"level":89,"item":"Leftovers","moves":["Heat Wave","Tailwind","Roost","Dragon Pulse"],"ability":"Natural Cure","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1088},
+		"Labradorra Gym Knight Frey (Dragon's Den)":{"level":87,"item":"Choice Band","moves":["Dragon Rush","Earthquake","Play Rough","Iron Tail"],"ability":"Cloud Nine","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1649},
+		
+	},	
+	"Altaria-Mega":{	
+		"Gym Ciel (Big Top, Cloud Nine)":{"level": 78, "item": "Altarianite", "moves": ["Earthquake","Hyper Voice","Roost","Sing"], "ability": "Pixilate", "nature": "Rash", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":386},
+		
+	},	
+	"Amaura":{	
+		"Spinel Gym Posh Lallia (Mirror)":{"level":45,"moves":["Avalanche","Hail","Nature Power","Encore"],"ability":"Refrigerate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":1309},
+		
+	},	
+	"Ambipom":{	
+		"Circus Clown Drolly (None)":{"level":66,"item":"Air Balloon","moves":["Fake Out","Last Resort"],"ability":"Technician","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2142},
+		
+	},	
+	"Amoonguss":{	
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Black Sludge", "moves": ["Spore","Giga Drain","Rage Powder","Hidden Power Ground"], "ability": "Regenerator", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 176, "sa": 0, "sd": 80, "sp": 0}, "index":732},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Black Sludge", "moves": ["Spore","Giga Drain","Clear Smog","Hidden Power Fire"], "ability": "Regenerator", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 176, "sa": 0, "sd": 80, "sp": 0}, "index":778},
+		"Gang Intimidation Craudburry (None)":{"level":61,"moves":["Spore","Giga Drain","Sludge Bomb","Synthesis"],"ability":"Effect Spore","nature":"Calm","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":958},
+		"Grind Indra 1 White (None)":{"level":58,"item":"Air Balloon","moves":["Spore","Giga Drain","Sludge Bomb","Foul Play"],"ability":"Regenerator","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1858},
+		"Grind Indra 2 White (None)":{"level":68,"item":"Black Sludge","moves":["Spore","Giga Drain","Sludge Bomb","Foul Play"],"ability":"Regenerator","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 252,"at": 0,"df": 136,"sa": 0,"sd": 120,"sp": 0},"index":1888},
+		
+	},	
+	"Ampharos":{	
+		"Klefki Mattie/Maddie (Mat, None)":{"level":73,"item":"Light Clay","moves":["Thunder","Signal Beam","Dragon Pulse","Light Screen"],"ability":"Static","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":995},
+		"Apophyll Grind Ch14 Nathaniel (None)":{"level":75,"moves":["Thunder","Dragon Pulse","Thunder Wave","Focus Blast"],"ability":"Static","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1897},
+		"Route 1 Techie Cameron (Grassy)":{"level":55,"moves":["Power Gem","Discharge","Cotton Guard","Signal Beam"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":2111},
+		
+	},	
+	"Ampharos-Mega":{	
+		"Devon Part. Arclight (Fact., Static) Doub":{"level": 78, "item": "Ampharosite", "moves": ["Discharge","Zap Cannon","Dragon Pulse","Agility"], "ability": "Mold Breaker", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 32, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 224}, "index":398},
+		"Devon VS Arclight (Factory, Static)":{"level": 79, "item": "Ampharosite", "moves": ["Discharge","Zap Cannon","Dragon Pulse","Agility"], "ability": "Mold Breaker", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 32, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 224}, "index":410},
+		
+	},	
+	"Anorith":{	
+		"Gym Shelly (Forest) Doubles":{"level": 32, "item": "Telluric Seed", "moves": ["Aqua Jet","Rapid Spin","Knock Off","Rock Slide"], "ability": "Swift Swim", "nature": "Quirky", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":79},
+		"Orphanage Shelly (None) Doubles":{"level": 32, "item": "Muscle Band", "moves": ["Aqua Jet","Rapid Spin","Knock Off","Rock Slide"], "ability": "Swift Swim", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":90},
+		
+	},	
+	"Araquanid":{	
+		"Gym Shelly (Forest) Doubles":{"level": 31, "item": "Damp Rock", "moves": ["Rain Dance","Bubble Beam","Icy Wind","Bug Bite"], "ability": "Water Bubble", "nature": "Bashful", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":80},
+		"Orphanage Shelly (None) Doubles":{"level": 32, "moves": ["Rain Dance","Bubble Beam","Icy Wind","Bug Bite"], "ability": "Water Bubble", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":91},
+		"Treecko Street Rat Alphonso (Factory)":{"level":77,"item":"Assault Vest","moves":["Liquidation","Leech Life","Poison Jab","Crunch"],"ability":"Water Bubble","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1027},
+		
+	},	
+	"Arbok":{	
+		"Piplup Street Rat Drake (None)":{"level":60,"moves":["Coil","Gunk Shot","Earthquake","Fire Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":953},
+		"Route 1 Ranger Steve (Grassy)":{"level":50,"moves":["Acid Spray","Mud Bomb","Gastro Acid","Belch"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":2117},
+		
+	},	
+	"Arcanine":{	
+		"Ametrine Cal (Various) Doubles":{"level": 70, "moves": ["Extreme Speed","Flare Blitz","Crunch","Outrage"], "ability": "Intimidate", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":300},
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Life Orb", "moves": ["Extreme Speed","Flare Blitz","Close Combat","Outrage"], "ability": "Intimidate", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":600},
+		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Life Orb", "moves": ["Extreme Speed","Flare Blitz","Close Combat","Outrage"], "ability": "Intimidate", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":624},
+		"Klefki Police Seer (None)":{"level":76,"item":"Power Herb","moves":["Solar Beam","Flamethrower","Dragon Pulse","Hidden Power Rock"],"ability":"Flash Fire","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":993},
+		"Ametrine Meteor Bruno/Ray (B, SnowM) Doub":{"level":69,"moves":["Heat Wave","Extreme Speed","Close Combat","Iron Tail"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1442},
+		"Glass Meteor Bruno (Factory)":{"level":79,"moves":["Heat Wave","Extreme Speed","Close Combat","Iron Tail"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1561},
+		"Labradorra Gym Knight Edgard (Dragon's Den)":{"level":87,"item":"Life Orb","moves":["Flare Blitz","Crunch","Extreme Speed","Outrage"],"ability":"Intimidate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1653},
+		"Opal Grind Ch14 Zach/Beau (Z, None)":{"level":85,"item":"Choice Band","moves":["Extreme Speed","Flare Blitz","Wild Charge","Bulldoze"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1939},
+		
+	},	
+	"Arceus":{	
+		"Citae Astrae El (Crystal Cavern)":{"level": 75, "item": "Leftovers", "moves": ["Recover","Judgment","Shadow Ball","Focus Blast"], "ability": "Multitype", "nature": "Quiet", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":233},
+		
+	},	
+	"Arceus-.Pulse":{	
+		"L Route Lin 2 (New World)":{"level": 100, "item": "Life Orb", "moves": ["Moonlight","Judgment","Doom Desire","Dark Pulse"], "ability": "Multitype", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":707},
+		"A Route Lin 3 (New World)":{"level": 100, "item": "Darkinium Z", "moves": ["Moonlight","Judgment","Doom Desire","Dark Pulse"], "ability": "Multitype", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":714},
+		
+	},	
+	"Archen":{	
+		"Apop Beach Hiker Jack (Rocky)":{"level":38,"moves":["Acrobatics","Dragon Breath","Crunch","Endeavor"],"ability":"Defeatist","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2084},
+		
+	},	
+	"Archeops":{	
+		"Agate Partner Hardy (Various) Doubles":{"level": 91, "item": "Sitrus Berry", "moves": ["Rock Slide","Aqua Tail","Endeavor","Acrobatics"], "ability": "Defeatist", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":508},
+		"Gym Hardy (Rocky) Doubles":{"level": 91, "item": "Flying Gem", "moves": ["Rock Slide","Aqua Tail","Endeavor","Acrobatics"], "ability": "Defeatist", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":522},
+		"E4 Heather (Mountain)":{"level": 100, "item": "Flying Gem", "moves": ["Tailwind","Stone Edge","Acrobatics","Earthquake"], "ability": "Defeatist", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":669},
+		"Treecko Street Rat Alphonso (Factory)":{"level":75,"item":"Sitrus Berry","moves":["Rock Slide","Acrobatics","U-turn","Crunch"],"ability":"Defeatist","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1025},
+		
+	},	
+	"Ariados":{	
+		"Glass Meteor Sanchez (Factory)":{"level":80,"moves":["Shadow Sneak","Sucker Punch","Rage Powder","Sticky Web"],"ability":"Sniper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1569},
+		
+	},	
+	"Armaldo":{	
+		"Mega-Z Ring McKrezzy (None)":{"level":78,"item":"Passho Berry","moves":["Swords Dance","X-Scissor","Rock Slide","Aqua Tail"],"ability":"Swift Swim","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1010},
+		"WTC Meteor Angela/Wes (W, Factory) Doub":{"level":73,"moves":["Aqua Tail","X-Scissor","Stone Edge","Knock Off"],"ability":"Battle Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1489},
+		"Glass Meteor Bruno (Factory)":{"level":80,"moves":["Stone Edge","Earthquake","Knock Off","Liquidation"],"ability":"Battle Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1564},
+		"Agate Gym Guitarist Alistair (Rocky)":{"level":89,"item":"Choice Band","moves":["Liquidation","X-Scissor","Stone Edge","Brick Break"],"ability":"Swift Swim","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1637},
+		
+	},	
+	"Aromatisse":{	
+		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 93, "item": "Amplifield Rock", "moves": ["Dazzling Gleam","Psychic","Flash Cannon","Thunder"], "ability": "Aroma Veil", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 200, "at": 0, "df": 56, "sa": 252, "sd": 0, "sp": 0}, "index":593},
+		"Orphanage Timothy/Chris (C, None)":{"level":32,"moves":["Draining Kiss","Aromatherapy","Attract","Moonblast"],"ability":"Healer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1198},
+		
+	},	
+	"Aron":{	
+		"Hiker Maximus (Desert)":{"level":1,"item":"Shell Bell","moves":["Endeavor"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 1,"at": 1,"df": 1,"sa": 1,"sd": 1,"sp": 1},"index":435},
+		"Railnet Resto Arons (1, Cave) Doubles":{"level":20,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1063},
+		"Railnet Resto Arons (2, Cave) Doubles":{"level":20,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1064},
+		"Railnet Resto Arons (3, Cave) Doubles":{"level":20,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1065},
+		"Railnet Resto Arons (4, Cave) Doubles":{"level":20,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1066},
+		"MW Meteor Hilda/Ricardo (R, Factory)":{"level":12,"moves":["Harden","Mud-Slap","Headbutt","Metal Claw"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1105},
+		
+	},	
+	"Audino":{	
+		"Route 4 Ranger Lassie (Forest)":{"level":83,"moves":["Wish","Protect","Toxic","Double-Edge"],"ability":"Healer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2174},
+		
+	},	
+	"Aurorus":{	
+		"Devon ZEL (Factory)":{"level": 74, "item": "Focus Sash", "moves": ["Flash Cannon","Stealth Rock","Ice Beam","Thunderbolt"], "ability": "Snow Warning", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":411},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Choice Specs", "moves": ["Blizzard","Earth Power","Flash Cannon","Hidden Power Rock"], "ability": "Snow Warning", "nature": "Modest", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index":614},
+		"Glass Meteor Sanchez (Factory)":{"level":82,"moves":["Blizzard","Thunderbolt","Earth Power","Psychic"],"ability":"Snow Warning","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1573},
+		"Agate Gym Guitarist Xavier (Rocky)":{"level":87,"item":"Icy Rock","moves":["Blizzard","Ancient Power","Freeze-Dry","Thunderbolt"],"ability":"Snow Warning","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 6,"sp": 0},"index":1638},
+		"Opal Grind Ch14 Gibson (None)":{"level":85,"item":"Assault Vest","moves":["Hyper Beam","Nature Power","Thunder","Earth Power"],"ability":"Refrigerate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1908},
+		
+	},	
+	"Avalugg-Pulse":{	
+		"PULSE Avalugg (Icy)":{"level": 70, "item": "Leftovers", "moves": ["Hammer Arm","Earthquake","Recover","Avalanche"], "ability": "Solid Rock", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":291},
+		
+	},	
+	"Axew":{	
+		"7th Street Punk Celina (None)":{"level":59,"moves":["Dragon Pulse","Swords Dance","Guillotine","Outrage"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2138},
+		
+	},	
+	"Azumarill":{	
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Sitrus Berry", "moves": ["Belly Drum","Aqua Jet","Play Rough","Brick Break"], "ability": "Huge Power", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":784},
+		"Mega-Z Ring Q Santiago (None)":{"level":79,"moves":["Aqua Jet","Play Rough","Belly Drum","Waterfall"],"ability":"Huge Power","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1005},
+		"Azurine Lake Swimmer Leigh (Water Surf)":{"level":72,"item":"Sitrus Berry","moves":["Belly Drum","Aqua Jet","Play Rough","Knock Off"],"ability":"Huge Power","nature":"Adamant","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2200},
+		"Route 4 Ace Trainer Autumn (Forest)":{"level":85,"item":"Assault Vest","moves":["Play Rough","Liquidation","Aqua Jet","Superpower"],"ability":"Huge Power","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 240,"at": 252,"df": 0,"sa": 0,"sd": 16,"sp": 0},"index":2233},
+		
+	},	
+	"Azurill":{	
+		"Onyx Punk Ginelle (None)":{"level":18,"moves":["Bubble","Charm","Bubble Beam","Helping Hand"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":2036},
+		
+	},	
+	"Bagon":{	
+		"Rhodocrine Gentleman Ben (Forest)":{"level":25,"moves":["Dragon Breath","Headbutt","Focus Energy","Crunch"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2044},
+		
+	},	
+	"Baltoy":{	
+		"Rhodocrine Ace (Forest)":{"level": 26, "moves": ["Psybeam","Rock Tomb","Mud-Slap","Grass Knot"], "ability": "Levitate", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":40},
+		"Peridot Hotshot Stiles (None)":{"level":15,"moves":["Rapid Spin","Mud-Slap","Heal Block","Rock Tomb"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":1100},
+		
+	},	
+	"Banette":{	
+		"Gym Shade (Short Circuit)":{"level": 36, "item": "Synthetic Seed", "moves": ["Shadow Claw","Knock Off","Dazzling Gleam","Destiny Bond"], "ability": "Cursed Body", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index":101},
+		
+	},	
+	"Barbaracle":{	
+		"Pyrous Cal (Super-Heated)":{"level": 38, "moves": ["Stealth Rock","Slash","Scald","Rock Slide"], "ability": "Tough Claws", "nature": "Brave", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":114},
+		"Route 3 Meteor Geoff/Audrey (G, Cave) Doub":{"level":65,"moves":["Shell Smash","Rock Slide","Razor Shell","Night Slash"],"ability":"Tough Claws","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1420},
+		"Amet. Meteor Geoff/Audrey (G, SnowM) Doub":{"level":71,"moves":["Shell Smash","Rock Slide","Razor Shell","Cross Chop"],"ability":"Tough Claws","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1449},
+		"Glass Meteor Geoff (Factory)":{"level":80,"moves":["Shell Smash","Rock Slide","Razor Shell","Cross Chop"],"ability":"Tough Claws","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1558},
+		
+	},	
+	"Barboach":{	
+		"Obsidia Street Rat Carter (None)":{"level":16,"moves":["Water Sport","Water Gun","Mud Bomb","Amnesia"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2017},
+		
+	},	
+	"Basculin":{	
+		"7th Street Street Rat Hyde (None)":{"level":60,"moves":["Flail","Final Gambit","Thrash","Head Smash"],"ability":"Reckless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2135},
+		"Azurine Lake Swimmer Arlo (Water Surf)":{"level":72,"item":"Assault Vest","moves":["Aqua Jet","Crunch","Waterfall","Zen Headbutt"],"ability":"Reckless","nature":"Adamant","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2198},
+		
+	},	
+	"Bastiodon":{	
+		"Opal Grind Ch8 Gibson (None)":{"level":59,"moves":["Endure","Metal Burst","Iron Head","Heavy Slam"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1790},
+		"Opal Grind Ch14 Gibson (None)":{"level":85,"item":"Custap Berry","moves":["Iron Head","Stealth Rock","Metal Burst","Stone Edge"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1905},
+		
+	},	
+	"Bayleef":{	
+		"Opal Grind Ch2 Carol (None)":{"level":23,"moves":["Poison Powder","Synthesis","Reflect","Magical Leaf"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1678},
+		"Opal Grind Ch3.5 Carol (None)":{"level":35,"moves":["Reflect","Magical Leaf","Natural Gift","Sweet Scent"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1712},
+		
+	},	
+	"Beartic":{	
+		"Smoochum Savage (Icy)":{"level":65,"moves":["Flail","Rest","Blizzard","Hail"],"ability":"Snow Cloak","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":937},
+		
+	},	
+	"Beautifly":{	
+		"Lapis Gym Techie Charlie (Forest)":{"level":30,"moves":["Mega Drain","Silver Wind","Attract","Whirlwind"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":1190},
+		
+	},	
+	"Beedrill":{	
+		"Malchous Meteor Rod (Forest)":{"level":21,"moves":["Fury Attack","Rage","Pursuit","Focus Energy"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1162},
+		"Yureyu Meteor Ringo/Rod (Rod, Short-Circ)":{"level":43,"moves":["Pin Missile","Poison Jab","Agility","Endeavor"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1304},
+		"Tanzan Meteor Tech Rod (Factory)":{"level":54,"moves":["Poison Jab","Agility","Endeavor","Fell Stinger"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1356},
+		
+	},	
+	"Beheeyem":{	
+		"Vanhanen Gym Psychic Thyme (Chess: Bishop)":{"level":55,"moves":["Psych Up","Psychic","Calm Mind","Recover"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1368},
+		"Devon Meteor Ramsey/Danielle (R, Factory) 2x":{"level":76,"moves":["Trick Room","Energy Ball","Psychic","Signal Beam"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1530},
+		"Agate Meteor Howaya/Christina (C, None) Dub":{"level":87,"moves":["Psychic","Energy Ball","Dark Pulse","Shadow Ball"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1625},
+		
+	},	
+	"Beldum":{	
+		"MW Meteor Winter/Michaela (W, Factory)":{"level":12,"moves":["Take Down"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1112},
+		"Vanhanen Gym Psychic Rosemary (Chess: Pawn)":{"level":50,"moves":["Take Down"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1364},
+		
+	},	
+	"Bellossom":{	
+		"WTC Meteor Ezra (Factory)":{"level":74,"moves":["Synthesis","Nature Power","Stun Spore","Leaf Storm"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1496},
+		"Agate Meteor Ezra (None)":{"level":87,"moves":["Synthesis","Nature Power","Stun Spore","Leaf Storm"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1609},
+		"Agate Meteor Ezrа/Lyla (E, None) Doub":{"level":87,"moves":["Synthesis","Nature Power","Stun Spore","Leaf Storm"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1613},
+		
+	},	
+	"Bellsprout":{	
+		"Opal Youngster Paul (None)":{"level":4,"moves":["Vine Whip"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 6,"at": 6,"df": 6,"sa": 6,"sd": 6,"sp": 6},"index":1953},
+		
+	},	
+	"Bergmite":{	
+		"Spinel Gym Posh Layla (Mirror)":{"level":46,"moves":["Ice Ball","Rapid Spin","Avalanche","Blizzard"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1313},
+		
+	},	
+	"Bewear":{	
+		"Gym Noel (Grassy)":{"level": 54, "item": "Muscle Band", "moves": ["Hammer Arm","Zen Headbutt","Stomping Tantrum","Ice Punch"], "ability": "Fluffy", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":217},
+		"Magikarp Casanova Crimson (Ashen Beach)":{"level":74,"item":"Rocky Helmet","moves":["Ice Punch","Earthquake","Zen Headbutt","Superpower"],"ability":"Fluffy","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":988},
+		"Grind Indra 1 Pink (None)":{"level":58,"item":"Air Balloon","moves":["Hammer Arm","Earthquake","Rock Slide","Ice Punch"],"ability":"Fluffy","nature":"Calm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1860},
+		"Grind Indra 2 Pink (None)":{"level":68,"item":"Choice Band","moves":["Hammer Arm","Earthquake","Rock Slide","Ice Punch"],"ability":"Fluffy","nature":"Calm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 252,"at": 0,"df": 0,"sa": 0,"sd": 4,"sp": 252},"index":1890},
+		
+	},	
+	"Bibarel":{	
+		"Ametrine Meteor Bruno/Ray (R, SnowM) Doub":{"level":70,"moves":["Super Fang","Waterfall","Bulldoze","Rollout"],"ability":"Moody","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1447},
+		"Glass Meteor Ray (Factory)":{"level":81,"moves":["Super Fang","Waterfall","Bulldoze","Rollout"],"ability":"Moody","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1567},
+		
+	},	
+	"Bidoof":{	
+		"Opal Hotshot Eric (None)":{"level":5,"moves":["Tackle","Growl","Defense Curl"],"ability":"Simple","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1958},
+		
+	},	
+	"Binacle":{	
+		"TV Theft Nature Girl Kacey (None)":{"level":44,"moves":["Ancient Power","Hone Claws","Fury Cutter","Night Slash"],"ability":"Tough Claws","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":939},
+		
+	},	
+	"Bisharp":{	
+		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Rocky Helmet", "moves": ["Iron Head","Night Slash","Sucker Punch","Stealth Rock"], "ability": "Defiant", "nature": "Impish", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":252},
+		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 83, "item": "Dread Plate", "moves": ["Knock Off","Iron Head","Brick Break","Sucker Punch"], "ability": "Defiant", "nature": "Adamant", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":500},
+		"Spirit Franz (Chess: Pawn) Doubles":{"level": 95, "item": "Focus Sash", "moves": ["Stealth Rock","Dual Chop","Sucker Punch","Swords Dance"], "ability": "Defiant", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":812},
+		"Piplup Street Rat Drake (None)":{"level":63,"moves":["Sucker Punch","Iron Head","Swords Dance","Throat Chop"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":955},
+		"Obsidia Resto Raph/Manwe (M, Forest) Doubles":{"level":74,"item":"Choice Band","moves":["Cut","Sucker Punch","Iron Head","Poison Jab"],"ability":"Defiant","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1052},
+		"Labradorra Gym Knight Edgard (Dragon's Den)":{"level":87,"item":"Life Orb","moves":["Sucker Punch","Iron Head","Poison Jab","Knock Off"],"ability":"Defiant","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1652},
+		"Opal Grind Ch8 Jace (None)":{"level":56,"moves":["Metal Sound","Embargo","Iron Defense","Night Slash"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1805},
+		"Opal Grind Ch14 Jace (None)":{"level":85,"item":"Rocky Helmet","moves":["Sucker Punch","Iron Head","Thunder Wave","Knock Off"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1922},
+		
+	},	
+	"Blastoise":{	
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 88, "item": "Fightinium Z", "moves": ["Aura Sphere","Surf","Ice Beam","Whirlpool"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":455},
+		"Magma Raid Aqua Archer (None)":{"level":42,"moves":["Aqua Tail","Bite","Skull Bash","Yawn"],"ability":"Torrent","nature":"Adamant","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":924},
+		"Magma 3 Aqua Archer (None)":{"level":60,"moves":["Hydro Pump","Hydro Cannon","Ice Beam","Yawn"],"ability":"Torrent","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":964},
+		"Opal Grind Ch4.5 Jonah (None)":{"level":52,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1760},
+		"Opal Grind Ch8 Jonah (1, None)":{"level":60,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1800},
+		"Opal Grind Ch8 Jonah (2, None)":{"level":62,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1801},
+		"Opal Grind Ch14 Jonah (None)":{"level":84,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1916},
+		"Azurine Lake Swimmer Wilson (Water Surf)":{"level":72,"item":"Elemental Seed","moves":["Surf","Ice Beam","Refresh","Toxic"],"ability":"Torrent","nature":"Calm","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2203},
+		
+	},	
+	"Blastoise-Mega":{	
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 88, "item": "Blastoisinite", "moves": ["Aura Sphere","Surf","Ice Beam","Whirlpool"], "ability": "Mega Launcher", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":467},
+		"Opal Grind Ch14 Jonah (None)":{"level":85,"item":"Blastoisinite","moves":["Scald","Dark Pulse","Aura Sphere","Dragon Pulse"],"ability":"Mega Launcher","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1917},
+		
+	},	
+	"Blaziken":{	
+		"Circus Alistasia (Big Top)":{"level": 67, "item": "Focus Sash", "moves": ["Swords Dance","Acrobatics","Brick Break","Bulldoze"], "ability": "Speed Boost", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":262},
+		"Gym Samson (Big Top)":{"level": 69, "item": "Synthetic Seed", "moves": ["Acrobatics","Protect","Brick Break","Blaze Kick"], "ability": "Speed Boost", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":267},
+		"Agate Meteor Ricardo (None)":{"level":88,"moves":["High Jump Kick","Flare Blitz","Brave Bird","Rock Slide"],"ability":"Speed Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1597},
+		"Apophyll Grind Ch14 Akane (None)":{"level":75,"moves":["Flare Blitz","Earthquake","Poison Jab","Low Kick"],"ability":"Speed Boost","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1893},
+		
+	},	
+	"Blissey":{	
+		"Devon Meteor Ramsey/Danielle (R, Factory) Doub":{"level":75,"moves":["Soft-Boiled","Toxic","Seismic Toss","Hyper Voice"],"ability":"Serene Grace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1531},
+		"Grind Indra 1 Pink (None)":{"level":58,"item":"Air Balloon","moves":["Soft-Boiled","Seismic Toss","Ice Beam","Flamethrower"],"ability":"Serene Grace","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1861},
+		"Grind Indra 2 Pink (None)":{"level":68,"item":"Leftovers","moves":["Soft-Boiled","Seismic Toss","Ice Beam","Flamethrower"],"ability":"Serene Grace","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1891},
+		"Opal Grind Ch14 Zach/Beau (B, None)":{"level":85,"item":"Leftovers","moves":["Seismic Toss","Thunder Wave","Flamethrower","Wish"],"ability":"Serene Grace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1942},
+		"Labradorra Grind Ch18 Priscilla (1, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1946},
+		"Labradorra Grind Ch18 Priscilla (2, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1947},
+		"Labradorra Grind Ch18 Priscilla (3, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1948},
+		"Labradorra Grind Ch18 Priscilla (4, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1949},
+		"Labradorra Grind Ch18 Priscilla (5, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1950},
+		"Labradorra Grind Ch18 Priscilla (6, None)":{"level":100,"item":"Toxic Orb","moves":["Healing Wish","Healing Wish","Healing Wish","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1951},
+		
+	},	
+	"Blitzle":{	
+		"Orphanage Bishop/Roth (R, None)":{"level":34,"moves":["Pursuit","Spark","Stomp","Discharge"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1209},
+		
+	},	
+	"Boldore":{	
+		"Rhodocrine Meteor Mary (Forest)":{"level":23,"moves":["Rock Blast","Mud-Slap","Iron Defense","Smack Down"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1173},
+		
+	},	
+	"Bonsly":{	
+		"Obsidia Meteor Minta (Forest)":{"level":17,"moves":["Flail","Low Kick","Rock Throw","Mimic"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1128},
+		
+	},	
+	"Bounsweet":{	
+		"MW Meteor Mary/Coleman (C, Factory)":{"level":13,"moves":["Splash","Play Nice","Rapid Spin","Razor Leaf"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1103},
+		"Peridot Doxy Marigold (None)":{"level":7,"moves":["Splash","Play Nice","Rapid Spin","Rapid Spin"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"index":1970},
+		
+	},	
+	"Braixen":{	
+		"Rhodocrine Ace (Forest)":{"level": 28, "item": "Sitrus Berry", "moves": ["Psybeam","Fire Spin","Hypnosis","Flame Charge"], "ability": "Magician", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 42, "at": 42, "df": 42, "sa": 42, "sd": 42, "sp": 42}, "index":42},
+		"Opal Grind Ch2 JB (None)":{"level":21,"moves":["Ember","Howl","Flame Charge","Psybeam"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1693},
+		"Opal Grind Ch3.5 JB (None)":{"level":34,"moves":["Psybeam","Fire Spin","Lucky Chant","Light Screen"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1730},
+		
+	},	
+	"Braviary":{	
+		"Opal Grind Ch8 Anthony (None)":{"level":59,"moves":["Tailwind","Air Slash","Crush Claw","Sky Drop"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1818},
+		"Opal Grind Ch14 Anthony (None)":{"level":81,"item":"Choice Band","moves":["Brave Bird","Superpower","U-turn","Rock Slide"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1935},
+		
+	},	
+	"Breloom":{	
+		"Gym Florinia (Desert)":{"level": 23, "moves": ["Leech Seed","Spore","Mach Punch","Mega Drain"], "ability": "Poison Heal", "nature": "Bashful", "ivs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index":34},
+		"Fiore Florinia (None) Doubles":{"level": 70, "item": "Toxic Orb", "moves": ["Spore","Drain Punch","Leech Seed","Seed Bomb"], "ability": "Poison Heal", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":340},
+		"Obsidia Resto Raph/Manwe (R, Forest) Doubles":{"level":78,"item":"Telluric Seed","moves":["Mach Punch","Seed Bomb","Spore","Cut"],"ability":"Technician","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1050},
+		
+	},	
+	"Breloom-Bot":{	
+		"Gastly Breloom Bot (Short Circuit)":{"level":90,"item":"Muscle Band","moves":["Spore","Magnet Bomb","Shadow Punch","Shift Gear"],"ability":"Technician","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1086},
+		
+	},	
+	"Brionne":{	
+		"Lapis/Orphanage Cain (None)":{"level": 32, "item": "Zoom Lens", "moves": ["Icy Wind","Disarming Voice","Bubble Beam","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":83},
+		
+	},	
+	"Bronzong":{	
+		"Byxbysion Ace (Wasteland)":{"level": 42, "item": "Telluric Seed", "moves": ["Gyro Ball","Zen Headbutt","Toxic","Protect"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "happiness": 0, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":145},
+		"Fiore Julia (None) Doubles":{"level": 67, "item": "Light Clay", "moves": ["Light Screen","Reflect","Gyro Ball","Toxic"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":344},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Gyro Ball","Zen Headbutt","Psywave","Rock Slide"], "ability": "Levitate", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":495},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "Leftovers", "moves": ["Stealth Rock","Toxic","Gyro Ball","Light Screen"], "ability": "Levitate", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":841},
+		
+	},	
+	"Bronzor":{	
+		"7th Street Hotshot Kellam (None)":{"level":59,"moves":["Extrasensory","Payback","Heal Block","Heavy Slam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2136},
+		
+	},	
+	"Bruxish":{	
+		"Orphanage Timothy/Chris (T, None)":{"level":33,"moves":["Disable","Psywave","Crunch","Aqua Tail"],"ability":"Dazzling","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1195},
+		"7th Street Street Rat Kevin (None)":{"level":60,"moves":["Aqua Tail","Screech","Psychic Fangs","Synchronoise"],"ability":"Dazzling","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1394},
+		"Circus Clown Posty (None)":{"level":64,"item":"Air Balloon","moves":["Psychic Fangs","Swords Dance","Aqua Jet","Crunch"],"ability":"Dazzling","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2147},
+		"Azurine Lake Swimmer Tsuki (Water Surf)":{"level":72,"item":"Choice Band","moves":["Poison Fang","Psychic Fangs","Crunch","Liquidation"],"ability":"Strong Jaw","nature":"Adamant","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2188},
+		
+	},	
+	"Budew":{	
+		"Peridot/Mosswater Fern (None)":{"level": 13, "item": "Oran Berry", "moves": ["Mega Drain","Natural Gift","Stun Spore","Covet"], "ability": "Poison Point", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index":3},
+		
+	},	
+	"Buizel":{	
+		"Onyx Gym Trisy/Jojo (T, None)":{"level":18,"moves":["Water Sport","Quick Attack","Water Gun","Pursuit"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1134},
+		
+	},	
+	"Bulbasaur":{	
+		"Opal Grind Ch1 Zach/Beau (Z, None)":{"level":11,"moves":["Tackle","Growl","Leech Seed","Vine Whip"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1672},
+		
+	},	
+	"Buneary":{	
+		"Peridot Punk Macy (None)":{"level":7,"moves":["Splash","Pound","Foresight","Endure"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"index":1972},
+		
+	},	
+	"Bunnelby":{	
+		"Opal Gentleman Norman (None)":{"level":5,"moves":["Tackle","Agility","Leer"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1955},
+		
+	},	
+	"Burmy":{	
+		"Lapis Gym Techie Eugene (Forest)":{"level":29,"moves":["Protect","Tackle","Bug Bite","Hidden Power"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 43,"at": 43,"df": 43,"sa": 43,"sd": 43,"sp": 43},"index":1186},
+		
+	},	
+	"Butterfree":{	
+		"Spinel Bennet (Mirror)":{"level": 50, "item": "Synthetic Seed", "moves": ["Sleep Powder","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index":187},
+		"Iolia Bennet (Dark Crystal)":{"level": 64, "item": "Leftovers", "moves": ["Sleep Powder","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":251},
+		
+	},	
+	"Cacnea":{	
+		"Gym Florinia (Desert)":{"level": 23, "item": "Big Root", "moves": ["Sandstorm","Needle Arm","Leech Seed","Nature Power"], "ability": "Sand Veil", "nature": "Jolly", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index":31},
+		
+	},	
+	"Cacturne":{	
+		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Seed Bomb","Sucker Punch","Swords Dance","Brick Break"], "ability": "Water Absorb", "nature": "Adamant", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":569},
+		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Seed Bomb","Sucker Punch","Swords Dance","Brick Break"], "ability": "Water Absorb", "nature": "Adamant", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":577},
+		"Magikarp Corin Rouge (Desert)":{"level":82,"item":"Bright Powder","moves":["Sucker Punch","Needle Arm","Swords Dance","Substitute"],"ability":"Sand Veil","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1080},
+		"WTC Meteor Angela/Wes (A, Factory) Doub":{"level":72,"moves":["Seed Bomb","Sucker Punch","Swords Dance","Leech Seed"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1485},
+		
+	},	
+	"Camerupt":{	
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Leftovers", "moves": ["Flash Cannon","Heat Wave","Earth Power","Yawn"], "ability": "Magma Armor", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":601},
+		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Elemental Seed", "moves": ["Nature Power","Lava Plume","Earth Power","Yawn"], "ability": "Magma Armor", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":625},
+		"Route 2 Hiker Ike (Rocky)":{"level":67,"moves":["Rock Polish","Earthquake","Fire Blast","Stone Edge"],"ability":"Magma Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2154},
+		
+	},	
+	"Carbink":{	
+		"Grind Indra 1 Grey (None)":{"level":58,"item":"Air Balloon","moves":["Calm Mind","Rest","Sleeptalk","Moonblast"],"ability":"Sturdy","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1853},
+		"Grind Indra 2 Grey (None)":{"level":68,"item":"Leftovers","moves":["Calm Mind","Rest","Sleeptalk","Moonblast"],"ability":"Sturdy","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 4,"sd": 0,"sp": 0},"index":1883},
+		
+	},	
+	"Carnivine":{	
+		"Yureyu Meteor Simon/Tara (S, Short-Circ)":{"level":42,"moves":["Stockpile","Spit Up","Swallow","Crunch"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1290},
+		"Tanzan Meteor Brenna (Factory)":{"level":52,"moves":["Swallow","Crunch","Wring Out","Power Whip"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1318},
+		
+	},	
+	"Carracosta":{	
+		"Spirit Josh (Big Top)":{"level": 95, "item": "White Herb", "moves": ["Shell Smash","Stone Edge","Aqua Jet","Earthquake"], "ability": "Solid Rock", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":820},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "White Herb", "moves": ["Shell Smash","Stone Edge","Waterfall","Earthquake"], "ability": "Sturdy", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":846},
+		"Vanhanen Meteor Hilda (Grassy)":{"level":55,"moves":["Curse","Shell Smash","Aqua Tail","Rock Slide"],"ability":"Solid Rock","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1380},
+		"Amet. Meteor Ricardo/Hilda (H, SnowM) Doub":{"level":72,"moves":["Shell Smash","Rock Slide","Aqua Jet","Blizzard"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1469},
+		"Agate Gym Guitarist Alistair (Rocky)":{"level":86,"item":"White Herb","moves":["Shell Smash","Liquidation","Rock Slide","Aqua Jet"],"ability":"Swift Swim","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1636},
+		"Opal Grind Ch8 Silva (None)":{"level":56,"moves":["Shell Smash","Aqua Tail","Rock Slide","Rain Dance"],"ability":"Solid Rock","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1809},
+		"Opal Grind Ch14 Silva (None)":{"level":85,"item":"Liechi Berry","moves":["Shell Smash","Rock Slide","Aqua Tail","Crunch"],"ability":"Solid Rock","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1924},
+		
+	},	
+	"Carvanha":{	
+		"Magma Theft Pierce (None)":{"level":32,"moves":["Swagger","Ice Fang","Scary Face","Poison Fang"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":899},
+		"Magma Theft DeFacto (None)":{"level":33,"moves":["Swagger","Ice Fang","Scary Face","Poison Fang"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":903},
+		"Aqua Mannie/Razzy (M, None) Doubles":{"level":32,"moves":["Swagger","Ice Fang","Scary Face","Poison Fang"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":910},
+		"Aqua Mannie/Razzy (R, None) Doubles":{"level":32,"moves":["Swagger","Ice Fang","Scary Face","Poison Fang"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":913},
+		
+	},	
+	"Cascoon":{	
+		"Obsidia Street Rat Mason (None)":{"level":16,"moves":["Harden","Tackle"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2010},
+		
+	},	
+	"Castform":{	
+		"Grind Indra 1 White (None)":{"level":58,"item":"Air Balloon","moves":["Rain Dance","Weather Ball","Ice Beam","Thunder"],"ability":"Forecast","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1856},
+		"Grind Indra 2 White (None)":{"level":68,"item":"Damp Rock","moves":["Rain Dance","Weather Ball","Ice Beam","Thunder"],"ability":"Forecast","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1886},
+		
+	},	
+	"Caterpie":{	
+		"Peridot Elder Seacrest (None)":{"level":9,"moves":["Tackle","String Shot","Bug Bite"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":865},
+		
+	},	
+	"Celesteela":{	
+		"L Route Lin 2 (New World)":{"level": 100, "item": "Leftovers", "moves": ["Flamethrower","Flash Cannon","Giga Drain","Leech Seed"], "ability": "Beast Boost", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":705},
+		"A Route Lin 2 (New World)":{"level": 100, "item": "Leftovers", "moves": ["Flamethrower","Flash Cannon","Giga Drain","Leech Seed"], "ability": "Beast Boost", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":712},
+		
+	},	
+	"Chandelure":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 48, "item": "Synthetic Seed", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":181},
+		"Belrose Sirius (None)":{"level": 52, "item": "Wise Glasses", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index":212},
+		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Wise Glasses", "moves": ["Heat Wave","Shadow Ball","Energy Ball","Psychic"], "ability": "Flash Fire", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":543},
+		"VR Sirius (Dragon's Den) Doubles":{"level": 100, "item": "Elemental Seed", "moves": ["Heat Wave","Energy Ball","Psychic","Shadow Ball"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":659},
+		"Spirit Jonathan (Big Top) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Shadow Ball","Heat Wave","Trick Room","Hidden Power Ice"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":722},
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Telluric Seed", "moves": ["Shadow Ball","Heat Wave","Overheat","Energy Ball"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":772},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Synthetic Seed", "moves": ["Shadow Ball","Heat Wave","Overheat","Energy Ball"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":777},
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Shadow Ball","Heat Wave","Hidden Power Fighting","Energy Ball"], "ability": "Flame Body", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":782},
+		"Spirit Franz (Chess: King) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Shadow Ball","Heat Wave","Trick Room","Memento"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":815},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Magical Seed", "moves": ["Shadow Ball","Heat Wave","Pain Split","Will-O-Wisp"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":854},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Psychic","Heat Wave","Hidden Power Ice","Energy Ball"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":862},
+		
+	},	
+	"Chansey":{	
+		"Labradorra Terra (Glitch)":{"level": 96, "item": "Eviolite", "moves": ["Blizzard","Thunderbolt","Psychic","Soft-Boiled"], "ability": "Serene Grace", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 252, "sa": 0, "sd": 252, "sp": 0}, "index":644},
+		"Opal Grind Ch8 Zach/Beau (B, None)":{"level":57,"moves":["Heal Pulse","Egg Bomb","Light Screen","Healing Wish"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1829},
+		
+	},	
+	"Charizard":{	
+		"Pyrous Cal (Super-Heated)":{"level": 39, "moves": ["Thunder Punch","Fire Punch","Dragon Claw","Wing Attack"], "ability": "Blaze", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":118},
+		"Ametrine Cal (Various) Doubles":{"level": 73, "moves": ["Flamethrower","Dragon Pulse","Air Slash","Ancient Power"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":303},
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Heat Wave","Dragon Pulse","Focus Blast","Air Slash"], "ability": "Blaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":603},
+		"Labr. VS Cal (Dragon's Den)":{"level": 94, "item": "Choice Scarf", "moves": ["Fire Blast","Dragon Pulse","Focus Blast","Air Slash"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":627},
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Choice Scarf", "moves": ["Dragon Pulse","Solar Beam","Air Slash","Heat Wave"], "ability": "Solar Power", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":773},
+		"Aqua Raid Magma Maxwell (None)":{"level":42,"moves":["Dragon Rage","Hidden Power Electric","Flame Burst","Ancient Power"],"ability":"Solar Power","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":927},
+		"Aqua 3 Magma Maxwell (None)":{"level":60,"item":"Wise Glasses","moves":["Flamethrower","Air Slash","Dragon Pulse","Blast Burn"],"ability":"Solar Power","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":969},
+		"Opal Grind Ch4.5 Will (None)":{"level":50,"moves":["Fire Fang","Flame Burst","Slash","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1772},
+		"Opal Grind Ch8 Will (None)":{"level":60,"moves":["Flame Burst","Slash","Flamethrower","Fire Spin"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1816},
+		"Opal Grind Ch14 Will (None)":{"level":85,"item":"Life Orb","moves":["Heat Wave","Air Slash","Dragon Pulse","Hidden Power Electric"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1933},
+		
+	},	
+	"Charizard-Mega-X":{	
+		"Gym Saphira (Dragon's Den)":{"level": 97, "item": "Charizardite X", "moves": ["Dragon Dance","Dragon Claw","Flare Blitz","Earthquake"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":640},
+		
+	},	
+	"Charjabug":{	
+		"Lapis Gym Techie Charlie (Forest)":{"level":30,"moves":["Bug Bite","Spark","Acrobatics","Crunch"],"ability":"Battery","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":1191},
+		"BW Meteor Steven (Factory)":{"level":34,"moves":["Spark","Acrobatics","Crunch","X-Scissor"],"ability":"Battery","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1249},
+		"BW Meteor Tech Deryl (Factory)":{"level":35,"moves":["Spark","Acrobatics","Crunch","X-Scissor"],"ability":"Battery","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1252},
+		
+	},	
+	"Charmander":{	
+		"Opal Grind Ch1 Will (None)":{"level":10,"moves":["Scratch","Growl","Ember","Smokescreen"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1669},
+		
+	},	
+	"Charmeleon":{	
+		"Lapis Cal (Rainbow)":{"level": 33, "moves": ["Flame Burst","Dragon Rage","Mega Punch","Smokescreen"], "ability": "Blaze", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":75},
+		"Glitch World ABBBBBBK (Glitch)":{"level":75,"moves":["Overheat","Dragon Dance","Dragon Claw","Brick Break"],"ability":"Solar Power","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1479},
+		"Opal Grind Ch2 Will (None)":{"level":21,"moves":["Ember","Smokescreen","Dragon Rage","Scary Face"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1697},
+		"Opal Grind Ch3.5 Will (None)":{"level":35,"moves":["Dragon Rage","Scary Face","Fire Fang","Flame Burst"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1734},
+		
+	},	
+	"Chatot":{	
+		"Malchous Taka (Rocky)":{"level": 25, "item": "Wide Lens", "moves": ["Sing","Nasty Plot","Chatter","Taunt"], "ability": "Keen Eye", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index":37},
+		"Azurine Taka (Factory)":{"level": 45, "item": "Sitrus Berry", "moves": ["Heat Wave","Nasty Plot","Chatter","Roost"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":135},
+		"WTC Taka (Factory)":{"level": 73, "item": "Synthetic Seed", "moves": ["Heat Wave","Nasty Plot","Hyper Voice","Roost"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":330},
+		"Tourmaline Taka (Desert)":{"level": 83, "item": "Normalium Z", "moves": ["Heat Wave","Nasty Plot","Boomburst","Encore"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":428},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 83, "moves": ["Heat Wave","Nasty Plot","Hyper Voice","Encore"], "ability": "Keen Eye", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":429},
+		
+	},	
+	"Cherrim":{	
+		"Opal Grind Ch8 Jace (None)":{"level":56,"moves":["Take Down","Solar Beam","Lucky Chant","Petal Blizzard"],"ability":"Flower Gift","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1804},
+		"Opal Grind Ch14 Jace (None)":{"level":84,"item":"Sitrus Berry","moves":["Sunny Day","Solar Beam","Weather Ball","Hidden Power Ice"],"ability":"Flower Gift","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1920},
+		
+	},	
+	"Cherubi":{	
+		"Onyx Gym Trisy/Jojo (T, None)":{"level":17,"moves":["Tackle","Growth","Leech Seed","Helping Hand"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1133},
+		
+	},	
+	"Chesnaught":{	
+		"Tanzan Meteor Hilda (Factory)":{"level":53,"moves":["Take Down","Seed Bomb","Mud Shot","Bulk Up"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1323},
+		"Vanhanen Meteor Hilda (Grassy)":{"level":58,"moves":["Seed Bomb","Mud Shot","Bulk Up","Body Slam"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1382},
+		"Amet. Meteor Ricardo/Hilda (H, SnowM) 2x":{"level":73,"moves":["Spiky Shield","Wood Hammer","Hammer Arm","Rock Slide"],"ability":"Bulletproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1471},
+		"Opal Grind Ch14 JB (None)":{"level":85,"item":"Leftovers","moves":["Leech Seed","Spiky Shield","Hammer Arm","Seed Bomb"],"ability":"Bulletproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1929},
+		"Route 4 Black Belt Seal (Forest)":{"level":81,"moves":["Wood Hammer","Hammer Arm","Spiky Shield","Rock Slide"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2235},
+		
+	},	
+	"Chikorita":{	
+		"Opal Grind Ch1 Carol (None)":{"level":10,"moves":["Tackle","Growl","Razor Leaf","Poison Powder"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1660},
+		
+	},	
+	"Chimchar":{	
+		"Apop School Black Belt Ryan (Ashen Beach)":{"level":35,"moves":["Nasty Plot","Torment","Facade","Fire Spin"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2087},
+		
+	},	
+	"Chimecho":{	
+		"7th Street Street Rat Yan (None)":{"level":60,"moves":["Uproar","Safeguard","Double-Edge","Heal Pulse"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2140},
+		
+	},	
+	"Chinchou":{	
+		"Orphanage Howaya/Callie (H, None)":{"level":34,"moves":["Spark","Signal Beam","Flail","Discharge"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1213},
+		
+	},	
+	"Chingling":{	
+		"Obsidia Street Rat Omar (None)":{"level":15,"moves":["Growl","Astonish","Confusion","Yawn"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":2004},
+		
+	},	
+	"Cinccino":{	
+		"Gym Noel (Grassy)":{"level": 54, "item": "King's Rock", "moves": ["Tail Slap","U-turn","Rock Blast","Bullet Seed"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":215},
+		
+	},	
+	"Clamperl":{	
+		"Aqua Mannie/Razzy (M, None) Doubles":{"level":31,"moves":["Clamp","Water Gun","Whirlpool","Iron Defense"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":908},
+		
+	},	
+	"Clauncher":{	
+		"Magikarp Arnie/Millhouse (M, None) Doubles":{"level":11,"moves":["Splash","Water Gun","Water Sport","Visegrip"],"ability":"Mega Launcher","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":869},
+		"Magma Theft Pierce (None)":{"level":33,"moves":["Flail","Bubble Beam","Swords Dance","Crabhammer"],"ability":"Mega Launcher","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":900},
+		
+	},	
+	"Clawitzer":{	
+		"7th Street Aqua Pierce (None)":{"level":55,"moves":["Crabhammer","Water Pulse","Smack Down","Aqua Jet"],"ability":"Mega Launcher","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1396},
+		
+	},	
+	"Clawitzer-Pulse":{	
+		"Labradorra Zero (None)":{"level":95,"item":"Wise Glasses","moves":["Overheat","Origin Pulse","Draco Meteor","Fleur Cannon"],"ability":"Contrary","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 0,"sa": 252,"sd": 4,"sp": 0},"index":591},																													
 
 	},	
-	"Granbull":{
-		"Gym Adrienn (Misty) Doubles":{"level": 76, "item": "Assault Vest", "moves": ["Earthquake","Close Combat","Play Rough","Rock Slide"], "ability": "Intimidate", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 408},																									
-
-	},
-	"Grimer-Alola":{
-		"Coral Cain (Misty)":{"level": 17, "moves": ["Gastro Acid","Curse","Taunt","Bite"], "ability": "Poison Touch", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index": 21},																																			
-		"Lapis/Orphanage Cain (None)":{"level": 35, "moves": ["Poison Fang","Minimize","Disable","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 84},																									
-
-	},
-	"Grumpig":{
-		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 68, "moves": ["Icy Wind","Reflect","Psychic","Light Screen"], "ability": "Thick Fat", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 340},																									
-		"Labradorra Diana (None)":{"level": 87, "item": "Kasib Berry", "moves": ["Shadow Ball","Reflect","Psychic","Light Screen"], "ability": "Thick Fat", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 520},																									
-		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 89, "item": "Light Clay", "moves": ["Shadow Ball","Light Screen","Focus Blast","Psychic"], "ability": "Thick Fat", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 574},																									
-
-	},
-	"Gyarados":{
-		"Ametrine Blake (Snowy Mount)":{"level": 72, "moves": ["Stone Edge","Dragon Dance","Waterfall","Crunch"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 301},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "moves": ["Stone Edge","Dragon Dance","Waterfall","Crunch"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 351},																									
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 73, "item": "Leftovers", "moves": ["Dragon Dance","Earthquake","Waterfall","Outrage"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 368},																									
-		"Agate Solaris (None)":{"level": 90, "item": "Wacan Berry", "moves": ["Dragon Dance","Earthquake","Waterfall","Outrage"], "ability": "Moxie", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 505},																									
-		"VR Blake (Icy)":{"level": 97, "item": "Elemental Seed", "moves": ["Earthquake","Stone Edge","Waterfall","Crunch"], "ability": "Moxie", "nature": "Adamant", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 641},																									
-		"E4 Heather (Mountain)":{"level": 100, "item": "Flyinium Z", "moves": ["Bounce","Earthquake","Waterfall","Stone Edge"], "ability": "Moxie", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 658},																									
-
-	},
-	"Hakamo-o":{
-		"Pyrous Cal (Super-Heated)":{"level": 39, "moves": ["Sky Uppercut","Dual Chop","Headbutt","Rock Tomb"], "ability": "Soundproof", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 115},																									
-
-	},
-	"Hariyama":{
-		"Gym Samson (Big Top)":{"level": 67, "item": "Rocky Helmet", "moves": ["Heavy Slam","Smack Down","Brick Break","Knock Off"], "ability": "Guts", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 254},																									
-
-	},
-	"Hawlucha":{
-		"Gym Samson (Big Top)":{"level": 66, "item": "Synthetic Seed", "moves": ["Roost","Flying Press","Acrobatics","Poison Jab"], "ability": "Unburden", "nature": "Jolly", "evs": {"hp": 23, "at": 23, "df": 23, "sa": 23, "sd": 23, "sp": 23}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 257},																									
-
-	},
-	"Haxorus":{
-		"Route 1 Fern (Grassy)":{"level": 52, "item": "Dragon Fang", "moves": ["Taunt","Dragon Claw","Dragon Dance","Iron Tail"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index": 212},																									
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "item": "Dragon Fang", "moves": ["Superpower","Outrage","Dragon Dance","Poison Jab"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 355},																									
-		"Gym Gargantuan (Dragon's Den)":{"level": 95, "item": "Focus Sash", "moves": ["Dragon Dance","Poison Jab","Dragon Claw","Earthquake"], "ability": "Mold Breaker", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 629},																									
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Focus Sash", "moves": ["Dragon Dance","Outrage","Rock Tomb","Poison Jab"], "ability": "Mold Breaker", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 651},																									
-
-	},
-	"Heracross":{
-		"Labradorra Audrey (None)":{"level": 89, "item": "Flame Orb", "moves": ["Swords Dance","Close Combat","Megahorn","Throat Chop"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 544},																									
-
-	},
-	"Hippowdon":{
-		"Gym Terra (Glitch)":{"level": 72, "item": "Smooth Rock", "moves": ["Bulldoze","Stealth Rock","Yawn","Stone Edge"], "ability": "Sand Stream", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 309},																									
-		"Fiore Florinia (None) Doubles":{"level": 68, "item": "Yache Berry", "moves": ["Crunch","Stomping Tantrum","Rock Slide","Yawn"], "ability": "Sand Force", "nature": "Impish", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 328},																									
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 93, "item": "Smooth Rock", "moves": ["Earthquake","Slack Off","Rock Slide","Stealth Rock"], "ability": "Sand Stream", "nature": "Impish", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index": 595},																									
-		"Labr. VS Florinia (Glitch)":{"level": 93, "item": "Smooth Rock", "moves": ["Earthquake","Slack Off","Stone Edge","Stealth Rock"], "ability": "Sand Stream", "nature": "Impish", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index": 619},																									
-
-	},
-	"Hitmonlee":{
-		"Apophyll Kiki (Ashen Beach)":{"level": 42, "item": "Normal Gem", "moves": ["Fake Out","Meditate","Knock Off","High Jump Kick"], "ability": "Unburden", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 121},																									
-
-	},
-	"Honchkrow":{
-		"Byxbysion Ace (Wasteland)":{"level": 41, "item": "Enigma Berry", "moves": ["Sucker Punch","Heat Wave","Steel Wing","Drill Peck"], "ability": "Super Luck", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 143},																									
-		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Muscle Band", "moves": ["Sucker Punch","Night Slash","Roost","Brave Bird"], "ability": "Moxie", "nature": "Jolly", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index": 245},																									
-		"Glass 2 ??? (Factory)":{"level": 84, "item": "Life Orb", "moves": ["Sucker Punch","Superpower","Roost","Brave Bird"], "ability": "Moxie", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 480},																									
-		"Labradorra Zero (None)":{"level": 93, "item": "Life Orb", "moves": ["Superpower","Brave Bird","Sucker Punch","Night Slash"], "ability": "Moxie", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 578},																									
-
-	},
-	"Houndoom":{
-		"Lapis Cal (Rainbow)":{"level": 31, "moves": ["Inferno","Beat Up","Snarl","Smog"], "ability": "Flash Fire", "nature": "Hasty", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 72},																									
-		"Labradorra Zero (None)":{"level": 92, "item": "Focus Sash", "moves": ["Flamethrower","Dark Pulse","Nasty Plot","Sludge Bomb"], "ability": "Flash Fire", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 577},																									
-
-	},
-	"Hypno":{
-		"Orphanage Connal (None)":{"level": 35, "moves": ["Hypnosis","Psychic Terrain","Psychic","Signal Beam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 94},																									
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 47, "item": "Wide Lens", "moves": ["Hypnosis","Nasty Plot","Psychic","Dazzling Gleam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 172},																									
-		"Belrose Connal (None)":{"level": 50, "item": "Wide Lens", "moves": ["Hypnosis","Nasty Plot","Psychic","Dazzling Gleam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index": 195},																									
-
-	},
-	"Hypno-Pulse":{
-		"PULSE Hypno (Starlight)":{"level": 100, "item": "Big Root", "moves": ["Hypnosis","Dream Eater","Dark Pulse","Calm Mind"], "ability": "No Guard", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 495},																									
-
-	},
-	"Illumise":{
-		"Gym Shelly (Forest) Doubles":{"level": 32, "item": "Damp Rock", "moves": ["Rain Dance","Struggle Bug","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 76},																									
-		"Orphanage Shelly (None) Doubles":{"level": 32, "moves": ["Struggle Bug","Helping Hand","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 87},																									
-		"Ametrine Shelly (Various) Doubles":{"level": 69, "item": "Leftovers", "moves": ["Bug Buzz","Thunder Wave","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 288},																									
-
-	},
-	"Incineroar":{
-		"Apophyll Victoria (Ashen Beach)":{"level": 41, "item": "Telluric Seed", "moves": ["Brick Break","Darkest Lariat","Iron Head","Fire Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 112},																									
-		"Pyrous Victoria (Super-Heated)":{"level": 41, "moves": ["Brick Break","Darkest Lariat","Iron Head","Fire Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 135},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 76, "item": "Assault Vest", "moves": ["Earthquake","Knock Off","Flare Blitz","Cross Chop"], "ability": "Intimidate", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 383},																									
-		"Devon VS Victoria (Factory)":{"level": 77, "item": "Assault Vest", "moves": ["Earthquake","Knock Off","Flare Blitz","Outrage"], "ability": "Intimidate", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 395},																									
-		"Labradorra Tag Victoria (None) Doubles":{"level": 93, "item": "Assault Vest", "moves": ["Leech Life","Darkest Lariat","Flare Blitz","Cross Chop"], "ability": "Intimidate", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 530},																									
-
-	},
-	"Jolteon":{
-		"Devon Partner Arclight (Factory) Doubles":{"level": 77, "moves": ["Shadow Ball","Signal Beam","Hidden Power Ice","Discharge"], "ability": "Volt Absorb", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 384},																									
-		"Devon VS Arclight (Factory)":{"level": 78, "item": "Petaya Berry", "moves": ["Shadow Ball","Signal Beam","Hidden Power Ice","Discharge"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 400},																									
-		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Discharge","Shadow Ball","Signal Beam","Volt Switch"], "ability": "Volt Absorb", "nature": "Timid", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 553},																									
-		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Discharge","Shadow Ball","Signal Beam","Volt Switch"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 563},																									
-
-	},
-	"Jynx":{
-		"Gym Serra (Mirror)":{"level": 49, "item": "Bright Powder", "moves": ["Nasty Plot","Focus Blast","Psyshock","Ice Beam"], "ability": "Dry Skin", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 190},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Synthetic Seed", "moves": ["Psychic","Shadow Ball","Blizzard","Nasty Plot"], "ability": "Dry Skin", "nature": "Modest", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 486},																									
-
-	},
-	"Kangaskhan-Mega":{
-		"E4 Elias (Holy)":{"level": 100, "item": "Kangaskhanite", "moves": ["Power-Up Punch","Earthquake","Return","Rock Tomb"], "ability": "Parental Bond", "nature": "Jolly", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 673},																									
-
-	},
-	"Kingdra":{
-		"Ametrine Cal (Various) Doubles":{"level": 72, "item": "Wise Glasses", "moves": ["Hydro Pump","Ice Beam","Dragon Pulse","Signal Beam"], "ability": "Sniper", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 292},																									
-		"Flotsam Amaria (H2O Surf)":{"level": 88, "item": "Dragonium Z", "moves": ["Scald","Dragon Pulse","Ice Beam","Whirlpool"], "ability": "Swift Swim", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index": 439},																									
-		"Jetsam Amaria (H2O Surf)":{"level": 88, "item": "Life Orb", "moves": ["Scald","Dragon Pulse","Ice Beam","Whirlpool"], "ability": "Swift Swim", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index": 451},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Dragonium Z", "moves": ["Muddy Water","Draco Meteor","Ice Beam","Hidden Power Fighting"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 547},																									
-
-	},
-	"Kirlia":{
-		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 31, "moves": ["Double Team","Magical Leaf","Psychic","Calm Mind"], "ability": "Trace", "nature": "Bashful", "ivs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 57},																									
-		"N. Obsidia Victoria (None)":{"level": 31, "moves": ["Double Team","Magical Leaf","Psychic","Calm Mind"], "ability": "Trace", "nature": "Bashful", "ivs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 64},																									
-
-	},
-	"Klefki":{
-		"Azurine Taka (Factory)":{"level": 40, "moves": ["Spikes","Mirror Shot","Draining Kiss","Foul Play"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 13, "at": 13, "df": 13, "sa": 13, "sd": 13, "sp": 13}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index": 131},																									
-		"WTC Taka (Factory)":{"level": 69, "item": "Leftovers", "moves": ["Spikes","Thunder Wave","Light Screen","Foul Play"], "ability": "Prankster", "nature": "Bold", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 316},																									
-		"Tourmaline Taka (Desert)":{"level": 76, "item": "Leftovers", "moves": ["Substitute","Thunder Wave","Swagger","Foul Play"], "ability": "Prankster", "nature": "Bold", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 414},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 76, "item": "Leftovers", "moves": ["Substitute","Thunder Wave","Swagger","Foul Play"], "ability": "Prankster", "nature": "Bold", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 422},																									
-		"Gym Titania (Fairy Tale, Hail)":{"level": 84, "item": "Leftovers", "moves": ["Thunder Wave","Flash Cannon","Draining Kiss","Calm Mind"], "ability": "Prankster", "nature": "Bold", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 192, "at": 0, "df": 252, "sa": 0, "sd": 64, "sp": 0}, "index": 432},																									
-
-	},
-	"Klinklang":{
-		"WTC Ace (Factory)":{"level": 70, "moves": ["Gear Grind","Shift Gear","Zap Cannon","Wild Charge"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 326},																									
-
-	},
-	"Komala":{
-		"WTC Taka (Factory)":{"level": 69, "item": "Leftovers", "moves": ["Wish","Return","Sucker Punch","Bulk Up"], "ability": "Comatose", "nature": "Sassy", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 318},																									
-		"Tourmaline Taka (Desert)":{"level": 77, "item": "Leftovers", "moves": ["Wish","Return","Knock Off","Bulk Up"], "ability": "Comatose", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 417},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 77, "item": "Leftovers", "moves": ["Wish","Return","Knock Off","Bulk Up"], "ability": "Comatose", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 424},																									
-
-	},
-	"Kommo-o":{
-		"Ametrine Cal (Various) Doubles":{"level": 71, "moves": ["Iron Head","Dragon Dance","Brick Break","Dragon Claw"], "ability": "Soundproof", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 293},																									
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 94, "item": "Lum Berry", "moves": ["Dragon Dance","Close Combat","Poison Jab","Outrage"], "ability": "Bulletproof", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 592},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 94, "item": "Focus Sash", "moves": ["Dragon Dance","Close Combat","Poison Jab","Outrage"], "ability": "Bulletproof", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 616},																									
-		"E4 Elias (Holy)":{"level": 100, "item": "Kommonium Z", "moves": ["Clanging Scales","Earthquake","Close Combat","Poison Jab"], "ability": "Bulletproof", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 669},																									
-
-	},
-	"Krokorok":{
-		"N. Obsidia Fern (None)":{"level": 31, "moves": ["Dig","Rock Tomb","Crunch","Fire Fang"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 68},																									
-
-	},
-	"Krookodile":{
-		"Byxbysion Fern (Wasteland)":{"level": 43, "moves": ["Fire Fang","Dig","Crunch","Thunder Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index": 148},																									
-		"Route 1 Fern (Grassy)":{"level": 52, "moves": ["Dig","Brick Break","Throat Chop","Thunder Fang"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index": 214},																									
-		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 67, "item": "Muscle Band", "moves": ["Bulldoze","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 269},																									
-		"Ametrine Aster (Icy)":{"level": 69, "item": "Muscle Band", "moves": ["Earthquake","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 297},																									
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 72, "moves": ["Earthquake","Brick Break","Throat Chop","Rock Slide"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 357},																									
-		"Glass Aster (Factory)":{"level": 85, "item": "Muscle Band", "moves": ["Earthquake","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 461},																									
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Choice Scarf", "moves": ["Outrage","Knock Off","Rock Tomb","Earthquake"], "ability": "Moxie", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 654},																									
-
-	},
-	"Lanturn":{
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Volt Switch","Surf","Thunderbolt","Whirlpool"], "ability": "Volt Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 56, "sa": 200, "sd": 0, "sp": 0}, "index": 444},																									
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Volt Switch","Surf","Thunderbolt","Whirlpool"], "ability": "Volt Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 56, "sa": 200, "sd": 0, "sp": 0}, "index": 456},																									
-		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Assault Vest", "moves": ["Surf","Volt Switch","Discharge","Blizzard"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 552},																									
-		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Assault Vest", "moves": ["Surf","Volt Switch","Discharge","Blizzard"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 562},																									
-
-	},
-	"Lapras":{
-		"Blacksteam Amaria (Factory)":{"level": 87, "moves": ["Waterfall","Ice Beam","Sing","Ice Shard"], "ability": "Hydration", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 103},																									
-		"Gym Serra (Mirror)":{"level": 48, "item": "Synthetic Seed", "moves": ["Thunderbolt","Surf","Signal Beam","Ice Beam"], "ability": "Shell Armor", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 188},																									
-		"Flotsam Amaria (H2O Surface)":{"level": 92, "item": "Elemental Seed", "moves": ["Curse","Rest","Dive","Ice Shard"], "ability": "Hydration", "nature": "Careful", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 440},																									
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Protect","Rest","Perish Song","Surf"], "ability": "Hydration", "nature": "Calm", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 156, "sa": 0, "sd": 100, "sp": 0}, "index": 446},																									
-		"Jetsam Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Curse","Rest","Dive","Ice Shard"], "ability": "Hydration", "nature": "Careful", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 452},																									
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Protect","Rest","Perish Song","Surf"], "ability": "Hydration", "nature": "Calm", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 156, "sa": 0, "sd": 100, "sp": 0}, "index": 458},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 95, "item": "Wide Lens", "moves": ["Blizzard","Thunder","Hydro Pump","Psychic"], "ability": "Hydration", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 551},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Magical Seed", "moves": ["Blizzard","Hydro Pump","Psychic","Dragon Pulse"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index": 603},																									
-
-	},
-	"Larvesta":{
-		"Spinel Bennet (Mirror)":{"level": 47, "item": "Wide Lens", "moves": ["Flame Charge","Bug Bite","Zen Headbutt","Morning Sun"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 180},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 58, "moves": ["Flame Charge","Bug Bite","Zen Headbutt","Morning Sun"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 237},																									
-
-	},
-	"Leavanny":{
-		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 68, "moves": ["Leaft Storm","Throat Chop","Sticky Web","X-Scissor"], "ability": "Swarm", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 345},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 83, "item": "Assault Vest", "moves": ["Fell Stinger","Knock Off","Seed Bomb","Poison Jab"], "ability": "Swarm", "nature": "Jolly", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 470},																									
-		"Labradorra Kenan (None)":{"level": 88, "item": "Focus Sash", "moves": ["Leaft Storm","Throat Chop","Sticky Web","X-Scissor"], "ability": "Swarm", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 515},																									
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Leaf Blade","Fell Stinger","Knock Off","Poison Jab"], "ability": "Chlorophyll", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 665},																									
-
-	},
-	"Lilligant":{
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Sleep Powder","Giga Drain","Growth","Hidden Power Rock"], "ability": "Chlorophyll", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 667},																									
-
-	},
-	"Litten":{
-		"Grand Hall Victoria (None)":{"level": 5, "moves": ["Scratch","Growl"], "ability": "Blaze", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "index": 2},																																			
-
-	},
-	"Lucario":{
-		"Apophyll Kiki (Ashen Beach)":{"level": 42, "moves": ["Aura Sphere","Psychic","Calm Mind","Hidden Power Dark"], "ability": "Steadfast", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 123},																									
-		"Gym Samson (Big Top)":{"level": 68, "item": "Focus Sash", "moves": ["Swords Dance","Extreme Speed","Brick Break","Meteor Mash"], "ability": "Steadfast", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 256},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 75, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 382},																									
-		"Devon VS Victoria (Factory)":{"level": 76, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 394},																									
-		"Labradorra Tag Victoria (None) Doubles":{"level": 93, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 529},																									
-
-	},
-	"Ludicolo":{
-		"Flotsam Amaria (H2O Surf)":{"level": 87, "item": "Choice Specs", "moves": ["Ice Beam","Giga Drain","Focus Blast","Surf"], "ability": "Swift Swim", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 206, "sd": 0, "sp": 52}, "index": 437},																									
-		"Jetsam Amaria (H2O Surf)":{"level": 87, "item": "Choice Specs", "moves": ["Ice Beam","Giga Drain","Focus Blast","Surf"], "ability": "Swift Swim", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 206, "sd": 0, "sp": 52}, "index": 449},																									
-
-	},
-	"Lumineon":{
-		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Sitrus Berry", "moves": ["Scald","Tailwind","Blizzard","U-Turn"], "ability": "Swift Swim", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 531},																									
-
-	},
-	"Lunatone":{
-		"Stairs Aster/Eclipse (Ecl, Crys Cav) Doubles":{"level": 30, "moves": ["Rock Polish","Psywave","Hypnosis","Rock Slide"], "ability": "Levitate", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 61},																									
-		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 38, "moves": ["Cosmic Power","Psywave","Hypnosis","Rock Slide"], "ability": "Levitate", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 128},																									
-		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 65, "item": "Light Clay", "moves": ["Light Screen","Moonblast","Blizzard","Icy Wind"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 271},																									
-
-	},
-	"Luxray":{
-		"Circus Alistasia (Big Top)":{"level": 65, "item": "Choice Scarf", "moves": ["Volt Switch","Superpower","Iron Tail","Snarl"], "ability": "Intimidate", "nature": "Serious", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 252, "df": 4, "sa": 128, "sd": 0, "sp": 0}, "index": 250},																									
-		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "item": "Amplifield Rock", "moves": ["Electric Terrain","Wild Charge","Superpower","Throat Chop"], "ability": "Intimidate", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 385},																									
-		"Devon VS Arclight (Factory)":{"level": 75, "item": "Amplifield Rock", "moves": ["Electric Terrain","Wild Charge","Superpower","Throat Chop"], "ability": "Intimidate", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 396},																									
-
-	},
-	"Lycanroc":{
-		"Stairs Aster/Eclipse (Ecl, Crys Cav) Doubles":{"level": 32, "moves": ["Fire Fang","Accelerock","Bite","Quick Attack"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 62},																									
-		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 41, "moves": ["Fire Fang","Accelerock","Rock Slide","Crush Claw"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 130},																									
-		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 68, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Fire Fang"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 275},																									
-		"Ametrine Aster (Icy)":{"level": 70, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Drill Run"], "ability": "Sand Rush", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 299},																									
-		"Glass Aster (Factory)":{"level": 86, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Drill Run"], "ability": "Sand Rush", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 463},																									
-		"Agate Partner Hardy (Various) Doubles":{"level": 92, "moves": ["Rock Slide","Drill Run","Brick Break","Zen Headbutt"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 496},																									
-		"Gym Hardy (Rocky) Doubles":{"level": 92, "item": "Choice Band", "moves": ["Rock Slide","Drill Run","Brick Break","Zen Headbutt"], "ability": "Sand Rush", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 511},																									
-
-	},
-	"Lycanroc-Dusk":{
-		"LCCC Aya (Various) Doubles":{"level": 66, "moves": ["Accelerock","Rock Slide","Swords Dance","Crunch"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 264},																									
-		"Agate Partner Hardy (Various) Doubles":{"level": 97, "moves": ["Rock Slide","Accelerock","Brick Break","Drill Run"], "ability": "Tough Claws", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 502},																									
-		"Gym Hardy (Rocky) Doubles":{"level": 97, "item": "Telluric Seed", "moves": ["Rock Slide","Accelerock","Brick Break","Drill Run"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 514},																									
-
-	},
-	"Lycanroc-Midnight":{
-		"Stairs Aster/Eclipse (A, CryCav) Doub":{"level": 32, "moves": ["Thunder Fang","Rock Tomb","Bite","Howl"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 60},																									
-		"Azurine Aster/Eclipse (A, Swamp) Dub":{"level": 41, "moves": ["Thunder Fang","Rock Slide","Crunch","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 127},																									
-		"LCCC Aster/Eclipse (Ast, Factory) Doub":{"level": 68, "item": "Life Orb", "moves": ["Thunder Fang","Stone Edge","Sucker Punch","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 270},																									
-		"Ametrine Aster (Icy)":{"level": 73, "item": "Elemental Seed", "moves": ["Thunder Punch","Stone Edge","Throat Chop","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 300},																									
-		"Glass Aster (Factory)":{"level": 88, "item": "Elemental Seed", "moves": ["Thunder Punch","Stone Edge","Throat Chop","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 464},																									
-
-	},
-	"Machamp":{
-		"Apophyll Kiki (Ashen Beach)":{"level": 40, "item": "Leftovers", "moves": ["Strength","Meditate","Rock Slide","Payback"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index": 119},																									
-		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 69, "moves": ["Wide Guard","Dynamic Punch","Ice Punch","Rock Slide"], "ability": "No Guard", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 347},																									
-		"Labradorra Kenan (None)":{"level": 89, "item": "Assault Vest", "moves": ["Dynamic Punch","Bullet Punch","Ice Punch","Rock Slide"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 518},																									
-
-	},
-	"Magmortar":{
-		"Lapis Cal (Rainbow)":{"level": 34, "item": "Oran Berry", "moves": ["Mach Punch","Belch","Feint Attack","Fire Punch"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 51, "at": 51, "df": 51, "sa": 51, "sd": 51, "sp": 51}, "index": 75},																									
-		"Pyrous Cal (Super-Heated)":{"level": 41, "moves": ["Focus Blast","Thunderbolt","Solar Beam","Lava Plume"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 118},																									
-		"Ametrine Cal (Various) Doubles":{"level": 71, "moves": ["Focus Blast","Thunderbolt","Psychic","Flamethrower"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 289},																									
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Assault Vest", "moves": ["Focus Blast","Thunderbolt","Heat Wave","Psychic"], "ability": "Flame Body", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 589},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Elemental Seed", "moves": ["Focus Blast","Thunderbolt","Lava Plume","Psychic"], "ability": "Flame Body", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 613},																									
-
-	},
-	"Magnezone":{
-		"Fiore Julia (None) Doubles":{"level": 66, "item": "Air Balloon", "moves": ["Hidden Power Fire","Signal Beam","Thunderbolt","Flash Cannon"], "ability": "Analytic", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 337},																									
-		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 72, "item": "Air Balloon", "moves": ["Discharge","Thunder Wave","Flash Cannon","Hidden Power Fire"], "ability": "Analytic", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 362},																									
-		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 89, "item": "Choice Specs", "moves": ["Thunderbolt","Flash Cannon","Signal Beam","Hidden Power Water"], "ability": "Sturdy", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 575},																									
-
-	},
-	"Magnezone-Pulse":{
-		"Devon ZEL (Factory)":{"level": 83, "item": "Wiki Berry", "moves": ["Magnet Bomb","Discharge","Autotomize","Hidden Power Fire"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 407},																									
-
-	},
-	"Malamar":{
-		"Gym Radomus (Chess: Pawn) Doubles":{"level": 58, "item": "Rocky Helmet", "moves": ["Superpower","Throat Chop","Trick Room","Rock Slide"], "ability": "Contrary", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 226},																									
-
-	},
-	"Mamoswine":{
-		"Ametrine Blake (Snowy Mount)":{"level": 72, "moves": ["Earthquake","Stealth Rock","Ice Shard","Icicle Crash"], "ability": "Snow Cloak", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 302},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "moves": ["Earthquake","Rock Slide","Ice Shard","Icicle Crash"], "ability": "Thick Fat", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 350},																									
-		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Life Orb", "moves": ["Icicle Crash","Stomping Tantrum","Ice Shard","Rock Slide"], "ability": "Thick Fat", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 539},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 93, "item": "Choice Band", "moves": ["Icicle Crash","Stealth Rock","Return","Earthquake"], "ability": "Snow Cloak", "nature": "Adamant", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 255, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 602},																									
-		"VR Blake (Icy)":{"level": 97, "item": "Elemental Seed", "moves": ["Earthquake","Knock Off","Ice Shard","Icicle Crash"], "ability": "Snow Cloak", "nature": "Adamant", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 640},																									
-
-	},
-	"Mandibuzz":{
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "item": "Leftovers", "moves": ["Roost","Snarl","Toxic","Foul Play"], "ability": "Overcoat", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 367},																									
-
-	},
-	"Manectric":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 47, "moves": ["Flamethrower","Volt Switch","Discharge","Snarl"], "ability": "Static", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 177},																									
-		"Belrose Sirius (None)":{"level": 50, "moves": ["Volt Switch","Discharge","Flamethrower","Snarl"], "ability": "Static", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index": 201},																									
-		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 68, "moves": ["Overheat","Discharge","Thunder Wave","Hidden Power Ice"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 342},																									
-		"Labradorra Diana (None)":{"level": 88, "item": "Life Orb", "moves": ["Hidden Power Ice","Thunderbolt","Thunder Wave","Flamethrower"], "ability": "Lightning Rod", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 522},																									
+	"Claydol":{	
+		"Orphanage Christina/Matt (M, None)":{"level":33,"moves":["Cosmic Power","Power Trick","Self-Destruct","Extrasensory"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1235},
+		"Circus Clown Drolly (None)":{"level":65,"item":"Air Balloon","moves":["Psychic","Sandstorm","Earth Power","Ancient Power"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2141},
+		"Desert Hiker Red (Desert)":{"level":74,"moves":["Earth Power","Psychic","Explosion","Light Screen"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2218},
 		
-	},
-	"Manectric-Mega":{
-		"VR Sirius (Dragon's Den) Doubles":{"level": 97, "item": "Manectite", "moves": ["Volt Switch","Overheat","Snarl","Discharge"], "ability": "Intimidate", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 644},																									
-
-	},
-	"Maractus":{
-		"Gym Florinia (Desert)":{"level": 22, "moves": ["Nature Power","Pin Missile","Needle Arm","Spikes"], "ability": "Water Absorb", "nature": "Quirky", "ivs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index": 29},																																			
-
-	},
-	"Mareanie":{
-		"Agent Corey (Corrosive)":{"level": 26, "item": "Telluric Seed", "moves": ["Peck","Bite","Venoshock","Toxic"], "ability": "Merciless", "nature": "Sassy", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 44},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 26, "moves": ["Peck","Bite","Venoshock","Protect"], "ability": "Merciless", "nature": "Sassy", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 50},																									
-
-	},
-	"Marowak":{
-		"Labradorra Audrey (None)":{"level": 90, "item": "Thick Club", "moves": ["Bonemerang","Iron Head","Rock Slide","Throat Chop"], "ability": "Battle Armor", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 545},																									
-
-	},
-	"Marowak-Alola":{
-		"Lapis/Orphanage Cain (None)":{"level": 33, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 83},																									
-		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 159},																									
-		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 165},																									
-		"Vanhainen Cain (Chess: Knight)":{"level": 54, "item": "Thick Club", "moves": ["Flare Blitz","Stomping Tantrum","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 221},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 82, "item": "Thick Club", "moves": ["Fire Punch","Rock Slide","Shadow Bone","Iron Head"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 471},																									
-		"VR Sirius (Dragon's Den) Doubles":{"level": 97, "item": "Thick Club", "moves": ["Outrage","Shadow Bone","Rock Slide","Flare Blitz"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 645},																									
-
-	},
-	"Masquerain":{
-		"Gym Shelly (Forest) Doubles":{"level": 31, "item": "Silver Powder", "moves": ["Struggle Bug","Icy Wind","Bubble Beam","Energy Ball"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 77},																									
-		"Orphanage Shelly (None) Doubles":{"level": 31, "item": "Silver Powder", "moves": ["Struggle Bug","Icy Wind","Bubble Beam","Energy Ball"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index": 88},																									
-		"Spinel Bennet (Mirror)":{"level": 49, "item": "Leftovers", "moves": ["Quiver Dance","Roost","Hydro Pump","Signal Beam"], "ability": "Intimidate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 184},																									
-
-	},
-	"Mawile-Mega":{
-		"Gym Adrienn (Misty) Doubles":{"level": 78, "item": "Mawilite", "moves": ["Iron Head","Play Rough","Rock Slide","Sucker Punch"], "ability": "Intimidate", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 412},																									
-
-	},
-	"Medicham":{
-		"Apophyll Kiki (Ashen Beach)":{"level": 43, "item": "Telluric Seed", "moves": ["Drain Punch","Meditate","Strength","Ice Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index": 124},																									
-		"Ametrine Cal (Various) Doubles":{"level": 72, "item": "Muscle Band", "moves": ["Drain Punch","Meditate","High Jump Kick","Ice Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 290},																									
-
-	},
-	"Medicham-Mega":{
-		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 95, "item": "Medichamite", "moves": ["Fake Out","High Jump Kick","Zen Headbutt","Fire Punch"], "ability": "Pure Power", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 594},																									
-		"Labr. VS Cal (Dragon's Den)":{"level": 95, "item": "Medichamite", "moves": ["Fake Out","High Jump Kick","Zen Headbutt","Fire Punch"], "ability": "Pure Power", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 618},																									
-
-	},
-	"Meowstic-F":{
-		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 160},																									
-		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 166},																									
-		"Vanhainen Cain (Chess: Knight)":{"level": 54, "item": "Wise Glasses", "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 220},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Damp Rock", "moves": ["Charge Beam","Psychic","Reflect","Rain Dance"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 472},																									
-
-	},
-	"Metagross":{
-		"Gym Radomus (Chess: King) Doubles":{"level": 59, "item": "King'S Rock", "moves": ["Zen Headbutt","Meteor Mash","Ice Punch","Strength"], "ability": "Clear Body", "nature": "Brave", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 229},																									
-		"WTC Ace (Factory)":{"level": 72, "item": "Enigma Berry", "moves": ["Earthquake","Iron Head","Zen Headbutt","Bullet Punch"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 327},																									
-		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Zen Headbutt","Meteor Mash","Ice Punch","Rock Slide"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 491},																									
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Weakness Policy", "moves": ["Meteor Mash","Protect","Zen Headbutt","Return"], "ability": "Clear Body", "nature": "Jolly", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 255, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index": 611},																									
-
-	},
-	"Mewtwo":{
-		"Glitch World Mewtwo (Glitch)":{"level": 75, "item": "Leftovers", "moves": ["Psystrike","Recover","Thunderbolt","Ice Beam"], "ability": "Pressure", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 307},																									
-
-	},
-	"Mienfoo":{
-		"Apophyll Victoria (Ashen Beach)":{"level": 38, "item": "Muscle Band", "moves": ["Drain Punch","Fake Out","Meditate","Rock Tomb"], "ability": "Regenerator", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 109},																									
-		"Pyrous Victoria (Super-Heated)":{"level": 37, "item": "Eject Button", "moves": ["Drain Punch","Fake Out","Meditate","Rock Tomb"], "ability": "Regenerator", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 137},																									
-
-	},
-	"Mienshao":{
-		"Gym Samson (Big Top)":{"level": 68, "item": "Life Orb", "moves": ["Acrobatics","U-Turn","Brick Break","Poison Jab"], "ability": "Regenerator", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 255},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 73, "moves": ["Knock Off","High Jump Kick","U-Turn","Fake Out"], "ability": "Regenerator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 379},																									
-		"Devon VS Victoria (Factory)":{"level": 74, "item": "Life Orb", "moves": ["Knock Off","High Jump Kick","U-Turn","Fake Out"], "ability": "Regenerator", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 390},																									
-		"Labradorra Tag Victoria (None) Doubles":{"level": 91, "item": "Life Orb", "moves": ["Knock Off","High Jump Kick","U-Turn","Poison Jab"], "ability": "Regenerator", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 525},																									
-
-	},
-	"Milotic":{
-		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 67, "item": "Leftovers", "moves": ["Scald","Confuse Ray","Recover","Blizzard"], "ability": "Marvel Scale", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 274},																									
-
-	},
-	"Mimikyu":{
-		"Gym Shade (Short Circuit)":{"level": 38, "item": "Sitrus Berry", "moves": ["Thunderbolt","Swords Dance","Shadow Claw","Play Rough"], "ability": "Disguise", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 102},																									
-		"Vanhainen Cain (Chess: King)":{"level": 53, "moves": ["Drain Punch","Play Rough","Swords Dance","Shadow Sneak"], "ability": "Disguise", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 79, "at": 79, "df": 79, "sa": 79, "sd": 79, "sp": 79}, "index": 219},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Electric Gem", "moves": ["Thunder","Play Rough","Swords Dance","Shadow Claw"], "ability": "Disguise", "nature": "Lonely", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index": 474},																									
-
-	},
-	"Minior-Meteor":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 45, "moves": ["Shell Smash","Charge Beam","Power Gem","Dazzling Gleam"], "ability": "Shields Down", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 174},																									
-		"Belrose Sirius (None)":{"level": 48, "moves": ["Shell Smash","Dazzling Gleam","Power Gem","Psychic"], "ability": "Shields Down", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 198},																									
-		"WTC Taka (Factory)":{"level": 69, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Power Gem","Earthquake"], "ability": "Shields Down", "nature": "Naive", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 148, "sd": 0, "sp": 108}, "index": 320},																									
-		"Gym Ciel (Big Top)":{"level": 75, "item": "Focus Sash", "moves": ["Acrobatics","Earthquake","Rock Slide","Shell Smash"], "ability": "Shields Down", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 373},																									
-		"Tourmaline Taka (Desert)":{"level": 78, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 418},																									
-		"Tourmaline Partner Taka (Desert) Doubles":{"level": 78, "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 425},																									
-		"Labradorra Avril/Steven (A, None) Doubles":{"level": 88, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 532},																									
-		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Iron Head","Rock Slide"], "ability": "Shields Down", "nature": "Adamant", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 646},																									
-
-	},
-	"Minun":{
-		"Gym Julia (Electric)":{"level": 12, "moves": ["Nuzzle","Charge Beam","Encore","Quick Attack"], "ability": "Minus", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index": 8},																																			
-
-	},
-	"Mismagius":{
-		"Byxbysion Ace (Wasteland)":{"level": 41, "moves": ["Mystical Fire","Power Gem","Shadow Ball","Thunder Wave"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 145},																									
-		"Glass 2 ??? (Factory)":{"level": 84, "item": "Synthetic Seed", "moves": ["Shadow Ball","Thunderbolt","Nasty Plot","Dazzling Gleam"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 479},																									
-
-	},
-	"Mr. Mime-Pulse":{
-		"Calc. Connal/Mime (Mime, Sh-Circ) Doub":{"level": 100, "item": "Leftovers", "moves": ["Instruct","Night Shade","Moonlight","Entrainment"], "ability": "Wonder Guard", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 236, "at": 0, "df": 16, "sa": 0, "sd": 252, "sp": 0}, "index": 582},																									
-
-	},
-	"Mudsdale":{
-		"Labradorra Avril/Steven (S, None) Doubles":{"level": 90, "item": "Assault Vest", "moves": ["Close Combat","High Horsepower","Counter","Rock Slide"], "ability": "Stamina", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 540},																									
-
-	},
-	"Muk-Alola":{
-		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Gunk Shot","Minimize","Disable","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 161},																									
-		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Gunk Shot","Minimize","Power-Up Punch","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 167},																									
-		"Vanhainen Cain (Chess: Pawn)":{"level": 52, "item": "Black Sludge", "moves": ["Gunk Shot","Minimize","Knock Off","Power-Up Punch"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index": 218},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Black Sludge", "moves": ["Gunk Shot","Thunder Punch","Knock Off","Rock Slide"], "ability": "Power Of Alchemy", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 475},																									
-
-	},
-	"Muk-Pulse":{
-		"Blacksteam ZEL (Factory)":{"level": 42, "item": "Leftovers", "moves": ["Sludge Wave","Mud Bomb","Muddy Water","Discharge"], "ability": "Protean", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 107},																									
-
-	},
-	"Musharna":{
-		"Orphanage Connal (None)":{"level": 34, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psybeam","Signal Beam"], "ability": "Telepathy", "nature": "Serious", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 51, "at": 51, "df": 51, "sa": 51, "sd": 51, "sp": 51}, "index": 93},																									
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 45, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psyshock","Dazzling Gleam"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 169},																									
-		"Belrose Connal (None)":{"level": 48, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psyshock","Dazzling Gleam"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 192},																									
-
-	},
-	"Nidoking":{
-		"Lapis/Orphanage Cain (None)":{"level": 36, "moves": ["Thrash","Double Kick","Poison Tail","Chip Away"], "ability": "Sheer Force", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index": 85},																									
-		"Byxbysion Cain (Wasteland)":{"level": 46, "moves": ["Thrash","Throat Chop","Poison Tail","Shadow Ball"], "ability": "Sheer Force", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 163},																									
-		"Yureyu Cain (Short Circuit) Doubles":{"level": 46, "moves": ["Thrash","Throat Chop","Poison Tail","Shadow Ball"], "ability": "Sheer Force", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 164},																									
-		"Vanhainen Cain (Chess: Queen)":{"level": 55, "moves": ["Earthquake","Throat Chop","Poison Jab","Megahorn"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 223},																									
-		"Gym Terra (Glitch)":{"level": 73, "item": "Life Orb", "moves": ["Amnesia","Blizzard","Thunderbolt","Flamethrower"], "ability": "Sheer Force", "nature": "Timid", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 308},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 83, "item": "Life Orb", "moves": ["Earth Power","Blizzard","Thunder","Flamethrower"], "ability": "Sheer Force", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 476},																									
-		"E4 Heather (Mountain)":{"level": 100, "item": "Life Orb", "moves": ["Thunder","Earth Power","Rock Slide","Sludge Wave"], "ability": "Sheer Force", "nature": "Hasty", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 657},																									
-
-	},
-	"Nidoran-M":{
-		"Grand Hall Cain (None)":{"level": 5, "moves": ["Cut","Leer"], "ability": "Hustle", "nature": "Modest", "ivs": {"hp": 3, "at": 3, "df": 3, "sa": 3, "sd": 3, "sp": 3}, "evs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "index": 1},																																																													
-	},
-	"Nidorina":{
-		"Agent Corey (Corrosive)":{"level": 27, "moves": ["Double Kick","Venom Drench","Bite","Disable"], "ability": "Hustle", "nature": "Impish", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 45},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Double Kick","Venom Drench","Bite","Disable"], "ability": "Hustle", "nature": "Impish", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 51},																									
-
-	},
-	"Nidorino":{
-		"Coral Cain (Misty)":{"level": 20, "moves": ["Poison Tail","Supersonic","Fury Attack","Peck"], "ability": "Rivalry", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "index": 24},																																			
-
-	},
-	"Nidoqueen":{
-		"Gym Aya (Wasteland) Doubles":{"level": 41, "item": "Black Sludge", "moves": ["Sludge Wave","Stealth Rock","Crunch","Stomping Tantrum"], "ability": "Poison Point", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 153},																									
-		"WTC Ace (Factory)":{"level": 71, "item": "Wise Glasses", "moves": ["Earth Power","Flamethrower","Thunderbolt","Sludge Bomb"], "ability": "Sheer Force", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 325},																									
-
-	},
-	"Ninetales":{
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 72, "item": "Telluric Seed", "moves": ["Heat Wave","Solar Beam","Hidden Power Rock","Nasty Plot"], "ability": "Drought", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 281},																									
-
-	},
-	"Ninetales-Alola":{
-		"Gym Serra (Mirror)":{"level": 48, "item": "Icy Rock", "moves": ["Nasty Plot","Dazzling Gleam","Aurora Beam","Aurora Veil"], "ability": "Snow Warning", "nature": "Calm", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 187},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 81, "item": "Light Clay", "moves": ["Blizzard","Dazzling Gleam","Freeze-Dry","Aurora Veil"], "ability": "Snow Warning", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 483},																									
-		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 93, "item": "Light Clay", "moves": ["Aurora Veil","Protect","Icy Wind","Dazzling Gleam"], "ability": "Snow Warning", "nature": "Timid", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index": 601},																									
-
-	},
-	"Noctowl":{
-		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 69, "moves": ["Hypnosis","Air Slash","Psychic","Heat Wave"], "ability": "Tinted Lens", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 341},																									
-		"Labradorra Diana (None)":{"species": 88, "item": "Choice Specs", "moves": ["Moonblast","Hurricane","Psychic","Heat Wave"], "ability": "Tinted Lens", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 521},																									
-
-	},
-	"Noivern":{
-		"Gym Ciel (Big Top)":{"level": 75, "item": "Assault Vest", "moves": ["Acrobatics","Boomburst","Dragon Pulse","Heat Wave"], "ability": "Infiltrator", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 374},																									
-		"Devon Partner Arclight (Factory) Doubles":{"level": 76, "item": "Wide Lens", "moves": ["Dragon Pulse","Boomburst","Hurricane","Heat Wave"], "ability": "Infiltrator", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 388},																									
-		"Devon VS Arclight (Factory)":{"level": 77, "item": "Wide Lens", "moves": ["Dragon Pulse","Boomburst","Hurricane","Heat Wave"], "ability": "Infiltrator", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 399},																									
-		"Gym Gargantuan (Dragon's Den)":{"level": 95, "item": "Elemental Seed", "moves": ["Boomburst","Dragon Pulse","Flamethrower","Defog"], "ability": "Infiltrator", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 626},																									
-		"E4 Elias (Holy)":{"level": 100, "item": "Magical Seed", "moves": ["Boomburst","Flamethrower","Dragon Pulse","Psychic"], "ability": "Infiltrator", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 668},																									
-
-	},
-	"Oranguru":{
-		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 39, "moves": ["Foul Play","Instruct","Reflect","Nature Power"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 129},																									
-		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 66, "item": "Light Clay", "moves": ["Foul Play","Reflect","Instruct","Nature Power"], "ability": "Telepathy", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 273},																									
-
-	},
-	"Oricorio":{
-		"Gym Ciel (Big Top)":{"level": 75, "item": "Synthetic Seed", "moves": ["Revelation Dance","Roost","Air Slash","Baton Pass"], "ability": "Dancer", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index": 376},																									
-
-	},
-	"Oricorio-Pom-Pom":{
-		"Gym Julia (Electric)":{"level": 14, "moves": ["Work Up","Tailwind","Pound","Air Cutter"], "ability": "Dancer", "nature": "Quirky", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "index": 12},																																			
-		"Fiore Julia (None) Doubles":{"level": 70, "item": "Life Orb", "moves": ["Hurricane","Revelation Dance","Roost","Hidden Power Ice"], "ability": "Dancer", "nature": "Modest", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 339},																									
-
-	},
-	"Palossand":{
-		"Gym Terra (Glitch)":{"level": 73, "item": "Synthetic Seed", "moves": ["Giga Drain","Shore Up","Psychic","Amnesia"], "ability": "Sand Veil", "nature": "Calm", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 311},																									
-
-	},
-	"Pancham":{
-		"Slums Victoria (None)":{"level": 18, "moves": ["Arm Thrust","Work Up","Comet Punch","Karate Chop"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index": 16},																																			
-		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 30, "moves": ["Arm Thrust","Work Up","Slash","Circle Throw"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 56},																									
-		"N. Obsidia Victoria (None)":{"level": 30, "moves": ["Arm Thrust","Work Up","Slash","Circle Throw"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 63},																									
-
-	},
-	"Pangoro":{
-		"Apophyll Victoria (Ashen Beach)":{"level": 38, "item": "Shell Bell", "moves": ["Bullet Punch","Payback","Strength","Circle Throw"], "ability": "Iron Fist", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 108},																									
-		"Pyrous Victoria (Super-Heated)":{"level": 37, "moves": ["Bullet Punch","Payback","Strength","Circle Throw"], "ability": "Iron Fist", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 136},																									
-
-	},
-	"Passimian":{
-		"Azurine Aster/Eclipse (Ast, Swamp) Doub":{"level": 39, "moves": ["Brick Break","Double-Edge","Bulk Up","Bulldoze"], "ability": "Receiver", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 126},																									
-		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 66, "item": "Life Orb", "moves": ["Bulldoze","Rock Slide","Brick Break","Giga Impact"], "ability": "Receiver", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 268},																									
-		"Ametrine Aster (Icy)":{"level": 69, "item": "Life Orb", "moves": ["Close Combat","Earthquake","Rock Slide","Gunk Shot"], "ability": "Defiant", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 298},																									
-		"Glass Aster (Factory)":{"level": 85, "item": "Life Orb", "moves": ["Close Combat","Earthquake","Rock Slide","Gunk Shot"], "ability": "Defiant", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 462},																									
-
-	},
-	"Pichu":{
-		"Slums Victoria (None)":{"level": 18, "item": "Eviolite", "moves": ["Sweet Kiss","Fake Out","Nasty Plot","Thunder Shock"], "ability": "Static", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index": 15},																																			
-
-	},
-	"Pikachu":{
-		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 32, "item": "Light Ball", "moves": ["Nuzzle","Nasty Plot","Electro Ball","Fake Out"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 58},																									
-		"N. Obsidia Victoria (None)":{"level": 32, "item": "Light Ball", "moves": ["Nuzzle","Nasty Plot","Electro Ball","Fake Out"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 65},																									
-
-	},
-	"Plusle":{
-		"Gym Julia (Electric)":{"level": 13, "moves": ["Nuzzle","Charge Beam","Encore","Quick Attack"], "ability": "Plus", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index": 11},																																			
-
-	},
-	"Popplio":{
-		"Coral Cain (Misty)":{"level": 18, "moves": ["Icy Wind","Aqua Jet","Disarming Voice","Amnesia"], "ability": "Torrent", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index": 23},																																			
-	},
-	"Porygon-Z":{
-		"Gym Noel (Grassy)":{"level": 54, "item": "Elemental Seed", "moves": ["Nasty Plot","Psychic","Hidden Power Fire","Tri Attack"], "ability": "Download", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 207},																									
-		"Subseven Ace (Holy)":{"level": 60, "moves": ["Tri Attack","Blizzard","Thunderbolt","Recover"], "ability": "Download", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 235},																									
-		"Labradorra Terra (Glitch)":{"level": 97, "item": "Normalium Z", "moves": ["Psychic","Blizzard","Thunderbolt","Conversion"], "ability": "Adaptability", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 6, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 636},																									
-
-	},
-	"Porygon2":{
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 93, "item": "Magical Seed", "moves": ["Conversion","Thunderbolt","Tri Attack","Blizzard"], "ability": "Download", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 607},																									
-
-	},
-	"Primarina":{
-		"Byxbysion Cain (Wasteland)":{"level": 45, "item": "Zoom Lens", "moves": ["Sparkling Aria","Icy Wind","Moonblast","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 162},																									
-		"Yureyu Cain (Short Circuit) Doubles":{"level": 45, "item": "Zoom Lens", "moves": ["Water Pledge","Icy Wind","Disarming Voice","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index": 168},																									
-		"Vanhainen Cain (Chess: Bishop)":{"level": 54, "moves": ["Moonblast","Sparkling Aria","Blizzard","Reflect"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 222},																									
-		"Subseven Ace (Holy)":{"level": 61, "moves": ["Sparkling Aria","Moonblast","Icy Wind","Hyper Voice"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 234},																									
-		"Circus Alistasia (Big Top)":{"level": 66, "item": "Leftovers", "moves": ["Sparkling Aria","Moonblast","Sing","Ice Beam"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 252},																									
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 87, "item": "Elemental Seed", "moves": ["Energy Ball","Dazzling Gleam","Surf","Ice Beam"], "ability": "Torrent", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 443},																									
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 87, "item": "Elemental Seed", "moves": ["Energy Ball","Dazzling Gleam","Surf","Ice Beam"], "ability": "Torrent", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 455},																									
-		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 82, "item": "Mystic Water", "moves": ["Dazzling Gleam","Hyper Voice","Blizzard","Icy Wind"], "ability": "Liquid Voice", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index": 473},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Wise Glasses", "moves": ["Energy Ball","Dazzling Gleam","Hydro Pump","Ice Beam"], "ability": "Torrent", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 548},																									
-
-	},
-	"Purugly":{
-		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 68, "moves": ["Hypnosis","Throat Chop","Frustration","Bulldoze"], "ability": "Thick Fat", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 346},																									
-		"Labradorra Kenan (None)":{"level": 88, "item": "Life Orb", "moves": ["Fake Out","Sucker Punch","Frustration","Play Rough"], "ability": "Thick Fat", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 517},																									
-
-	},
-	"Pyroar":{
-		"Circus Alistasia (Big Top)":{"level": 64, "item": "Power Herb", "moves": ["Heat Wave","Solar Beam","Snarl","Hyper Voice"], "ability": "Rivalry", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 249},																									
-
-	},
-	"Quagsire":{
-		"Gym Terra (Glitch)":{"level": 72, "item": "Synthetic Seed", "moves": ["Scald","Amnesia","Blizzard","Recover"], "ability": "Unaware", "nature": "Bold", "names": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 312},																									
-		"Labradorra Terra (Glitch)":{"level": 97, "item": "Synthetic Seed", "moves": ["Scald","Amnesia","Blizzard","Recover"], "ability": "Unaware", "nature": "Bold", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 635},																									
-
-	},
-	"Quilava":{
-		"Lapis Cal (Rainbow)":{"level": 32, "moves": ["Nature Power","Flame Burst","Hidden Power Electric","Flame Charge"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index": 73},																									
-
-	},
-	"Raichu":{
-		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "item": "Wise Glasses", "moves": ["Focus Blast","Thunderbolt","Hidden Power Ice","Nasty Plot"], "ability": "Lightning Rod", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index": 386},																									
-		"Devon VS Arclight (Factory)":{"level": 76, "item": "Wise Glasses", "moves": ["Focus Blast","Thunderbolt","Hidden Power Ice","Nasty Plot"], "ability": "Lightning Rod", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index": 397},																									
-
-	},
-	"Raichu-Alola":{
-		"Orphanage Connal (None)":{"level": 36, "moves": ["Volt Switch","Psychic","Nuzzle","Fake Out"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index": 96},																									
-		"Apophyll Victoria (Ashen Beach)":{"level": 39, "moves": ["Hidden Power Ice","Nasty Plot","Psychic","Thunderbolt"], "ability": "Surge Surfer", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index": 110},																									
-		"Pyrous Victoria (Super-Heated)":{"level": 38, "moves": ["Hidden Power Ice","Nasty Plot","Psychic","Thunderbolt"], "ability": "Surge Surfer", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 138},																									
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 46, "moves": ["Volt Switch","Psychic","Nasty Plot","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 171},																									
-		"Belrose Connal (None)":{"level": 49, "moves": ["Volt Switch","Psychic","Nasty Plot","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 194},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 74, "moves": ["Nuzzle","Nasty Plot","Psyshock","Discharge"], "ability": "Surge Surfer", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 380},																									
-		"Devon VS Victoria (Factory)":{"level": 75, "item": "Synthetic Seed", "moves": ["Nuzzle","Nasty Plot","Psyshock","Discharge"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 391},																									
-		"Labradorra Tag Victoria (None) Doubles":{"level": 91, "item": "Focus Sash", "moves": ["Nuzzle","Nasty Plot","Psyshock","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 526},																									
-		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Synthetic Seed", "moves": ["Volt Switch","Psychic","Focus Blast","Discharge"], "ability": "Surge Surfer", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index": 585},																									
-	},
-	"Ralts":{
-		"Slums Victoria (None)":{"level": 18, "item": "Wise Glasses", "moves": ["Magical Leaf","Confusion","Disarming Voice","Double Team"], "ability": "Synchronize", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index": 14},																																			
-
-	},
-	"Rampardos":{
-		"Agate Partner Hardy (Various) Doubles":{"level": 91, "moves": ["Rock Slide","Iron Head","Fire Punch","Rock Smash"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 499},																									
-		"Gym Hardy (Rocky) Doubles":{"level": 91, "item": "Choice Scarf", "moves": ["Rock Slide","Iron Head","Fire Punch","Rock Smash"], "ability": "Sheer Force", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 513},																									
-
-	},
-	"Reshiram":{
-		"Legendary Reshiram (None)":{"level": 90, "item": "Elemental Seed", "moves": ["Blue Flare","Roost","Dragon Pulse","Solar Beam"], "ability": "Turboblaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index": 427},																									
-
-	},
-	"Reuniclus":{
-		"Gym Radomus (Chess: Pawn) Doubles":{"level": 57, "item": "Synthetic Seed", "moves": ["Trick Room","Psychic","Focus Blast","Toxic"], "ability": "Magic Guard", "nature": "Quiet", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 225},																									
-		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Psychic","Thunder","Recover","Calm Mind"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 572},																									
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Leftovers", "moves": ["Protect","Psyshock","Shadow Ball","Focus Blast"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index": 610},																									
-
-	},
-	"Rhydon":{
-		"Byxbysion Fern (Wasteland)":{"level": 43, "item": "Muscle Band", "moves": ["Stone Edge","Drill Run","Chip Away","Fire Fang"], "ability": "Reckless", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index": 147},																									
-		"Route 1 Fern (Grassy)":{"level": 52, "item": "Eviolite", "moves": ["Drill Run","Stone Edge","Hammer Arm","Fire Fang"], "ability": "Lightning Rod", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index": 213},																									
-
-	},
-	"Rhyhorn":{
-		"N. Obsidia Fern (None)":{"level": 30, "moves": ["Bulldoze","Rock Blast","Chip Away","Fire Fang"], "ability": "Reckless", "nature": "Brave", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 67},																									
-
-	},
-	"Rhyperior":{
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "moves": ["Earthquake","Rock Slide","Fire Punch","Megahorn"], "ability": "Solid Rock", "nature": "Brave", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 356},																									
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Iapapa Berry", "moves": ["Drill Run","Rock Tomb","Stealth Rock","Rock Polish"], "ability": "Solid Rock", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 650},																									
-
-	},
-	"Ribombee":{
-		"Ametrine Shelly (Various) Doubles":{"level": 70, "item": "Silver Powder", "moves": ["Moonblast","Psychic","Pollen Puff","Quiver Dance"], "ability": "Honey Gather", "nature": "Modest", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 285},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 81, "item": "Babiri Berry", "moves": ["Dazzling Gleam","Sticky Web","Pollen Puff","Light Screen"], "ability": "Sweet Veil", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 465},																									
-
-	},
-	"Rockruff":{
-		"Mosswater Aster/Eclipse (Ast, Factory) Doubles":{"level": 16, "moves": ["Thunder Fang","Howl","Bite","Rock Throw"], "ability": "Steadfast", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index": 6},																																			
-		"Mosswater Aster/Eclipse (Ecl, Factory) Doubles":{"level": 16, "moves": ["Fire Fang","Howl","Bite","Rock Throw"], "ability": "Vital Spirit", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index": 7},																																			
-
-	},
-	"Roselia":{
-		"Onyx Fern (None)":{"level": 24, "moves": ["Leech Seed","Stun Spore","Mega Drain","Poison Sting"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index": 27},																																			
-		"Rhodocrine Ace (Forest)":{"level": 26, "item": "Enigma Berry", "moves": ["Giga Drain","Extrasensory","Natural Gift","Leech Seed"], "ability": "Leaf Guard", "nature": "Serious", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 40},																									
-
-	},
-	"Roserade":{
-		"N. Obsidia Fern (None)":{"level": 33, "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 70},																									
-		"Byxbysion Fern (Wasteland)":{"level": 44, "item": "Leftovers", "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index": 151},																									
-		"Route 1 Fern (Grassy)":{"level": 54, "item": "Leftovers", "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 216},																									
-		"WTC Ace (Factory)":{"level": 70, "moves": ["Nature Power","Giga Drain","Dazzling Gleam","Toxic Spikes"], "ability": "Technician", "nature": "Rash", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 322},																									
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 72, "moves": ["Sleep Powder","Giga Drain","Sludge Bomb","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "evs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 359},																																														
-
-	},
-	"Rotom":{
-		"Orphanage Connal (None)":{"level": 35, "moves": ["Volt Switch","Ominous Wind","Thunder Wave","Confuse Ray"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 95},																									
-		"Gym Shade (Short Circuit)":{"level": 37, "item": "Leftovers", "moves": ["Pain Split","Confuse Ray","Shadow Ball","Discharge"], "ability": "Levitate", "nature": "Bold", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 99},																									
-		"Yureyu Connal (Short Circuit) Doubles":{"level": 47, "moves": ["Thunderbolt","Hex","Will-O-Wisp","Foul Play"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 172},																									
-		"Belrose Connal (None)":{"level": 50, "moves": ["Thunderbolt","Hex","Will-O-Wisp","Foul Play"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index": 196},																									
-
-	},
-	"Rotom-Fan":{
-		"Fiore Julia (None) Doubles":{"level": 67, "item": "Air Balloon", "moves": ["Volt Switch","Air Slash","Shadow Ball","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 336},																									
-
-	},
-	"Rotom-Frost":{
-		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Icium Z", "moves": ["Discharge","Shadow Ball","Blizzard","Foul Play"], "ability": "Levitate", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 586},																									
-
-	},
-	"Rotom-Heat":{
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 68, "item": "Light Clay", "moves": ["Reflect","Volt Switch","Overheat","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 278},																									
-
-	},
-	"Rotom-Wash":{
-		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hydro Pump","Discharge","Dark Pulse","Will-O-Wisp"], "ability": "Levitate", "nature": "Modest", "evs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 555},																									
-
-	},
-	"Rowlet":{
-		"Peridot/Mosswater Fern (None)":{"level": 14, "moves": ["Leafage","Peck","Ominous Wind","Confuse Ray"], "ability": "Overgrow", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "index": 5},																																			
-
-	},
-	"Salamence":{
-		"Gym Gargantuan (Dragon's Den)":{"level": 96, "item": "Focus Sash", "moves": ["Dragon Dance","Dragon Claw","Earthquake","Fire Fang"], "ability": "Moxie", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 627},																									
-
-	},
-	"Salamence-Mega":{
-		"E4 Heather (Mountain)":{"level": 100, "item": "Salamencite", "moves": ["Stone Edge","Roost","Return","Earthquake"], "ability": "Intimidate", "nature": "Jolly", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 252, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 661},																									
-
-	},
-	"Salazzle":{
-		"Gym Aya (Wasteland) Doubles":{"level": 42, "item": "Focus Sash", "moves": ["Nasty Plot","Heat Wave","Sludge Wave","Disable"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 157},																									
-		"LCCC Aya (Various) Doubles":{"level": 68, "moves": ["Nasty Plot","Flamethrower","Sludge Bomb","Knock Off"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 263},																									
-		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 69, "moves": ["Sludge Bomb","Flamethrower","Nasty Plot","Dragon Pulse"], "ability": "Corrosion", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 343},																									
-		"Labradorra Diana (None)":{"level": 89, "item": "Black Sludge", "moves": ["Sludge Bomb","Flamethrower","Nasty Plot","Toxic"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 523},																									
-
-	},
-	"Sandile":{
-		"Peridot/Mosswater Fern (None)":{"level": 13, "moves": ["Power Trip","Snatch","Rage","Sand Tomb"], "ability": "Moxie", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index": 4},																																			
-		"Onyx Fern (None)":{"level": 23, "moves": ["Mud-Slap","Bite","Sand Attack","Rage"], "ability": "Moxie", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index": 26},																																			
-
-	},
-	"Sandslash":{
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Focus Sash", "moves": ["Earthquake","Swords Dance","Stone Edge","Knock Off"], "ability": "Sand Rush", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 598},																									
-		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Focus Sash", "moves": ["Earthquake","Swords Dance","Stone Edge","X-Scissor"], "ability": "Sand Rush", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 622},																									
-
-	},
-	"Sandslash-Alola":{
-		"Gym Serra (Mirror)":{"level": 47, "item": "Wide Lens", "moves": ["Iron Head","Icicle Crash","Brick Break","Swords Dance"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 189},																									
-		"Ametrine Blake (Snowy Mount)":{"level": 74, "moves": ["Earthquake","Swords Dance","Rock Slide","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 306},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 73, "moves": ["Earthquake","Swords Dance","Rock Slide","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 354},																									
-		"Gym Titania (Fairy Tale, Hail)":{"level": 83, "item": "Light Clay", "moves": ["Aurora Veil","Icicle Crash","Earthquake","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 128}, "index": 429},																									
-		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Muscle Band", "moves": ["Iron Head","Icicle Crash","Knock Off","Rock Slide"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 484},																									
-		"VR Blake (Icy)":{"level": 100, "item": "Iapapa Berry", "moves": ["Earthquake","Swords Dance","Icicle Crash","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 643},																									
-
-	},
-	"Scizor":{
-		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "moves": ["Bullet Punch","Bug Bite","Swords Dance","Superpower"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 358},																									
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "moves": ["Bullet Punch","U-Turn","Roost","Superpower"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 366},																									
-		"Agate Solaris (None)":{"level": 88, "item": "Life Orb", "moves": ["Bullet Punch","U-Turn","Superpower","Knock Off"], "ability": "Technician", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 504},																									
-
-	},
-	"Scizor-Mega":{
-		"Gym Titania (Fairy Tale, Hail)":{"level": 86, "item": "Scizorite", "moves": ["Swords Dance","Roost","Bullet Punch","Bug Bite"], "ability": "Technician", "nature": "Careful", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 433},																									
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Scizorite", "moves": ["Bullet Punch","Bug Bite","Swords Dance","Roost"], "ability": "Technician", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 652},																									
-
-	},
-	"Scolipede":{
-		"Ametrine Shelly (Various) Doubles":{"level": 69, "item": "Muscle Band", "moves": ["Rock Slide","Throat Chop","Megahorn","Poison Jab"], "ability": "Speed Boost", "nature": "Adamant", "names": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 286},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 81, "item": "Muscle Band", "moves": ["Rock Slide","Stomping Tantrum","Steamroller","Poison Jab"], "ability": "Speed Boost", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 467},																									
-
-	},
-	"Scrafty":{
-		"Slums Gang (None) Doubles":{"level": 20, "moves": ["Feint Attack","Swagger","Low Kick","Payback"], "ability": "Moxie", "ivs": {"hp": 12, "at": 12, "df": 12, "sa": 12, "sd": 12, "sp": 12}, "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "index": 21},																																			
-
-	},
-	"Scraggy":{
-		"Slums Gang (Lv. 15, None) Doubles":{"level": 15, "moves": ["Headbutt","Sand Attack","Feint Attack","Swagger"], "ability": "Intimidate", "iv": "15", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 22, "at": 22, "df": 22, "sa": 22, "sd": 22, "sp": 22}, "index": 18},																																			
-		"Slums Gang (Lv. 16, None) Doubles":{"level": 16, "moves": ["Sand Attack","Feint Attack","Swagger","Low Kick"], "ability": "Moxie", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index": 19},																																			
-		"Slums Gang (Lv. 17, None) Doubles":{"level": 17, "moves": ["Sand Attack","Feint Attack","Swagger","Low Kick"], "ability": "Shed Skin", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index": 20},																																			
-
-	},
-	"Scyther":{
-		"Byxbysion Fern (Wasteland)":{"level": 43, "item": "Muscle Band", "moves": ["X-Scissor","Double Team","Slash","Wing Attack"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index": 149},																									
-		"Route 1 Fern (Grassy)":{"level": 53, "item": "Muscle Band", "moves": ["X-Scissor","Double Team","Wing Attack","Swords Dance"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 79, "at": 79, "df": 79, "sa": 79, "sd": 79, "sp": 79}, "index": 215},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 62, "moves": ["Swords Dance","Night Slash","Wing Attack","Bug Bite"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 240},																									
-
-	},
-	"Seismitoad":{
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 86, "item": "Life Orb", "moves": ["Sludge Bomb","Surf","Earthquake","Focus Blast"], "ability": "Water Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index": 442},																									
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 86, "item": "Life Orb", "moves": ["Sludge Bomb","Surf","Earthquake","Focus Blast"], "ability": "Water Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index": 454},																									
-
-	},
-	"Serperior":{
-		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Life Orb", "moves": ["Leaft Storm","Nature Power","Dragon Pulse","Hidden Power Fire"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 653},																									
-
-	},
-	"Seviper":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 47, "item": "Leftovers", "moves": ["Throat Chop","Poison Jab","Rest","Aqua Tail"], "ability": "Shed Skin", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index": 178},																									
-		"Belrose Sirius (None)":{"level": 51, "item": "Leftovers", "moves": ["Throat Chop","Poison Jab","Rest","Aqua Tail"], "ability": "Shed Skin", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 76, "at": 76, "df": 76, "sa": 76, "sd": 76, "sp": 76}, "index": 202},																									
-		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "Flame Orb", "moves": ["Sludge Bomb","Giga Drain","Flamethrower","Sludge Wave"], "ability": "Shed Skin", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 648},																									
-
-	},
-	"Sigilyph":{
-		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 93, "item": "Life Orb", "moves": ["Synchronoise","Tailwind","Protect","Energy Ball"], "ability": "Magic Guard", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 608},																									
-
-	},
-	"Skrelp":{
-		"Agent Corey (Corrosive)":{"level": 26, "item": "Focus Sash", "moves": ["Acid","Toxic Spikes","Water Pulse","Venom Drench"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 43},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 26, "item": "Focus Sash", "moves": ["Acid","Bubble","Smokescreen","Venom Drench"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index": 49},																									
-
-	},
-	"Skuntank":{
-		"Agent Corey (Corrosive)":{"level": 27, "moves": ["Pursuit","Flame Burst","Smokescreen","Acid Spray"], "ability": "Aftermath", "nature": "Careful", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 47},																									
-		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Pursuit","Flamethrower","Smokescreen","Acid Spray"], "ability": "Aftermath", "nature": "Careful", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index": 53},																									
-
-	},
-	"Slowbro":{
-		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Leftovers", "moves": ["Icy Wind","Light Screen","Flamethrower","Scald"], "ability": "Own Tempo", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 365},																									
-
-	},
-	"Slowking":{
-		"Gym Radomus (Chess: Rook) Doubles":{"level": 57, "item": "Wise Glasses", "moves": ["Trick Room","Nasty Plot","Scald","Psychic"], "ability": "Regenerator", "nature": "Sassy", "ivs": {"hp": 32, "at": 32, "df": 32, "sa": 32, "sd": 32, "sp": 32}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 228},																									
-
-	},
-	"Solrock":{
-		"Stairs Aster/Eclipse (Ast, Crys Cav) Doub":{"level": 30, "moves": ["Rock Polish","Psywave","Fire Spin","Rock Slide"], "ability": "Levitate", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 59},																									
-		"Azurine Aster/Eclipse (Ast, Swamp) Doub":{"level": 38, "moves": ["Cosmic Power","Psywave","Fire Spin","Rock Slide"], "ability": "Levitate", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 125},																									
-		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 65, "item": "Light Clay", "moves": ["Rock Slide","Reflect","Bulldoze","Will-O-Wisp"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 266},																									
-		"Ametrine Aster (Icy)":{"level": 68, "item": "Light Clay", "moves": ["Stealth Rock","Reflect","Explosion","Light Screen"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 295},																									
-		"Glass Aster (Factory)":{"level": 84, "item": "Light Clay", "moves": ["Stealth Rock","Reflect","Explosion","Light Screen"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 459},																									
-
-	},
-	"Spiritomb":{
-		"Labradorra Zero (None)":{"level": 92, "item": "Black Glasses", "moves": ["Will-O-Wisp","Pursuit","Shadow Sneak","Foul Play"], "ability": "Pressure", "nature": "Careful", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 576},																									
-
-	},
-	"Staraptor":{
-		"Agate Solaris (None)":{"level": 89, "item": "Leftovers", "moves": ["Return","Close Combat","U-Turn","Brave Bird"], "ability": "Intimidate", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 156, "at": 100, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 503},																									
-
-	},
-	"Starmie":{
-		"Ametrine Blake (Snowy Mount)":{"level": 73, "item": "Icy Rock", "moves": ["Blizzard","Hail","Thunder","Light Screen"], "ability": "Natural Cure", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 304},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "item": "Icy Rock", "moves": ["Blizzard","Hail","Thunder","Light Screen"], "ability": "Natural Cure", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 353},																									
-		"Flotsam Amaria (H2O Surf)":{"level": 86, "item": "Light Clay", "moves": ["Scald","Thunderbolt","Light Screen","Ice Beam"], "ability": "Illuminate", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 435},																									
-		"Jetsam Amaria (H2O Surf)":{"level": 86, "item": "Light Clay", "moves": ["Scald","Thunderbolt","Light Screen","Ice Beam"], "ability": "Illuminate", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 447},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"species": 93, "item": "Light Clay", "moves": ["Hydro Pump","Thunder","Light Screen","Reflect"], "ability": "Illuminate", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 546},																									
-		"VR Blake (Icy)":{"level": 96, "item": "Light Clay", "moves": ["Surf","Reflect","Ice Beam","Thunderbolt"], "ability": "Natural Cure", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 638},																									
-
-	},
-	"Steelix":{
-		"Tanzan Gargantuan (Rocky)":{"level": 75, "item": "Sitrus Berry", "moves": ["Earthquake","Stone Edge","Crunch","Heavy Slam"], "ability": "Sheer Force", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index": 204},																									
-		"Labradorra Gargantuan (Dragon's Den)":{"level": 100, "item": "Assault Vest", "moves": ["Earthquake","Dragon Tail","Fire Fang","Heavy Slam"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 3252, "at": 252, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 625},																									
-
-	},
-	"Swalot-Pulse":{
-		"PULSE Swalot (Murkwater)":{"level": 80, "item": "Black Sludge", "moves": ["Sludge Wave","Recover","Infestation","Discharge"], "ability": "Water Absorb", "nature": "Calm", "ivs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 315},																									
-
-	},
-	"Swampert":{
-		"Flotsam Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Dive","Earthquake","Stone Edge","Whirlpool"], "ability": "Torrent", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 252, "sa": 0, "sd": 0, "sp": 0}, "index": 438},																									
-
-	},
-	"Swampert-Mega":{
-		"Jetsam Amaria (H2O Surf)":{"level": 87, "item": "Swampertite", "moves": ["Dive","Earthquake","Stone Edge","Whirlpool"], "ability": "Torrent", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 450},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Swampertite", "moves": ["Waterfall","Earthquake","Hammer Arm","Rock Slide"], "ability": "Torrent", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 549},																									
-
-	},
-	"Swellow":{
-		"Gym Noel (Grassy)":{"level": 54, "item": "Flame Orb", "moves": ["U-Turn","Brave Bird","Steel Wing","Facade"], "ability": "Guts", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index": 210},																									
-
-	},
-	"Sylveon":{
-		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hyper Voice","Psyshock","Wish","Protect"], "ability": "Pixilate", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 560},																									
-		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hyper Voice","Psyshock","Wish","Protect"], "ability": "Pixilate", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 568},																									
-
-	},
-	"Tangrowth":{
-		"Fiore Florinia (None) Doubles":{"level": 70, "item": "Assault Vest", "moves": ["Knock Off","Giga Drain","Hidden Power Fire","Sludge Bomb"], "ability": "Regenerator", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 332},																									
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Knock Off","Giga Drain","Hidden Power Ice","Sludge Bomb"], "ability": "Regenerator", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 248, "at": 0, "df": 8, "sa": 0, "sd": 252, "sp": 0}, "index": 599},																									
-		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Synthetic Seed", "moves": ["Hidden Power Ice","Giga Drain","Nature Power","Rock Slide"], "ability": "Regenerator", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 623},																									
-
-	},
-	"Tangrowth-Pulse-A":{
-		"Malchous Taka (Rocky)":{"level": 24, "item": "Oran Berry", "moves": ["Leech Seed","Vine Whip","Sand Tomb","Rock Tomb"], "ability": "Arena Trap", "nature": "Impish", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index": 37},																									
-
-	},
-	"Tangrowth-Pulse-B":{
-		"Rhodocrine Ace (Forest)":{"level": 29, "item": "Pecha Berry", "moves": ["Growth","Mega Drain","Stored Power","Rock Tomb"], "ability": "Stamina", "nature": "Serious", "ivs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "evs": {"hp": 43, "at": 43, "df": 43, "sa": 43, "sd": 43, "sp": 43}, "index": 42},																									
-
-	},
-	"Tangrowth-Pulse-C":{
-		"Obsidia ZEL (Forest)":{"level": 22, "item": "Occa Berry", "moves": ["Wrap","Vine Whip","Acid Spray","Mega Drain"], "ability": "Filter", "nature": "Calm", "ivs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "happiness": 0, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index": 25},																																			
-
-	},
-	"Tentacruel":{
-		"Labradorra Audrey (None)":{"level": 88, "item": "Black Sludge", "moves": ["Sludge Wave","Hydro Pump","Giga Drain","Dazzling Gleam"], "ability": "Clear Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 541},																									
-		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Choice Specs", "moves": ["Sludge Bomb","Dazzling Gleam","Muddy Water","Blizzard"], "ability": "Clear Body", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 550},																									
-
-	},
-	"Togekiss":{
-		"Subseven Ace (Holy)":{"level": 60, "item": "Leftovers", "moves": ["Dazzling Gleam","Air Slash","Grass Knot","Roost"], "ability": "Serene Grace", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 233},																									
-		"Gym Ciel (Big Top)":{"level": 75, "item": "Leftovers", "moves": ["Roost","Air Slash","Aura Sphere","Thunder Wave"], "ability": "Serene Grace", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index": 372},																									
-		"Devon Partner Victoria (Factory) Doubles":{"level": 73, "item": "King'S Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 381},																									
-		"Devon VS Victoria (Factory)":{"level": 74, "item": "King'S Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 393},																									
-		"Gym Adrienn (Misty) Doubles":{"level": 77, "item": "Kebia Berry", "moves": ["Aura Sphere","Dazzling Gleam","Flamethrower","Psyshock"], "ability": "Serene Grace", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index": 410},																									
-		"Labradorra Tag Victoria (None) Doubles":{"level": 92, "item": "King'S Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 528},																									
-
-	},
-	"Torkoal":{
-		"Lapis Cal (Rainbow)":{"level": 30, "item": "Heat Rock", "moves": ["Stealth Rock","Fire Spin","Nature Power","Hidden Power Electric"], "ability": "Drought", "nature": "Mild", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index": 71},																									
-
-	},
-	"Torracat":{
-		"Slums Victoria (None)":{"level": 19, "moves": ["Flame Charge","Dual Chop","Power Trip","Bulk Up"], "ability": "Intimidate", "iv": "30", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 28, "at": 28, "df": 28, "sa": 28, "sd": 28, "sp": 28}, "index": 17},																																			
-		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 33, "moves": ["Bite","Fire Fang","Double Kick","Lick"], "ability": "Intimidate", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 55},																									
-		"N. Obsidia Victoria (None)":{"level": 33, "moves": ["Bite","Fire Fang","Double Kick","Lick"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 66},																									
-
-	},
-	"Torterra":{
-		"Fiore Florinia (None) Doubles":{"level": 68, "item": "Yache Berry", "moves": ["Superpower","Wood Hammer","Rock Slide","Crunch"], "ability": "Overgrow", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 329},																									
-		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Leftovers", "moves": ["Wood Hammer","Earthquake","Rock Slide","Return"], "ability": "Overgrow", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index": 596},																									
-		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Synthetic Seed", "moves": ["Giga Drain","Leaft Storm","Amnesia","Nature Power"], "ability": "Shell Armor", "nature": "Careful", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 252, "sp": 0}, "index": 620},																									
-
-	},
-	"Toucannon":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 46, "moves": ["Beak Blast","Rock Blast","Tailwind","Roost"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 176},																									
-		"Belrose Sirius (None)":{"level": 50, "moves": ["Beak Blast","Rock Blast","Tailwind","Roost"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index": 200},																									
-		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Muscle Band", "moves": ["Beak Blast","Knock Off","Roost","Brick Break"], "ability": "Skill Link", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 364},																									
-
 	},	
-	"Toxapex":{
-		"Gym Aya (Wasteland) Doubles":{"level": 41, "item": "Black Sludge", "moves": ["Sludge Wave","Recover","Icy Wind","Toxic Spikes"], "ability": "Merciless", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 154},																									
-		"LCCC Aya (Various) Doubles":{"level": 66, "item": "Rocky Helmet", "moves": ["Sludge Bomb","Icy Wind","Blizzard","Scald"], "ability": "Merciless", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 262},																									
-
-	},
-	"Toxicroak":{
-		"Apophyll Kiki (Ashen Beach)":{"level": 41, "moves": ["Meditate","Sucker Punch","Strength","Poison Jab"], "ability": "Dry Skin", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 120},																									
-
-	},
-	"Trevenant":{
-		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 88, "item": "Life Orb", "moves": ["Drain Punch","Horn Leech","Shadow Claw","Rock Slide"], "ability": "Natural Cure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 570},																									
-
-	},
-	"Turtonator":{
-		"Pyrous Cal (Super-Heated)":{"level": 38, "moves": ["Dragon Pulse","Flamethrower","Head Smash","Revenge"], "ability": "Shell Armor", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index": 114},																									
-
-	},
-	"Typhlosion":{
-		"Pyrous Cal (Super-Heated)":{"level": 40, "moves": ["Solar Beam","Hidden Power Rock","Sunny Day","Flame Charge"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index": 116},																									
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 69, "item": "Sitrus Berry", "moves": ["Eruption","Solar Beam","Heat Wave","Hidden Power Rock"], "ability": "Blaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 277},																									
-
-	},
-	"Tyranitar":{
-		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Magical Seed", "moves": ["Brick Break","Iron Head","Crunch","Stone Edge"], "ability": "Unnerve", "nature": "Adamant", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index": 247},																									
-		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 73, "item": "Smooth Rock", "moves": ["Dragon Dance","Earthquake","Superpower","Rock Slide"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 369},																									
-		"Agate Solaris (None)":{"level": 89, "item": "Smooth Rock", "moves": ["Stone Edge","Earthquake","Crunch","Fire Punch"], "ability": "Sand Stream", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index": 506},																									
-		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Weakness Policy", "moves": ["Crunch","Rock Slide","Stealth Rock","Aqua Tail"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 536},																									
-
-	},
-	"Tyrantrum":{
-		"Yureyu Sirius (Short Circuit) Doubles":{"level": 46, "moves": ["Rock Slide","Crunch","Dragon Claw","Dragon Dance"], "ability": "Strong Jaw", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index": 175},																									
-		"Belrose Sirius (None)":{"level": 49, "moves": ["Earthquake","Crunch","Dragon Claw","Dragon Dance"], "ability": "Strong Jaw", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index": 199},																									
-		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "Focus Sash", "moves": ["Superpower","Head Smash","Dragon Claw","Dragon Dance"], "ability": "Rock Head", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 647},																									
-
-	},
-	"Umbreon":{
-		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Lum Berry", "moves": ["Moonlight","Assurance","Quick Attack","Confuse Ray"], "ability": "Synchronize", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index": 106},																									
-		"Gym Luna (Dark Crystal)":{"level": 65, "item": "Leftovers", "moves": ["Moonlight","Dark Pulse","Double Team","Toxic"], "ability": "Synchronize", "nature": "Calm", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 248},																									
-		"Devon ZEL (Factory)":{"level": 77, "item": "Leftovers", "moves": ["Double Team","Wish","Foul Play","Toxic"], "ability": "Synchronize", "nature": "Calm", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 406},																									
-		"Glass 2 ??? (Factory)":{"level": 86, "item": "Leftovers", "moves": ["Wish","Foul Play","Protect","Toxic"], "ability": "Synchronize", "nature": "Calm", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index": 482},																									
-		"Labradorra Zero (None)":{"level": 94, "item": "Leftovers", "moves": ["Wish","Protect","Toxic","Foul Play"], "ability": "Synchronize", "nature": "Calm", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 580},																									
-
-	},
-	"Vanilluxe":{
-		"Labradorra Audrey (None)":{"level": 88, "item": "Choice Specs", "moves": ["Blizzard","Signal Beam","Freeze-Dry","Mirror Shot"], "ability": "Ice Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 542},																									
-
-	},
-	"Vaporeon":{
-		"Doubles Zekrom Amaria (H2O Surf)":{"level": 86, "item": "Assault Vest", "moves": ["Shadow Ball","Ice Beam","Dive","Surf"], "ability": "Water Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 100, "sa": 156, "sd": 0, "sp": 0}, "index": 441},																									
-		"Doubles Reshiram Amaria (H2O Surf)":{"level": 86, "item": "Assault Vest", "moves": ["Shadow Ball","Ice Beam","Dive","Surf"], "ability": "Water Absorb", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 100, "sa": 156, "sd": 0, "sp": 0}, "index": 453},																									
-		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Surf","Blizzard","Wish","Protect"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 554},																									
-		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Surf","Blizzard","Wish","Protect"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 564},																									
-
-	},
-	"Venomoth":{
-		"Spinel Bennet (Mirror)":{"level": 48, "moves": ["Quiver Dance","Baton Pass","Sleep Powder","Signal Beam"], "ability": "Shield Dust", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 181},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Leftovers", "moves": ["Quiver Dance","Baton Pass","Sleep Powder","Signal Beam"], "ability": "Shield Dust", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 238},																									
-
-	},
-	"Venusaur":{
-		"Gym Aya (Wasteland) Doubles":{"level": 42, "moves": ["Stomping Tantrum","Power Whip","Nature Power","Leech Seed"], "ability": "Overgrow", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index": 155},																									
-		"LCCC Aya (Various) Doubles":{"level": 65, "moves": ["Leech Seed","Power Whip","Sludge Bomb","Sleep Powder"], "ability": "Overgrow", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 261},																									
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Grassium Z", "moves": ["Nature Power","Sleep Powder","Hidden Power Fire","Giga Drain"], "ability": "Chlorophyll", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 664},																									
-
-	},
-	"Vikavolt":{
-		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Choice Specs", "moves": ["Bug Buzz","Energy Ball","Volt Switch","Flash Cannon"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 537},																									
-		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 89, "item": "Choice Specs", "moves": ["Energy Ball","Thunderbolt","Flash Cannon","Bug Buzz"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 571},																									
-
-	},
-	"Vileplume":{
-		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 66, "moves": ["Sleep Powder","Nature Power","Sludge Bomb","Petal Dance"], "ability": "Effect Spore", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 272},																									
-		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 70, "moves": ["Sludge Bomb","Giga Drain","Sleep Powder","Dazzling Gleam"], "ability": "Effect Spore", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 344},																									
-		"Labradorra Diana (None)":{"level": 89, "item": "Black Sludge", "moves": ["Sludge Bomb","Giga Drain","Sleep Powder","Moonblast"], "ability": "Effect Spore", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 524},																									
-
-	},
-	"Vivillon":{
-		"Spinel Bennet (Mirror)":{"level": 48, "item": "Bright Powder", "moves": ["Quiver Dance","Sleep Powder","Draining Kiss","Signal Beam"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index": 182},																									
-		"Ametrine Shelly (Various) Doubles":{"level": 71, "moves": ["Bug Buzz","Quiver Dance","Hurricane","Light Screen"], "ability": "Friend Guard", "nature": "Modest", "ivs": {"hp": 16, "at": 16, "df": 16, "sa": 16, "sd": 16, "sp": 16}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 284},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 80, "item": "Synthetic Seed", "moves": ["Signal Beam","Sleep Powder","Hurricane","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 466},																									
-
-	},
-	"Volbeat":{
-		"Gym Shelly (Forest) Doubles":{"level": 35, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Struggle Bug","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 81},																									
-		"Orphanage Shelly (None) Doubles":{"level": 35, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Struggle Bug","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index": 91},																									
-		"Ametrine Shelly (Various) Doubles":{"level": 70, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Bug Buzz","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 287},																									
-
-	},
-	"Volcarona":{
-		"Gym Charlotte (Super-Heated) Doubles":{"level": 70, "item": "Charti Berry", "moves": ["Giga Drain","Quiver Dance","Heat Wave","Hidden Power Rock"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 280},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Heat Wave","Quiver Dance","Signal Beam","Hurricane"], "ability": "Swarm", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 468},																									
-		"Labradorra Kenan (None)":{"level": 90, "item": "Wiki Berry", "moves": ["Quiver Dance","Fire Blast","Bug Buzz","Giga Drain"], "ability": "Flame Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 519},																									
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Fierydance","Hurricane","Bug Buzz","Quiver Dance"], "ability": "Swarm", "nature": "Timid", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 666},																									
-
-	},
-	"Voltorb":{
-		"Gym Julia (Electric)":{"level": 12, "moves": ["Explosion","Rollout","Charge Beam","Sonic Boom"], "ability": "Aftermath", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index": 10},																																			
-
-	},
-	"Walrein":{
-		"Ametrine Blake (Snowy Mount)":{"level": 74, "item": "Leftovers", "moves": ["Protect","Avalanche","Surf","Stockpile"], "ability": "Ice Body", "nature": "Bold", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 305},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 72, "item": "Leftovers", "moves": ["Protect","Blizzard","Surf","Stockpile"], "ability": "Ice Body", "nature": "Bold", "evs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index": 349},																									
-		"VR Blake (Icy)":{"level": 97, "item": "Leftovers", "moves": ["Curse","Yawn","Waterfall","Avalanche"], "ability": "Ice Body", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 639},																									
-
-	},
-	"Weavile":{
-		"Gym Luna (Dark Crystal)":{"level": 64, "item": "Focus Sash", "moves": ["Power-Up Punch","Poison Jab","Ice Shard","Night Slash"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 246},																									
-		"Ametrine Blake (Snowy Mount)":{"level": 73, "moves": ["Night Slash","Power-Up Punch","Ice Shard","Knock Off"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 303},																									
-		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 72, "moves": ["Icicle Crash","Poison Jab","Ice Shard","Knock Off"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 352},																									
-		"Glass 2 ??? (Factory)":{"level": 83, "item": "Focus Sash", "moves": ["Icicle Crash","Poison Jab","Brick Break","Night Slash"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 477},																									
-		"Labradorra Zero (None)":{"level": 93, "item": "Life Orb", "moves": ["Knock Off","Icicle Crash","Ice Shard","Brick Break"], "ability": "Pressure", "nature": "Adamant", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 579},																									
-		"VR Blake (Icy)":{"level": 97, "item": "Life Orb", "moves": ["Icicle Crash","Brick Break","Ice Shard","Knock Off"], "ability": "Pressure", "nature": "Jolly", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 642},																									
-
-	},
-	"Whimsicott":{
-		"Gym Adrienn (Misty) Doubles":{"level": 76, "item": "Wide Lens", "moves": ["Dazzling Gleam","Tailwind","Hurricane","Nature Power"], "ability": "Prankster", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 411},																									
-		"E4 Bennet/Laura (Flower Garden) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Dazzling Gleam","Giga Drain","Hurricane","Nature Power"], "ability": "Prankster", "nature": "Modest", "evs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 663},																									
-
-	},
-	"Whiscash":{
-		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 70, "item": "Sitrus Berry", "moves": ["Dragon Dance","Rock Slide","Waterfall","Zen Headbutt"], "ability": "Oblivious", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 361},																									
-
-	},
-	"Wishiwashi-School":{
-		"Flotsam Amaria (H2O Surf)":{"level": 86, "item": "Wiki Berry", "moves": ["Dive","Hidden Power Electric","Ice Beam","Whirlpool"], "ability": "Schooling", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 436},																									
-		"Jetsam Amaria (H2O Surf)":{"level": 86, "item": "Wiki Berry", "moves": ["Dive","Hidden Power Electric","Ice Beam","Whirlpool"], "ability": "Schooling", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 448},																									
-
-	},
-	"Yanmega":{
-		"Gym Shelly (Forest) Doubles":{"level": 33, "moves": ["Struggle Bug","Giga Drain","Hidden Power Flying","Ancient Power"], "ability": "Speed Boost", "nature": "Modest", "names": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 80},																									
-		"Orphanage Shelly (None) Doubles":{"level": 33, "moves": ["Struggle Bug","Giga Drain","Hidden Power Flying","Ancient Power"], "ability": "Speed Boost", "nature": "Modest", "names": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index": 86},																									
-		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Life Orb", "moves": ["Protect","Giga Drain","Ancient Power","Signal Beam"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 241},																									
-		"Ametrine Shelly (Various) Doubles":{"level": 70, "moves": ["Bug Buzz","Giga Drain","Air Slash","Hidden Power Fire"], "ability": "Speed Boost", "nature": "Modest", "names": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 283},																									
-		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 83, "item": "Wise Glasses", "moves": ["Signal Beam","Shadow Ball","Air Slash","Giga Drain"], "ability": "Speed Boost", "nature": "Modest", "names": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 469},																									
-
-	},
-	"Zekrom":{
-		"Legendary Zekrom (None)":{"level": 90, "item": "Groundium Z", "moves": ["Bolt Strike","Roost","Outrage","Earth Power"], "ability": "Teravolt", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index": 428},																									
-
-	},
-	"Zoroark":{
-		"Byxbysion Ace (Wasteland)":{"level": 41, "moves": ["Swagger","U-Turn","Punishment","Low Sweep"], "ability": "Illusion", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index": 141},																									
-		"Subseven Ace (Holy)":{"level": 62, "item": "Black Glasses", "moves": ["Foul Play","Flamethrower","Extrasensory","Grass Knot"], "ability": "Illusion", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index": 232},																									
-		"WTC Ace (Factory)":{"level": 72, "item": "Focus Sash", "moves": ["Night Daze","Nasty Plot","Flamethrower","Extrasensory"], "ability": "Illusion", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index": 323},
-		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 88, "item": "Choice Scarf", "moves": ["Dark Pulse","Shadow Ball","Focus Blast","Trick"], "ability": "Illusion", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index": 573},																									
-
-	},
-	"Zorua":{
-		"Rhodocrine Ace (Forest)":{"level": 25, "item": "Telluric Seed", "moves": ["Pursuit","Grass Knot","Feint Attack","Taunt"], "ability": "Illusion", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index": 38},																									
-
-	}
-	};
+	"Clefable":{	
+		"Byxbysion Ace (Wasteland)":{"level": 41, "item": "Sitrus Berry", "moves": ["Belly Drum","Drain Punch","Ice Punch","Meteor Mash"], "ability": "Magic Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":143},
+		"Gym Noel (Grassy)":{"level": 55, "item": "Elemental Seed", "moves": ["Moonblast","Calm Mind","Moonlight","Stored Power"], "ability": "Magic Guard", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 204, "sa": 52, "sd": 0, "sp": 0}, "index":220},
+		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 81, "item": "Leftovers", "moves": ["Blizzard","Dazzling Gleam","Fire Blast","Thunder Wave"], "ability": "Magic Guard", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index":499},
+		"L Route Lin 2 (New World)":{"level": 100, "item": "Leftovers", "moves": ["Cosmic Power","Moonblast","Moonlight","Fire Blast"], "ability": "Unaware", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":704},
+		"A Route Lin 2 (New World)":{"level": 100, "item": "Leftovers", "moves": ["Cosmic Power","Moonblast","Moonlight","Fire Blast"], "ability": "Unaware", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":711},
+		"Rock Tomb 🅱️indra (Rainbow)":{"level":71,"moves":["Moonblast","Cosmic Power","Wish","Protect"],"ability":"Unaware","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":973},
+		"Devon Meteor Allyssa/Bishop (B, Factory) Doub":{"level":73,"moves":["Metronome","Dazzling Gleam","Lucky Chant","Follow Me"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1512},
+		"Agate Meteor Howaya/Christina (C, None) Doub":{"level":89,"item":"Charcoal","moves":["Moonblast","Wish","Protect","Fire Blast"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1629},
+		
+	},	
+	"Clefairy":{	
+		"Orphanage Bishop/Roth (B, None)":{"level":34,"moves":["Minimize","Stored Power","Metronome","Cosmic Power"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1205},
+		
+	},	
+	"Cleffa":{	
+		"Peridot Doxy Lindsey (None)":{"level":5,"moves":["Pound","Charm","Encore"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1962},
+		
+	},	
+	"Cloyster":{	
+		"Devon Meteor Roth (Factory)":{"level":73,"moves":["Shell Smash","Icicle Spear","Rock Blast","Hydro Pump"],"ability":"Skill Link","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1537},
+		"Neo Coral Swimmer Aiden (Water Surf)":{"level":72,"item":"White Herb","moves":["Shell Smash","Icicle Spear","Rock Blast","Surf"],"ability":"Skill Link","nature":"Serious","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2182},
+		
+	},	
+	"Cofagrigus":{	
+		"Route 4 Hiker Goro (Forest)":{"level":69,"moves":["Shadow Ball","Trick Room","Will-O-Wisp","Psychic"],"ability":"Mummy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2172},
+		
+	},	
+	"Combee":{	
+		"Rainbow Swarm (None) Doubles":{"level":20,"moves":["Sweet Scent","Gust","Bug Bite"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":881},
+		"Onyx Gym Star Susan (None)":{"level":18,"moves":["Sweet Scent","Gust","Bug Bite"],"ability":"Honey Gather","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1143},
+		
+	},	
+	"Combusken":{	
+		"Apop Beach Battle Girl Mauve (Ashen Beach)":{"level":35,"moves":["Peck","Flame Charge","Quick Attack","Bulk Up"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2078},
+		
+	},	
+	"Comfey":{	
+		"Opal Grind Ch3.5 Jace (None)":{"level":35,"moves":["Petal Blizzard","Synthesis","Sweet Scent","Grass Knot"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1726},
+		"Opal Grind Ch4.5 Jace (None)":{"level":48,"moves":["Floral Healing","Petal Dance","Aromatherapy","Grassy Terrain"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":1764},
+		"Opal Grind Ch8 Jace (None)":{"level":58,"moves":["Petal Dance","Aromatherapy","Grassy Terrain","Play Rough"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1806},
+		"Opal Grind Ch14 Jace (None)":{"level":86,"item":"Big Root","moves":["Draining Kiss","Light Screen","Petal Dance","Dazzling Gleam"],"ability":"Triage","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1921},
+		"Opal Arcade Star Akemi (None)":{"level":24,"moves":["Growth","Wrap","Sweet Kiss","Natural Gift"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":2051},
+		
+	},	
+	"Conkeldurr":{	
+		"Gym Samson (Big Top)":{"level": 71, "item": "Synthetic Seed", "moves": ["Drain Punch","Poison Jab","Knock Off","Bulk Up"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":268},
+		"Meteor Lin 1 Zek. (None)":{"level": 100, "item": "Flame Orb", "moves": ["Drain Punch","Mach Punch","Facade","Knock Off"], "ability": "Guts", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":693},
+		"Spirit Jonathan (Big Top) Doubles":{"level": 95, "item": "Flame Orb", "moves": ["Mach Punch","Drain Punch","Knock Off","Rock Slide"], "ability": "Guts", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":724},
+		"Spirit Fezz (Swamp)":{"level": 95, "item": "Flame Orb", "moves": ["Mach Punch","Drain Punch","Knock Off","Rock Slide"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":737},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Flame Orb", "moves": ["Mach Punch","Drain Punch","Bulk Up","Rock Slide"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":775},
+		
+	},	
+	"Corphish":{	
+		"Orphanage Howaya/Callie (C, None)":{"level":33,"moves":["Double Hit","Knock Off","Night Slash","Razor Shell"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1215},
+		
+	},	
+	"Corsola":{	
+		"Labradorra Audrey (None)":{"level": 89, "item": "Rindo Berry", "moves": ["Recover","Scald","Toxic","Power Gem"], "ability": "Regenerator", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":553},
+		"Route 3 Meteor Geoff/Audrey (A, Cave) Doub":{"level":65,"moves":["Mirror Coat","Scald","Head Smash","Ancient Power"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1422},
+		"Amet. Meteor Geoff/Audrey (A, SnowM) Doub":{"level":71,"moves":["Mirror Coat","Scald","Head Smash","Ancient Power"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1452},
+		
+	},	
+	"Cottonee":{	
+		"Gym Florinia (Desert)":{"level": 24, "moves": ["Leech Seed","Poison Powder","Nature Power","Protect"], "ability": "Prankster", "nature": "Impish", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index":32},
+		
+	},	
+	"Crabominable":{	
+		"Gang Intimidation Craudburry (None)":{"level":62,"item":"Assault Vest","moves":["Ice Hammer","Close Combat","Earthquake","Stone Edge"],"ability":"Anger Point","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 236,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 20},"index":959},
+		"Route 1 Hiker Rufus (Grassy)":{"level":51,"moves":["Ice Hammer","Iron Defense","Dynamic Punch","Close Combat"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2124},
+		
+	},	
+	"Crabrawler":{	
+		"Daycare Grant/Janis (G, None) Doubles":{"level":19,"moves":["Rock Smash","Leer","Pursuit","Bubble Beam"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":871},
+		"MW Meteor Janis/Grant (G, Factory)":{"level":13,"moves":["Bubble","Rock Smash","Leer","Pursuit"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1117},
+		
+	},	
+	"Cradily":{	
+		"Gym Florinia (Desert)":{"level": 24, "moves": ["Stockpile","Smack Down","Recover","Sandstorm"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index":35},
+		"Fiore Florinia (None) Doubles":{"level": 71, "item": "Leftovers", "moves": ["Curse","Rock Slide","Recover","Seed Bomb"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":342},
+		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Stealth Rock","Earth Power","Rock Slide","Giga Drain"], "ability": "Storm Drain", "nature": "Quiet", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":567},
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Stockpile","Giga Drain","Recover","Stone Edge"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":610},
+		"Labr. VS Florinia (Glitch)":{"level": 95, "item": "Synthetic Seed", "moves": ["Stockpile","Giga Drain","Recover","Stone Edge"], "ability": "Suction Cups", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":634},
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Leftovers", "moves": ["Stockpile","Toxic","Energy Ball","Ancient Power"], "ability": "Storm Drain", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 252, "sp": 0}, "index":832},
+		
+	},	
+	"Cranidos":{	
+		"Opal Grind Ch2 Gibson (None)":{"level":20,"moves":["Focus Energy","Pursuit","Take Down","Scary Face"],"ability":"Mold Breaker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1679},
+		"Opal Grind Ch3.5 Gibson (None)":{"level":37,"moves":["Assurance","Chip Away","Ancient Power","Zen Headbutt"],"ability":"Mold Breaker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":1713},
+		
+	},	
+	"Crawdaunt":{	
+		"Devon Meteor Howaya/Callie (C, Factory) Dub":{"level":75,"moves":["Crabhammer","Night Slash","Icy Wind","Surf"],"ability":"Adaptability","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1525},
+		
+	},	
+	"Croagunk":{	
+		"Agent Corey (Corrosive)":{"level": 27, "item": "Black Glasses", "moves": ["Sucker Punch","Drain Punch","Venoshock","Mud Bomb"], "ability": "Dry Skin", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":47},
+		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Sucker Punch","Drain Punch","Venoshock","Mud Bomb"], "ability": "Dry Skin", "nature": "Bashful", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":53},
+		"BW Meteor Devin (Factory)":{"level":34,"moves":["Revenge","Swagger","Mud Bomb","Sucker Punch"],"ability":"Anticipation","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1242},
+		
+	},	
+	"Crobat":{	
+		"Agent Corey (Corrosive)":{"level": 30, "moves": ["Venom Drench","Venoshock","Air Cutter","Roost"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":49},
+		"Agent Borealis (Corrosive Mist)":{"level": 30, "moves": ["Venom Drench","Venoshock","Air Cutter","Nasty Plot"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 6, "at": 6, "df": 6, "sa": 6, "sd": 6, "sp": 6}, "happiness": 255, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":55},
+		"E4 Heather (Mountain)":{"level": 100, "item": "Focus Sash", "moves": ["U-turn","Tailwind","Brave Bird","Cross Poison"], "ability": "Infiltrator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":666},
+		"Tanzan Meteor Hilda (Factory)":{"level":52,"moves":["Haze","Venoshock","Air Slash","Quick Guard"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1322},
+		"Vanhanen Meteor Hilda (Grassy)":{"level":57,"moves":["Haze","Venoshock","Air Slash","Quick Guard"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1381},
+		"Amet. Meteor Ricardo/Hilda (H, SnowM) Doub":{"level":72,"moves":["Hypnosis","Brave Bird","Confuse Ray","Cross Poison"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1470},
+		
+	},	
+	"Croconaw":{	
+		"Opal Grind Ch2 Carol (None)":{"level":22,"moves":["Rage","Bite","Scary Face","Ice Fang"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1676},
+		"Opal Grind Ch3.5 Carol (None)":{"level":35,"moves":["Ice Fang","Flail","Crunch","Chip Away"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1709},
+		
+	},	
+	"Cryogonal":{	
+		"Orphanage Christina/Matt (C, None)":{"level":34,"moves":["Ancient Power","Ice Beam","Light Screen","Reflect"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1232},
+		"Agate Meteor Howaya/Christina (C, None) Dub":{"level":88,"moves":["Icy Wind","Light Screen","Reflect","Freeze-Dry"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1627},
+		
+	},	
+	"Cubchoo":{	
+		"Spinel Gym Posh Lania (Mirror)":{"level":46,"moves":["Slash","Flail","Rest","Blizzard"],"ability":"Snow Cloak","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1311},
+		
+	},	
+	"Cubone":{	
+		"Coral Cain (Misty)":{"level": 17, "moves": ["Bone Club","Double Kick","Skull Bash","Confide"], "ability": "Rock Head", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index":23},
+		"Igglybuff Geoff/Audrey (A, None) Doubles":{"level":11,"moves":["Growl","Tail Whip","Bone Club","Headbutt"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1098},
+		
+	},	
+	"Cutiefly":{	
+		"Peridot Punk Trill (None)":{"level":9,"moves":["Absorb","Fairy Wind","Stun Spore"],"ability":"Honey Gather","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1992},
+		"Onyx Arcade Star Jacee (None)":{"level":16,"moves":["Stun Spore","Struggle Bug","Silver Wind","Draining Kiss"],"ability":"Honey Gather","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2037},
+		
+	},	
+	"Cyndaquil":{	
+		"Onyx Gym Youngster Destry (None)":{"level":17,"moves":["Leer","Smokescreen","Ember","Quick Attack"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1149},
+		
+	},	
+	"Darmanitan":{	
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 68, "moves": ["Rock Slide","Flare Blitz","U-turn","Hammer Arm"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":285},
+		"Tanzan Meteor Kenan/Diana (K, Factory)":{"level":53,"moves":["Belly Drum","Flare Blitz","Taunt","Superpower"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1328},
+		"7th Street Magma Darm (1, None)":{"level":55,"moves":["Flare Blitz","Taunt","Superpower","Overheat"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1405},
+		"7th Street Magma Darm (2, None)":{"level":55,"moves":["Flare Blitz","Taunt","Superpower","Overheat"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1406},
+		"Agate Gym Guitarist Isaac (Rocky)":{"level":87,"item":"Telluric Seed","moves":["Psychic","Flamethrower","Grass Knot","Hidden Power Rock"],"ability":"Zen Mode","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 248,"at": 0,"df": 252,"sa": 10,"sd": 0,"sp": 0},"index":1643},
+		
+	},	
+	"Dartrix":{	
+		"Onyx Fern (None)":{"level": 25, "moves": ["Pluck","Razor Leaf","Ominous Wind","Nature Power"], "ability": "Overgrow", "nature": "Bashful", "ivs": {"hp": 28, "at": 28, "df": 28, "sa": 28, "sd": 28, "sp": 28}, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index":29},
+		"N. Obsidia Fern (None)":{"level": 32, "moves": ["Synthesis","Pluck","Ominous Wind","Razor Leaf"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":70},
+		"Orphanage Allyssa/Stephanie (S, None)":{"level":33,"moves":["Foresight","Pluck","Synthesis","Fury Attack"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1202},
+		
+	},	
+	"Darumaka":{	
+		"Aqua Theft Magma Darm (Lv. 38, None)":{"level":32,"moves":["Fire Punch","Work Up","Thrash","Belly Drum"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":914},
+		"Aqua Theft Magma Darm (Lv. 39, None)":{"level":33,"moves":["Work Up","Thrash","Belly Drum","Flare Blitz"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":916},
+		
+	},	
+	"Decidueye":{	
+		"Byxbysion Fern (Wasteland)":{"level": 45, "item": "Lum Berry", "moves": ["Leaf Blade","Swords Dance","Sucker Punch","Spirit Shackle"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":153},
+		"Route 1 Fern (Grassy)":{"level": 54, "item": "Elemental Seed", "moves": ["Swords Dance","Leaf Blade","Spirit Shackle","Shadow Sneak"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":226},
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 73, "moves": ["Spirit Shackle","Shadow Sneak","Brave Bird","Leaf Blade"], "ability": "Long Reach", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":369},
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Decidium Z", "moves": ["Spirit Shackle","Shadow Sneak","Swords Dance","Leaf Blade"], "ability": "Overgrow", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":665},
+		
+	},	
+	"Dedenne":{	
+		"Grind Indra 1 Yellow (None)":{"level":58,"item":"Air Balloon","moves":["Nuzzle","Attract","Play Rough","Double Team"],"ability":"Cheek Pouch","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1840},
+		"Grind Indra 2 Yellow (None)":{"level":68,"item":"Leftovers","moves":["Nuzzle","Attract","Play Rough","Double Team"],"ability":"Cheek Pouch","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1870},
+		
+	},	
+	"Deerling":{	
+		"Obsidia Punk Brittnay (None)":{"level":16,"moves":["Sand Attack","Double Kick","Leech Seed","Feint Attack"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2028},
+		
+	},	
+	"Deino":{	
+		"Opal Casanova Daniel (None)":{"level":32,"moves":["Roar","Crunch","Slam","Dragon Pulse"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":2068},
+		
+	},	
+	"Delcatty":{	
+		"Pyrous Meteor Regina/Gretchen (G, SupHeat)":{"level":40,"moves":["Fake Out","Sing","Attract","Double Slap"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1278},
+		"Tanzan Meteor Gretchen (Factory)":{"level":48,"moves":["Fake Out","Sing","Attract","Double Slap"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":1336},
+		
+	},	
+	"Delibird":{	
+		"Apop Cave Battle Girl Dillon (Cave)":{"level":42,"item":"Wide Lens","moves":["Fake Out","Drill Peck","Brick Break","Ice Shard"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":2094},
+		"Circus Clown Bert (None)":{"level":75,"item":"Air Balloon","moves":["Present","Destiny Bond","Frost Breath","Swagger"],"ability":"Vital Spirit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2144},
+		
+	},	
+	"Delphox":{	
+		"Byxbysion Ace (Wasteland)":{"level": 43, "moves": ["Mystical Fire","Psyshock","Thunder Punch","Foul Play"], "ability": "Magician", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index":147},
+		"Subseven Ace (Holy)":{"level": 62, "item": "Sitrus Berry", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Foul Play"], "ability": "Magician", "nature": "Modest", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":245},
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 69, "item": "Light Clay", "moves": ["Light Screen","Heat Wave","Flamethrower","Psyshock"], "ability": "Blaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":288},
+		"WTC Ace (Factory)":{"level": 72, "item": "Synthetic Seed", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Shadow Ball"], "ability": "Magician", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":333},
+		"Meteor Lin 1 Zek. (None)":{"level": 100, "item": "Choice Specs", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Shadow Ball"], "ability": "Magician", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":694},
+		"Meteor Lin 1 Resh. (None)":{"level": 100, "item": "Choice Specs", "moves": ["Mystical Fire","Psyshock","Dazzling Gleam","Shadow Ball"], "ability": "Magician", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":700},
+		"Magikarp Corin Rouge (Desert)":{"level":86,"item":"Firium Z","moves":["Heat Wave","Psyshock","Solar Beam","Dazzling Gleam"],"ability":"Magician","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1083},
+		"Somewhere Gym Knight Lancelot (Fairy Tale)":{"level":76,"moves":["Mystical Fire","Wish","Psyshock","Dazzling Gleam"],"ability":"Magician","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1555},
+		"Opal Grind Ch4.5 JB (None)":{"level":49,"moves":["Lucky Chant","Light Screen","Psyshock","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1768},
+		"Opal Grind Ch8 JB (None)":{"level":59,"moves":["Psyshock","Flamethrower","Will-O-Wisp","Psychic"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1811},
+		"Opal Grind Ch14 JB (None)":{"level":85,"moves":["Calm Mind","Wish","Psyshock","Mystical Fire"],"ability":"Magician","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1928},
+		
+	},	
+	"Dewgong":{	
+		"Spinel Gym Posh Layla (Mirror)":{"level":47,"moves":["Aqua Jet","Brine","Take Down","Dive"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1314},
+		
+	},	
+	"Dewott":{	
+		"Rhodocrine Meteor Brenna (Forest)":{"level":23,"moves":["Water Sport","Focus Energy","Razor Shell","Fury Cutter"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1177},
+		
+	},	
+	"Dewpider":{	
+		"Onyx Gym Hotshot Blane (None)":{"level":17,"moves":["Infestation","Spider Web","Bug Bite","Bubble Beam"],"ability":"Water Bubble","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1132},
+		
+	},	
+	"Dhelmise":{	
+		"Gym Shade (Short Circuit)":{"level": 35, "item": "Lum Berry", "moves": ["Brick Break","Giga Drain","Anchor Shot","Shadow Claw"], "ability": "Steelworker", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":99},
+		"Klefki Mattie/Maddie (Mat, None)":{"level":73,"moves":["Anchor Shot","Power Whip","Rock Slide","Phantom Force"],"ability":"Steelworker","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":996},
+		"Neo Coral Fisherman Jacob (Misty)":{"level":70,"moves":["Slam","Heavy Slam","Phantom Force","Power Whip"],"ability":"Steelworker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2184},
+		"Desert Ace Trainer Erebus (Desert)":{"level":73,"moves":["Anchor Shot","Power Whip","Phantom Force","Bulldoze"],"ability":"Steelworker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2211},
+		
+	},	
+	"Diggersby":{	
+		"Amet. Meteor Demian/Antoine (D, SnowM) Dub":{"level":71,"moves":["Earthquake","Frustration","Swords Dance","Quick Attack"],"ability":"Huge Power","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1455},
+		"Opal Hotshot Kaz (Grassy)":{"level":51,"moves":["Flail","Dig","Bounce","Super Fang"],"ability":"Huge Power","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2132},
+		
+	},	
+	"Diglett":{	
+		"Peridot Hotshot Roger (None)":{"level":9,"moves":["Scratch","Sand Attack","Growl","Astonish"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1984},
+		
+	},	
+	"Diglett-Alola":{	
+		"Orphanage Howaya/Callie (C, None)":{"level":33,"moves":["Sucker Punch","Mud Bomb","Earth Power","Dig"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1214},
+		
+	},	
+	"Ditto":{	
+		"E4 Elias (Holy)":{"level": 100, "item": "Choice Scarf", "moves": ["Transform"], "ability": "Imposter", "nature": "Timid", "hptypes": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "index":682},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Choice Scarf", "moves": ["Transform"], "ability": "Imposter", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "index":861},
+		"Subseven Acolyte Ezra (Holy)":{"level":64,"moves":["Transform"],"ability":"Limber","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1410},
+		"WTC Meteor Ezra (Factory)":{"level":73,"moves":["Transform","Transform","Transform","Transform"],"ability":"Imposter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1495},
+		"Agate Meteor Ezra (None)":{"level":87,"moves":["Transform","Transform","Transform","Transform"],"ability":"Imposter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1608},
+		"Agate Meteor Ezrа/Lyla (E, None) Doub":{"level":87,"moves":["Transform","Transform","Transform","Transform"],"ability":"Imposter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1612},
+		
+	},	
+	"Dodrio":{	
+		"Pyrous Meteor Ama/Christopher (A, SupHeat)":{"level":39,"moves":["Agility","Uproar","Acupressure","Swords Dance"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1256},
+		"Vanhanen Meteor Ama (Grassy)":{"level":56,"moves":["Jump Kick","Drill Peck","Endeavor","Thrash"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1384},
+		"7th Street Street Rat Andy (None)":{"level":59,"moves":["Jump Kick","Drill Peck","Endeavor","Thrash"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1393},
+		"Agate Meteor Ama (None)":{"level":87,"moves":["Swords Dance","Jump Kick","Brave Bird","Knock Off"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1630},
+		
+	},	
+	"Doduo":{	
+		"7th Street Street Rat Andy (None)":{"level":58,"moves":["Jump Kick","Drill Peck","Endeavor","Thrash"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1392},
+		
+	},	
+	"Donphan":{	
+		"Circus Alistasia (Big Top)":{"level": 66, "item": "Synthetic Seed", "moves": ["Earthquake","Ice Shard","Heavy Slam","Brutal Swing"], "ability": "Sturdy", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":260},
+		"Labradorra Terra (Glitch)":{"level": 1, "item": "Shell Bell", "moves": ["Ice Shard","Endeavor"], "ability": "Sturdy", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 0, "evs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "index":643},
+		"Grind Indra 1 Grey (None)":{"level":58,"item":"Air Balloon","moves":["Earthquake","Ice Shard","Gunk Shot","Seed Bomb"],"ability":"Sand Veil","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1855},
+		"Grind Indra 2 Grey (None)":{"level":68,"item":"Choice Band","moves":["Earthquake","Ice Shard","Gunk Shot","Seed Bomb"],"ability":"Sand Veil","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 204},"index":1885},
+		"Chrys Forest Posh Ceratisa (Forest)":{"level":42,"moves":["Knock Off","Slam","Magnitude","Scary Face"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":2105},
+		
+	},	
+	"Doublade":{	
+		"Gym Shade (Short Circuit)":{"level": 37, "item": "Synthetic Seed", "moves": ["Gyro Ball","Shadow Claw","Brick Break","Swords Dance"], "ability": "No Guard", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":102},
+		"Pyrous Meteor Ama/Christopher (C, SupHeat)":{"level":40,"moves":["Retaliate","Slash","Iron Defense","Night Slash"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1260},
+		"Vanhanen Meteor Christopher (Grassy)":{"level":54,"moves":["Night Slash","Power Trick","Iron Head","Sacred Sword"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1379},
+		"Opal Grind Ch4.5 Fawkes (None)":{"level":47,"moves":["Iron Defense","Night Slash","Power Trick","Iron Head"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1754},
+		
+	},	
+	"Dragalge":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 45, "item": "Black Sludge", "moves": ["Sludge Wave","Shadow Ball","Hydro Pump","Dragon Pulse"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":159},
+		"LCCC Aya (Various) Doubles":{"level": 69, "item": "Black Sludge", "moves": ["Sludge Bomb","Thunderbolt","Hydro Pump","Dragon Pulse"], "ability": "Adaptability", "nature": "Modest", "}s": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":269},
+		"Opal Grind Ch8 Fawkes (None)":{"level":56,"moves":["Aqua Tail","Sludge Bomb","Hydro Pump","Dragon Pulse"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1794},
+		"Opal Grind Ch14 Fawkes (None)":{"level":83,"item":"Assault Vest","moves":["Sludge Bomb","Dragon Pulse","Thunderbolt","Hydro Pump"],"ability":"Adaptability","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1910},
+		
+	},	
+	"Dragonair":{	
+		"Subseven Acolyte Ezra (Holy)":{"level":62,"moves":["Aqua Tail","Dragon Rush","Safeguard","Dragon Dance"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1411},
+		
+	},	
+	"Dragonite":{	
+		"Gym Saphira (Dragon's Den)":{"level": 100, "item": "Iapapa Berry", "moves": ["Dragon Dance","Dragon Claw","Fire Punch","Extreme Speed"], "ability": "Multiscale", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 64, "df": 0, "sa": 0, "sd": 0, "sp": 192}, "index":641},
+		"E4 Elias (Holy)":{"level": 100, "item": "Choice Band", "moves": ["Outrage","Extreme Speed","Earthquake","Brick Break"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":680},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Leftovers", "moves": ["Dragon Claw","Extreme Speed","Fire Punch","Rock Slide"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":719},
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Leftovers", "moves": ["Hurricane","Superpower","Thunder","Roost"], "ability": "Multiscale", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":730},
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Choice Band", "moves": ["Rock Slide","Dragon Claw","Fire Punch","Extreme Speed"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":740},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Choice Band", "moves": ["Earthquake","Outrage","Fire Punch","Extreme Speed"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":788},
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Magical Seed", "moves": ["Dragon Claw","Dragon Dance","Rock Slide","Extreme Speed"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":796},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Telluric Seed", "moves": ["Rock Slide","Dragon Claw","Fire Punch","Extreme Speed"], "ability": "Multiscale", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":800},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "Leftovers", "moves": ["Dragon Dance","Dragon Claw","Fire Punch","Roost"], "ability": "Multiscale", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":845},
+		"Grind Indra 1 Brown (None)":{"level":58,"item":"Air Balloon","moves":["Outrage","Extreme Speed","Fire Punch","Earthquake"],"ability":"Multiscale","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1848},
+		"Grind Indra 2 Brown (None)":{"level":68,"item":"Choice Band","moves":["Outrage","Extreme Speed","Fire Punch","Earthquake"],"ability":"Multiscale","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1878},
+		"Desert Hiker Red (Desert)":{"level":75,"moves":["Fly","Thunder Wave","Outrage","Roost"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2219},
+		
+	},	
+	"Drampa":{	
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 46, "moves": ["Thunderbolt","Dragon Pulse","Nature Power","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":171},
+		"Belrose Connal (None)":{"level": 49, "moves": ["Thunderbolt","Dragon Pulse","Nature Power","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":195},
+		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Heat Wave","Blizzard","Surf","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":566},
+		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Heat Wave","Blizzard","Surf","Hyper Voice"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":575},
+		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Life Orb", "moves": ["Hyper Voice","Surf","Heat Wave","Roost"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":594},
+		"E4 Elias (Holy)":{"level": 100, "item": "Wiki Berry", "moves": ["Nature Power","Dragon Pulse","Surf","Flamethrower"], "ability": "Berserk", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":681},
+		"Subseven Acolyte Arcturus (Holy)":{"level":62,"moves":["Dragon Pulse","Fly","Hyper Voice","Outrage"],"ability":"Berserk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1414},
+		"WTC Meteor Arcturus (Factory)":{"level":74,"moves":["Nature Power","Dragon Pulse","Thunder","Extrasensory"],"ability":"Berserk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1500},
+		"Glass Meteor Arcturus (Factory)":{"level":82,"moves":["Nature Power","Dragon Pulse","Thunder","Extrasensory"],"ability":"Berserk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1588},
+		"Route 2 Clown Freedo (Rocky)":{"level":67,"item":"Air Balloon","moves":["Fly","Outrage","Extrasensory","Glare"],"ability":"Berserk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2158},
+		
+	},	
+	"Drapion":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 42, "item": "Muscle Band", "moves": ["Knock Off","Fire Fang","Cross Poison","Aqua Tail"], "ability": "Battle Armor", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":157},
+		"LCCC Aya (Various) Doubles":{"level": 67, "item": "Black Sludge", "moves": ["Throat Chop","Confuse Ray","Cross Poison","Aqua Tail"], "ability": "Battle Armor", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":274},
+		
+	},	
+	"Dratini":{	
+		"Chrys Forest Ranger Elizabeth (Forest)":{"level":44,"moves":["Agility","Dragon Tail","Aqua Tail","Dragon Rush"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":2099},
+		
+	},	
+	"Drifblim":{	
+		"Opal Grind Ch4.5 Jace (None)":{"level":47,"moves":["Swallow","Spit Up","Shadow Ball","Amnesia"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1761},
+		"Opal Grind Ch8 Jace (None)":{"level":57,"moves":["Spit Up","Shadow Ball","Amnesia","Baton Pass"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1802},
+		"Opal Grind Ch14 Jace (None)":{"level":83,"item":"Flame Orb","moves":["Hex","Will-O-Wisp","Explosion","Thunder"],"ability":"Flare Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1918},
+		
+	},	
+	"Drifloon":{	
+		"Opal Grind Ch1 Jace (None)":{"level":12,"moves":["Constrict","Minimize","Astonish","Gust"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1664},
+		"Opal Grind Ch2 Jace (None)":{"level":21,"moves":["Gust","Focus Energy","Payback","Ominous Wind"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1688},
+		"Opal Grind Ch3.5 Jace (None)":{"level":32,"moves":["Stockpile","Hex","Swallow","Spit Up"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1723},
+		
+	},	
+	"Drilbur":{	
+		"Magikarp Kai (None)":{"level":19,"moves":["Mud-Slap","Fury Swipes","Metal Claw","Dig"],"ability":"Sand Rush","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":876},
+		
+	},	
+	"Drowzee":{	
+		"Orphanage Christina/Matt (M, None)":{"level":33,"moves":["Meditate","Psybeam","Wake-Up Slap","Psych Up"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1234},
+		
+	},	
+	"Druddigon":{	
+		"Spirit Franz (Chess: Bishop) Doubles":{"level": 95, "item": "King's Rock", "moves": ["Outrage","Fire Punch","Rock Slide","Thunder Punch"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":813},
+		"Amet. Meteor Ricardo/Hilda (H, SnowM) Doub":{"level":71,"moves":["Outrage","Night Slash","Superpower","Sucker Punch"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1468},
+		
+	},	
+	"Ducklett":{	
+		"Peridot Doxy Hera (None)":{"level":6,"moves":["Water Gun","Water Sport","Defog"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 9,"at": 9,"df": 9,"sa": 9,"sd": 9,"sp": 9},"index":1966},
+		
+	},	
+	"Dugtrio":{	
+		"Porygon Sticker 4B 8 4 8 (Glitch)":{"level":75,"moves":["Earthquake","Sludge Wave","Hyper Beam","Tri Attack"],"ability":"Arena Trap","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":977},
+		
+	},	
+	"Dugtrio-Alola":{	
+		"Devon Meteor Howaya/Callie (C, Factory) 2":{"level":75,"moves":["Earthquake","Iron Head","Sucker Punch","Rock Slide"],"ability":"Tangling Hair","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1522},
+		
+	},	
+	"Dunsparce":{	
+		"Obsidia Street Rat Ulf (None)":{"level":16,"moves":["Pursuit","Screech","Mud-Slap","Yawn"],"ability":"Serene Grace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2006},
+		
+	},	
+	"Duosion":{	
+		"Opal Grind Ch3.5 Zach/Beau (Z, None)":{"level":36,"moves":["Psyshock","Endeavor","Future Sight","Pain Split"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":1744},
+		
+	},	
+	"Durant":{	
+		"Devon Meteor Allyssa/Bishop (B, Factory) Doub":{"level":74,"moves":["Rock Slide","Iron Head","X-Scissor","Crunch"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1514},
+		
+	},	
+	"Dusclops":{	
+		"Route 3 Meteor Geoff/Audrey (G, Cave) Doub":{"level":66,"moves":["Will-O-Wisp","Shadow Punch","Rest","Confuse Ray"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1421},
+		
+	},	
+	"Dusknoir":{	
+		"Amet. Meteor Geoff/Audrey (G, SnowM) Doub":{"level":72,"moves":["Will-O-Wisp","Shadow Punch","Rest","Confuse Ray"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1450},
+		"Glass Meteor Geoff (Factory)":{"level":80,"moves":["Will-O-Wisp","Shadow Punch","Rest","Confuse Ray"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1559},
+		"Grind Indra 1 Black (None)":{"level":58,"item":"Air Balloon","moves":["Shadow Sneak","Earthquake","Ice Punch","Trick"],"ability":"Pressure","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1845},
+		"Grind Indra 2 Black (None)":{"level":68,"item":"Choice Band","moves":["Shadow Sneak","Earthquake","Ice Punch","Trick"],"ability":"Pressure","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 212,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 44},"index":1875},
+		
+	},	
+	"Duskull":{	
+		"Igglybuff Geoff/Audrey (G, None) Doub":{"level":11,"moves":["Leer","Night Shade","Disable","Astonish"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1097},
+		
+	},	
+	"Dustox":{	
+		"Spinel Bennet (Mirror)":{"level": 49, "item": "Bright Powder", "moves": ["Moonlight","Quiver Dance","Signal Beam","Giga Drain"], "ability": "Shield Dust", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":185},
+		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Leftovers", "moves": ["Quiver Dance","Shadow Ball","Signal Beam","Moonlight"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":248},
+		
+	},	
+	"Eelektrik":{	
+		"Orphanage John Reborn (None)":{"level":33,"moves":["Confusion","Disable","Headbutt","Water Pulse"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1183},
+		"Orphanage Charity/John (J, None)":{"level":33,"moves":["Charge Beam","Bind","Acid","Discharge"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1227},
+		"Orphanage Christina/Matt (C, None)":{"level":33,"moves":["Charge Beam","Bind","Acid","Discharge"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1231},
+		
+	},	
+	"Eelektross":{	
+		"Belrose John/David (J, None) Doubles":{"level":43,"moves":["Crush Claw","Headbutt","Acid","Discharge"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":201},
+		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Assault Vest", "moves": ["Thunderbolt","Giga Drain","Flamethrower","Acid Spray"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":372},
+		"Spirit Leo (Chess: Bishop) Doubles":{"level": 95, "item": "Muscle Band", "moves": ["Coil","Dragon Tail","Drain Punch","Thunder Punch"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":761},
+		"Agate Meteor Howaya/Christina (C, None) Dub":{"level":87,"item":"Amplifield Rock","moves":["Throat Chop","Ion Deluge","Rock Slide","Wild Charge"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1626},
+		
+	},	
+	"Eevee":{	
+		"Onyx Gym Hotshot Skye (None)":{"level":19,"moves":["Baby-Doll Eyes","Quick Attack","Bite","Swift"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":1151},
+		
+	},	
+	"Ekans":{	
+		"Peridot Youngster Tony (None)":{"level":8,"moves":["Wrap","Leer","Poison Sting"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 12,"at": 12,"df": 12,"sa": 12,"sd": 12,"sp": 12},"index":1978},
+		
+	},	
+	"Electabuzz":{	
+		"Orphanage Timothy/Chris (C, None)":{"level":31,"moves":["Light Screen","Thunder Punch","Thunder Wave","Low Kick"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":1197},
+		
+	},	
+	"Electivire":{	
+		"Orphanage Connal (None)":{"level": 38, "moves": ["Volt Switch","Thunder Wave","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":93},
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 48, "moves": ["Thunder Punch","Fire Punch","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":175},
+		"Belrose Connal (None)":{"level": 51, "moves": ["Thunder Punch","Fire Punch","Low Kick","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 76, "at": 76, "df": 76, "sa": 76, "sd": 76, "sp": 76}, "index":199},
+		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 95, "item": "Life Orb", "moves": ["Thunder Punch","Cross Chop","Earthquake","Ice Punch"], "ability": "Motor Drive", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":598},
+		
+	},	
+	"Electrike":{	
+		"BW Meteor Diana (Factory)":{"level":34,"moves":["Thunder Fang","Bite","Discharge","Roar"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1246},
+		
+	},	
+	"Electrode":{	
+		"Gym Julia (Electric)":{"level": 15, "moves": ["Charge Beam","Sonic Boom","Rollout","Charge"], "ability": "Aftermath", "nature": "Bashful", "ivs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "evs": {"hp": 22, "at": 22, "df": 22, "sa": 22, "sd": 22, "sp": 22}, "index":13},
+		"Fiore Julia (None) Doubles":{"level": 70, "item": "Air Balloon", "moves": ["Foul Play","Thunderbolt","Hidden Power Ice","Explosion"], "ability": "Aftermath", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":343},
+		
+	},	
+	"Elgyem":{	
+		"Orphanage Danielle/Ramsey (R, None)":{"level":32,"moves":["Feint","Double Team","Spark","Nuzzle"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1220},
+		"Orphanage Charity/John (C, None)":{"level":34,"moves":["Hidden Power","Imprison","Simple Beam","Zen Headbutt"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1226},
+		"Orphanage Christina/Matt (C, None)":{"level":32,"moves":["Hidden Power","Imprison","Simple Beam","Zen Headbutt"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1230},
+		
+	},	
+	"Emboar":{	
+		"Yureyu Meteor Kenneth/Brenna (K, Short-Circ)":{"level":43,"moves":["Take Down","Heat Crash","Assurance","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1286},
+		"Tanzan Meteor Kenneth (Factory)":{"level":53,"moves":["Heat Crash","Assurance","Flamethrower","Head Smash"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1317},
+		
+	},	
+	"Emolga":{	
+		"Rhodocrine Meteor Brenna (Forest)":{"level":23,"moves":["Nuzzle","Pursuit","Double Team","Shock Wave"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1176},
+		"Yureyu Meteor Kenneth/Brenna (B, Short-Circ)":{"level":41,"moves":["Electro Ball","Acrobatics","Light Screen","Encore"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1287},
+		
+	},	
+	"Empoleon":{	
+		"Gym Titania (Fairy Tale, Hail)":{"level": 85, "item": "Petaya Berry", "moves": ["Agility","Scald","Flash Cannon","Blizzard"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index":440},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Life Orb", "moves": ["Aqua Jet","Scald","Blizzard","Grass Knot"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":860},
+		"Devon Meteor Ramsey/Danielle (D, Factory) 2x":{"level":76,"moves":["Surf","Flash Cannon","Icy Wind","Mist"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1535},
+		"Grind Indra 1 Blue (None)":{"level":58,"item":"Air Balloon","moves":["Scald","Roar","Stealth Rock","Flash Cannon"],"ability":"Torrent","nature":"Calm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1835},
+		"Grind Indra 2 Blue (None)":{"level":68,"item":"Leftovers","moves":["Scald","Roar","Stealth Rock","Flash Cannon"],"ability":"Torrent","nature":"Calm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 248,"at": 0,"df": 8,"sa": 0,"sd": 252,"sp": 0},"index":1865},
+		
+	},	
+	"Escavalier":{	
+		"Spirit Leo (Chess: Bishop) Doubles":{"level": 95, "item": "King's Rock", "moves": ["Swords Dance","Pursuit","Megahorn","Knock Off"], "ability": "Overcoat", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 252, "df": 0, "sa": 0, "sd": 128, "sp": 0}, "index":759},
+		"Spirit Franz (Chess: Queen) Doubles":{"level": 95, "item": "King's Rock", "moves": ["Swords Dance","Iron Head","Megahorn","Pursuit"], "ability": "Overcoat", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":816},
+		"Museum Devin/Sanchez (D, Cave) Doubles":{"level":45,"moves":["Slash","Iron Head","Iron Defense","X-Scissor"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":945},
+		"Somewhere Gym Knight Xander (Fairy Tale)":{"level":76,"moves":["Drill Run","Smart Strike","X-Scissor","Swords Dance"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1548},
+		"Glass Meteor Devin (Factory)":{"level":81,"moves":["Megahorn","Iron Head","Knock Off","Struggle Bug"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1576},
+		
+	},	
+	"Espeon":{	
+		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Twisted Spoon", "moves": ["Morning Sun","Psychic","Signal Beam","Yawn"], "ability": "Magic Bounce", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":106},
+		"Devon ZEL (Factory)":{"level": 77, "item": "Synthetic Seed", "moves": ["Dazzling Gleam","Light Screen","Reflect","Psyshock"], "ability": "Magic Bounce", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index":414},
+		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 83, "item": "Twisted Spoon", "moves": ["Dazzling Gleam","Psyshock","Calm Mind","Signal Beam"], "ability": "Magic Bounce", "nature": "Timid", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":503},
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 95, "item": "Normal Gem", "moves": ["Psychic","Shadow Ball","Hyper Beam","Grass Knot"], "ability": "Magic Bounce", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":622},
+		"Spirit Josh (Big Top)":{"level": 95, "item": "Leftovers", "moves": ["Psychic","Calm Mind","Hidden Power Fighting","Wish"], "ability": "Magic Bounce", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index":818},
+		"Spirit Godot (Burning)":{"level": 95, "item": "Elemental Seed", "moves": ["Psychic","Shadow Ball","Hidden Power Fire","Toxic"], "ability": "Synchronize", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":849},
+		
+	},	
+	"Espurr":{	
+		"Obsidia Street Rat Brody (None)":{"level":17,"moves":["Covet","Confusion","Light Screen","Psybeam"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":2009},
+		
+	},	
+	"Excadrill":{	
+		"Gym Terra (Glitch)":{"level": 73, "item": "Life Orb", "moves": ["Earthquake","X-Scissor","Rock Slide","Swords Dance"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":319},
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "item": "Life Orb", "moves": ["Earthquake","Rock Slide","Swords Dance","Iron Head"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":379},
+		"Gym Titania (Fairy Tale, Hail)":{"level": 86, "item": "Magical Seed", "moves": ["Sandstorm","Earthquake","Swords Dance","Smart Strike"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":441},
+		"Agate Solaris (None)":{"level": 90, "item": "Focus Sash", "moves": ["Earthquake","Rock Slide","Swords Dance","Iron Head"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":517},
+		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Chople Berry", "moves": ["Drill Run","Rock Slide","Iron Head","Swords Dance"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":548},
+		"Labradorra Terra (Glitch)":{"level": 96, "item": "Life Orb", "moves": ["Earthquake","X-Scissor","Rock Slide","Swords Dance"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":642},
+		"Spirit King (Desert)":{"level": 95, "item": "Focus Sash", "moves": ["Swords Dance","Earthquake","Brick Break","Rock Slide"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":808},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Swords Dance","Earthquake","X-Scissor","Rock Slide"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":826},
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Telluric Seed", "moves": ["Swords Dance","Earthquake","X-Scissor","Rock Slide"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":831},
+		
+	},	
+	"Exeggcute":{	
+		"Malchous Taka (Rocky)":{"level": 22, "moves": ["Poison Powder","Leech Seed","Barrage","Bullet Seed"], "ability": "Harvest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index":36},
+		"Onyx Gym Hotshot Noah (None)":{"level":16,"moves":["Uproar","Hypnosis","Reflect","Leech Seed"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1138},
+		"Circus Clown Bert (None)":{"level":66,"item":"Air Balloon","moves":["Barrage","Sleep Powder","Swords Dance","Bullet Seed"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2143},
+		
+	},	
+	"Exeggutor-Alola":{	
+		"Azurine Taka (Factory)":{"level": 41, "item": "Sitrus Berry", "moves": ["Dragon Hammer","Wood Hammer","Hypnosis","Nature Power"], "ability": "Harvest", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":133},
+		"WTC Taka (Factory)":{"level": 71, "item": "Sitrus Berry", "moves": ["Trick Room","Dragon Hammer","Stomping Tantrum","Seed Bomb"], "ability": "Harvest", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":326},
+		"Tourmaline Taka (Desert)":{"level": 77, "item": "Telluric Seed", "moves": ["Nature Power","Dragon Hammer","Earthquake","Wood Hammer"], "ability": "Harvest", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":425},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 77, "moves": ["Nature Power","Dragon Hammer","Earthquake","Wood Hammer"], "ability": "Harvest", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":430},
+		
+	},	
+	"Exploud":{	
+		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "moves": ["Boomburst","Ice Beam","Earthquake","Surf"], "ability": "Soundproof", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 52, "df": 0, "sa": 200, "sd": 0, "sp": 0}, "index":396},
+		"Devon VS Arclight (Factory)":{"level": 75, "item": "Sitrus Berry", "moves": ["Boomburst","Ice Beam","Earthquake","Surf"], "ability": "Soundproof", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 52, "df": 0, "sa": 200, "sd": 0, "sp": 0}, "index":407},
+		
+	},	
+	"Farfetch\u2019d":{	
+		"Obsidia Resto Raph/Manwe (R, Forest) Doubles":{"level":100,"item":"Stick","moves":["Leaf Blade","Night Slash","Brave Bird","Cut"],"ability":"Defiant","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1051},
+		"Obsidia Resto Raph/Manwe (M, Forest) Doubles":{"level":100,"item":"Stick","moves":["Leaf Blade","Night Slash","Brave Bird","Cut"],"ability":"Defiant","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1056},
+		"Glitch World C (Glitch)":{"level":75,"moves":["Brave Bird","First Impression","Swords Dance","Poison Jab"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1475},
+		
+	},	
+	"Fearow":{	
+		"Pyrous Meteor Minta/Chad (C, SupHeat)":{"level":40,"moves":["Assurance","Agility","Focus Energy","Roost"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1270},
+		"Vanhanen Meteor Ama (Grassy)":{"level":57,"moves":["Agility","Focus Energy","Roost","Drill Peck"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1385},
+		"Agate Meteor Ama (None)":{"level":88,"moves":["Drill Run","Drill Peck","Roost","U-turn"],"ability":"Sniper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1632},
+		
+	},	
+	"Feebas":{	
+		"Magikarp Kai (None)":{"level":19,"moves":["Splash","Tackle"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":874},
+		
+	},	
+	"Fennekin":{	
+		"Magma Nihil/Kriz (K, None) Doubles":{"level":31,"moves":["Fire Spin","Lucky Chant","Light Screen","Psyshock"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":897},
+		"Opal Grind Ch1 JB (None)":{"level":11,"moves":["Scratch","Tail Whip","Ember","Howl"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1667},
+		
+	},	
+	"Feraligatr":{	
+		"Spirit Godot (Burning)":{"level": 95, "item": "Life Orb", "moves": ["Dragon Dance","Waterfall","Crunch","Ice Fang"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":848},
+		"7th Street Aqua Razzy (None)":{"level":55,"moves":["Crunch","Chip Away","Slash","Screech"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1400},
+		"Opal Grind Ch4.5 Carol (None)":{"level":50,"moves":["Crunch","Chip Away","Slash","Screech"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1747},
+		"Opal Grind Ch8 Carol (None)":{"level":57,"moves":["Crunch","Chip Away","Slash","Screech"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1786},
+		"Opal Grind Ch14 Carol (None)":{"level":84,"item":"Life Orb","moves":["Dragon Dance","Ice Punch","Aqua Tail","Crunch"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1901},
+		"Route 1 Ranger Steve (Grassy)":{"level":49,"moves":["Flail","Crunch","Chip Away","Slash"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":2116},
+		
+	},	
+	"Ferroseed":{	
+		"Belrose John/David (D, None) Doubles":{"level":43,"moves":["Mirror Shot","Ingrain","Self-Destruct","Iron Head"],"ability":"Iron Barbs","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":204},
+		"Gym Florinia (Desert)":{"level": 22, "item": "Telluric Seed", "moves": ["Leech Seed","Nature Power","Pin Missile","Secret Power"], "ability": "Iron Barbs", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index":33},
+		
+	},	
+	"Ferrothorn":{	
+		"Fiore Florinia (None) Doubles":{"level": 69, "item": "Rocky Helmet", "moves": ["Leech Seed","Thunder Wave","Power Whip","Gyro Ball"], "ability": "Iron Barbs", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":339},
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 93, "item": "Normal Gem", "moves": ["Explosion","Thunder Wave","Power Whip","Gyro Ball"], "ability": "Iron Barbs", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":607},
+		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Assault Vest", "moves": ["Explosion","Hidden Power Water","Giga Drain","Nature Power"], "ability": "Iron Barbs", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":631},
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Leftovers", "moves": ["Stealth Rock","Power Whip","Gyro Ball","Leech Seed"], "ability": "Iron Barbs", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":747},
+		"Devon Meteor David (Factory)":{"level":73,"moves":["Gyro Ball","Power Whip","Curse","Nature Power"],"ability":"Iron Barbs","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1542},
+		
+	},	
+	"Finneon":{	
+		"BW Meteor Avril (Factory)":{"level":34,"moves":["Water Pulse","Captivate","Safeguard","Aqua Ring"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1253},
+		
+	},	
+	"Flaaffy":{	
+		"Beryl Gym Police Blackwell (None)":{"level":27,"moves":["Cotton Spore","Charge","Take Down","Electro Ball"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 40,"at": 40,"df": 40,"sa": 40,"sd": 40,"sp": 40},"index":1181},
+		
+	},	
+	"Flabébé":{	
+		"Subseven Acolyte Angela (Holy)":{"level":59,"moves":["Misty Terrain","Moonblast","Petal Dance","Solar Beam"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1415},
+		
+	},	
+	"Flareon":{	
+		"Calcenon Gym Ace Karus (Super-Heated)":{"level":70,"moves":["Flare Blitz","Superpower","Quick Attack","Iron Tail"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1439},
+		"Route 1 Hotshot Hark (1, Grassy)":{"level":51,"item":"Ganlon Berry","moves":["Natural Gift","Last Resort"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2119},
+		"Route 1 Hotshot Hark (2, Grassy)":{"level":52,"item":"Belue Berry","moves":["Natural Gift","Superpower","Flare Blitz","Iron Tail"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":2120},
+		"Route 1 Hotshot Hark (3, Grassy)":{"level":53,"item":"Liechi Berry","moves":["Natural Gift","Superpower","Flare Blitz","Iron Tail"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":2121},
+		"Route 1 Hotshot Hark (4, Grassy)":{"level":54,"item":"Durin Berry","moves":["Natural Gift","Superpower","Flare Blitz","Iron Tail"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":2122},
+		
+	},	
+	"Fletchling":{	
+		"Magikarp Arnie/Millhouse (A, None) Doubles":{"level":11,"moves":["Tackle","Growl","Quick Attack","Peck"],"ability":"Big Pecks","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":868},
+		
+	},	
+	"Floatzel":{	
+		"Subseven Acolyte Kaiden (Holy)":{"level":61,"moves":["Razor Wind","Aqua Tail","Agility","Hydro Pump"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1409},
+		"WTC Meteor Kaiden (Factory)":{"level":74,"moves":["Aqua Jet","Waterfall","Brick Break","Crunch"],"ability":"Water Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1483},
+		"Glass Meteor Kaiden (Factory)":{"level":80,"moves":["Aqua Jet","Waterfall","Brick Break","Crunch"],"ability":"Water Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1590},
+		
+	},	
+	"Floette":{	
+		"Subseven Acolyte Angela (Holy)":{"level":60,"moves":["Misty Terrain","Moonblast","Petal Dance","Solar Beam"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1416},
+		
+	},	
+	"Florges":{	
+		"Gym Adrienn (Misty) Doubles":{"level": 84, "item": "Leftovers", "moves": ["Dazzling Gleam","Hidden Power Ground","Wish","Nature Power"], "ability": "Flower Veil", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":422},
+		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Synthesis","Dazzling Gleam","Light Screen","Energy Ball"], "ability": "Flower Veil", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":571},
+		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Synthesis","Dazzling Gleam","Light Screen","Energy Ball"], "ability": "Flower Veil", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":579},
+		"WTC Meteor Angela/Wes (A, Factory) Doub":{"level":73,"moves":["Grassy Terrain","Dazzling Gleam","Light Screen","Hidden Power Fire"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1486},
+		"Devon Meteor Howaya/Callie (C, Factory) Doub":{"level":75,"moves":["Moonblast","Petal Dance","Synthesis","Attract"],"ability":"Flower Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1526},
+		
+	},	
+	"Flygon":{	
+		"A Route Lin 2 (New World)":{"level": 100, "item": "Life Orb", "moves": ["Earth Power","Draco Meteor","Throat Chop","Roost"], "ability": "Levitate", "nature": "Rash", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":709},
+		"Mega-Z Ring McKrezzy (None)":{"level":77,"item":"Muscle Band","moves":["Dragon Claw","Earthquake","Dragon Dance","Superpower"],"ability":"Levitate","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1012},
+		"Devon Meteor David (Factory)":{"level":75,"moves":["Throat Chop","Earthquake","Rock Slide","Dragon Rush"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1546},
+		"Grind Indra 1 Green (None)":{"level":58,"item":"Air Balloon","moves":["Outrage","Earthquake","U-turn","Superpower"],"ability":"Levitate","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1843},
+		"Grind Indra 2 Green (None)":{"level":68,"item":"Choice Scarf","moves":["Outrage","Earthquake","U-turn","Superpower"],"ability":"Levitate","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1873},
+		"Route 4 Ace Trainer Autumn (Forest)":{"level":84,"item":"Life Orb","moves":["Dragon Dance","Dragon Claw","Earthquake","Iron Tail"],"ability":"Levitate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 0,"sa": 0,"sd": 4,"sp": 252},"index":2232},
+		"Route 4 Hiker Nicky (Forest)":{"level":82,"item":"Telluric Seed","moves":["Dragon Dance","Dragon Claw","Earthquake","Fury Cutter"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2240},
+		
+	},	
+	"Fomantis":{	
+		"Opal Jackson/Mack (J, None) Doubles":{"level":6,"moves":["Fury Cutter","Leafage"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 9,"at": 9,"df": 9,"sa": 9,"sd": 9,"sp": 9},"index":1960},
+		
+	},	
+	"Forretress":{	
+		"WTC Meteor Ichorus/Lyla (I, Factory) Doub":{"level":73,"moves":["Gyro Ball","Stealth Rock","Volt Switch","Toxic"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1501},
+		
+	},	
+	"Froakie":{	
+		"Aqua Mannie/Razzy (M, None) Doubles":{"level":31,"moves":["Smokescreen","Round","Fling","Smack Down"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":909},
+		"Opal Grind Ch1 Fawkes (None)":{"level":14,"moves":["Bubble","Quick Attack","Lick","Water Pulse"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1662},
+		"Opal Grind Ch1 JB (None)":{"level":11,"moves":["Growl","Bubble","Quick Attack","Lick"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1666},
+		
+	},	
+	"Frogadier":{	
+		"Opal Grind Ch2 Fawkes (None)":{"level":22,"moves":["Quick Attack","Lick","Water Pulse","Smokescreen"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1684},
+		"Opal Grind Ch2 JB (None)":{"level":21,"moves":["Quick Attack","Lick","Water Pulse","Smokescreen"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1694},
+		"Opal Grind Ch3.5 JB (None)":{"level":34,"moves":["Smokescreen","Round","Fling","Smack Down"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1731},
+		
+	},	
+	"Fraxure":{	
+		"Byxbysion Fern (Wasteland)":{"level": 42, "moves": ["Taunt","Dual Chop","Dragon Dance","Stomping Tantrum"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":151},
+		
+	},	
+	"Frillish":{	
+		"Apop Beach Fisherman Moritz (Ashen Beach)":{"level":38,"moves":["Water Pulse","Ominous Wind","Brine","Rain Dance"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2077},
+		
+	},	
+	"Froslass":{	
+		"Gym Serra (Mirror)":{"level": 50, "item": "Bright Powder", "moves": ["Ice Beam","Double Team","Pain Split","Shadow Ball"], "ability": "Snow Cloak", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":193},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 84, "item": "Icium Z", "moves": ["Blizzard","Destiny Bond","Thunderbolt","Shadow Ball"], "ability": "Snow Cloak", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":498},
+		
+	},	
+	"Furfrou":{	
+		"Opal Grind Ch3.5 Carol (None)":{"level":35,"moves":["Bite","Odor Sleuth","Retaliate","Take Down"],"ability":"Fur Coat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1711},
+		"Opal Grind Ch4.5 Carol (None)":{"level":50,"moves":["Take Down","Charm","Sucker Punch","Cotton Guard"],"ability":"Fur Coat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1749},
+		"Opal Grind Ch8 Carol (None)":{"level":59,"moves":["Take Down","Charm","Sucker Punch","Cotton Guard"],"ability":"Fur Coat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1788},
+		"Opal Grind Ch14 Carol (None)":{"level":86,"item":"Assault Vest","moves":["Sucker Punch","Zen Headbutt","U-turn","Giga Impact"],"ability":"Fur Coat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1903},
+		
+	},	
+	"Furret":{	
+		"Opal Grind Ch2 Carol (None)":{"level":23,"moves":["Quick Attack","Fury Swipes","Helping Hand","Follow Me"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1677},
+		"Opal Grind Ch3.5 Carol (None)":{"level":35,"moves":["Helping Hand","Follow Me","Slam","Rest"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1710},
+		"Opal Grind Ch4.5 Carol (None)":{"level":50,"moves":["Sucker Punch","Amnesia","Baton Pass","Me First"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1748},
+		"Opal Grind Ch8 Carol (None)":{"level":58,"moves":["Amnesia","Baton Pass","Me First","Hyper Voice"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1787},
+		"Opal Grind Ch14 Carol (None)":{"level":86,"item":"Choice Band","moves":["Shadow Claw","Thunder Punch","Knock Off","Body Slam"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1902},
+		
+	},	
+	"Gabite":{	
+		"Pyrous Meteor Ama/Christopher (C, SupHeat)":{"level":39,"moves":["Take Down","Sand Tomb","Slash","Dragon Claw"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1258},
+		"Vanhanen Meteor Christopher (Grassy)":{"level":54,"moves":["Slash","Dragon Claw","Dig","Dragon Rush"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1376},
+		"Opal Grind Ch3.5 Anthony (None)":{"level":38,"moves":["Take Down","Sand Tomb","Slash","Dragon Claw"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":1738},
+		"Chrys Forest Posh Ceratisa (Forest)":{"level":42,"moves":["Sand Tomb","Slash","Dragon Claw","Dig"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":2104},
+		
+	},	
+	"Gallade":{	
+		"Apophyll Victoria (Ashen Beach)":{"level": 40, "item": "Shell Bell", "moves": ["Leaf Blade","Night Slash","Psycho Cut","Swords Dance"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index":112},
+		"Apophyll Kiki (Ashen Beach)":{"level": 41, "item": "Telluric Seed", "moves": ["Night Slash","Strength","Poison Jab","Rock Slide"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":123},
+		"Pyrous Victoria (Super-Heated)":{"level": 39, "moves": ["Leaf Blade","Night Slash","Psycho Cut","Swords Dance"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":140},
+		"Gym Radomus (Chess: Bishop) Doubles":{"level": 58, "item": "Muscle Band", "moves": ["Strength","Close Combat","Knock Off","Fire Punch"], "ability": "Justified", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":236},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 76, "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":387},
+		"Devon VS Victoria (Factory)":{"level": 77, "item": "Salac Berry", "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":401},
+		
+	},	
+	"Gallade-Mega":{	
+		"Labr. Tag Victoria (None, Justified) Doub":{"level": 92, "item": "Galladite", "moves": ["Throat Chop","Zen Headbutt","Swords Dance","Close Combat"], "ability": "Inner Focus", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":537},
+		
+	},	
+	"Galvantula":{	
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Sticky Web","Bug Buzz","Thunder","Electroweb"], "ability": "Swarm", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":672},
+		"Tanzan Depths Ranger Will (Cave)":{"level":82,"moves":["Agility","Sucker Punch","Discharge","Bug Buzz"],"ability":"Compound Eyes","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2224},
+		
+	},	
+	"Garbodor-Pulse":{	
+		"Byxbysion Mr. Bigglesworth (Wasteland)":{"level":65,"item":"Black Sludge","moves":["Gunk Shot","Pain Split","Stockpile","Drain Punch"],"ability":"Gooey","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":942},
+		
+	},	
+	"Garchomp":{	
+		"Pyrous Solaris (Super-Heated)":{"level": 75, "item": "Leftovers", "moves": ["Dragon Rush","Earthquake","Fire Fang","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "gender": "M", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":141},
+		"Gym Terra (Glitch)":{"level": 75, "item": "Assault Vest", "moves": ["Draco Meteor","Bulldoze","Stone Edge","Flamethrower"], "ability": "Rough Skin", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 0, "sd": 252, "sp": 252}, "index":322},
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 76, "moves": ["Dragon Rush","Earthquake","Fire Fang","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":380},
+		"Statuary Garchomp (None)":{"level": 75, "item": "Muscle Band", "moves": ["Earthquake","Dragon Rush","Crunch","Stone Edge"], "ability": "Sand Veil", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":436},
+		"Gym Saphira (Dragon's Den)":{"level": 96, "item": "Choice Scarf", "moves": ["Earthquake","Dragon Claw","Poison Jab","Iron Head"], "ability": "Rough Skin", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":638},
+		"Labradorra Terra (Glitch)":{"level": 98, "item": "Assault Vest", "moves": ["Draco Meteor","Bulldoze","Stone Edge","Flamethrower"], "ability": "Rough Skin", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 0, "sd": 252, "sp": 252}, "index":647},
+		"Meteor Lin 1 Zek. (None)":{"level": 100, "item": "Choice Scarf", "moves": ["Outrage","Earthquake","Dragon Claw","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":692},
+		"Meteor Lin 1 Resh. (None)":{"level": 100, "item": "Choice Scarf", "moves": ["Outrage","Earthquake","Dragon Claw","Stone Edge"], "ability": "Rough Skin", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":698},
+		"Spirit Kamina (Chess: Queen)":{"level": 95, "item": "Choice Scarf", "moves": ["Earthquake","Outrage","Poison Jab","Iron Head"], "ability": "Rough Skin", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":756},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Earthquake","Dragon Claw","Fire Fang","Swords Dance"], "ability": "Rough Skin", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":827},
+		"Agate Meteor Christopher (None)":{"level":85,"moves":["Stone Edge","Outrage","Fire Blast","Iron Head"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1599},
+		"Labradorra Gym Knight Frey (Dragon's Den)":{"level":87,"item":"Choice Scarf","moves":["Earthquake","Outrage","Poison Jab","Iron Head"],"ability":"Rough Skin","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1651},
+		"Opal Grind Ch4.5 Anthony (None)":{"level":53,"moves":["Sand Tomb","Slash","Dragon Claw","Dig"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1776},
+		"Opal Grind Ch8 Anthony (None)":{"level":63,"moves":["Slash","Dragon Claw","Dig","Dragon Rush"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1820},
+		
+	},	
+	"Garchomp-Mega":{	
+		"Agate Solaris (None, Rough Skin)":{"level": 93, "item": "Garchompite", "moves": ["Swords Dance","Earthquake","Dragon Claw","Stone Edge"], "ability": "Sand Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":518},
+		"Opal Grind Ch14 Anthony (None, Rough)":{"level":83,"item":"Garchompite","moves":["Earthquake","Dragon Rush","Stone Edge","Poison Jab"],"ability":"Sand Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1937},
+		
+	},	
+	"Gardevoir":{	
+		"Gym Radomus (Chess: Queen) Doubles":{"level": 60, "item": "Sitrus Berry", "moves": ["Calm Mind","Wish","Psychic","Moonblast"], "ability": "Trace", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 5, "sp": 0}, "index":239},
+		"Gym Adrienn (Misty) Doubles":{"level": 77, "item": "Wise Glasses", "moves": ["Icy Wind","Dazzling Gleam","Psychic","Focus Blast"], "ability": "Telepathy", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":418},
+		"E4 Anna (Starlight)":{"level": 100, "item": "Magical Seed", "moves": ["Psychic","Moonblast","Focus Blast","Signal Beam"], "ability": "Telepathy", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":686},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Magical Seed", "moves": ["Calm Mind","Thunderbolt","Psychic","Focus Blast"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":855},
+		"Devon Meteor Roth (Factory)":{"level":75,"moves":["Shadow Ball","Moonblast","Psyshock","Thunderbolt"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1541},
+		"Opal Grind Ch3.5 Will (None)":{"level":36,"moves":["Draining Kiss","Calm Mind","Psychic","Imprison"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":1735},
+		"Opal Grind Ch3.5 Emile (None)":{"level":33,"moves":["Heal Pulse","Draining Kiss","Calm Mind","Psychic"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1740},
+		"Opal Grind Ch4.5 Will (None)":{"level":51,"moves":["Imprison","Future Sight","Captivate","Hypnosis"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":1773},
+		"Opal Grind Ch4.5 Emile (None)":{"level":48,"moves":["Psychic","Imprison","Future Sight","Captivate"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":1778},
+		"Opal Grind Ch8 Will (None)":{"level":61,"moves":["Future Sight","Captivate","Hypnosis","Dream Eater"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1817},
+		"Opal Grind Ch8 Emile (None)":{"level":58,"moves":["Future Sight","Captivate","Hypnosis","Dream Eater"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1823},
+		"Route 1 Techie Cameron (Grassy)":{"level":53,"moves":["Future Sight","Captivate","Hypnosis","Dream Eater"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":2110},
+		
+	},	
+	"Gardevoir-Mega":{	
+		"Glass 3 ???/??? (R, Fact., Trace) Doub":{"level": 85, "item": "Gardevoirite", "moves": ["Calm Mind","Thunderbolt","Psychic","Hyper Voice"], "ability": "Pixilate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":504},
+		"Meteor Lin 1 Zek. (None, Trace)":{"level": 100, "item": "Gardevoirite", "moves": ["Psychic","Moonblast","Shadow Ball","Thunderbolt"], "ability": "Pixilate", "nature": "Modest", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":691},
+		"Meteor Lin 1 Resh. (None, Trace)":{"level": 100, "item": "Gardevoirite", "moves": ["Psychic","Moonblast","Shadow Ball","Thunderbolt"], "ability": "Pixilate", "nature": "Modest", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":697},
+		"Opal Grind Ch14 Will (None, Synch)":{"level":85,"item":"Gardevoirite","moves":["Hyper Voice","Psyshock","Focus Blast","Calm Mind"],"ability":"Pixilate","nature":"Timid","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1934},
+		
+	},	
+	"Gastly":{	
+		"Opal Psychic Damon (None)":{"level":35,"moves":["Sucker Punch","Payback","Shadow Ball","Dream Eater"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2072},
+		
+	},	
+	"Gastrodon":{	
+		"Devon Meteor David (Factory)":{"level":74,"moves":["Blizzard","Recover","Muddy Water","Infestation"],"ability":"Storm Drain","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1544},
+		
+	},	
+	"Gengar":{	
+		"Gym Shade (Short Circuit)":{"level": 35, "item": "Wide Lens", "moves": ["Hypnosis","Dream Eater","Shadow Ball","Thunderbolt"], "ability": "Cursed Body", "nature": "Bashful", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":98},
+		"E4 Heather (Mountain)":{"level": 100, "item": "Life Orb", "moves": ["Thunder","Shadow Ball","Icy Wind","Sludge Bomb"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":670},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Elemental Seed", "moves": ["Icy Wind","Shadow Ball","Focus Blast","Thunderbolt"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":787},
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Focus Sash", "moves": ["Icy Wind","Shadow Ball","Focus Blast","Thunderbolt"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":793},
+		"Spirit King (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Shadow Ball","Thunderbolt","Focus Blast","Hidden Power Fire"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":805},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Life Orb", "moves": ["Shadow Ball","Thunderbolt","Destiny Bond","Hidden Power Fire"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":824},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Psychic","Thunderbolt","Energy Ball","Hidden Power Fire"], "ability": "Cursed Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":859},
+		"Magikarp Coral Carmen 2 (Fairy Tale)":{"level":77,"item":"Wise Glasses","moves":["Clear Smog","Sludge Bomb","Shadow Ball","Dazzling Gleam"],"ability":"Cursed Body","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1078},
+		"Torchic Doxy Murmina (Factory)":{"level":93,"item":"Life Orb","moves":["Sludge Bomb","Shadow Ball","Thunder","Dazzling Gleam"],"ability":"Cursed Body","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1093},
+		
+	},	
+	"Geodude-Alola":{	
+		"Gym Julia (Electric)":{"level": 12, "moves": ["Self-Destruct","Tackle","Charge","Rollout"], "ability": "Galvanize", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index":9},
+		"MW Meteor Sanchez/Devin (D, Factory)":{"level":12,"moves":["Charge","Rock Polish","Rollout","Spark"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1107},
+		
+	},	
+	"Gible":{	
+		"Opal Grind Ch2 Anthony (None)":{"level":24,"moves":["Dragon Rage","Sandstorm","Take Down","Sand Tomb"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":1700},
+		"Opal Grind Ch3.5 Anthony (None)":{"level":36,"moves":["Sand Tomb","Slash","Dragon Claw","Dig"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":1737},
+		
+	},	
+	"Gigalith":{	
+		"Agate Partner Hardy (Various) Doubles":{"level": 90, "moves": ["Stomping Tantrum","Rock Slide","Rock Smash","Throat Chop"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":507},
+		"Gym Hardy (Rocky) Doubles":{"level": 90, "item": "Choice Band", "moves": ["Stomping Tantrum","Rock Slide","Rock Smash","Throat Chop"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":519},
+		"Yureyu Meteor Mary/Coleman (M, Short-Circ)":{"level":43,"moves":["Smack Down","Rock Slide","Stealth Rock","Sandstorm"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1297},
+		"Tanzan Meteor Mary (Factory)":{"level":47,"moves":["Smack Down","Rock Slide","Stealth Rock","Sandstorm"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1344},
+		
+	},	
+	"Girafarig":{	
+		"Gym Noel (Grassy)":{"level": 54, "item": "Twisted Spoon", "moves": ["Psychic","Thunderbolt","Thunder Wave","Hidden Power Fire"], "ability": "Sap Sipper", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":218},
+		
+	},	
+	"Glaceon":{	
+		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Never-Melt Ice", "moves": ["Ice Shard","Icy Wind","Mirror Coat","Bite"], "ability": "Snow Cloak", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":105},
+		"Gym Serra (Mirror)":{"level": 48, "item": "Light Clay", "moves": ["Wish","Ice Beam","Signal Beam","Aurora Veil"], "ability": "Snow Cloak", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":188},
+		"Devon ZEL (Factory)":{"level": 77, "item": "Synthetic Seed", "moves": ["Blizzard","Shadow Ball","Yawn","Wish"], "ability": "Snow Cloak", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":412},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 83, "item": "Light Clay", "moves": ["Aurora Veil","Blizzard","Signal Beam","Shadow Ball"], "ability": "Snow Cloak", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 156, "sd": 0, "sp": 252}, "index":497},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Blizzard","Wish","Hyper Voice","Helping Hand"], "ability": "Snow Cloak", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 252}, "index":616},
+		"Route 4 Hiker Nicky (Forest)":{"level":82,"moves":["Ice Beam","Frost Breath","Shadow Ball","Signal Beam"],"ability":"Snow Cloak","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2239},
+		
+	},	
+	"Glalie":{	
+		"Spinel Gym Posh Lania (Mirror)":{"level":47,"moves":["Headbutt","Protect","Frost Breath","Crunch"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1312},
+		
+	},	
+	"Glameow":{	
+		"Peridot Street Rat Bob (None)":{"level":5,"moves":["Fake Out","Scratch"],"ability":"Keen Eye","nature":"Bashful","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1974},
+		
+	},	
+	"Gligar":{	
+		"Azurine Taka (Factory)":{"level": 42, "moves": ["U-turn","Acrobatics","Night Slash","Roost"], "ability": "Sand Veil", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":134},
+		
+	},	
+	"Gliscor":{	
+		"WTC Taka (Factory)":{"level": 71, "item": "Toxic Orb", "moves": ["Protect","Earthquake","Acrobatics","Roost"], "ability": "Poison Heal", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":328},
+		"Gym Ciel (Big Top)":{"level": 75, "item": "Toxic Orb", "moves": ["Earthquake","Acrobatics","Roost","Defog"], "ability": "Poison Heal", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":384},
+		"Tourmaline Taka (Desert)":{"level": 78, "item": "Toxic Orb", "moves": ["Stealth Rock","Earthquake","U-turn","Roost"], "ability": "Poison Heal", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":424},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 78, "item": "Toxic Orb", "moves": ["Stealth Rock","Earthquake","U-turn","Roost"], "ability": "Poison Heal", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":432},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Toxic Orb", "moves": ["Swords Dance","Earthquake","Ice Fang","Protect"], "ability": "Poison Heal", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":780},
+		"Desert Ace Trainer Altimis (Desert)":{"level":74,"item":"Toxic Orb","moves":["Toxic","Metal Claw","Substitute","Protect"],"ability":"Poison Heal","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2215},
+		
+	},	
+	"Gloom":{	
+		"BW Meteor Diana (Factory)":{"level":34,"moves":["Mega Drain","Lucky Chant","Moonlight","Giga Drain"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1247},
+		
+	},	
+	"Gogoat":{	
+		"Ametrine Meteor Bruno/Ray (R, SnowM) Doub":{"level":69,"moves":["Horn Leech","Wild Charge","Rollout","Milk Drink"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1446},
+		"Glass Meteor Ray (Factory)":{"level":81,"moves":["Horn Leech","Wild Charge","Rollout","Milk Drink"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1566},
+		"Route 4 Ranger Lena (Forest)":{"level":79,"moves":["Horn Leech","Milk Drink","Earthquake","Wild Charge"],"ability":"Grass Pelt","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2228},
+		
+	},	
+	"Golbat":{	
+		"Jasper Meteor Tara (None)":{"level":21,"moves":["Bite","Wing Attack","Confuse Ray","Air Cutter"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1159},
+		"BW Meteor Ricardo/Hilda (H, Factory)":{"level":34,"moves":["Air Cutter","Swift","Poison Fang","Mean Look"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1237},
+		"Yureyu Meteor Hilda/Ricardo (H, Short-Circ)":{"level":43,"moves":["Mean Look","Leech Life","Haze","Venoshock"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1282},
+		"Yureyu Meteor Simon/Tara (T, Short-Circ)":{"level":43,"moves":["Mean Look","Leech Life","Haze","Venoshock"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1295},
+		"Yureyu Meteor Mary/Coleman (C, Short-Circ)":{"level":41,"moves":["Poison Fang","Mean Look","Leech Life","Haze"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1298},
+		"Tanzan Meteor Coleman (Factory)":{"level":47,"moves":["Mean Look","Leech Life","Haze","Venoshock"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1333},
+		
+	},	
+	"Goldeen":{	
+		"Peridot Fisherman Morey (None)":{"level":10,"moves":["Tail Whip","Water Sport","Supersonic","Horn Attack"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1968},
+		
+	},	
+	"Golduck":{	
+		"Porygon Sticker 'Ng'Mp (Glitch)":{"level":76,"moves":["Amnesia","Hydro Pump","Blizzard","Psychic"],"ability":"Cloud Nine","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":979},
+		"Azurine Lake Ranger Nhadala (Water Surf)":{"level":71,"item":"Choice Specs","moves":["Focus Blast","Surf","Ice Beam","Psyshock"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2207},
+		
+	},	
+	"Golem":{	
+		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 70, "moves": ["Explosion","Earthquake","Rock Slide","Gyro Ball"], "ability": "Sturdy", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":357},
+		"Labradorra Kenan (None)":{"level": 88, "item": "Custap Berry", "moves": ["Explosion","Earthquake","Rock Slide","Gyro Ball"], "ability": "Sturdy", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":526},
+		"Route 4 Hiker Karim (Forest)":{"level":88,"item":"Custap Berry","moves":["Stealth Rock","Stone Edge","Explosion","Stomping Tantrum"],"ability":"Sturdy","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1087},
+		"Tanzan Meteor Kenan/Diana (K, Factory)":{"level":54,"moves":["Earthquake","Explosion","Double-Edge","Stone Edge"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1329},
+		"Route 3 Meteor Kenan/Diana (K, Cave) Doub":{"level":67,"moves":["Explosion","Earthquake","Smack Down","Gyro Ball"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1426},
+		"Amet. Meteor Demian/Antoine (D, SnowM) Doub":{"level":72,"moves":["Explosion","Earthquake","Rock Slide","Heavy Slam"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1456},
+		
+	},	
+	"Golem-Alola":{	
+		"Fiore Julia (None) Doubles":{"level": 67, "item": "Assault Vest", "moves": ["Rock Slide","Explosion","Double-Edge","Heavy Slam"], "ability": "Galvanize", "nature": "Adamant", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":347},
+		"Museum Devin/Sanchez (D, Cave) Doubles":{"level":46,"moves":["Stealth Rock","Rock Blast","Discharge","Explosion"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":946},
+		"Glass Meteor Devin (Factory)":{"level":82,"moves":["Discharge","Explosion","Rock Slide","Heavy Slam"],"ability":"Galvanize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1577},
+		
+	},	
+	"Golett":{	
+		"Orphanage Bishop/Roth (B, None)":{"level":34,"moves":["Iron Defense","Stomping Tantrum","Mega Punch","Magnitude"],"ability":"Iron Fist","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1207},
+		
+	},	
+	"Golisopod":{	
+		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Muscle Band", "moves": ["Liquidation","First Impression","Leech Life","Brick Break"], "ability": "Emergency Exit", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":544},
+		"Tanzan Meteor Avril/Steven (A, Factory)":{"level":53,"moves":["Sucker Punch","Iron Defense","Pin Missile","Liquidation"],"ability":"Emergency Exit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1346},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":66,"moves":["Liquidation","Sucker Punch","Leech Life","Brick Break"],"ability":"Emergency Exit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1436},
+		"Route 1 Techie Armin (Grassy)":{"level":52,"moves":["Sucker Punch","Iron Defense","Pin Missile","Liquidation"],"ability":"Emergency Exit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":2109},
+		"Azurine Lake Swimmer Wilson (Water Surf)":{"level":73,"item":"Sitrus Berry","moves":["First Impression","Liquidation","Leech Life","Aqua Jet"],"ability":"Emergency Exit","nature":"Adamant","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2204},
+		
+	},	
+	"Golurk":{	
+		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 66, "moves": ["Dynamic Punch","Bulldoze","Rock Slide","Phantom Force"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":276},
+		"Ametrine Aster (Icy)":{"level": 68, "moves": ["Dynamic Punch","Earthquake","Stone Edge","Shadow Punch"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":305},
+		"Glass Aster (Factory)":{"level": 84, "moves": ["Dynamic Punch","Earthquake","Thunder Punch","Shadow Punch"], "ability": "No Guard", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":470},
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Telluric Seed", "moves": ["Rock Polish","Dynamic Punch","Earthquake","Shadow Punch"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":834},
+		"Klefki Mattie/Maddie (Mad, None)":{"level":74,"moves":["Rock Slide","Dynamic Punch","Ice Punch","Hammer Arm"],"ability":"No Guard","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1001},
+		"Devon Meteor Allyssa/Bishop (B, Factory) Doub":{"level":75,"moves":["Dynamic Punch","Bulldoze","Rock Slide","Heavy Slam"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1515},
+		
+	},	
+	"Goodra":{	
+		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Wide Lens", "moves": ["Muddy Water","Blizzard","Power Whip","Fire Blast"], "ability": "Gooey", "nature": "Mild", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":568},
+		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Wide Lens", "moves": ["Muddy Water","Blizzard","Power Whip","Fire Blast"], "ability": "Gooey", "nature": "Mild", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":576},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Dragon Pulse","Muddy Water","Thunderbolt","Focus Blast"], "ability": "Sap Sipper", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index":615},
+		"Devon Meteor Allyssa/Bishop (A, Factory) Doub":{"level":75,"moves":["Draco Meteor","Fire Blast","Thunderbolt","Sludge Wave"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1511},
+		"Opal Grind Ch4.5 Anthony (None)":{"level":51,"moves":["Body Slam","Muddy Water","Dragon Pulse","Power Whip"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":1775},
+		"Opal Grind Ch8 JB (None)":{"level":59,"moves":["Body Slam","Muddy Water","Dragon Pulse","Power Whip"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1813},
+		"Opal Grind Ch8 Anthony (None)":{"level":61,"moves":["Body Slam","Muddy Water","Dragon Pulse","Power Whip"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1819},
+		"Opal Grind Ch14 JB (None)":{"level":85,"item":"Chesto Berry","moves":["Dragon Pulse","Flamethrower","Sludge Bomb","Rest"],"ability":"Gooey","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1930},
+		"Opal Grind Ch14 Anthony (None)":{"level":82,"item":"Leftovers","moves":["Dragon Pulse","Sludge Bomb","Flamethrower","Acid Armor"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1936},
+		
+	},	
+	"Goomy":{	
+		"Opal Grind Ch2 JB (None)":{"level":20,"moves":["Absorb","Protect","Bide","Dragon Breath"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1695},
+		"Opal Grind Ch3.5 JB (None)":{"level":34,"moves":["Dragon Breath","Rain Dance","Flail","Body Slam"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1732},
+		"Route 2 Clown Goomy (Rocky)":{"level":85,"item":"Air Balloon","moves":["Draco Meteor","Infestation","Muddy Water","Sludge Wave"],"ability":"Hydration","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 0,"df": 0,"sa": 252,"sd": 4,"sp": 252},"index":2159},
+		
+	},	
+	"Gorebyss":{	
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "White Herb", "moves": ["Surf","Ice Beam","Shell Smash","Hidden Power Electric"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":768},
+		"Popplio Predators (Underwater)":{"level":78,"item":"Bright Powder","moves":["Muddy Water","Blizzard","Rest","Double Team"],"ability":"Swift Swim","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 4},"index":1004},
+		"Azurine Lake Swimmer Xerciel (Water Surf)":{"level":73,"item":"White Herb","moves":["Shell Smash","Surf","Draining Kiss","Shadow Ball"],"ability":"Swift Swim","nature":"Modest","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2193},
+		
+	},	
+	"Gothita":{	
+		"Route 1 Youngster Elliot (Grassy)":{"level":20,"moves":["Fake Tears","Double Slap","Psybeam","Embargo"],"ability":"Frisk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":2107},
+		
+	},	
+	"Gothitelle":{	
+		"Glass 2 ??? (Factory)":{"level": 83, "item": "Leftovers", "moves": ["Calm Mind","Charge Beam","Foul Play","Psychic"], "ability": "Shadow Tag", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":488},
+		"Labradorra Avril/Steven (A, None) Doubles":{"level": 90, "item": "Wise Glasses", "moves": ["Psychic","Dark Pulse","Calm Mind","Thunderbolt"], "ability": "Frisk", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":545},
+		"Tanzan Meteor Avril/Steven (A, Factory)":{"level":53,"moves":["Future Sight","Heal Block","Psychic","Telekinesis"],"ability":"Frisk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1347},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":67,"moves":["Psychic","Dark Pulse","Calm Mind","Thunderbolt"],"ability":"Frisk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1437},
+		"WTC Meteor Gretchen (Factory)":{"level":71,"moves":["Psychic","Thunderbolt","Energy Ball","Hidden Power Fire"],"ability":"Competitive","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1493},
+		"Opal Grind Ch14 Zach/Beau (B, None)":{"level":86,"item":"Leftovers","moves":["Psyshock","Calm Mind","Thunderbolt","Rest"],"ability":"Shadow Tag","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1945},
+		
+	},	
+	"Gothorita":{	
+		"BW Meteor Avril (Factory)":{"level":34,"moves":["Psyshock","Flatter","Future Sight","Heal Block"],"ability":"Frisk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1254},
+		
+	},	
+	"Gourgeist":{	
+		"Route 2 Ranger Nick (Rocky)":{"level":68,"moves":["Phantom Force","Seed Bomb","Pain Split","Trick-Or-Treat"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2162},
+		
+	},	
+	"Granbull":{	
+		"Gym Adrienn (Misty) Doubles":{"level": 76, "item": "Assault Vest", "moves": ["Earthquake","Close Combat","Play Rough","Rock Slide"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":417},
+		
+	},	
+	"Graveler":{	
+		"BW Meteor Kenan (Factory)":{"level":34,"moves":["Bulldoze","Self-Destruct","Stealth Rock","Rock Blast"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1245},
+		"Pyrous Meteor Antoine/Demian (D, SupHeat)":{"level":40,"moves":["Self-Destruct","Stealth Rock","Rock Blast","Earthquake"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1264},
+		
+	},	
+	"Graveler-Alola":{	
+		"BW Meteor Devin (Factory)":{"level":35,"moves":["Thunder Punch","Self-Destruct","Stealth Rock","Rock Blast"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1243},
+		
+	},	
+	"Greninja":{	
+		"Opal Grind Ch3.5 Fawkes (None)":{"level":37,"moves":["Smokescreen","Shadow Sneak","Spikes","Feint Attack"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":1718},
+		"Opal Grind Ch4.5 Fawkes (None)":{"level":50,"moves":["Spikes","Feint Attack","Substitute","Extrasensory"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1756},
+		"Opal Grind Ch4.5 JB (None)":{"level":49,"moves":["Spikes","Feint Attack","Substitute","Extrasensory"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1769},
+		"Opal Grind Ch8 Fawkes (None)":{"level":60,"moves":["Feint Attack","Substitute","Extrasensory","Double Team"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1797},
+		"Opal Grind Ch8 JB (None)":{"level":59,"moves":["Feint Attack","Substitute","Extrasensory","Double Team"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1812},
+		"Opal Grind Ch14 Fawkes (None)":{"level":85,"item":"Life Orb","moves":["Dark Pulse","Scald","Ice Beam","U-turn"],"ability":"Protean","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1913},
+		"Opal Grind Ch14 JB (None)":{"level":85,"item":"Life Orb","moves":["Hydro Pump","Gunk Shot","Ice Beam","U-turn"],"ability":"Protean","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1927},
+		"Azurine Lake Swimmer Leigh (Water Surf)":{"level":73,"item":"Life Orb","moves":["Water Shuriken","Surf","Dark Pulse","Gunk Shot"],"ability":"Torrent","nature":"Rash","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2202},
+		"Desert Ace Trainer Erebus (Desert)":{"level":76,"moves":["Ice Beam","Surf","Gunk Shot","Dark Pulse"],"ability":"Protean","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2214},
+		"Tanzan Depths Ranger Will (Cave)":{"level":81,"moves":["Substitute","Extrasensory","Double Team","Hydro Pump"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2221},
+		"Route 4 Casanova Fawkes (Forest)":{"level":81,"item":"Life Orb","moves":["Hydro Pump","Dark Pulse","Extrasensory","Ice Beam"],"ability":"Protean","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2236},
+		
+	},	
+	"Grimer":{	
+		"Coral Fisherman Wade (1, Misty)":{"level":14,"moves":["Poison Gas","Harden","Mud-Slap","Disable"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":2014},
+		"Coral Fisherman Wade (2, Misty)":{"level":14,"moves":["Poison Gas","Harden","Mud-Slap","Disable"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":2015},
+		"Apop Beach Fisherman Jerry (Ashen Beach)":{"level":35,"moves":["Minimize","Fling","Sludge Bomb","Sludge Wave"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2075},
+		
+	},	
+	"Grimer-Alola":{	
+		"Coral Cain (Misty)":{"level": 17, "moves": ["Gastro Acid","Curse","Taunt","Bite"], "ability": "Poison Touch", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index":22},
+		"Lapis/Orphanage Cain (None)":{"level": 35, "moves": ["Poison Fang","Minimize","Disable","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":85},
+		"MW Meteor Simon/Tara (S, Factory)":{"level":13,"moves":["Poison Gas","Harden","Bite","Disable"],"ability":"Poison Touch","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1110},
+		"Jasper Meteor Simon (None)":{"level":21,"moves":["Disable","Acid Spray","Poison Fang","Minimize"],"ability":"Poison Touch","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1155},
+		
+	},	
+	"Grotle":{	
+		"Opal Street Rat Waldon (None)":{"level":25,"moves":["Absorb","Razor Leaf","Curse","Bite"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2054},
+		
+	},	
+	"Grovyle":{	
+		"Opal Grind Ch2 Will (None)":{"level":21,"moves":["Absorb","Quick Attack","Mega Drain","Pursuit"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1696},
+		"Opal Grind Ch3.5 Will (None)":{"level":34,"moves":["Pursuit","Leaf Blade","Agility","Slam"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1733},
+		
+	},	
+	"Growlithe":{	
+		"Jasper Police Joe (1, None)":{"level":23,"moves":["Flame Wheel","Reversal","Fire Fang","Take Down"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1156},
+		"Jasper Police Joe (2, None)":{"level":23,"moves":["Flame Wheel","Reversal","Fire Fang","Take Down"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1157},
+		"Rhodocrine Meteor Bruno (Forest)":{"level":22,"moves":["Helping Hand","Flame Wheel","Reversal","Fire Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1174},
+		"Beryl Gym Police Jameson (None)":{"level":28,"moves":["Reversal","Fire Fang","Take Down","Flame Burst"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 42,"at": 42,"df": 42,"sa": 42,"sd": 42,"sp": 42},"index":1178},
+		"Beryl Gym Police Lambert (None)":{"level":27,"moves":["Flame Wheel","Reversal","Fire Fang","Take Down"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 40,"at": 40,"df": 40,"sa": 40,"sd": 40,"sp": 40},"index":1180},
+		"Beryl Gym Police Blackwell (None)":{"level":28,"moves":["Reversal","Fire Fang","Take Down","Flame Burst"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 42,"at": 42,"df": 42,"sa": 42,"sd": 42,"sp": 42},"index":1182},
+		
+	},	
+	"Grubbin":{	
+		"Onyx Youngster Baxter (None)":{"level":16,"moves":["Mud-Slap","Bite","Bug Bite","Spark"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2031},
+		
+	},	
+	"Grumpig":{	
+		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 68, "moves": ["Icy Wind","Reflect","Psychic","Light Screen"], "ability": "Thick Fat", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":349},
+		"Labradorra Diana (None)":{"level": 87, "item": "Kasib Berry", "moves": ["Shadow Ball","Reflect","Psychic","Light Screen"], "ability": "Thick Fat", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":530},
+		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 89, "item": "Light Clay", "moves": ["Shadow Ball","Light Screen","Focus Blast","Psychic"], "ability": "Thick Fat", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":584},
+		"Tanzan Meteor Tech Naoman (Factory)":{"level":53,"moves":["Snore","Psyshock","Payback","Psychic"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1360},
+		"Devon Meteor Allyssa/Bishop (A, Factory) Doub":{"level":73,"moves":["Teeter Dance","Icy Wind","Light Screen","Reflect"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1507},
+		"Glass Meteor Techs Deryl/Naoman (N, Factory)":{"level":83,"item":"Light Clay","moves":["Trick Room","Light Screen","Teeter Dance","Psychic"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1584},
+		
+	},	
+	"Gulpin":{	
+		"Obsidia Resto Stoplettes (1, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1057},
+		"Obsidia Resto Stoplettes (2, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1058},
+		"Obsidia Resto Stoplettes (3, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1059},
+		"Obsidia Resto Stoplettes (4, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1060},
+		"Obsidia Resto Stoplettes (5, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1061},
+		"Obsidia Resto Stoplettes (6, Factory)":{"level":83,"item":"Eviolite","moves":["Gunk Shot","Pain Split","Toxic","Destiny Bond"],"ability":"Liquid Ooze","nature":"Impish","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 252,"sa": 0,"sd": 252,"sp": 0},"index":1062},
+		
+	},	
+	"Gumshoos":{	
+		"7th Street Street Rat Austin (None)":{"level":59,"moves":["Hyper Fang","Yawn","Thrash","Rest"],"ability":"Stakeout","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1388},
+		
+	},	
+	"Gurdurr":{	
+		"Yureyu Meteor Mary/Coleman (C, Short-Circ)":{"level":41,"moves":["Bulk Up","Rock Slide","Dynamic Punch","Scary Face"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1299},
+		"Tanzan Meteor Coleman (Factory)":{"level":47,"moves":["Rock Slide","Dynamic Punch","Scary Face","Hammer Arm"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1334},
+		"Circus Clown Bingo (1, None)":{"level":65,"item":"Air Balloon","moves":["Bulk Up","Brick Break","Smack Down","Poison Jab"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2149},
+		"Circus Clown Bingo (2, None)":{"level":65,"item":"Air Balloon","moves":["Bulk Up","Drain Punch","Rock Slide","Poison Jab"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2150},
+		
+	},	
+	"Gyarados":{	
+		"Ametrine Blake (Snowy Mount)":{"level": 72, "moves": ["Stone Edge","Dragon Dance","Waterfall","Crunch"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":310},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "moves": ["Stone Edge","Dragon Dance","Waterfall","Crunch"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":360},
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 73, "item": "Leftovers", "moves": ["Dragon Dance","Earthquake","Waterfall","Outrage"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":377},
+		"Agate Solaris (None)":{"level": 90, "item": "Wacan Berry", "moves": ["Dragon Dance","Earthquake","Waterfall","Outrage"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":515},
+		"VR Blake (Icy)":{"level": 97, "item": "Elemental Seed", "moves": ["Earthquake","Stone Edge","Waterfall","Crunch"], "ability": "Moxie", "nature": "Adamant", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":651},
+		"E4 Heather (Mountain)":{"level": 100, "item": "Flyinium Z", "moves": ["Bounce","Earthquake","Waterfall","Stone Edge"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":668},
+		
+	},	
+	"Hakamo-o":{	
+		"Pyrous Cal (Super-Heated)":{"level": 39, "moves": ["Sky Uppercut","Dual Chop","Headbutt","Rock Tomb"], "ability": "Soundproof", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":116},
+		
+	},	
+	"Happiny":{	
+		"Obsidia Arcade Star Eilee (None)":{"level":16,"moves":["Charm","Copycat","Refresh","Sweet Kiss"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2029},
+		
+	},	
+	"Hariyama":{	
+		"Gym Samson (Big Top)":{"level": 67, "item": "Rocky Helmet", "moves": ["Heavy Slam","Smack Down","Brick Break","Knock Off"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":263},
+		"Pyrous Meteor Minta/Chad (M, SupHeat)":{"level":39,"moves":["Belly Drum","Smelling Salts","Seismic Toss","Wake-Up Slap"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1265},
+		"Neo Coral Fisherman Jacob (Misty)":{"level":72,"moves":["Endure","Close Combat","Reversal","Heavy Slam"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2186},
+		
+	},	
+	"Haunter":{	
+		"Pyrous Meteor Minta/Chad (M, SupHeat)":{"level":40,"moves":["Sucker Punch","Payback","Shadow Ball","Dream Eater"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1267},
+		
+	},	
+	"Hawlucha":{	
+		"Gym Samson (Big Top)":{"level": 66, "item": "Synthetic Seed", "moves": ["Roost","Flying Press","Acrobatics","Poison Jab"], "ability": "Unburden", "nature": "Jolly", "evs": {"hp": 23, "at": 23, "df": 23, "sa": 23, "sd": 23, "sp": 23}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":266},
+		"Obsidia Resto Raph/Manwe (M, Forest) Doubles":{"level":78,"item":"Telluric Seed","moves":["Cut","Acrobatics","Flying Press","High Jump Kick"],"ability":"Limber","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 6,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1055},
+		"Grind Indra 1 Green (None)":{"level":58,"item":"Air Balloon","moves":["Sky Attack","High Jump Kick","Acrobatics","Swords Dance"],"ability":"Limber","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1841},
+		"Grind Indra 2 Green (None)":{"level":68,"item":"Power Herb","moves":["Sky Attack","High Jump Kick","Acrobatics","Swords Dance"],"ability":"Limber","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1871},
+		
+	},	
+	"Haxorus":{	
+		"Route 1 Fern (Grassy)":{"level": 52, "item": "Dragon Fang", "moves": ["Taunt","Dragon Claw","Dragon Dance","Iron Tail"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index":221},
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "item": "Dragon Fang", "moves": ["Superpower","Outrage","Dragon Dance","Poison Jab"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":364},
+		"Gym Saphira (Dragon's Den)":{"level": 95, "item": "Focus Sash", "moves": ["Dragon Dance","Poison Jab","Dragon Claw","Earthquake"], "ability": "Mold Breaker", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":639},
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Focus Sash", "moves": ["Dragon Dance","Outrage","Rock Tomb","Poison Jab"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":661},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Elemental Seed", "moves": ["Outrage","Dragon Dance","Earthquake","Brick Break"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":838},
+		"Spirit Godot (Burning)":{"level": 95, "item": "Muscle Band", "moves": ["Dual Chop","Dragon Dance","Earthquake","Night Slash"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":852},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Muscle Band", "moves": ["Poison Jab","Dragon Dance","Earthquake","Brick Break"], "ability": "Mold Breaker", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":864},
+		"Piplup Street Rat Drake (None)":{"level":61,"moves":["Dragon Claw","Outrage","Superpower","Iron Tail"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":954},
+		"Calcenon Gym Ace Eddie (1, Super-Heated)":{"level":68,"moves":["Dragon Dance","Outrage","Earthquake","Cut"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1440},
+		"Calcenon Gym Ace Eddie (2, Super-Heated)":{"level":68,"moves":["Giga Impact","Iron Tail","Poison Jab","Aqua Tail"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1441},
+		"Agate Meteor Ezrа/Lyla (L, None) Doub":{"level":87,"moves":["Dragon Dance","Outrage","Earthquake","Poison Jab"],"ability":"Mold Breaker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1619},
+		"Labradorra Gym Knight Edgard (Dragon's Den)":{"level":87,"item":"Lum Berry","moves":["Dragon Dance","Poison Jab","Dragon Claw","Earthquake"],"ability":"Mold Breaker","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1654},
+		"Route 4 Ace Trainer Eddie (1, orest)":{"level":68,"moves":["Dragon Dance","Outrage","Earthquake","Cut"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2167},
+		"Route 4 Ace Trainer Eddie (2, Forest)":{"level":68,"moves":["Giga Impact","Iron Tail","Poison Jab","Aqua Tail"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2168},
+		
+	},	
+	"Heatmor":{	
+		"Aqua 3 Magma Maxwell (None)":{"level":58,"item":"Muscle Band","moves":["Hone Claws","Fire Punch","Thunder Punch","Sucker Punch"],"ability":"White Smoke","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":967},
+		
+	},	
+	"Heliolisk":{	
+		"Pyrous Meteor Regina/Gretchen (G, SupHeat)":{"level":41,"moves":["Uickattack","Thunder","Charge","Parabolic Charge"],"ability":"Dry Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1280},
+		"Tanzan Meteor Gretchen (Factory)":{"level":49,"moves":["Quick Attack","Thunder","Charge","Parabolic Charge"],"ability":"Dry Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1338},
+		"WTC Meteor Gretchen (Factory)":{"level":72,"moves":["Discharge","Bulldoze","Focus Blast","Surf"],"ability":"Dry Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1494},
+		
+	},	
+	"Helioptile":{	
+		"Malchous Meteor Regina/Gretchen (G, Forest)":{"level":21,"moves":["Thunder Shock","Charge","Mud-Slap","Quick Attack"],"ability":"Dry Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1167},
+		
+	},	
+	"Heracross":{	
+		"Labradorra Audrey (None)":{"level": 89, "item": "Flame Orb", "moves": ["Swords Dance","Close Combat","Megahorn","Throat Chop"], "ability": "Guts", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":554},
+		"Obsidia Resto Raph/Manwe (R, Forest) Doubles":{"level":76,"item":"Life Orb","moves":["Cut","Megahorn","Close Combat","Bulldoze"],"ability":"Swarm","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1049},
+		"Devon Meteor Roth (Factory)":{"level":74,"moves":["Stone Edge","Earthquake","Megahorn","Close Combat"],"ability":"Moxie","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1538},
+		
+	},	
+	"Herdier":{	
+		"Rhodocrine Meteor Bruno (Forest)":{"level":23,"moves":["Bite","Helping Hand","Take Down","Work Up"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1175},
+		"Beryl Gym Police Lambert (None)":{"level":27,"moves":["Helping Hand","Take Down","Work Up","Crunch"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 40,"at": 40,"df": 40,"sa": 40,"sd": 40,"sp": 40},"index":1179},
+		
+	},	
+	"Hippopotas":{	
+		"Opal Street Rat Waldon (None)":{"level":24,"moves":["Bite","Yawn","Take Down","Dig"],"ability":"Sand Stream","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":2053},
+		
+	},	
+	"Hippowdon":{	
+		"Gym Terra (Glitch)":{"level": 72, "item": "Smooth Rock", "moves": ["Bulldoze","Stealth Rock","Yawn","Stone Edge"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":318},
+		"Fiore Florinia (None) Doubles":{"level": 68, "item": "Yache Berry", "moves": ["Crunch","Stomping Tantrum","Rock Slide","Yawn"], "ability": "Sand Force", "nature": "Impish", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":337},
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 93, "item": "Smooth Rock", "moves": ["Earthquake","Slack Off","Rock Slide","Stealth Rock"], "ability": "Sand Stream", "nature": "Impish", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":605},
+		"Labr. VS Florinia (Glitch)":{"level": 93, "item": "Smooth Rock", "moves": ["Earthquake","Slack Off","Stone Edge","Stealth Rock"], "ability": "Sand Stream", "nature": "Impish", "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 4}, "index":629},
+		
+	},	
+	"Hitmonchan":{	
+		"Labradorra Gym Knight Dan (Dragon's Den)":{"level":87,"item":"Assault Vest","moves":["Fire Punch","Drain Punch","Mach Punch","Thunder Punch"],"ability":"Iron Fist","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1646},
+		"Apop School Nature Girl Cocoa (Ash Beach)":{"level":37,"moves":["Quick Guard","Fire Punch","Ice Punch","Thunder Punch"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":2089},
+		
+	},	
+	"Hitmonlee":{	
+		"Apophyll Kiki (Ashen Beach)":{"level": 42, "item": "Normal Gem", "moves": ["Fake Out","Meditate","Knock Off","High Jump Kick"], "ability": "Unburden", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":122},
+		
+	},	
+	"Hitmontop":{	
+		"Apop Beach Black Belt Paul (Ashen Beach)":{"level":37,"moves":["Feint","Counter","Triple Kick","Agility"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":2081},
+		
+	},	
+	"Honchkrow":{	
+		"Byxbysion Ace (Wasteland)":{"level": 41, "item": "Enigma Berry", "moves": ["Sucker Punch","Heat Wave","Steel Wing","Drill Peck"], "ability": "Super Luck", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":144},
+		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Muscle Band", "moves": ["Sucker Punch","Night Slash","Roost","Brave Bird"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":254},
+		"Glass 2 ??? (Factory)":{"level": 84, "item": "Life Orb", "moves": ["Sucker Punch","Superpower","Roost","Brave Bird"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":490},
+		"Labradorra Zero (None)":{"level": 93, "item": "Life Orb", "moves": ["Superpower","Brave Bird","Sucker Punch","Night Slash"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":588},
+		"L Route Lin 2 (New World)":{"level": 100, "item": "Darkinium Z", "moves": ["Night Slash","Roost","Brave Bird","Sucker Punch"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":703},
+		"A Route Lin 2 (New World)":{"level": 100, "item": "Darkinium Z", "moves": ["Night Slash","Roost","Brave Bird","Sucker Punch"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":710},
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Life Orb", "moves": ["Sucker Punch","Heat Wave","Brave Bird","Superpower"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":744},
+		"Spirit Kamina (Chess: Bishop)":{"level": 95, "item": "Life Orb", "moves": ["Brave Bird","Superpower","Sucker Punch","Taunt"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":752},
+		
+	},	
+	"Honedge":{	
+		"Opal Grind Ch2 Fawkes (None)":{"level":20,"moves":["Metal Sound","Pursuit","Autotomize","Shadow Sneak"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1682},
+		"Opal Grind Ch3.5 Fawkes (None)":{"level":33,"moves":["Aerial Ace","Retaliate","Slash","Iron Defense"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1716},
+		
+	},	
+	"Hoothoot":{	
+		"Obsidia Meteor Christopher/Ama (A, Forest)":{"level":17,"moves":["Peck","Confusion","Echoed Voice","Zen Headbutt"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1130},
+		"Peridot Youngster Sid (None)":{"level":8,"moves":["Growl","Foresight","Hypnosis","Peck"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 12,"at": 12,"df": 12,"sa": 12,"sd": 12,"sp": 12},"index":1975},
+		
+	},	
+	"Hoppip":{	
+		"Peridot Street Rat Bob (None)":{"level":5,"moves":["Tackle","Synthesis","Tackle","Tackle"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1973},
+		
+	},	
+	"Horsea":{	
+		"Glitch World u (Glitch)":{"level":75,"moves":["Hydro Pump","Blizzard","Dragon Pulse","Swagger"],"ability":"Sniper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1472},
+		
+	},	
+	"Houndoom":{	
+		"Lapis Cal (Rainbow)":{"level": 31, "moves": ["Inferno","Beat Up","Snarl","Smog"], "ability": "Flash Fire", "nature": "Hasty", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":73},
+		"Labradorra Zero (None)":{"level": 92, "item": "Focus Sash", "moves": ["Flamethrower","Dark Pulse","Nasty Plot","Sludge Bomb"], "ability": "Flash Fire", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":587},
+		"Magikarp Magma Bunson (None)":{"level":37,"moves":["Odor Sleuth","Beat Up","Fire Fang","Feint Attack"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":921},
+		"Aqua Raid Magma Maxwell (None)":{"level":45,"moves":["Fire Fang","Feint Attack","Thunder Fang","Return"],"ability":"Flash Fire","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":928},
+		"Aqua 3 Magma Maxwell (None)":{"level":62,"item":"Wise Glasses","moves":["Nasty Plot","Flamethrower","Dark Pulse","Sludge Bomb"],"ability":"Flash Fire","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":970},
+		"Pyrous Meteor Regina/Gretchen (R, SupHeat)":{"level":41,"moves":["Beat Up","Fire Fang","Feint Attack","Embargo"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1276},
+		"Tanzan Meteor Regina (Factory)":{"level":48,"moves":["Fire Fang","Feint Attack","Embargo","Foul Play"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":1325},
+		"7th Street Magma Nihil (None)":{"level":55,"moves":["Feint Attack","Embargo","Foul Play","Flamethrower"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1403},
+		"7th Street Magma Darm (None)":{"level":54,"moves":["Feint Attack","Embargo","Foul Play","Flamethrower"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1404},
+		"WTC Meteor Gretchen (Factory)":{"level":71,"moves":["Heat Wave","Dark Pulse","Will-O-Wisp","Sludge Bomb"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1491},
+		
+	},	
+	"Houndour":{	
+		"Magma Nihil/Kriz (N, None) Doubles":{"level":32,"moves":["Odor Sleuth","Beat Up","Fire Fang","Feint Attack"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":895},
+		"Magma Nihil/Kriz (K, None) Doubles":{"level":32,"moves":["Odor Sleuth","Beat Up","Fire Fang","Feint Attack"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":898},
+		"Aqua Theft Magma Darm (None)":{"level":33,"moves":["Odor Sleuth","Beat Up","Fire Fang","Feint Attack"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":915},
+		"Aqua Theft Magma Break (None)":{"level":32,"moves":["Odor Sleuth","Beat Up","Fire Fang","Feint Attack"],"ability":"Early Bird","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":917},
+		
+	},	
+	"Huntail":{	
+		"Popplio Predators (Underwater)":{"level":78,"item":"White Herb","moves":["Aqua Tail","Crunch","Ice Fang","Shell Smash"],"ability":"Swift Swim","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 4},"index":1003},
+		
+	},	
+	"Hydreigon":{	
+		"L Route Lin 2 (New World)":{"level": 100, "item": "White Herb", "moves": ["Dark Pulse","Earth Power","Flash Cannon","Draco Meteor"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":706},
+		"A Route Lin 2 (New World)":{"level": 100, "item": "White Herb", "moves": ["Dark Pulse","Earth Power","Flash Cannon","Draco Meteor"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":713},
+		"Spirit Leo (Chess: Queen) Doubles":{"level": 95, "item": "Choice Specs", "moves": ["Earth Power","Heat Wave","Dark Pulse","Draco Meteor"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index":762},
+		"Agate Meteor Christopher (None)":{"level":87,"moves":["Flash Cannon","Draco Meteor","Fire Blast","Dark Pulse"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1602},
+		
+	},	
+	"Hypno":{	
+		"Orphanage Connal (None)":{"level": 35, "moves": ["Hypnosis","Psychic Terrain","Psychic","Signal Beam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":95},
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 47, "item": "Wide Lens", "moves": ["Hypnosis","Nasty Plot","Psychic","Dazzling Gleam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":173},
+		"Belrose Connal (None)":{"level": 50, "item": "Wide Lens", "moves": ["Hypnosis","Nasty Plot","Psychic","Dazzling Gleam"], "ability": "Insomnia", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index":197},
+		"Orphanage Howaya/Callie (C, None)":{"level":34,"moves":["Meditate","Psybeam","Wake-Up Slap","Psych Up"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1216},
+		"Devon Meteor Howaya/Callie (C, Factory) Doub":{"level":74,"moves":["Trick Room","Dazzling Gleam","Psychic","Assist"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1523},
+		
+	},	
+	"Hypno-Pulse":{	
+		"PULSE Hypno (Starlight)":{"level": 100, "item": "Big Root", "moves": ["Hypnosis","Dream Eater","Dark Pulse","Calm Mind"], "ability": "No Guard", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs":{"hp": 0,"at": 0,"df": 252,"sa": 4,"sd": 252,"sp": 0}, "index":505},
+		
+	},	
+	"Igglybuff":{	
+		"Peridot Doxy Hera (None)":{"level":5,"moves":["Sing","Charm","Defense Curl","Pound"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1965},
+		
+	},	
+	"Illumise":{	
+		"Gym Shelly (Forest) Doubles":{"level": 32, "item": "Damp Rock", "moves": ["Rain Dance","Struggle Bug","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":77},
+		"Orphanage Shelly (None) Doubles":{"level": 32, "moves": ["Struggle Bug","Helping Hand","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":88},
+		"Ametrine Shelly (Various) Doubles":{"level": 69, "item": "Leftovers", "moves": ["Bug Buzz","Thunder Wave","Dazzling Gleam","Confuse Ray"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":297},
+		
+	},	
+	"Incineroar":{	
+		"Apophyll Victoria (Ashen Beach)":{"level": 41, "item": "Telluric Seed", "moves": ["Brick Break","Darkest Lariat","Iron Head","Fire Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":113},
+		"Pyrous Victoria (Super-Heated)":{"level": 41, "moves": ["Brick Break","Darkest Lariat","Iron Head","Fire Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":136},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 76, "item": "Assault Vest", "moves": ["Earthquake","Knock Off","Flare Blitz","Cross Chop"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":392},
+		"Devon VS Victoria (Factory)":{"level": 77, "item": "Assault Vest", "moves": ["Earthquake","Knock Off","Flare Blitz","Outrage"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":404},
+		"Labr. Tag Victoria (None) Doubles":{"level": 93, "item": "Assault Vest", "moves": ["Leech Life","Darkest Lariat","Flare Blitz","Cross Chop"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":540},
+		"Mega-Z Ring McKrezzy (None)":{"level":76,"item":"Assault Vest","moves":["Darkest Lariat","Cross Chop","Flare Blitz","Outrage"],"ability":"Intimidate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1008},
+		
+	},	
+	"Infernape":{	
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Life Orb", "moves": ["Heat Wave","Rock Slide","Close Combat","Fake Out"], "ability": "Blaze", "nature": "Naive", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":741},
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Life Orb", "moves": ["Heat Wave","Rock Slide","Mach Punch","Fake Out"], "ability": "Blaze", "nature": "Naive", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":798},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Telluric Seed", "moves": ["Heat Wave","Rock Slide","Close Combat","Fake Out"], "ability": "Blaze", "nature": "Naive", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":804},
+		"Klefki Mattie/Maddie (Mad, None)":{"level":76,"item":"Sitrus Berry","moves":["Close Combat","Rock Slide","Flare Blitz","Acrobatics"],"ability":"Blaze","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1002},
+		
+	},	
+	"Inkay":{	
+		"Opal Psychic Michael (None)":{"level":32,"moves":["Psybeam","Switcheroo","Payback","Light Screen"],"ability":"Contrary","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":2065},
+		
+	},	
+	"Ivysaur":{	
+		"Opal Grind Ch2 Zach/Beau (Z, None)":{"level":23,"moves":["Sleep Powder","Take Down","Razor Leaf","Sweet Scent"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1706},
+		"Opal Grind Ch3.5 Zach/Beau (Z, None)":{"level":35,"moves":["Razor Leaf","Sweet Scent","Growth","Double-Edge"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1743},
+		"Rhodocrine Ranger Endow (Forest)":{"level":26,"moves":["Sleep Powder","Take Down","Razor Leaf","Sweet Scent"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2047},
+		
+	},	
+	"Jangmo-o":{	
+		"Daycare Grant/Janis (J, None) Doubles":{"level":18,"moves":["Leer","Bide","Protect","Dragon Tail"],"ability":"Bulletproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":872},
+		
+	},	
+	"Jellicent":{	
+		"Amet. Meteor Demian/Antoine (D, SnowM) Doub":{"level":71,"moves":["Water Spout","Blizzard","Ominous Wind","Recover"],"ability":"Cursed Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1454},
+		"Azurine Lake Swimmer Arlo (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Acid Armor","Surf","Recover","Will-O-Wisp"],"ability":"Water Absorb","nature":"Bold","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2199},
+		
+	},	
+	"Jigglypuff":{	
+		"Opal Grind Ch1 Zach/Beau (B, None)":{"level":12,"moves":["Defense Curl","Pound","Play Nice","Disarming Voice"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1674},
+		"Opal Grind Ch2 Zach/Beau (B, None)":{"level":23,"moves":["Disable","Double Slap","Rollout","Round"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1707},
+		"Opal Grind Ch3.5 Zach/Beau (B, None)":{"level":35,"moves":["Wake-Up Slap","Rest","Body Slam","Gyro Ball"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1745},
+		
+	},	
+	"Jirachi":{	
+		"E4 Anna (Starlight)":{"level": 100, "item": "Psychium Z", "moves": ["Flash Cannon","Wish","Psychic","Cosmic Power"], "ability": "Serene Grace", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":689},
+		
+	},	
+	"Jolteon":{	
+		"Devon Partner Arclight (Factory) Doubles":{"level": 77, "moves": ["Shadow Ball","Signal Beam","Hidden Power Ice","Discharge"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":393},
+		"Devon VS Arclight (Factory)":{"level": 78, "item": "Petaya Berry", "moves": ["Shadow Ball","Signal Beam","Hidden Power Ice","Discharge"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":409},
+		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Discharge","Shadow Ball","Signal Beam","Volt Switch"], "ability": "Volt Absorb", "nature": "Timid", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":563},
+		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Life Orb", "moves": ["Discharge","Shadow Ball","Signal Beam","Volt Switch"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":573},
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Choice Specs", "moves": ["Thunderbolt","Volt Switch","Shadow Ball","Hidden Power Ice"], "ability": "Volt Absorb", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":731},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Elemental Seed", "moves": ["Thunderbolt","Signal Beam","Shadow Ball","Hidden Power Ice"], "ability": "Volt Absorb", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":790},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Choice Specs", "moves": ["Thunderbolt","Volt Switch","Shadow Ball","Hidden Power Ice"], "ability": "Volt Absorb", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":837},
+		"Porygon Sticker X C (Glitch)":{"level":78,"moves":["Discharge","Pin Missile","Body Slam","Thunder Wave"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":982},
+		"WTC Meteor Arcturus (Factory)":{"level":73,"moves":["Discharge","Shadow Ball","Signal Beam","Volt Switch"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1499},
+		"Glass Meteor Arcturus (Factory)":{"level":80,"moves":["Discharge","Shadow Ball","Signal Beam","Volt Switch"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1586},
+		
+	},	
+	"Joltik":{	
+		"Obsidia Techie Neville (None)":{"level":16,"moves":["Thunder Wave","Screech","Fury Cutter","Electroweb"],"ability":"Compound Eyes","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2008},
+		
+	},	
+	"Jumpluff":{	
+		"WTC Meteor Angela/Wes (W, Factory) Doub":{"level":72,"moves":["Sleep Powder","Helping Hand","Grassy Terrain","Energy Ball"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1488},
+		"Devon Meteor David (Factory)":{"level":74,"moves":["Leech Seed","Substitute","Sleep Powder","Energy Ball"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1543},
+		"Route 2 Clown Freedo (Rocky)":{"level":66,"item":"Air Balloon","moves":["Sleep Powder","Leech Seed","Acrobatics","Giga Drain"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2157},
+		
+	},	
+	"Jynx":{	
+		"Gym Serra (Mirror)":{"level": 49, "item": "Bright Powder", "moves": ["Nasty Plot","Focus Blast","Psyshock","Ice Beam"], "ability": "Dry Skin", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":192},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Synthetic Seed", "moves": ["Psychic","Shadow Ball","Blizzard","Nasty Plot"], "ability": "Dry Skin", "nature": "Modest", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":496},
+		
+	},	
+	"Kabuto":{	
+		"Opal Grind Ch1 Gibson (None)":{"level":14,"moves":["Scratch","Harden","Absorb","Leer"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1661},
+		"Opal Grind Ch2 Gibson (None)":{"level":22,"moves":["Absorb","Leer","Mud Shot","Sand Attack"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1681},
+		"Opal Grind Ch3.5 Gibson (None)":{"level":37,"moves":["Sand Attack","Endure","Aqua Jet","Mega Drain"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":1715},
+		
+	},	
+	"Kabutops":{	
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Assault Vest", "moves": ["Rock Slide","Stone Edge","Waterfall","Superpower"], "ability": "Swift Swim", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":749},
+		"Klefki Mattie/Maddie (Mad, None)":{"level":73,"item":"Focus Sash","moves":["Rock Slide","Waterfall","Knock Off","X-Scissor"],"ability":"Weak Armor","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1000},
+		"Opal Grind Ch4.5 Gibson (None)":{"level":50,"moves":["Endure","Aqua Jet","Mega Drain","Metal Sound"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1753},
+		"Opal Grind Ch8 Gibson (None)":{"level":60,"moves":["Aqua Jet","Mega Drain","Metal Sound","Ancient Power"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1793},
+		"Opal Grind Ch14 Gibson (None)":{"level":86,"item":"Focus Sash","moves":["Swords Dance","Waterfall","Rock Slide","X-Scissor"],"ability":"Weak Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1909},
+		
+	},	
+	"Kadabra":{	
+		"Orphanage Allyssa/Stephanie (A, None)":{"level":33,"moves":["Reflect","Psycho Cut","Recover","Telekinesis"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1201},
+		"Orphanage Charity/John (C, None)":{"level":33,"moves":["Reflect","Psycho Cut","Recover","Telekinesis"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1223},
+		
+	},	
+	"Kakuna":{	
+		"Opal Youngster Bart (None)":{"level":19,"moves":["Harden"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":2039},
+		
+	},	
+	"Kangaskhan":{	
+		"WTC Meteor Kaiden (Factory)":{"level":73,"moves":["Fake Out","Icy Wind","Sucker Punch","Thunder Punch"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1484},
+		"Glass Meteor Kaiden (Factory)":{"level":82,"moves":["Fake Out","Icy Wind","Sucker Punch","Thunder Punch"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1592},
+		
+	},	
+	"Kangaskhan-Mega":{	
+		"E4 Elias (Holy, Early Bird)":{"level": 100, "item": "Kangaskhanite", "moves": ["Power-Up Punch","Earthquake","Return","Rock Tomb"], "ability": "Parental Bond", "nature": "Jolly", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":683},
+		
+	},	
+	"Karrablast":{	
+		"Route 1 Ranger Medius (Grassy)":{"level":52,"moves":["Scary Face","X-Scissor","Flail","Swords Dance"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":2129},
+		
+	},	
+	"Kecleon":{	
+		"Treecko Run/Ref (Run1, Cave) Doubles":{"level":65,"moves":["Shadow Sneak","Ancient Power","Stealth Rock","Sucker Punch"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1028},
+		"Treecko Run/Ref (Run2, Cave) Doubles":{"level":66,"moves":["Dizzy Punch","Rock Tomb","Fake Out","Hidden Power"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1029},
+		"Treecko Run/Ref (Run3, Cave) Doubles":{"level":69,"moves":["Psybeam","Foul Play","Recover","Aerial Ace"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1030},
+		"Treecko Run/Ref (Run4, Cave) Doubles":{"level":64,"moves":["Thief","Rock Tomb","Fake Out","Trick Room"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1031},
+		"Treecko Run/Ref (Run5, Cave) Doubles":{"level":67,"moves":["Foul Play","Rock Slide","Dizzy Punch","Flamethrower"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1032},
+		"Treecko Run/Ref (Run6, Cave) Doubles":{"level":68,"moves":["Sucker Punch","Rock Slide","Recover","Ice Beam"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1033},
+		"Treecko Run/Ref (Ref1, Cave) Doubles":{"level":67,"moves":["Foul Play","Rock Tomb","Dizzy Punch","Icy Wind"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1034},
+		"Treecko Run/Ref (Ref2, Cave) Doubles":{"level":65,"moves":["Shadow Sneak","Ancient Power","Thunder Wave","Sucker Punch"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1035},
+		"Treecko Run/Ref (Ref3, Cave) Doubles":{"level":64,"moves":["Thief","Rock Tomb","Fake Out","Drain Punch"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1036},
+		"Treecko Run/Ref (Ref4, Cave) Doubles":{"level":66,"moves":["Dizzy Punch","Rock Tomb","Fake Out","Knock Off"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1037},
+		"Treecko Run/Ref (Ref5, Cave) Doubles":{"level":68,"moves":["Sucker Punch","Rock Slide","Shadow Sneak","Brick Break"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1038},
+		"Treecko Run/Ref (Ref6, Cave) Doubles":{"level":69,"moves":["Rock Slide","Foul Play","Recover","Thunderbolt"],"ability":"Color Change","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1039},
+		
+	},	
+	"Kecleon-Purple":{	
+		"Treecko Kecleon Purple (Cave)":{"level":81,"item":"Sitrus Berry","moves":["Recover","Drain Punch","Knock Off","Rock Slide"],"ability":"Color Change","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 4,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1040},
+		
+	},	
+	"Kingdra":{	
+		"Ametrine Cal (Various) Doubles":{"level": 72, "item": "Wise Glasses", "moves": ["Hydro Pump","Ice Beam","Dragon Pulse","Signal Beam"], "ability": "Sniper", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":301},
+		"Flotsam Amaria (H2O Surf)":{"level": 88, "item": "Dragonium Z", "moves": ["Scald","Dragon Pulse","Ice Beam","Whirlpool"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index":449},
+		"Jetsam Amaria (H2O Surf)":{"level": 88, "item": "Life Orb", "moves": ["Scald","Dragon Pulse","Ice Beam","Whirlpool"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index":461},
+		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Dragonium Z", "moves": ["Muddy Water","Draco Meteor","Ice Beam","Hidden Power Fighting"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":557},
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "Leftovers", "moves": ["Dragon Dance","Substitute","Waterfall","Outrage"], "ability": "Swift Swim", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":767},
+		"Devon Meteor Ramsey/Danielle (D, Factory) Doub":{"level":75,"moves":["Surf","Dragon Pulse","Dragon Dance","Ice Beam"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1536},
+		"Azurine Lake Swimmer Hubert (Water Surf)":{"level":72,"item":"Choice Specs","moves":["Surf","Draco Meteor","Ice Beam","Flash Cannon"],"ability":"Sniper","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2194},
+		
+	},	
+	"Kingler":{	
+		"Route 4 Hotshot George (Forest)":{"level":69,"moves":["Crabhammer","Knock Off","Superpower","X-Scissor"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2177},
+		
+	},	
+	"Kirlia":{	
+		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 31, "moves": ["Double Team","Magical Leaf","Psychic","Calm Mind"], "ability": "Trace", "nature": "Bashful", "ivs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":58},
+		"N. Obsidia Victoria (None)":{"level": 31, "moves": ["Double Team","Magical Leaf","Psychic","Calm Mind"], "ability": "Trace", "nature": "Bashful", "ivs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":65},
+		"Opal Grind Ch2 Will (None)":{"level":21,"moves":["Disarming Voice","Lucky Chant","Magical Leaf","Heal Pulse"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1698},
+		"Opal Grind Ch2 Emile (None)":{"level":22,"moves":["Disarming Voice","Lucky Chant","Magical Leaf","Heal Pulse"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1702},
+		
+	},	
+	"Klang":{	
+		"Orphanage Bishop/Roth (R, None)":{"level":34,"moves":["Gear Grind","Bind","Charge Beam","Autotomize"],"ability":"Plus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1210},
+		"Pyrous Meteor Ama/Christopher (A, SupHeat)":{"level":40,"moves":["Charge Beam","Autotomize","Mirror Shot","Screech"],"ability":"Plus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1257},
+		
+	},	
+	"Klefki":{	
+		"Azurine Taka (Factory)":{"level": 40, "moves": ["Spikes","Mirror Shot","Draining Kiss","Foul Play"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 13, "at": 13, "df": 13, "sa": 13, "sd": 13, "sp": 13}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index":132},
+		"WTC Taka (Factory)":{"level": 69, "item": "Leftovers", "moves": ["Spikes","Thunder Wave","Light Screen","Foul Play"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":325},
+		"Tourmaline Taka (Desert)":{"level": 76, "item": "Leftovers", "moves": ["Substitute","Thunder Wave","Swagger","Foul Play"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":423},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 76, "item": "Leftovers", "moves": ["Substitute","Thunder Wave","Swagger","Foul Play"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":431},
+		"Gym Titania (Fairy Tale, Hail)":{"level": 84, "item": "Leftovers", "moves": ["Thunder Wave","Flash Cannon","Draining Kiss","Calm Mind"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 192, "at": 0, "df": 252, "sa": 0, "sd": 64, "sp": 0}, "index":442},
+		"Magikarp Casanova Carmen (None)":{"level":76,"item":"Leftovers","moves":["Substitute","Thunder Wave","Swagger","Foul Play"],"ability":"Prankster","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":987},
+		"Magikarp Corin Rouge (Desert)":{"level":81,"item":"Leftovers","moves":["Spikes","Thunder Wave","Swagger","Foul Play"],"ability":"Prankster","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 200,"sa": 0,"sd": 56,"sp": 0},"index":1079},
+		
+	},	
+	"Klink":{	
+		"Orphanage Christina/Matt (M, None)":{"level":33,"moves":["Gear Grind","Bind","Charge Beam","Autotomize"],"ability":"Plus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1233},
+		
+	},	
+	"Klinklang":{	
+		"WTC Ace (Factory)":{"level": 70, "moves": ["Gear Grind","Shift Gear","Zap Cannon","Wild Charge"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":335},
+		"Railnet Mechanightmare (Cave)":{"level":35,"moves":["Discharge","Charge Beam","Mirror Shot","Autotomize"],"ability":"Clear Body","nature":"Modest","ivs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":879},
+		"Vanhanen Meteor Ama (Grassy)":{"level":58,"moves":["Screech","Discharge","Metal Sound","Shift Gear"],"ability":"Plus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1386},
+		"Devon Meteor Roth (Factory)":{"level":74,"moves":["Gear Grind","Shift Gear","Wild Charge","Return"],"ability":"Plus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1540},
+		"Agate Meteor Ama (None)":{"level":89,"moves":["Discharge","Shift Gear","Gear Grind","Magnet Rise"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1634},
+		"Labr. Gym Knight Kalezis (Dragon's Den)":{"level":87,"item":"Life Orb","moves":["Shift Gear","Gear Grind","Return","Wild Charge"],"ability":"Minus","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1656},
+		"Grind Indra 1 Grey (None)":{"level":58,"item":"Air Balloon","moves":["Shift Gear","Gear Grind","Return","Wild Charge"],"ability":"Minus","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1854},
+		"Grind Indra 2 Grey (None)":{"level":68,"item":"Leftovers","moves":["Shift Gear","Gear Grind","Return","Wild Charge"],"ability":"Minus","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 136,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 120},"index":1884},
+		
+	},	
+	"Komala":{	
+		"WTC Taka (Factory)":{"level": 69, "item": "Leftovers", "moves": ["Wish","Return","Sucker Punch","Bulk Up"], "ability": "Comatose", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":327},
+		"Tourmaline Taka (Desert)":{"level": 77, "item": "Leftovers", "moves": ["Wish","Return","Knock Off","Bulk Up"], "ability": "Comatose", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":426},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 77, "item": "Leftovers", "moves": ["Wish","Return","Knock Off","Bulk Up"], "ability": "Comatose", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":433},
+		"Opal Grind Ch8 Zach/Beau (Z, None)":{"level":54,"moves":["Sucker Punch","Psych Up","Wood Hammer","Thrash"],"ability":"Comatose","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1826},
+		"Opal Grind Ch14 Zach/Beau (Z, None)":{"level":85,"item":"Assault Vest","moves":["Bulldoze","Knock Off","Sucker Punch","Iron Head"],"ability":"Comatose","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1938},
+		
+	},	
+	"Kommo-o":{	
+		"Ametrine Cal (Various) Doubles":{"level": 71, "moves": ["Iron Head","Dragon Dance","Brick Break","Dragon Claw"], "ability": "Soundproof", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":302},
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 94, "item": "Lum Berry", "moves": ["Dragon Dance","Close Combat","Poison Jab","Outrage"], "ability": "Bulletproof", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":602},
+		"Labr. VS Cal (Dragon's Den)":{"level": 94, "item": "Focus Sash", "moves": ["Dragon Dance","Close Combat","Poison Jab","Outrage"], "ability": "Bulletproof", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":626},
+		"E4 Elias (Holy)":{"level": 100, "item": "Kommonium Z", "moves": ["Clanging Scales","Earthquake","Close Combat","Poison Jab"], "ability": "Bulletproof", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":679},
+		"Route 4 Hiker Karim (Forest)":{"level":91,"item":"Sitrus Berry","moves":["Iron Head","Drain Punch","Dragon Dance","Dragon Claw"],"ability":"Soundproof","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1091},
+		"WTC Meteor Ichorus/Lyla (I, Factory) Doub":{"level":74,"moves":["Clanging Scales","Focus Blast","Flamethrower","Flash Cannon"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1502},
+		"Agate Meteor Ezra (None)":{"level":87,"moves":["Clanging Scales","Close Combat","Poison Jab","Flamethrower"],"ability":"Bulletproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1611},
+		"Agate Meteor Ezrа/Lyla (E, None) Doub":{"level":87,"moves":["Clanging Scales","Close Combat","Poison Jab","Flamethrower"],"ability":"Bulletproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1615},
+		"Labr. Gym Knight Kalezis (Dragon's Den)":{"level":87,"item":"Life Orb","moves":["Dragon Dance","Outrage","Close Combat","Poison Jab"],"ability":"Soundproof","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1655},
+		
+	},	
+	"Krabby":{	
+		"TV Theft Nature Girl Kacey (None)":{"level":40,"moves":["Protect","Guillotine","Slam","Brine"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":938},
+		
+	},	
+	"Kricketot":{	
+		"Peridot Youngster Tony (None)":{"level":7,"moves":["Growl","Bide","Struggle Bug"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"index":1977},
+		
+	},	
+	"Kricketune":{	
+		"Jasper Street Rat Morrison (None)":{"level":22,"moves":["Bide","Absorb","Sing","Focus Energy"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":2043},
+		
+	},	
+	"Krokorok":{	
+		"N. Obsidia Fern (None)":{"level": 31, "moves": ["Dig","Rock Tomb","Crunch","Fire Fang"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":69},
+		
+	},	
+	"Krookodile":{	
+		"Byxbysion Fern (Wasteland)":{"level": 43, "moves": ["Fire Fang","Dig","Crunch","Thunder Fang"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index":149},
+		"Route 1 Fern (Grassy)":{"level": 52, "moves": ["Dig","Brick Break","Throat Chop","Thunder Fang"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index":223},
+		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 67, "item": "Muscle Band", "moves": ["Bulldoze","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":278},
+		"Ametrine Aster (Icy)":{"level": 69, "item": "Muscle Band", "moves": ["Earthquake","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":306},
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 72, "moves": ["Earthquake","Brick Break","Throat Chop","Rock Slide"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":366},
+		"Glass Aster (Factory)":{"level": 85, "item": "Muscle Band", "moves": ["Earthquake","Outrage","Rock Slide","Foul Play"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":471},
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Choice Scarf", "moves": ["Outrage","Knock Off","Rock Tomb","Earthquake"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":664},
+		"Route 1 Ranger Steve (Grassy)":{"level":49,"moves":["Dig","Scary Face","Foul Play","Sandstorm"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":2114},
+		
+	},	
+	"Lairon":{	
+		"Railnet Resto Arons (5, Cave) Doubles":{"level":35,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1067},
+		"Railnet Resto Arons (6, Cave) Doubles":{"level":35,"item":"Custap Berry","moves":["Earthquake"],"ability":"Sturdy","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1068},
+		"BW Meteor Ricardo/Hilda (R, Factory)":{"level":34,"moves":["Iron Head","Rock Slide","Take Down","Metal Sound"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1236},
+		"Yureyu Meteor Hilda/Ricardo (R, Short-Circ)":{"level":43,"moves":["Metal Sound","Iron Tail","Iron Defense","Double-Edge"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1284},
+		
+	},	
+	"Lampent":{	
+		"Aqua Theft Magma Break (None)":{"level":33,"moves":["Flame Burst","Imprison","Hex","Memento"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":919},
+		
+	},	
+	"Lanturn":{	
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Volt Switch","Surf","Thunderbolt","Whirlpool"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 56, "sa": 200, "sd": 0, "sp": 0}, "index":454},
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Volt Switch","Surf","Thunderbolt","Whirlpool"], "ability": "Volt Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 56, "sa": 200, "sd": 0, "sp": 0}, "index":466},
+		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Assault Vest", "moves": ["Surf","Volt Switch","Discharge","Blizzard"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":562},
+		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Assault Vest", "moves": ["Surf","Volt Switch","Discharge","Blizzard"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":572},
+		"Devon Meteor Howaya/Callie (H, Factory) Doub":{"level":73,"moves":["Thunder","Icy Wind","Surf","Dazzling Gleam"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1520},
+		"Glass Meteor Arcturus (Factory)":{"level":81,"moves":["Blizzard","Volt Switch","Surf","Discharge"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1587},
+		"Agate Meteor Howaya/Christina (H, None) Doub":{"level":89,"moves":["Discharge","Icy Wind","Surf","Dazzling Gleam"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1623},
+		"Azurine Lake Ranger Nhadala (Water Surf)":{"level":72,"item":"Leftovers","moves":["Substitute","Toxic","Surf","Discharge"],"ability":"Volt Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2208},
+		
+	},	
+	"Lapras":{	
+		"Blacksteam Amaria (Factory)":{"level": 87, "moves": ["Waterfall","Ice Beam","Sing","Ice Shard"], "ability": "Hydration", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":104},
+		"Gym Serra (Mirror)":{"level": 48, "item": "Synthetic Seed", "moves": ["Thunderbolt","Surf","Signal Beam","Ice Beam"], "ability": "Shell Armor", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":190},
+		"Flotsam Amaria (H2O Surface)":{"level": 92, "item": "Elemental Seed", "moves": ["Curse","Rest","Dive","Ice Shard"], "ability": "Hydration", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":450},
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Protect","Rest","Perish Song","Surf"], "ability": "Hydration", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 156, "sa": 0, "sd": 100, "sp": 0}, "index":456},
+		"Jetsam Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Curse","Rest","Dive","Ice Shard"], "ability": "Hydration", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":462},
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 92, "item": "Elemental Seed", "moves": ["Protect","Rest","Perish Song","Surf"], "ability": "Hydration", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 156, "sa": 0, "sd": 100, "sp": 0}, "index":468},
+		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 95, "item": "Wide Lens", "moves": ["Blizzard","Thunder","Hydro Pump","Psychic"], "ability": "Hydration", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":561},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 94, "item": "Magical Seed", "moves": ["Blizzard","Hydro Pump","Psychic","Dragon Pulse"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index":613},
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Leftovers", "moves": ["Waterfall","Curse","Avalanche","Rest"], "ability": "Hydration", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":728},
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "Elemental Seed", "moves": ["Waterfall","Curse","Avalanche","Rest"], "ability": "Hydration", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":764},
+		"Magikarp Aqua Jakob (None)":{"level":37,"moves":["Rain Dance","Perish Song","Ice Beam","Brine"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":906},
+		"Torchic Doxy Murmina (Factory)":{"level":92,"item":"Assault Vest","moves":["Freeze-Dry","Surf","Blizzard","Signal Beam"],"ability":"Water Absorb","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 4,"sp": 0},"index":1092},
+		"Devon Meteor Howaya/Callie (H, Factory) Doub":{"level":74,"moves":["Smart Strike","Dragon Dance","Waterfall","Ice Shard"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1518},
+		"Agate Meteor Howaya/Christina (H, None) Doub":{"level":87,"moves":["Smart Strike","Dragon Dance","Waterfall","Ice Shard"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1621},
+		"Route 4 Ace Trainer Simon (Forest)":{"level":83,"moves":["Freeze-Dry","Hydro Pump","Ice Beam","Psychic"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2242},
+		
+	},	
+	"Larvitar":{	
+		"Onyx Gym Youngster Destry (None)":{"level":17,"moves":["Leer","Sandstorm","Screech","Chip Away"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1150},
+		
+	},	
+	"Larvesta":{	
+		"Spinel Bennet (Mirror)":{"level": 47, "item": "Wide Lens", "moves": ["Flame Charge","Bug Bite","Zen Headbutt","Morning Sun"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":182},
+		"Iolia Bennet (Dark Crystal)":{"level": 58, "moves": ["Flame Charge","Bug Bite","Zen Headbutt","Morning Sun"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":246},
+		
+	},	
+	"Leafeon":{	
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Life Orb", "moves": ["Synthesis","Dig","Return","Leaf Blade"], "ability": "Chlorophyll", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":771},
+		"Route 4 Ranger Lassie (Forest)":{"level":84,"moves":["Leaf Blade","Frustration","Synthesis","Knock Off"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2175},
+		"Route 4 Casanova Fawkes (Forest)":{"level":81,"item":"Assault Vest","moves":["Leaf Blade","X-Scissor","Knock Off","Iron Tail"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2238},
+		
+	},	
+	"Leavanny":{	
+		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 68, "moves": ["Leaf Storm","Throat Chop","Sticky Web","X-Scissor"], "ability": "Swarm", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":354},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 83, "item": "Assault Vest", "moves": ["Fell Stinger","Knock Off","Seed Bomb","Poison Jab"], "ability": "Swarm", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":480},
+		"Labradorra Kenan (None)":{"level": 88, "item": "Focus Sash", "moves": ["Leaf Storm","Throat Chop","Sticky Web","X-Scissor"], "ability": "Swarm", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":525},
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Leaf Blade","Fell Stinger","Knock Off","Poison Jab"], "ability": "Chlorophyll", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":675},
+		
+	},	
+	"Ledian":{	
+		"Subseven Acolyte Kaiden (Holy)":{"level":62,"moves":["Agility","Bug Buzz","Air Slash","Double-Edge"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1408},
+		"WTC Meteor Kaiden (Factory)":{"level":75,"moves":["Mach Punch","Power-Up Punch","Ice Punch","Thunder Punch"],"ability":"Iron Fist","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1482},
+		"Glass Meteor Kaiden (Factory)":{"level":79,"moves":["Mach Punch","Power-Up Punch","Ice Punch","Thunder Punch"],"ability":"Iron Fist","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1589},
+		
+	},	
+	"Ledyba":{	
+		"Peridot Street Rat Murphy (None)":{"level":10,"moves":["Tackle","Supersonic","Swift"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1976},
+		
+	},	
+	"Lickilicky":{	
+		"Mega-Z Ring Colin/Matthew (M, None) Doubles":{"level":76,"moves":["Power Whip","Muddy Water","Blizzard","Hammer Arm"],"ability":"Own Tempo","nature":"Bashful","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1019},
+		"Route 3 Meteor Geoff/Audrey (G, Cave) Doub":{"level":64,"moves":["Power Whip","Gyro Ball","Explosion","Blizzard"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1419},
+		"Amet. Meteor Geoff/Audrey (G, SnowM) Doub":{"level":71,"moves":["Power Whip","Gyro Ball","Explosion","Blizzard"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1448},
+		"Glass Meteor Geoff (Factory)":{"level":81,"moves":["Power Whip","Gyro Ball","Explosion","Blizzard"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1557},
+		
+	},	
+	"Lickitung":{	
+		"Route 4 Hiker Goro (Forest)":{"level":70,"moves":["Body Slam","Lick","Dragon Tail","Fire Blast"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2171},
+		
+	},	
+	"Liepard":{	
+		"Magikarp Corin Rouge (Desert)":{"level":82,"item":"Muscle Band","moves":["Encore","Play Rough","U-turn","Foul Play"],"ability":"Limber","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 0,"sp": 4},"index":1081},
+		"Pyrous Meteor Antoine/Demian (A, SupHeat)":{"level":40,"moves":["Hone Claws","Assurance","Slash","Taunt"],"ability":"Limber","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1262},
+		"Amet. Meteor Demian/Antoine (A, SnowM) Doub":{"level":72,"moves":["Fake Out","Swagger","Foul Play","Substitute"],"ability":"Prankster","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1461},
+		"Agate Meteor Antoine (None)":{"level":87,"moves":["Fake Out","Swagger","Foul Play","Substitute"],"ability":"Prankster","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1605},
+		
+	},	
+	"Lileep":{	
+		"Onyx Gym Hotshot Noah (None)":{"level":16,"moves":["Constrict","Acid","Ingrain","Confuse Ray"],"ability":"Suction Cups","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1137},
+		
+	},	
+	"Lilligant":{	
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Sleep Powder","Giga Drain","Growth","Hidden Power Rock"], "ability": "Chlorophyll", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":677},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Focus Sash", "moves": ["Giga Drain","Quiver Dance","Sleep Powder","Hidden Power Rock"], "ability": "Chlorophyll", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":857},
+		"Grind Indra 1 Green (None)":{"level":58,"item":"Air Balloon","moves":["Quiver Dance","Sleep Powder","Petal Dance","Hidden Power Fire"],"ability":"Own Tempo","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1842},
+		"Grind Indra 2 Green (None)":{"level":68,"item":"Life Orb","moves":["Quiver Dance","Sleep Powder","Petal Dance","Hidden Power Fire"],"ability":"Own Tempo","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1872},
+		
+	},	
+	"Lillipup":{	
+		"MW Meteor Bruno/Ray (B, Factory)":{"level":12,"moves":["Odor Sleuth","Bite","Baby-Doll Eyes","Helping Hand"],"ability":"Vital Spirit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1108},
+		
+	},	
+	"Linoone":{	
+		"Route 1 Hiker Rosch (Grassy)":{"level":54,"moves":["Double-Edge","Rest","Belly Drum","Fling"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":2131},
+		
+	},	
+	"Litleo":{	
+		"Aqua Theft Magma Break (None)":{"level":33,"moves":["Take Down","Fire Fang","Endeavor","Echoed Voice"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":918},
+		
+	},	
+	"Litten":{	
+		"Grand Hall Victoria (None)":{"level": 5, "moves": ["Scratch","Growl"], "ability": "Blaze", "nature": "Bashful", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "index":2},
+		
+	},	
+	"Litwick":{	
+		"Opal Psychic Damon (None)":{"level":35,"moves":["Flame Burst","Imprison","Hex","Memento"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2073},
+		
+	},	
+	"Lombre":{	
+		"Orphanage Howaya/Callie (H, None)":{"level":33,"moves":["Water Sport","Bubble Beam","Nature Power","Uproar"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1211},
+		
+	},	
+	"Lopunny":{	
+		"Mega-Z Ring Q Santiago (None)":{"level":82,"item":"Sitrus Berry","moves":["Power-Up Punch","High Jump Kick","Ice Punch","Bounce"],"ability":"Limber","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1007},
+		"7th Street Punk Celina (None)":{"level":60,"moves":["Dizzy Punch","After You","Charm","Entrainment"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2139},
+		
+	},	
+	"Lotad":{	
+		"Obsidia Punk Brittnay (None)":{"level":16,"moves":["Absorb","Bubble","Natural Gift","Mist"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2027},
+		
+	},	
+	"Loudred":{	
+		"Route 1 Hiker Rufus (Grassy)":{"level":50,"moves":["Rest","Sleeptalk","Hyper Voice","Synchronoise"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":2123},
+		
+	},	
+	"Lucario":{	
+		"Apophyll Kiki (Ashen Beach)":{"level": 42, "moves": ["Aura Sphere","Psychic","Calm Mind","Hidden Power Dark"], "ability": "Steadfast", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":124},
+		"Gym Samson (Big Top)":{"level": 68, "item": "Focus Sash", "moves": ["Swords Dance","Extreme Speed","Brick Break","Meteor Mash"], "ability": "Steadfast", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":265},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 75, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":391},
+		"Devon VS Victoria (Factory)":{"level": 76, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":403},
+		"Labr. Tag Victoria (None) Doubles":{"level": 93, "item": "Wise Glasses", "moves": ["Aura Sphere","Flash Cannon","Calm Mind","Shadow Ball"], "ability": "Justified", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":539},
+		"Spirit King (Desert)":{"level": 95, "item": "Focus Sash", "moves": ["Extreme Speed","Crunch","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":806},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Vacuum Wave","Dark Pulse","Nasty Plot","Aura Sphere"], "ability": "Justified", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":825},
+		"Spirit Godot (Burning)":{"level": 95, "item": "Elemental Seed", "moves": ["Extreme Speed","Ice Punch","Swords Dance","Close Combat"], "ability": "Justified", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":851},
+		"Riolu Pariah Lucario (Snowy Mountain)":{"level":85,"item":"Sitrus Berry","moves":["Extreme Speed","Meteor Mash","Swords Dance","Close Combat"],"ability":"Steadfast","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":983},
+		"Apophyll Grind Ch14 Akane (None)":{"level":75,"moves":["Calm Mind","Aura Sphere","Psychic","Flash Cannon"],"ability":"Inner Focus","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1894},
+		"Tanzan Depths Ranger Will (Cave)":{"level":80,"moves":["Heal Pulse","Close Combat","Dragon Pulse","Extreme Speed"],"ability":"Steadfast","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2220},
+		"Route 4 Ace Trainer Simon (Forest)":{"level":82,"moves":["Nasty Plot","Aura Sphere","Flash Cannon","Psychic"],"ability":"Steadfast","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2244},
+		
+	},	
+	"Ludicolo":{	
+		"Flotsam Amaria (H2O Surf)":{"level": 87, "item": "Choice Specs", "moves": ["Ice Beam","Giga Drain","Focus Blast","Surf"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 206, "sd": 0, "sp": 52}, "index":447},
+		"Jetsam Amaria (H2O Surf)":{"level": 87, "item": "Choice Specs", "moves": ["Ice Beam","Giga Drain","Focus Blast","Surf"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 206, "sd": 0, "sp": 52}, "index":459},
+		"Spirit Fezz (Swamp)":{"level": 95, "item": "Telluric Seed", "moves": ["Surf","Giga Drain","Ice Beam","Focus Blast"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":735},
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Life Orb", "moves": ["Surf","Giga Drain","Ice Beam","Focus Blast"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":748},
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "Life Orb", "moves": ["Surf","Giga Drain","Ice Beam","Focus Blast"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":765},
+		"Magma Theft Pierce (None)":{"level":33,"moves":["Astonish","Growl","Mega Drain","Nature Power"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":901},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":76,"moves":["Scald","Giga Drain","Focus Blast","Ice Beam"],"ability":"Swift Swim","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1043},
+		"7th Street Aqua Pierce (None)":{"level":55,"moves":["Astonish","Growl","Mega Drain","Nature Power"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1397},
+		"Devon Meteor Howaya/Callie (H, Factory) Doub":{"level":74,"moves":["Rain Dance","Giga Drain","Scald","Ice Beam"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1517},
+		"Agate Meteor Howaya/Christina (H, None) Doub":{"level":87,"moves":["Rain Dance","Giga Drain","Surf","Ice Beam"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1620},
+		
+	},	
+	"Lumineon":{	
+		"Labradorra Avril/Steven (A, None) Doubles":{"level": 89, "item": "Sitrus Berry", "moves": ["Scald","Tailwind","Blizzard","U-turn"], "ability": "Swift Swim", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":541},
+		"Tanzan Meteor Avril/Steven (A, Factory)":{"level":53,"moves":["Aqua Ring","Whirlpool","U-turn","Bounce"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1345},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":66,"moves":["Scald","Silver Wind","Ice Beam","Attract"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1435},
+		
+	},	
+	"Lunatone":{	
+		"Stairs Aster/Eclipse (Ecl, Crys Cav) Doubles":{"level": 30, "moves": ["Rock Polish","Psywave","Hypnosis","Rock Slide"], "ability": "Levitate", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":62},
+		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 38, "moves": ["Cosmic Power","Psywave","Hypnosis","Rock Slide"], "ability": "Levitate", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":129},
+		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 65, "item": "Light Clay", "moves": ["Light Screen","Moonblast","Blizzard","Icy Wind"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":280},
+		"Museum Devin/Sanchez (S, Cave) Doubles":{"level":44,"moves":["Psychic","Heal Block","Stone Edge","Future Sight"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":947},
+		"MW Meteor Rod/Ringo (Rin, Factory)":{"level":13,"moves":["Rock Throw","Hypnosis","Rock Polish","Psywave"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1119},
+		"Malchous Meteor Ringo (Forest)":{"level":22,"moves":["Rock Polish","Psywave","Embargo","Rock Slide"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1161},
+		"Pyrous Meteor Regina/Gretchen (G, SupHeat)":{"level":40,"moves":["Cosmic Power","Psychic","Heal Block","Stone Edge"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1279},
+		"Yureyu Meteor Ringo/Rod (Rin, Short-Circ)":{"level":43,"moves":["Psychic","Heal Block","Stone Edge","Future Sight"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1302},
+		"Tanzan Meteor Gretchen (Factory)":{"level":49,"moves":["Stone Edge","Future Sight","Explosion","Magic Room"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1337},
+		"Tanzan Meteor Ringo (Factory)":{"level":54,"moves":["Stone Edge","Future Sight","Explosion","Magic Room"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1351},
+		"WTC Meteor Gretchen (Factory)":{"level":72,"moves":["Psychic","Power Gem","Earth Power","Grass Knot"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1492},
+		"Glass Meteor Sanchez (Factory)":{"level":81,"moves":["Blizzard","Moonblast","Rock Slide","Psychic"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1570},
+		"Agate Gym Guitarist Alistair (Rocky)":{"level":85,"item":"Damp Rock","moves":["Psychic","Power Gem","Rain Dance","Icy Wind"],"ability":"Levitate","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 252,"sa": 0,"sd": 6,"sp": 0},"index":1635},
+		
+	},	
+	"Lurantis":{	
+		"Rock Tomb 🅱️indra (Rainbow)":{"level":70,"moves":["Solar Blade","Synthesis","Superpower","Knock Off"],"ability":"Contrary","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":972},
+		"Amet. Meteor Demian/Antoine (A, SnowM) Doub":{"level":71,"moves":["Leaf Storm","Knock Off","Brick Break","Poison Jab"],"ability":"Contrary","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1460},
+		"Agate Meteor Antoine (None)":{"level":86,"moves":["Leaf Storm","Knock Off","Brick Break","Poison Jab"],"ability":"Contrary","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1604},
+		
+	},	
+	"Luvdisc":{	
+		"Lapis Lady Lenore (None)":{"level":26,"moves":["Water Pulse","Attract","Heart Stamp","Flail"],"ability":"Swift Swim","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2055},
+		
+	},	
+	"Luxio":{	
+		"Belrose John/David (D, None) Doubles":{"level":44,"moves":["Swagger","Thunder Fang","Crunch","Scary Face"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":206},
+		
+	},	
+	"Luxray":{	
+		"Circus Alistasia (Big Top)":{"level": 65, "item": "Choice Scarf", "moves": ["Volt Switch","Superpower","Iron Tail","Snarl"], "ability": "Intimidate", "nature": "Serious", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 252, "df": 4, "sa": 128, "sd": 0, "sp": 0}, "index":259},
+		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "item": "Amplifield Rock", "moves": ["Electric Terrain","Wild Charge","Superpower","Throat Chop"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":394},
+		"Devon VS Arclight (Factory)":{"level": 75, "item": "Amplifield Rock", "moves": ["Electric Terrain","Wild Charge","Superpower","Throat Chop"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":405},
+		"Devon Meteor David (Factory)":{"level":74,"moves":["Superpower","Ice Fang","Wild Charge","Throat Chop"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1545},
+		"Route 1 Youngster Elliot (Grassy)":{"level":60,"moves":["Thunder Fang","Crunch","Scary Face","Discharge"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2108},
+		"Circus Clown Leonardo (None)":{"level":66,"item":"Air Balloon","moves":["Wild Charge","Crunch","Electric Terrain","Ice Fang"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2145},
+		
+	},	
+	"Lycanroc":{	
+		"Stairs Aster/Eclipse (Ecl, Crys Cav) Doubles":{"level": 32, "moves": ["Fire Fang","Accelerock","Bite","Quick Attack"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":63},
+		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 41, "moves": ["Fire Fang","Accelerock","Rock Slide","Crush Claw"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":131},
+		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 68, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Fire Fang"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":284},
+		"Ametrine Aster (Icy)":{"level": 70, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Drill Run"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":308},
+		"Glass Aster (Factory)":{"level": 86, "item": "Life Orb", "moves": ["Brick Break","Rock Slide","Crunch","Drill Run"], "ability": "Sand Rush", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":473},
+		"Agate Partner Hardy (Various) Doubles":{"level": 92, "moves": ["Rock Slide","Drill Run","Brick Break","Zen Headbutt"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":506},
+		"Gym Hardy (Rocky) Doubles":{"level": 92, "item": "Choice Band", "moves": ["Rock Slide","Drill Run","Brick Break","Zen Headbutt"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":521},
+		
+	},	
+	"Lycanroc-Dusk":{	
+		"LCCC Aya (Various) Doubles":{"level": 66, "moves": ["Accelerock","Rock Slide","Swords Dance","Crunch"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":273},
+		"Agate Partner Hardy (Various) Doubles":{"level": 97, "moves": ["Rock Slide","Accelerock","Brick Break","Drill Run"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":512},
+		"Gym Hardy (Rocky) Doubles":{"level": 97, "item": "Telluric Seed", "moves": ["Rock Slide","Accelerock","Brick Break","Drill Run"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":524},
+		
+	},	
+	"Lycanroc-Midnight":{	
+		"Stairs Aster/Eclipse (A, CryCav) Doub":{"level": 32, "moves": ["Thunder Fang","Rock Tomb","Bite","Howl"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":61},
+		"Azurine Aster/Eclipse (A, Swamp) Dub":{"level": 41, "moves": ["Thunder Fang","Rock Slide","Crunch","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":128},
+		"LCCC Aster/Eclipse (Ast, Factory) Doub":{"level": 68, "item": "Life Orb", "moves": ["Thunder Fang","Stone Edge","Sucker Punch","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":279},
+		"Ametrine Aster (Icy)":{"level": 73, "item": "Elemental Seed", "moves": ["Thunder Punch","Stone Edge","Throat Chop","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":309},
+		"Glass Aster (Factory)":{"level": 88, "item": "Elemental Seed", "moves": ["Thunder Punch","Stone Edge","Throat Chop","Swords Dance"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":474},
+		
+	},	
+	"Machamp":{	
+		"Apophyll Kiki (Ashen Beach)":{"level": 40, "item": "Leftovers", "moves": ["Strength","Meditate","Rock Slide","Payback"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index":120},
+		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 69, "moves": ["Wide Guard","Dynamic Punch","Ice Punch","Rock Slide"], "ability": "No Guard", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":356},
+		"Labradorra Kenan (None)":{"level": 89, "item": "Assault Vest", "moves": ["Dynamic Punch","Bullet Punch","Ice Punch","Rock Slide"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":528},
+		"Spirit Kamina (Chess: Bishop)":{"level": 95, "item": "Assault Vest", "moves": ["Stone Edge","Dynamic Punch","Payback","Bullet Punch"], "ability": "No Guard", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":754},
+		"Rainbow BRUCHAMP (None)":{"level":30,"moves":["Brutal Swing","Triple Kick","Rock Tomb","Aerial Ace"],"ability":"Technician","nature":"Brave","ivs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":887},
+		"Klefki Police Seer (None)":{"level":76,"item":"Assault Vest","moves":["Dynamic Punch","Knock Off","Stone Edge","Poison Jab"],"ability":"No Guard","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":994},
+		"Route 3 Meteor Kenan/Diana (K, Cave) Doub":{"level":66,"moves":["Knock Off","Dynamic Punch","Ice Punch","Stone Edge"],"ability":"No Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1425},
+		
+	},	
+	"Machoke":{	
+		"Tanzan Meteor Kenan/Diana (K, Factory)":{"level":53,"moves":["Submission","Bulk Up","Cross Chop","Scary Face"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1327},
+		
+	},	
+	"Machop":{	
+		"BW Meteor Kenan (Factory)":{"level":34,"moves":["Vital Throw","Wake-Up Slap","Dual Chop","Submission"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1244},
+		
+	},	
+	"Magcargo":{	
+		"7th Street Magma Nihil (None)":{"level":54,"moves":["Amnesia","Body Slam","Recover","Flamethrower"],"ability":"Magma Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1402},
+		"Agate Gym Guitarist Isaac (Rocky)":{"level":88,"item":"White Herb","moves":["Shell Smash","Flamethrower","Earth Power","Solar Beam"],"ability":"Weak Armor","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 0,"df": 252,"sa": 6,"sd": 0,"sp": 252},"index":1644},
+		
+	},	
+	"Magikarp":{	
+		"Magikarp Corin Rouge (Desert)":{"level":5,"moves":["Splash","Flail","Tackle","Bounce"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1084},
+		
+	},	
+	"Magmar":{	
+		"Orphanage Timothy/Chris (C, None)":{"level":31,"moves":["Clear Smog","Flame Burst","Confuse Ray","Fire Punch"],"ability":"Flame Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":1196},
+		
+	},	
+	"Magmortar":{	
+		"Lapis Cal (Rainbow)":{"level": 34, "item": "Oran Berry", "moves": ["Mach Punch","Belch","Feint Attack","Fire Punch"], "ability": "Flame Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 51, "at": 51, "df": 51, "sa": 51, "sd": 51, "sp": 51}, "index":76},
+		"Pyrous Cal (Super-Heated)":{"level": 41, "moves": ["Focus Blast","Thunderbolt","Solar Beam","Lava Plume"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":119},
+		"Ametrine Cal (Various) Doubles":{"level": 71, "moves": ["Focus Blast","Thunderbolt","Psychic","Flamethrower"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":298},
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 93, "item": "Assault Vest", "moves": ["Focus Blast","Thunderbolt","Heat Wave","Psychic"], "ability": "Flame Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":599},
+		"Labr. VS Cal (Dragon's Den)":{"level": 93, "item": "Elemental Seed", "moves": ["Focus Blast","Thunderbolt","Lava Plume","Psychic"], "ability": "Flame Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":623},
+		
+	},	
+	"Magnemite":{	
+		"Orphanage Howaya/Callie (H, None)":{"level":33,"moves":["Mirror Shot","Metal Sound","Electro Ball","Flash Cannon"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1212},
+		"Orphanage Danielle/Ramsey (R, None)":{"level":33,"moves":["Mirror Shot","Metal Sound","Electro Ball","Flash Cannon"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1221},
+		
+	},	
+	"Magneton":{	
+		"Belrose John/David (J, None) Doubles":{"level":45,"moves":["Electro Ball","Flash Cannon","Screech","Discharge"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":203},
+		"Orphanage John Reborn (None)":{"level":35,"moves":["Spark","Mirror Shot","Metal Sound","Electro Ball"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1185},
+		"Orphanage Charity/John (J, None)":{"level":35,"moves":["Mirror Shot","Metal Sound","Electro Ball","Flash Cannon"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1229},
+		"Devon Meteor Howaya/Callie (H, Factory) Doub":{"level":75,"moves":["Thunder","Flash Cannon","Electric Terrain","Explosion"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1519},
+		"Devon Meteor Ramsey/Danielle (R, Factory) 2x":{"level":75,"moves":["Electric Terrain","Magnet Bomb","Discharge","Flash Cannon"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1527},
+		"Agate Meteor Howaya/Christina (H, None) 2x":{"level":88,"moves":["Discharge","Flash Cannon","Electric Terrain","Explosion"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1622},
+		"Chrys Forest Posh Ceratisa (Forest)":{"level":41,"moves":["Metal Sound","Electro Ball","Flash Cannon","Screech"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":2103},
+		
+	},	
+	"Magnezone":{	
+		"Fiore Julia (None) Doubles":{"level": 66, "item": "Air Balloon", "moves": ["Hidden Power Fire","Signal Beam","Thunderbolt","Flash Cannon"], "ability": "Analytic", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":346},
+		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 72, "item": "Air Balloon", "moves": ["Discharge","Thunder Wave","Flash Cannon","Hidden Power Fire"], "ability": "Analytic", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":371},
+		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 89, "item": "Choice Specs", "moves": ["Thunderbolt","Flash Cannon","Signal Beam","Hidden Power Water"], "ability": "Sturdy", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":585},
+		"Rock Tomb 🅱️indra (Rainbow)":{"level":72,"moves":["Sonic Boom","Hidden Power Fire","Thunderbolt","Flash Cannon"],"ability":"Sturdy","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":975},
+		"Glass Meteor Techs Deryl/Naoman (N, Fact)":{"level":82,"item":"Choice Specs","moves":["Thunderbolt","Flash Cannon","Signal Beam","Hidden Power Water"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1582},
+		"Neo Coral Fisherman Jacob (Misty)":{"level":71,"moves":["Discharge","Lock-On","Magnet Rise","Gyro Ball"],"ability":"Magnet Pull","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2185},
+		
+	},	
+	"Magnezone-Pulse":{	
+		"Devon ZEL (Factory)":{"level": 83, "item": "Wiki Berry", "moves": ["Magnet Bomb","Discharge","Autotomize","Hidden Power Fire"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":416},
+		
+	},	
+	"Makuhita":{	
+		"Obsidia Meteor Minta (Forest)":{"level":16,"moves":["Arm Thrust","Fake Out","Force Palm","Whirlwind"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1127},
+		
+	},	
+	"Malamar":{	
+		"Gym Radomus (Chess: Pawn) Doubles":{"level": 58, "item": "Rocky Helmet", "moves": ["Superpower","Throat Chop","Trick Room","Rock Slide"], "ability": "Contrary", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":235},
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Fightinium Z", "moves": ["Trick Room","Night Slash","Psycho Cut","Superpower"], "ability": "Contrary", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 0, "at": 252, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":786},
+		
+	},	
+	"Mamoswine":{	
+		"Ametrine Blake (Snowy Mount)":{"level": 72, "moves": ["Earthquake","Stealth Rock","Ice Shard","Icicle Crash"], "ability": "Snow Cloak", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":311},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "moves": ["Earthquake","Rock Slide","Ice Shard","Icicle Crash"], "ability": "Thick Fat", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":359},
+		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Life Orb", "moves": ["Icicle Crash","Stomping Tantrum","Ice Shard","Rock Slide"], "ability": "Thick Fat", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":549},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 93, "item": "Choice Band", "moves": ["Icicle Crash","Stealth Rock","Return","Earthquake"], "ability": "Snow Cloak", "nature": "Adamant", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 255, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":612},
+		"VR Blake (Icy)":{"level": 97, "item": "Elemental Seed", "moves": ["Earthquake","Knock Off","Ice Shard","Icicle Crash"], "ability": "Snow Cloak", "nature": "Adamant", "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":650},
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Choice Band", "moves": ["Icicle Crash","Earthquake","Ice Shard","Rock Slide"], "ability": "Thick Fat", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":830},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":66,"moves":["Icicle Crash","Earthquake","Ice Shard","Rock Slide"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1431},
+		"Amet. Meteor Demian/Antoine (A, SnowM) 2":{"level":71,"moves":["Earthquake","Ice Shard","Rock Slide","Icicle Crash"],"ability":"Snow Cloak","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1459},
+		"Agate Meteor Antoine (None)":{"level":86,"moves":["Earthquake","Ice Shard","Rock Slide","Icicle Crash"],"ability":"Snow Cloak","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1603},
+		"Agate Gym Guitarist Xavier (Rocky)":{"level":87,"item":"Telluric Seed","moves":["Ice Shard","Earthquake","Icicle Crash","Stone Edge"],"ability":"Snow Cloak","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1639},
+		
+	},	
+	"Mandibuzz":{	
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "item": "Leftovers", "moves": ["Roost","Snarl","Toxic","Foul Play"], "ability": "Overcoat", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":376},
+		
+	},	
+	"Manectric":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 47, "moves": ["Flamethrower","Volt Switch","Discharge","Snarl"], "ability": "Static", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":179},
+		"Belrose Sirius (None)":{"level": 50, "moves": ["Volt Switch","Discharge","Flamethrower","Snarl"], "ability": "Static", "nature": "Timid", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index":210},
+		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 68, "moves": ["Overheat","Discharge","Thunder Wave","Hidden Power Ice"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":351},
+		"Labradorra Diana (None)":{"level": 88, "item": "Life Orb", "moves": ["Hidden Power Ice","Thunderbolt","Thunder Wave","Flamethrower"], "ability": "Lightning Rod", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":532},
+		"Mega-Z Ring Eustace (None)":{"level":81,"item":"Choice Specs","moves":["Volt Switch","Flamethrower","Thunderbolt","Hidden Power Ice"],"ability":"Lightning Rod","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1020},
+		"Tanzan Meteor Kenan/Diana (D, Factory)":{"level":53,"moves":["Discharge","Roar","Wild Charge","Charge"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1330},
+		"Route 3 Meteor Kenan/Diana (D, Cave) Doub":{"level":66,"moves":["Overheat","Thunderbolt","Thunder Wave","Hidden Power Grass"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1428},
+		"Ametrine Meteor Bruno/Ray (B, SnowM) Doub":{"level":70,"moves":["Volt Switch","Flamethrower","Thunder Wave","Discharge"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1443},
+		"Glass Meteor Bruno (Factory)":{"level":80,"moves":["Volt Switch","Flamethrower","Thunder Wave","Discharge"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1562},
+		
+	},	
+	"Manectric-Mega":{	
+		"VR Sirius (Drag's Den, Light. Rod) Doub":{"level": 97, "item": "Manectite", "moves": ["Volt Switch","Overheat","Snarl","Discharge"], "ability": "Intimidate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":654},
+		
+	},	
+	"Mankey":{	
+		"Obsidia Street Rat Omar (None)":{"level":15,"moves":["Fury Swipes","Karate Chop","Pursuit","Seismic Toss"],"ability":"Vital Spirit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":2005},
+		
+	},	
+	"Mantine":{	
+		"WTC Meteor Ezra (Factory)":{"level":75,"moves":["Scald","Air Slash","Roost","Seed Bomb"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1497},
+		"Agate Meteor Ezra (None)":{"level":87,"moves":["Scald","Air Slash","Roost","Seed Bomb"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1610},
+		"Agate Meteor Ezrа/Lyla (E, None) Doub":{"level":87,"moves":["Scald","Air Slash","Roost","Seed Bomb"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1614},
+		"Route 1 Ranger Steve (Grassy)":{"level":50,"moves":["Air Slash","Aqua Ring","Bounce","Hydro Pump"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":2118},
+		
+	},	
+	"Mantyke":{	
+		"Onyx Hotshot Joel (None)":{"level":16,"moves":["Bubble Beam","Confuse Ray","Wing Attack","Headbutt"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2033},
+		
+	},	
+	"Maractus":{	
+		"Gym Florinia (Desert)":{"level": 22, "moves": ["Nature Power","Pin Missile","Needle Arm","Spikes"], "ability": "Water Absorb", "nature": "Quirky", "ivs": {"hp": 1, "at": 1, "df": 1, "sa": 1, "sd": 1, "sp": 1}, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index":30},
+		
+	},	
+	"Mareanie":{	
+		"Agent Corey (Corrosive)":{"level": 26, "item": "Telluric Seed", "moves": ["Peck","Bite","Venoshock","Toxic"], "ability": "Merciless", "nature": "Sassy", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":45},
+		"Agent Borealis (Corrosive Mist)":{"level": 26, "moves": ["Peck","Bite","Venoshock","Protect"], "ability": "Merciless", "nature": "Sassy", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":51},
+		"Rhodocrine Meteor Mary (Forest)":{"level":23,"moves":["Bite","Toxic Spikes","Wide Guard","Toxic"],"ability":"Merciless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1172},
+		
+	},	
+	"Mareep":{	
+		"Julia Gym Techie Bill (Factory)":{"level":14,"moves":["Growl","Thunder Wave","Thunder Shock","Cotton Spore"],"ability":"Static","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1122},
+		
+	},	
+	"Marill":{	
+		"Lapis Gentleman Murray (None)":{"level":25,"moves":["Bubble Beam","Helping Hand","Aqua Tail","Play Rough"],"ability":"Thick Fat","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2064},
+		
+	},	
+	"Marowak":{	
+		"Labradorra Audrey (None)":{"level": 90, "item": "Thick Club", "moves": ["Bonemerang","Iron Head","Rock Slide","Throat Chop"], "ability": "Battle Armor", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":555},
+		"Route 3 Meteor Geoff/Audrey (A, Cave) Doub":{"level":66,"moves":["Earthquake","Iron Head","Stone Edge","Smack Down"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1423},
+		"Amet. Meteor Geoff/Audrey (A, SnowM) Doub":{"level":72,"moves":["Bulldoze","Iron Head","Rock Slide","Smack Down"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1453},
+		"Desert Ranger Addison (Desert)":{"level":77,"item":"Thick Club","moves":["Earthquake","Stone Edge","Iron Head","Thunder Punch"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2210},
+		
+	},	
+	"Marowak-Alola":{	
+		"Lapis/Orphanage Cain (None)":{"level": 33, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":84},
+		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":160},
+		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Flame Wheel","Bonemerang","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":166},
+		"Vanhanen Cain (Chess: Rook)":{"level": 54, "item": "Thick Club", "moves": ["Flare Blitz","Stomping Tantrum","Shadow Bone","Will-O-Wisp"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":230},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 82, "item": "Thick Club", "moves": ["Fire Punch","Rock Slide","Shadow Bone","Iron Head"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":481},
+		"VR Sirius (Dragon's Den) Doubles":{"level": 97, "item": "Thick Club", "moves": ["Outrage","Shadow Bone","Rock Slide","Flare Blitz"], "ability": "Lightning Rod", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":655},
+		"Desert Ace Trainer Erebus (Desert)":{"level":74,"moves":["Flare Blitz","Bonemerang","Will-O-Wisp","Shadow Bone"],"ability":"Cursed Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2213},
+		
+	},	
+	"Marshtomp":{	
+		"Lapis Lady Anastasia (None)":{"level":25,"moves":["Mud-Slap","Foresight","Bide","Mud Bomb"],"ability":"Torrent","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2061},
+		
+	},	
+	"Masquerain":{	
+		"Gym Shelly (Forest) Doubles":{"level": 31, "item": "Silver Powder", "moves": ["Struggle Bug","Icy Wind","Bubble Beam","Energy Ball"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":78},
+		"Orphanage Shelly (None) Doubles":{"level": 31, "item": "Silver Powder", "moves": ["Struggle Bug","Icy Wind","Bubble Beam","Energy Ball"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 46, "at": 46, "df": 46, "sa": 46, "sd": 46, "sp": 46}, "index":89},
+		"Spinel Bennet (Mirror)":{"level": 49, "item": "Leftovers", "moves": ["Quiver Dance","Roost","Hydro Pump","Signal Beam"], "ability": "Intimidate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":186},
+		
+	},	
+	"Mawile":{	
+		"Somewhere Gym Knight Xander (Fairy Tale)":{"level":75,"moves":["Sucker Punch","Iron Head","Play Rough","Swords Dance"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1547},
+		"Labradorra Gym Knight Frey (Dragon's Den)":{"level":87,"item":"Life Orb","moves":["Sucker Punch","Iron Head","Play Rough","Swords Dance"],"ability":"Intimidate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":1650},
+		"Opal Grind Ch2 Silva (None)":{"level":22,"moves":["Bite","Sweet Scent","Visegrip","Feint Attack"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1691},
+		"Opal Grind Ch3.5 Silva (None)":{"level":35,"moves":["Feint Attack","Baton Pass","Crunch","Iron Defense"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1727},
+		"Opal Grind Ch4.5 Silva (None)":{"level":47,"item":"Assault Vest","moves":["Play Rough","Sucker Punch","Iron Head","Ice Fang"],"ability":"Sheer Force","nature":"Adamant","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1765},
+		"Opal Grind Ch8 Silva (None)":{"level":57,"item":"Assault Vest","moves":["Play Rough","Sucker Punch","Iron Head","Ice Fang"],"ability":"Sheer Force","nature":"Adamant","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1807},
+		
+	},	
+	"Mawile-Mega":{	
+		"Gym Adrienn (Misty, Intimidate) Doubles":{"level": 78, "item": "Mawilite", "moves": ["Iron Head","Play Rough","Rock Slide","Sucker Punch"], "ability": "Huge Power", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":421},
+		"Opal Grind Ch14 Silva (None, Intimidate)":{"level":84,"item":"Mawilite","moves":["Play Rough","Sucker Punch","Iron Head","Rock Slide"],"ability":"Huge Power","nature":"Adamant","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1926},
+		
+	},	
+	"Medicham":{	
+		"Apophyll Kiki (Ashen Beach)":{"level": 43, "item": "Telluric Seed", "moves": ["Drain Punch","Meditate","Strength","Ice Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index":125},
+		"Ametrine Cal (Various) Doubles":{"level": 72, "item": "Muscle Band", "moves": ["Drain Punch","Meditate","High Jump Kick","Ice Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":299},
+		"Misdreavus Kiki (Wasteland)":{"level":65,"moves":["Meditate","Thunder Punch","Drain Punch","Ice Punch"],"ability":"Pure Power","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":943},
+		"Apophyll Grind Ch14 Akane (None)":{"level":75,"moves":["High Jump Kick","Zen Headbutt","Bullet Punch","Ice Punch"],"ability":"Pure Power","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1892},
+		
+	},	
+	"Medicham-Mega":{	
+		"Labr. Resh. Tag Cal (Inverse) Doubles":{"level": 95, "item": "Medichamite", "moves": ["Fake Out","High Jump Kick","Zen Headbutt","Fire Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":604},
+		"Labr. VS Cal (Dragon's Den)":{"level": 95, "item": "Medichamite", "moves": ["Fake Out","High Jump Kick","Zen Headbutt","Fire Punch"], "ability": "Pure Power", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":628},
+		
+	},	
+	"Meditite":{	
+		"Apop Beach Battle Girl Tina (Ashen Beach)":{"level":36,"moves":["High Jump Kick","Psych Up","Acupressure","Power Trick"],"ability":"Pure Power","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":2083},
+		
+	},	
+	"Meganium":{	
+		"Opal Grind Ch4.5 Carol (None)":{"level":50,"moves":["Natural Gift","Sweet Scent","Light Screen","Body Slam"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1750},
+		"Opal Grind Ch8 Carol (None)":{"level":60,"moves":["Light Screen","Body Slam","Safeguard","Aromatherapy"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1789},
+		"Opal Grind Ch14 Carol (None)":{"level":85,"item":"Lum Berry","moves":["Swords Dance","Earthquake","Petal Blizzard","Outrage"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1904},
+		
+	},	
+	"Meowstic":{	
+		"Vanhanen Gym Psychic Sage (Chess: Pawn)":{"level":56,"moves":["Calm Mind","Reflect","Fake Out","Psychic"],"ability":"Infiltrator","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1362},
+		"Opal Grind Ch8 Carol (None)":{"level":56,"moves":["Role Play","Imprison","Sucker Punch","Misty Terrain"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1785},
+		"Opal Grind Ch14 Carol (None)":{"level":82,"item":"Light Clay","moves":["Reflect","Light Screen","Thunder Wave","Psyshock"],"ability":"Prankster","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1900},
+		
+	},	
+	"Meowstic-F":{	
+		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":161},
+		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":167},
+		"Vanhanen Cain (Chess: Knight)":{"level": 54, "item": "Wise Glasses", "moves": ["Charge Beam","Psychic","Shadow Ball","Light Screen"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":229},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Damp Rock", "moves": ["Charge Beam","Psychic","Reflect","Rain Dance"], "ability": "Competitive", "nature": "Timid", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":482},
+		"Vanhanen Gym Psychic Sage (Chess: Queen)":{"level":52,"moves":["Calm Mind","Thunderbolt","Shadow Ball","Stored Power"],"ability":"Competitive","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1363},
+		
+	},	
+	"Meowth":{	
+		"Opal Posh Claudette (None)":{"level":4,"moves":["Scratch","Growl"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 6,"at": 6,"df": 6,"sa": 6,"sd": 6,"sp": 6},"index":1956},
+		
+	},	
+	"Meowth-Alola":{	
+		"Opal Posh Claudette (None)":{"level":4,"moves":["Scratch","Growl"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 6,"at": 6,"df": 6,"sa": 6,"sd": 6,"sp": 6},"index":1957},
+		
+	},	
+	"Metagross":{	
+		"Gym Radomus (Chess: King) Doubles":{"level": 59, "item": "King's Rock", "moves": ["Zen Headbutt","Meteor Mash","Ice Punch","Strength"], "ability": "Clear Body", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":238},
+		"WTC Ace (Factory)":{"level": 72, "item": "Enigma Berry", "moves": ["Earthquake","Iron Head","Zen Headbutt","Bullet Punch"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":336},
+		"Glass 3 ???/??? (Right, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Zen Headbutt","Meteor Mash","Ice Punch","Rock Slide"], "ability": "Clear Body", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":501},
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Weakness Policy", "moves": ["Meteor Mash","Protect","Zen Headbutt","Return"], "ability": "Clear Body", "nature": "Jolly", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "happiness": 255, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":621},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Assault Vest", "moves": ["Meteor Mash","Bullet Punch","Grass Knot","Psychic"], "ability": "Clear Body", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":835},
+		"Torchic Doxy Murmina (Factory)":{"level":95,"item":"Muscle Band","moves":["Meteor Mash","Agility","Earthquake","Zen Headbutt"],"ability":"Clear Body","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1094},
+		"Vanhanen Gym Psychic Rosemary (Chess: K)":{"level":56,"item":"King's Rock","moves":["Zen Headbutt","Iron Head","Thunder Punch","Bullet Punch"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1365},
+		"Route 4 Ace Trainer Autumn (Forest)":{"level":85,"item":"Eject Button","moves":["Meteor Mash","Bullet Punch","Zen Headbutt","Ice Punch"],"ability":"Clear Body","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 240,"at": 252,"df": 16,"sa": 0,"sd": 0,"sp": 0},"index":2231},
+		
+	},	
+	"Metagross-Mega":{	
+		"E4 Anna (Starlight, Clear Body)":{"level": 100, "item": "Metagrossite", "moves": ["Meteor Mash","Earthquake","Zen Headbutt","Bullet Punch"], "ability": "Tough Claws", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":688},
+		
+	},	
+	"Metang":{	
+		"Pyro Meteor Michaela/Winter (W, SupHeat)":{"level":40,"moves":["Miracle Eye","Zen Headbutt","Scary Face","Psychic"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1273},
+		"Vanhanen Gym Psychic Rosemary (Chess: Queen)":{"level":51,"moves":["Agility","Meteor Mash","Iron Defense","Hyper Beam"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":1366},
+		
+	},	
+	"Metapod":{	
+		"Jasper Hotshot Ross (None)":{"level":19,"moves":["Tackle","Harden"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":2042},
+		
+	},	
+	"Mewtwo":{	
+		"Glitch World Mewtwo (Glitch)":{"level": 75, "item": "Leftovers", "moves": ["Psystrike","Recover","Thunderbolt","Ice Beam"], "ability": "Pressure", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":316},
+		
+	},	
+	"Mienfoo":{	
+		"Apophyll Victoria (Ashen Beach)":{"level": 38, "item": "Muscle Band", "moves": ["Drain Punch","Fake Out","Meditate","Rock Tomb"], "ability": "Regenerator", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":110},
+		"Pyrous Victoria (Super-Heated)":{"level": 37, "item": "Eject Button", "moves": ["Drain Punch","Fake Out","Meditate","Rock Tomb"], "ability": "Regenerator", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":138},
+		
+	},	
+	"Mienshao":{	
+		"Gym Samson (Big Top)":{"level": 68, "item": "Life Orb", "moves": ["Acrobatics","U-turn","Brick Break","Poison Jab"], "ability": "Regenerator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":264},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 73, "moves": ["Knock Off","High Jump Kick","U-turn","Fake Out"], "ability": "Regenerator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":388},
+		"Devon VS Victoria (Factory)":{"level": 74, "item": "Life Orb", "moves": ["Knock Off","High Jump Kick","U-turn","Fake Out"], "ability": "Regenerator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":399},
+		"Labr. Tag Victoria (None) Doubles":{"level": 91, "item": "Life Orb", "moves": ["Knock Off","High Jump Kick","U-turn","Poison Jab"], "ability": "Regenerator", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":535},
+		"Grind Indra 1 Violet (None)":{"level":58,"item":"Air Balloon","moves":["Stone Edge","Hidden Power Ice","U-turn","High Jump Kick"],"ability":"Reckless","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1852},
+		"Grind Indra 2 Violet (None)":{"level":68,"item":"Life Orb","moves":["Stone Edge","Hidden Power Ice","U-turn","High Jump Kick"],"ability":"Reckless","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1882},
+		
+	},	
+	"Milotic":{	
+		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 67, "item": "Leftovers", "moves": ["Scald","Confuse Ray","Recover","Blizzard"], "ability": "Marvel Scale", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":283},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Leftovers", "moves": ["Rest","Sleeptalk","Dragon Tail","Scald"], "ability": "Marvel Scale", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":856},
+		"Pyro Meteor Michaela/Winter (W, SupHeat)":{"level":40,"moves":["Recover","Aqua Tail","Attract","Safeguard"],"ability":"Marvel Scale","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1274},
+		"Azurine Lake Swimmer Xerciel (Water Surf)":{"level":72,"item":"Elemental Seed","moves":["Surf","Recover","Ice Beam","Toxic"],"ability":"Competitive","nature":"Calm","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2191},
+		
+	},	
+	"Miltank":{	
+		"Route 1 Ranger Medius (Grassy)":{"level":52,"moves":["Captivate","Gyro Ball","Heal Bell","Wake-Up Slap"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":2130},
+		
+	},	
+	"Mime Jr.":{	
+		"Obsidia Street Rat Rafe (None)":{"level":18,"moves":["Meditate","Double Slap","Mimic","Encore"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":2003},
+		
+	},	
+	"Mimikyu":{	
+		"Gym Shade (Short Circuit)":{"level": 38, "item": "Sitrus Berry", "moves": ["Thunderbolt","Swords Dance","Shadow Claw","Play Rough"], "ability": "Disguise", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":103},
+		"Vanhanen Cain (Chess: King)":{"level": 53, "moves": ["Drain Punch","Play Rough","Swords Dance","Shadow Sneak"], "ability": "Disguise", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 79, "at": 79, "df": 79, "sa": 79, "sd": 79, "sp": 79}, "index":228},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Electric Gem", "moves": ["Thunder","Play Rough","Swords Dance","Shadow Claw"], "ability": "Disguise", "nature": "Lonely", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index":484},
+		"Type: Null Nadira (Factory)":{"level":56,"moves":["Swords Dance","Drain Punch","Shadow Sneak","Play Rough"],"ability":"Disguise","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":950},
+		"Chrys Forest Casanova Christian (Forest)":{"level":44,"moves":["Charm","Slash","Shadow Claw","Hone Claws"],"ability":"Disguise","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":2101},
+		
+	},	
+	"Minior-Meteor":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 45, "moves": ["Shell Smash","Charge Beam","Power Gem","Dazzling Gleam"], "ability": "Shields Down", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":176},
+		"Belrose Sirius (None)":{"level": 48, "moves": ["Shell Smash","Dazzling Gleam","Power Gem","Psychic"], "ability": "Shields Down", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":207},
+		"WTC Taka (Factory)":{"level": 69, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Power Gem","Earthquake"], "ability": "Shields Down", "nature": "Naive", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 148, "sd": 0, "sp": 108}, "index":329},
+		"Gym Ciel (Big Top)":{"level": 75, "item": "Focus Sash", "moves": ["Acrobatics","Earthquake","Rock Slide","Shell Smash"], "ability": "Shields Down", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":382},
+		"Tourmaline Taka (Desert)":{"level": 78, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":427},
+		"Tourmaline Partner Taka (Desert) Doubles":{"level": 78, "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":434},
+		"Labradorra Avril/Steven (A, None) Doubles":{"level": 88, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Rock Slide","Earthquake"], "ability": "Shields Down", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":542},
+		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "White Herb", "moves": ["Shell Smash","Acrobatics","Iron Head","Rock Slide"], "ability": "Shields Down", "nature": "Adamant", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":656},
+		"Daycare Grant/Janis (J, None) Doubles":{"level":19,"moves":["Rock Smash","Leer","Pursuit","Bubble Beam"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":873},
+		"MW Meteor Janis/Grant (J, Factory)":{"level":13,"moves":["Tackle","Defense Curl","Rollout","Confuse Ray"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1116},
+		"Pyro Meteor Michaela/Winter (M, SupHot)":{"level":40,"moves":["Take Down","Autotomize","Cosmic Power","Power Gem"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1272},
+		"Yureyu Meteor Kenneth/Brenna (B, SCirc)":{"level":41,"moves":["Take Down","Autotomize","Cosmic Power","Power Gem"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1288},
+		"Tanzan Meteor Kenneth (Factory)":{"level":52,"moves":["Power Gem","Double-Edge","Shell Smash","Explosion"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1315},
+		"Tanzan Meteor Brenna (Factory)":{"level":52,"moves":["Power Gem","Double-Edge","Shell Smash","Explosion"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1319},
+		"Tanzan Meteor Ricardo (Factory)":{"level":52,"moves":["Power Gem","Double-Edge","Shell Smash","Explosion"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1339},
+		"Vanhanen Meteor Ricardo (Grassy)":{"level":56,"moves":["Power Gem","Double-Edge","Shell Smash","Explosion"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1373},
+		"Route 3 Meteor Steven/Avril (S, Rock) 2x":{"level":66,"moves":["Stealth Rock","Acrobatics","Rock Slide","Earthquake"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1434},
+		"Amet. Meteor Ricardo/Hilda (R, SnowM) 2x":{"level":72,"moves":["Cosmic Power","Rock Slide","Confuse Ray","Bulldoze"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1465},
+		"Agate Meteor Ricardo (None)":{"level":86,"moves":["Cosmic Power","Rock Slide","Confuse Ray","Bulldoze"],"ability":"Shields Down","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1594},
+		
+	},	
+	"Minun":{	
+		"Gym Julia (Electric)":{"level": 12, "moves": ["Nuzzle","Charge Beam","Encore","Quick Attack"], "ability": "Minus", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index":8},
+		
+	},	
+	"Misdreavus":{	
+		"Opal Psychic Michael (None)":{"level":32,"moves":["Mean Look","Hex","Psybeam","Pain Split"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":2066},
+		
+	},	
+	"Mismagius":{	
+		"Byxbysion Ace (Wasteland)":{"level": 41, "moves": ["Mystical Fire","Power Gem","Shadow Ball","Thunder Wave"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":146},
+		"Glass 2 ??? (Factory)":{"level": 84, "item": "Synthetic Seed", "moves": ["Shadow Ball","Thunderbolt","Nasty Plot","Dazzling Gleam"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":489},
+		"L Route Lin 2 (New World)":{"level": 100, "item": "Life Orb", "moves": ["Dazzling Gleam","Shadow Ball","Power Gem","Foul Play"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":702},
+		"A Route Lin 2 (New World)":{"level": 100, "item": "Life Orb", "moves": ["Dazzling Gleam","Shadow Ball","Power Gem","Foul Play"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":708},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "Focus Sash", "moves": ["Nasty Plot","Thunderbolt","Shadow Ball","Hidden Power Fighting"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":844},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Focus Sash", "moves": ["Nasty Plot","Thunderbolt","Shadow Ball","Hidden Power Fighting"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":858},
+		"Type: Null Nadira (Factory)":{"level":57,"moves":["Nasty Plot","Power Gem","Thunderbolt","Shadow Ball"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":951},
+		"Grind Indra 1 Violet (None)":{"level":58,"item":"Air Balloon","moves":["Nasty Plot","Shadow Ball","Dazzling Gleam","Thunderbolt"],"ability":"Levitate","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1851},
+		"Grind Indra 2 Violet (None)":{"level":68,"item":"Spooky Plate","moves":["Nasty Plot","Shadow Ball","Dazzling Gleam","Thunderbolt"],"ability":"Levitate","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1881},
+		
+	},	
+	"Monferno":{	
+		"Apop School Black Belt Ryan (Ashen Beach)":{"level":35,"moves":["Fury Swipes","Flame Wheel","Feint","Torment"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":2088},
+		
+	},	
+	"Morelull":{	
+		"Onyx Gym Trisy/Jojo (J, None)":{"level":17,"moves":["Astonish","Flash","Moonlight","Mega Drain"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1136},
+		
+	},	
+	"Mothim":{	
+		"Rainbow Swarm (None) Doubles":{"level":26,"moves":["Gust","Hidden Power Ground","Bug Bite","Confusion"],"ability":"Tinted Lens","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":883},
+		"Lapis Gym Techie Eugene (Forest)":{"level":30,"moves":["Hidden Power","Confusion","Gust","Poison Powder"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":1187},
+		"Yureyu Meteor Kenneth/Brenna (K, Short-Circ)":{"level":42,"moves":["Psybeam","Camouflage","Silver Wind","Air Slash"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1285},
+		"Tanzan Meteor Kenneth (Factory)":{"level":52,"moves":["Air Slash","Psychic","Lunge","Bug Buzz"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1316},
+		
+	},	
+	"Mr. Mime":{	
+		"Circus Clown Posty (None)":{"level":65,"item":"Air Balloon","moves":["Teeter Dance","Energy Ball","Psychic","Thunder Wave"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2148},
+		
+	},	
+	"Mr. Mime-Pulse":{	
+		"Calc. Connal/Mime (Mime, Sh-Circ) Doub":{"level": 100, "item": "Leftovers", "moves": ["Instruct","Night Shade","Moonlight","Entrainment"], "ability": "Wonder Guard", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 236, "at": 0, "df": 16, "sa": 0, "sd": 252, "sp": 0}, "index":592},
+		
+	},	
+	"Mudbray":{	
+		"Jasper Meteor Simon (None)":{"level":19,"moves":["Rototiller","Bulldoze","Double Kick","Stomp"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":1154},
+		"Opal Jackson/Mack (M, None) Doubles":{"level":6,"moves":["Mud-Slap","Mud Sport"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 9,"at": 9,"df": 9,"sa": 9,"sd": 9,"sp": 9},"index":1961},
+		
+	},	
+	"Mudkip":{	
+		"Lapis Lady Anastasia (None)":{"level":25,"moves":["Rock Throw","Bide","Mud Sport","Water Gun"],"ability":"Torrent","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2060},
+		
+	},	
+	"Mudsdale":{	
+		"Labradorra Avril/Steven (S, None) Doubles":{"level": 90, "item": "Assault Vest", "moves": ["Close Combat","High Horsepower","Counter","Rock Slide"], "ability": "Stamina", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":550},
+		"Mega-Z Ring Colin/Matthew (C, None) Doubles":{"level":74,"item":"Assault Vest","moves":["Superpower","Heavy Slam","Rock Slide","High Horsepower"],"ability":"Stamina","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1015},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":77,"item":"Assault Vest","moves":["Rock Slide","High Horsepower","Heavy Slam","Close Combat"],"ability":"Stamina","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1046},
+		"BW Meteor Steven (Factory)":{"level":34,"moves":["Bide","High Horsepower","Iron Defense","Heavy Slam"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1250},
+		"Yureyu Meteor Simon/Tara (S, Short-Circ)":{"level":42,"moves":["High Horsepower","Iron Defense","Heavy Slam","Counter"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1291},
+		"Tanzan Meteor Avril/Steven (S, Factory)":{"level":53,"moves":["Iron Defense","Heavy Slam","Counter","Earthquake"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1350},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":68,"moves":["Superpower","High Horsepower","Counter","Rock Slide"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1433},
+		
+	},	
+	"Muk":{	
+		"Chrys Forest Posh Ceratisa (Forest)":{"level":40,"moves":["Minimize","Gunk Shot","Mud Bomb","Screech"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":2102},
+		
+	},	
+	"Muk-Alola":{	
+		"Byxbysion Cain (Wasteland)":{"level": 44, "moves": ["Gunk Shot","Minimize","Disable","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":162},
+		"Yureyu Cain (Short Circuit) Doubles":{"level": 44, "moves": ["Gunk Shot","Minimize","Power-Up Punch","Knock Off"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":168},
+		"Vanhanen Cain (Chess: Pawn)":{"level": 52, "item": "Black Sludge", "moves": ["Gunk Shot","Minimize","Knock Off","Power-Up Punch"], "ability": "Poison Touch", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index":227},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 81, "item": "Black Sludge", "moves": ["Gunk Shot","Thunder Punch","Knock Off","Rock Slide"], "ability": "Power Of Alchemy", "nature": "Brave", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":485},
+		"Mega-Z Ring Colin/Matthew (M, None) Doubles":{"level":73,"moves":["Minimize","Sludge Wave","Fire Blast","Giga Drain"],"ability":"Power Of Alchemy","nature":"Calm","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1017},
+		"Yureyu Meteor Simon/Tara (S, Short-Circ)":{"level":43,"moves":["Knock Off","Crunch","Screech","Gunk Shot"],"ability":"Poison Touch","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1292},
+		
+	},	
+	"Muk-Pulse":{	
+		"Blacksteam ZEL (Factory)":{"level": 42, "item": "Leftovers", "moves": ["Sludge Wave","Mud Bomb","Muddy Water","Discharge"], "ability": "Protean", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":108},
+		
+	},	
+	"Munchlax":{	
+		"Rhodocrine Gentleman Ben (Forest)":{"level":26,"moves":["Amnesia","Chip Away","Screech","Body Slam"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2045},
+		
+	},	
+	"Munna":{	
+		"Opal Posh Lulu (None)":{"level":44,"moves":["Calm Mind","Psychic","Dream Eater","Telekinesis"],"ability":"Forewarn","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":2098},
+		
+	},	
+	"Musharna":{	
+		"Orphanage Connal (None)":{"level": 34, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psybeam","Signal Beam"], "ability": "Telepathy", "nature": "Serious", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 51, "at": 51, "df": 51, "sa": 51, "sd": 51, "sp": 51}, "index":94},
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 45, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psyshock","Dazzling Gleam"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":170},
+		"Belrose Connal (None)":{"level": 48, "item": "Amplifield Rock", "moves": ["Psychic Terrain","Moonlight","Psyshock","Dazzling Gleam"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":194},
+		"Rock Tomb 🅱️indra (Rainbow)":{"level":71,"item":"Leftovers","moves":["Sonic Boom","Dazzling Gleam","Toxic","Moonlight"],"ability":"Synchronize","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":974},
+		"Grind Indra 1 Pink (None)":{"level":58,"item":"Air Balloon","moves":["Moonlight","Psychic","Shadow Ball","Signal Beam"],"ability":"Synchronize","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1859},
+		"Grind Indra 2 Pink (None)":{"level":68,"item":"Leftovers","moves":["Moonlight","Psychic","Shadow Ball","Signal Beam"],"ability":"Synchronize","nature":"Bold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 240,"at": 0,"df": 252,"sa": 0,"sd": 16,"sp": 0},"index":1889},
+		
+	},	
+	"Mightyena":{	
+		"Electrike Strays (1, None) Doubles":{"level":25,"moves":["Snarl","Swagger","Assurance","Thunder Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":877},
+		"Electrike Strays (2, None) Doubles":{"level":25,"moves":["Snarl","Swagger","Assurance","Fire Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":878},
+		"Pyrous Meteor Antoine/Demian (A, SupHeat)":{"level":40,"moves":["Assurance","Scary Face","Embargo","Taunt"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1261},
+		"Amet. Meteor Demian/Antoine (A, SnowM) 2":{"level":73,"moves":["Play Rough","Sucker Punch","Crunch","Fire Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1462},
+		"Agate Meteor Antoine (None)":{"level":88,"moves":["Play Rough","Sucker Punch","Crunch","Fire Fang"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1606},
+		
+	},	
+	"Minccino":{	
+		"Obsidia Hotshot Vinny (None)":{"level":16,"moves":["Helping Hand","Tickle","Double Slap","Encore"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2019},
+		
+	},	
+	"Murkrow":{	
+		"Lapis Lady Lenore (None)":{"level":26,"moves":["Haze","Wing Attack","Night Shade","Assurance"],"ability":"Insomnia","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2056},
+		
+	},	
+	"Natu":{	
+		"Opal Grind Ch1 Silva (None)":{"level":12,"moves":["Leer","Night Shade","Teleport","Lucky Chant"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1665},
+		"Opal Grind Ch2 Silva (None)":{"level":23,"moves":["Lucky Chant","Stored Power","Ominous Wind","Confuse Ray"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1692},
+		
+	},	
+	"Nincada":{	
+		"Opal Hotshot Zane (None)":{"level":12,"moves":["Scratch","Harden","Absorb","Sand Attack"],"ability":"Compound Eyes","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1993},
+		
+	},	
+	"Nidoking":{	
+		"Lapis/Orphanage Cain (None)":{"level": 36, "moves": ["Thrash","Double Kick","Poison Tail","Chip Away"], "ability": "Sheer Force", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index":86},
+		"Byxbysion Cain (Wasteland)":{"level": 46, "moves": ["Thrash","Throat Chop","Poison Tail","Shadow Ball"], "ability": "Sheer Force", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":164},
+		"Yureyu Cain (Short Circuit) Doubles":{"level": 46, "moves": ["Thrash","Throat Chop","Poison Tail","Shadow Ball"], "ability": "Sheer Force", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":165},
+		"Vanhanen Cain (Chess: Queen)":{"level": 55, "moves": ["Earthquake","Throat Chop","Poison Jab","Megahorn"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":232},
+		"Gym Terra (Glitch)":{"level": 73, "item": "Life Orb", "moves": ["Amnesia","Blizzard","Thunderbolt","Flamethrower"], "ability": "Sheer Force", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":317},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 83, "item": "Life Orb", "moves": ["Earth Power","Blizzard","Thunder","Flamethrower"], "ability": "Sheer Force", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":486},
+		"E4 Heather (Mountain)":{"level": 100, "item": "Life Orb", "moves": ["Thunder","Earth Power","Rock Slide","Sludge Wave"], "ability": "Sheer Force", "nature": "Hasty", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":667},
+		"Some Gym Knight Asmus/Isadan (A, Fairy T)":{"level":76,"moves":["Smart Strike","Megahorn","Thunder","Earth Power"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1549},
+		"Opal Grind Ch3.5 Emile (None)":{"level":37,"moves":["Double Kick","Poison Sting","Chip Away","Thrash"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":1742},
+		"Opal Grind Ch4.5 Emile (None)":{"level":52,"moves":["Poison Sting","Chip Away","Thrash","Earth Power"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1780},
+		"Opal Grind Ch8 Emile (None)":{"level":62,"moves":["Poison Sting","Chip Away","Thrash","Earth Power"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1825},
+		
+	},	
+	"Nidoran-F":{	
+		"Peridot Street Rat Reginald (None)":{"level":9,"moves":["Growl","Scratch","Tail Whip","Double Kick"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1986},
+		
+	},	
+	"Nidoran-M":{	
+		"Grand Hall Cain (None)":{"level": 5, "moves": ["Cut","Leer"], "ability": "Hustle", "nature": "Modest", "ivs": {"hp": 3, "at": 3, "df": 3, "sa": 3, "sd": 3, "sp": 3}, "evs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "index":1},
+		"Opal Grind Ch1 Emile (None)":{"level":14,"moves":["Peck","Focus Energy","Double Kick","Poison Sting"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1671},
+		
+	},	
+	"Nidorina":{	
+		"Agent Corey (Corrosive)":{"level": 27, "moves": ["Double Kick","Venom Drench","Bite","Disable"], "ability": "Hustle", "nature": "Impish", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":46},
+		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Double Kick","Venom Drench","Bite","Disable"], "ability": "Hustle", "nature": "Impish", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":52},
+		
+	},	
+	"Nidorino":{	
+		"Coral Cain (Misty)":{"level": 20, "moves": ["Poison Tail","Supersonic","Fury Attack","Peck"], "ability": "Rivalry", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "index":25},
+		"Opal Grind Ch2 Emile (None)":{"level":22,"moves":["Focus Energy","Double Kick","Poison Sting","Fury Attack"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1704},
+		
+	},	
+	"Nidoqueen":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 41, "item": "Black Sludge", "moves": ["Sludge Wave","Stealth Rock","Crunch","Stomping Tantrum"], "ability": "Poison Point", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":154},
+		"WTC Ace (Factory)":{"level": 71, "item": "Wise Glasses", "moves": ["Earth Power","Flamethrower","Thunderbolt","Sludge Bomb"], "ability": "Sheer Force", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":334},
+		"Some Gym Knight Asmus/Isadan (I, Fairy T)":{"level":76,"moves":["Fire Blast","Blizzard","Earth Power","Dragon Tail"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1550},
+		
+	},	
+	"Ninetales":{	
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 72, "item": "Telluric Seed", "moves": ["Heat Wave","Solar Beam","Hidden Power Rock","Nasty Plot"], "ability": "Drought", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":290},
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Air Balloon", "moves": ["Role Play","Heat Wave","Solar Beam","Dark Pulse"], "ability": "Drought", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":770},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Life Orb", "moves": ["Solar Beam","Hypnosis","Flamethrower","Psyshock"], "ability": "Drought", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":839},
+		"Spirit Allan (Psychic)":{"level": 95, "item": "Magical Seed", "moves": ["Nasty Plot","Substitute","Flamethrower","Solar Beam"], "ability": "Drought", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":853},
+		"Magikarp Magma Bunson (None)":{"level":37,"moves":["Flamethrower","Quick Attack","Confuse Ray","Safeguard"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":920},
+		"Aqua Raid Magma Maxwell (None)":{"level":41,"moves":["Will-O-Wisp","Payback","Flamethrower","Confuse Ray"],"ability":"Drought","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":926},
+		"Aqua 3 Magma Maxwell (None)":{"level":58,"item":"Wise Glasses","moves":["Will-O-Wisp","Fire Blast","Extrasensory","Confuse Ray"],"ability":"Drought","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":966},
+		"Magikarp Casanova Claret (Forest)":{"level":76,"item":"Heat Rock","moves":["Solar Beam","Heat Wave","Nasty Plot","Dark Pulse"],"ability":"Drought","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":985},
+		"Torchic Doxy Murmina (Factory)":{"level":94,"item":"Focus Sash","moves":["Dark Pulse","Nasty Plot","Fire Blast","Energy Ball"],"ability":"Flash Fire","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1095},
+		"7th Street Magma Nihil (None)":{"level":54,"moves":["Flamethrower","Quick Attack","Confuse Ray","Safeguard"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1401},
+		"Opal Street Rat Owen (None)":{"level":44,"moves":["Ember","Quick Attack","Confuse Ray","Safeguard"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":2095},
+		
+	},	
+	"Ninetales-Alola":{	
+		"Gym Serra (Mirror)":{"level": 48, "item": "Icy Rock", "moves": ["Nasty Plot","Dazzling Gleam","Aurora Beam","Aurora Veil"], "ability": "Snow Warning", "nature": "Calm", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":189},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 81, "item": "Light Clay", "moves": ["Blizzard","Dazzling Gleam","Freeze-Dry","Aurora Veil"], "ability": "Snow Warning", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":493},
+		"Labr. Lumi/Eve (L, Inverse) Doubles":{"level": 93, "item": "Light Clay", "moves": ["Aurora Veil","Protect","Icy Wind","Dazzling Gleam"], "ability": "Snow Warning", "nature": "Timid", "evs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "index":611},
+		"E4 Anna (Starlight)":{"level": 100, "item": "Light Clay", "moves": ["Aurora Veil","Moonblast","Aurora Beam","Extrasensory"], "ability": "Snow Cloak", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":684},
+		"Meteor Lin 1 Zek. (None)":{"level": 100, "item": "Eject Button", "moves": ["Aurora Veil","Moonblast","Freeze-Dry","Foul Play"], "ability": "Snow Warning", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":690},
+		"Meteor Lin 1 Resh. (None)":{"level": 100, "item": "Eject Button", "moves": ["Aurora Veil","Moonblast","Freeze-Dry","Foul Play"], "ability": "Snow Warning", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":696},
+		"Somewhere Gym Knight Rylin (Fairy Tale)":{"level":78,"moves":["Nasty Plot","Moonblast","Aurora Veil","Freeze-Dry"],"ability":"Snow Warning","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1556},
+		"Route 4 Ace Trainer Autumn (Forest)":{"level":84,"item":"Red Card","moves":["Hypnosis","Freeze-Dry","Blizzard","Moonblast"],"ability":"Snow Cloak","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 0,"df": 0,"sa": 252,"sd": 4,"sp": 252},"index":2230},
+		
+	},	
+	"Ninjask":{	
+		"Grind Indra 1 Yellow (None)":{"level":58,"item":"Air Balloon","moves":["U-turn","Final Gambit","Aerial Ace","X-Scissor"],"ability":"Infiltrator","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1839},
+		"Grind Indra 2 Yellow (None)":{"level":68,"item":"Choice Band","moves":["U-turn","Final Gambit","Aerial Ace","X-Scissor"],"ability":"Infiltrator","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1869},
+		
+	},	
+	"Noctowl":{	
+		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 69, "moves": ["Hypnosis","Air Slash","Psychic","Heat Wave"], "ability": "Tinted Lens", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":350},
+		"Labradorra Diana (None)":{"level": 88, "item": "Choice Specs", "moves": ["Moonblast","Hurricane","Psychic","Heat Wave"], "ability": "Tinted Lens", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":531},
+		"Pyrous Meteor Ama/Christopher (A, SupHeat)":{"level":39,"moves":["Take Down","Reflect","Air Slash","Uproar"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1255},
+		"Vanhanen Meteor Ama (Grassy)":{"level":55,"moves":["Uproar","Roost","Moonblast","Synchronoise"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1383},
+		"Route 3 Meteor Kenan/Diana (D, Cave) Doub":{"level":65,"moves":["Hypnosis","Air Slash","Psychic","Roost"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1427},
+		"Agate Meteor Ama (None)":{"level":88,"moves":["Hurricane","Moonblast","Heat Wave","Roost"],"ability":"Tinted Lens","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1631},
+		
+	},	
+	"Noibat":{	
+		"Peridot Street Rat Craig (None)":{"level":8,"moves":["Screech","Supersonic","Tackle","Absorb"],"ability":"Frisk","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 12,"at": 12,"df": 12,"sa": 12,"sd": 12,"sp": 12},"index":1979},
+		
+	},	
+	"Noivern":{	
+		"Gym Ciel (Big Top)":{"level": 75, "item": "Assault Vest", "moves": ["Acrobatics","Boomburst","Dragon Pulse","Heat Wave"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":383},
+		"Devon Partner Arclight (Factory) Doubles":{"level": 76, "item": "Wide Lens", "moves": ["Dragon Pulse","Boomburst","Hurricane","Heat Wave"], "ability": "Infiltrator", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":397},
+		"Devon VS Arclight (Factory)":{"level": 77, "item": "Wide Lens", "moves": ["Dragon Pulse","Boomburst","Hurricane","Heat Wave"], "ability": "Infiltrator", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":408},
+		"Gym Saphira (Dragon's Den)":{"level": 95, "item": "Elemental Seed", "moves": ["Boomburst","Dragon Pulse","Flamethrower","Defog"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":636},
+		"E4 Elias (Holy)":{"level": 100, "item": "Magical Seed", "moves": ["Boomburst","Flamethrower","Dragon Pulse","Psychic"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":678},
+		"Spirit Fezz (Swamp)":{"level": 95, "item": "Telluric Seed", "moves": ["Hurricane","Super Fang","Boomburst","Taunt"], "ability": "Telepathy", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":738},
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Magical Seed", "moves": ["Boomburst","Dragon Pulse","Flamethrower","Air Cutter"], "ability": "Infiltrator", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":781},
+		"WTC Meteor Ichorus/Lyla (L, Factory) Doub":{"level":73,"moves":["Boomburst","Hurricane","Heat Wave","Swagger"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1504},
+		"Agate Meteor Ezrа/Lyla (L, None) Doub":{"level":87,"moves":["Boomburst","Hurricane","Heat Wave","Swagger"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1616},
+		"Labradorra Gym Knight Dan (Dragon's Den)":{"level":87,"item":"Elemental Seed","moves":["Boomburst","Dragon Pulse","Flamethrower","Roost"],"ability":"Infiltrator","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1648},
+		
+	},	
+	"Nosepass":{	
+		"Orphanage Danielle/Ramsey (D, None)":{"level":34,"moves":["Power Gem","Rock Blast","Discharge","Sandstorm"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1218},
+		
+	},	
+	"Numel":{	
+		"Magma Nihil/Kriz (K, None) Doubles":{"level":31,"moves":["Lava Plume","Earth Power","Curse","Take Down"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":896},
+		
+	},	
+	"Nuzleaf":{	
+		"Nuzleaf Tribe (1, None)":{"level":20,"moves":["Torment","Fake Out","Nature Power","Razor Wind"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":931},
+		"Nuzleaf Tribe (2, None)":{"level":25,"moves":["Fake Out","Nature Power","Razor Wind","Feint Attack"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":932},
+		"Nuzleaf Tribe (3, None)":{"level":25,"moves":["Fake Out","Nature Power","Razor Wind","Feint Attack"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":933},
+		"Nuzleaf Tribe (4, None)":{"level":30,"moves":["Nature Power","Razor Wind","Feint Attack","Leaf Blade"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":934},
+		"Nuzleaf Tribe (5, None)":{"level":30,"moves":["Nature Power","Razor Wind","Feint Attack","Leaf Blade"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":935},
+		
+	},	
+	"Octillery":{	
+		"7th Street Aqua Razzy (None)":{"level":54,"moves":["Signal Beam","Ice Beam","Bullet Seed","Hydro Pump"],"ability":"Suction Cups","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1398},
+		
+	},	
+	"Oddish":{	
+		"Peridot Doxy Shawna (None)":{"level":10,"moves":["Absorb","Growth","Sweet Scent","Acid"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1982},
+		
+	},	
+	"Omanyte":{	
+		"Glitch World C (Glitch)":{"level":74,"moves":["Shell Smash","Hydro Pump","Blizzard","Protect"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1474},
+		
+	},	
+	"Omastar":{	
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Telluric Seed", "moves": ["Shell Smash","Hidden Power Fire","Ice Beam","Scald"], "ability": "Shell Armor", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":833},
+		"Mega-Z Ring McKrezzy (None)":{"level":78,"item":"Focus Sash","moves":["Shell Smash","Hydro Pump","Ice Beam","Hidden Power Grass"],"ability":"Swift Swim","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1011},
+		"Opal Hotshot Kaz (Grassy)":{"level":51,"moves":["Brine","Protect","Ancient Power","Tickle"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2133},
+		
+	},	
+	"Oranguru":{	
+		"Azurine Aster/Eclipse (Ecl, Swamp) Doubles":{"level": 39, "moves": ["Foul Play","Instruct","Reflect","Nature Power"], "ability": "Telepathy", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":130},
+		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 66, "item": "Light Clay", "moves": ["Foul Play","Reflect","Instruct","Nature Power"], "ability": "Telepathy", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":282},
+		
+	},	
+	"Onix":{	
+		"Yureyu Meteor Simon/Tara (T, Short-Circ)":{"level":42,"moves":["Screech","Rock Slide","Sand Tomb","Iron Tail"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1294},
+		
+	},	
+	"Oricorio":{	
+		"Gym Ciel (Big Top)":{"level": 75, "item": "Synthetic Seed", "moves": ["Revelation Dance","Roost","Air Slash","Baton Pass"], "ability": "Dancer", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 100, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 156}, "index":385},
+		
+	},	
+	"Oricorio-Pom-Pom":{	
+		"Gym Julia (Electric)":{"level": 14, "moves": ["Work Up","Tailwind","Pound","Air Cutter"], "ability": "Dancer", "nature": "Quirky", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "index":12},
+		"Fiore Julia (None) Doubles":{"level": 70, "item": "Life Orb", "moves": ["Hurricane","Revelation Dance","Roost","Hidden Power Ice"], "ability": "Dancer", "nature": "Modest", "natures": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":348},
+		
+	},	
+	"Oshawott":{	
+		"Onyx Gym Hotshot Skye (None)":{"level":19,"moves":["Water Sport","Focus Energy","Razor Shell","Fury Cutter"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":1152},
+		
+	},	
+	"Pachirisu":{	
+		"Onyx Gym Hotshot Terry (None)":{"level":17,"moves":["Quick Attack","Charm","Spark","Endure"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1142},
+		
+	},	
+	"Palossand":{	
+		"Gym Terra (Glitch)":{"level": 73, "item": "Synthetic Seed", "moves": ["Giga Drain","Shore Up","Psychic","Amnesia"], "ability": "Sand Veil", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":320},
+		"Tanzan Meteor Tech Rod (Factory)":{"level":55,"moves":["Giga Drain","Shadow Ball","Earth Power","Shore Up"],"ability":"Water Compaction","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1358},
+		
+	},	
+	"Palpitoad":{	
+		"BW Meteor Sanchez (Factory)":{"level":35,"moves":["Aqua Ring","Uproar","Muddy Water","Rain Dance"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1239},
+		
+	},	
+	"Pancham":{	
+		"Slums Victoria (None)":{"level": 18, "moves": ["Arm Thrust","Work Up","Comet Punch","Karate Chop"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index":16},
+		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 30, "moves": ["Arm Thrust","Work Up","Slash","Circle Throw"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":57},
+		"N. Obsidia Victoria (None)":{"level": 30, "moves": ["Arm Thrust","Work Up","Slash","Circle Throw"], "ability": "Scrappy", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":64},
+		
+	},	
+	"Pangoro":{	
+		"Apophyll Victoria (Ashen Beach)":{"level": 38, "item": "Shell Bell", "moves": ["Bullet Punch","Payback","Strength","Circle Throw"], "ability": "Iron Fist", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":109},
+		"Pyrous Victoria (Super-Heated)":{"level": 37, "moves": ["Bullet Punch","Payback","Strength","Circle Throw"], "ability": "Iron Fist", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":137},
+		"Scraggy Don 1/2 Pangoro (None)":{"level":45,"moves":["Body Slam","Circle Throw","Crunch","Vital Throw"],"ability":"Scrappy","nature":"Adamant","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":929},
+		"Scraggy Don 3 Pangoro (None)":{"level":50,"item":"Sitrus Berry","moves":["Body Slam","Circle Throw","Crunch","Hammer Arm"],"ability":"Iron Fist","nature":"Adamant","ivs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":930},
+		
+	},	
+	"Panpour":{	
+		"Peridot Doxy Lindsey (None)":{"level":5,"moves":["Scratch","Play Nice","Leer"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1963},
+		
+	},	
+	"Pansage":{	
+		"Peridot Casanova Saad (None)":{"level":7,"moves":["Scratch","Play Nice","Leer","Lick"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"index":1967},
+		
+	},	
+	"Pansear":{	
+		"Obsidia Street Rat Rafe (None)":{"level":17,"moves":["Lick","Incinerate","Fury Swipes","Yawn"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":2002},
+		
+	},	
+	"Paras":{	
+		"Obsidia Street Rat Mason (None)":{"level":16,"moves":["Scratch","Stun Spore","Poison Powder","Absorb"],"ability":"Effect Spore","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2011},
+		
+	},	
+	"Parasect":{	
+		"Porygon Sticker 4B 8 4 8 (Glitch)":{"level":74,"moves":["Spore","Nature Power","Leech Seed","Double Team"],"ability":"Effect Spore","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":976},
+		
+	},	
+	"Passimian":{	
+		"Azurine Aster/Eclipse (Ast, Swamp) Doub":{"level": 39, "moves": ["Brick Break","Double-Edge","Bulk Up","Bulldoze"], "ability": "Receiver", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":127},
+		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 66, "item": "Life Orb", "moves": ["Bulldoze","Rock Slide","Brick Break","Giga Impact"], "ability": "Receiver", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":277},
+		"Ametrine Aster (Icy)":{"level": 69, "item": "Life Orb", "moves": ["Close Combat","Earthquake","Rock Slide","Gunk Shot"], "ability": "Defiant", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":307},
+		"Glass Aster (Factory)":{"level": 85, "item": "Life Orb", "moves": ["Close Combat","Earthquake","Rock Slide","Gunk Shot"], "ability": "Defiant", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":472},
+		"Yureyu Meteor Ringo/Rod (Rin, Short-Circ)":{"level":44,"moves":["Bulk Up","Double-Edge","Fling","Close Combat"],"ability":"Receiver","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":1303},
+		"Tanzan Meteor Ringo (Factory)":{"level":54,"moves":["Fling","Close Combat","Reversal","Giga Impact"],"ability":"Receiver","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1352},
+		"Route 4 Black Belt Seal (Forest)":{"level":80,"moves":["Close Combat","Seed Bomb","Rock Slide","Knock Off"],"ability":"Receiver","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2234},
+		
+	},	
+	"Patrat":{	
+		"Peridot Youngster Jimmy (None)":{"level":10,"moves":["Tackle","Leer","Bite","Bide"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1981},
+		
+	},	
+	"Pawniard":{	
+		"Opal Grind Ch2 Jace (None)":{"level":22,"moves":["Fury Cutter","Torment","Feint Attack","Scary Face"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1690},
+		"Opal Grind Ch3.5 Jace (None)":{"level":34,"moves":["Scary Face","Metal Claw","Slash","Assurance"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1725},
+		"Opal Grind Ch4.5 Jace (None)":{"level":46,"moves":["Assurance","Metal Sound","Embargo","Iron Defense"],"ability":"Defiant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1763},
+		
+	},	
+	"Pelipper":{	
+		"Magma Raid Aqua Archer (None)":{"level":41,"moves":["Roost","Tailwind","Brine","Ice Beam"],"ability":"Drizzle","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":923},
+		"Magma 3 Aqua Archer (None)":{"level":58,"moves":["Hydro Pump","Hurricane","Roost","Tailwind"],"ability":"Drizzle","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":961},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":75,"item":"Damp Rock","moves":["Hurricane","Roost","U-turn","Hydro Pump"],"ability":"Drizzle","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1041},
+		"Azurine Lake Ranger Nhadala (Water Surf)":{"level":70,"item":"Damp Rock","moves":["Roost","Surf","Hurricane","U-turn"],"ability":"Drizzle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2206},
+		
+	},	
+	"Persian":{	
+		"Orphanage Bishop/Roth (B, None)":{"level":34,"moves":["Screech","Feint Attack","Taunt","Power Gem"],"ability":"Limber","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1206},
+		"Devon Meteor Allyssa/Bishop (B, Factory) Doub":{"level":73,"moves":["Icy Wind","Dark Pulse","Thunderbolt","Power Gem"],"ability":"Limber","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1513},
+		
+	},	
+	"Persian-Alola":{	
+		"Magikarp Casanova Carmen (None)":{"level":74,"item":"Wise Glasses","moves":["Power Gem","Nasty Plot","Thunderbolt","Dark Pulse"],"ability":"Fur Coat","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":986},
+		
+	},	
+	"Petilil":{	
+		"Orphanage Timothy/Chris (T, None)":{"level":32,"moves":["Stun Spore","Giga Drain","Aromatherapy","Helping Hand"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1193},
+		
+	},	
+	"Phanpy":{	
+		"Onyx Gym Hotshot Skye (None)":{"level":20,"moves":["Flail","Rollout","Natural Gift","Endure"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1153},
+		
+	},	
+	"Pichu":{	
+		"Slums Victoria (None)":{"level": 18, "item": "Eviolite", "moves": ["Sweet Kiss","Fake Out","Nasty Plot","Thunder Shock"], "ability": "Static", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index":15},
+		
+	},	
+	"Pidgeot":{	
+		"Subseven Acolyte Tanner (Holy)":{"level":61,"moves":["Wing Attack","Roost","Tailwind","Mirror Move"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1413},
+		"Porygon Sticker X C (Glitch)":{"level":77,"moves":["Hurricane","Tailwind","Hyper Beam","U-turn"],"ability":"Tangled Feet","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":981},
+		
+	},	
+	"Pidgeotto":{	
+		"Obsidia Street Rat Wayne (None)":{"level":18,"moves":["Sand Attack","Gust","Quick Attack","Whirlwind"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":2001},
+		
+	},	
+	"Pidgey":{	
+		"Obsidia Street Rat Wayne (None)":{"level":16,"moves":["Tackle","Sand Attack","Gust","Quick Attack"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1999},
+		
+	},	
+	"Pidove":{	
+		"Obsidia Street Rat Wayne (None)":{"level":16,"moves":["Growl","Leer","Quick Attack","Air Cutter"],"ability":"Big Pecks","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2000},
+		
+	},	
+	"Pignite":{	
+		"Rhodocrine Meteor Kenneth (Forest)":{"level":24,"moves":["Defense Curl","Flame Charge","Smog","Rollout"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":1171},
+		"Pyrous Meteor Minta/Chad (C, SupHeat)":{"level":39,"moves":["Take Down","Heat Crash","Assurance","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1269},
+		
+	},	
+	"Pikachu":{	
+		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 32, "item": "Light Ball", "moves": ["Nuzzle","Nasty Plot","Electro Ball","Fake Out"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":59},
+		"N. Obsidia Victoria (None)":{"level": 32, "item": "Light Ball", "moves": ["Nuzzle","Nasty Plot","Electro Ball","Fake Out"], "ability": "Lightning Rod", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":66},
+		"Orphanage Danielle/Ramsey (R, None)":{"level":34,"moves":["Hidden Power","Imprison","Simple Beam","Zen Headbutt"],"ability":"Telepathy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1222},
+		
+	},	
+	"Pikipek":{	
+		"Peridot Doxy Marigold (None)":{"level":5,"moves":["Peck","Growl"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 7,"at": 7,"df": 7,"sa": 7,"sd": 7,"sp": 7},"index":1969},
+		
+	},	
+	"Piloswine":{	
+		"Spinel Gym Posh Lallia (Mirror)":{"level":46,"moves":["Take Down","Mist","Thrash","Earthquake"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1310},
+		"Tanzan Meteor Mary (Factory)":{"level":47,"moves":["Take Down","Mist","Thrash","Earthquake"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1342},
+		"Tanzan Meteor Avril/Steven (S, Factory)":{"level":53,"moves":["Mist","Thrash","Earthquake","Blizzard"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1349},
+		"Opal Hotshot Kaz (Grassy)":{"level":52,"moves":["Mist","Thrash","Earthquake","Blizzard"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":2134},
+		
+	},	
+	"Pineco":{	
+		"Rainbow Swarm (None) Doubles":{"level":20,"item":"Buginium Z","moves":["Self-Destruct","Bug Bite","Self-Destruct","Self-Destruct"],"ability":"Sturdy","ivs":{"hp": 3,"at": 3,"df": 3,"sa": 3,"sd": 3,"sp": 3},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":886},
+		"Peridot Street Rat Erick (None)":{"level":9,"moves":["Tackle","Protect","Self-Destruct","Bug Bite"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1988},
+		
+	},	
+	"Pinsir":{	
+		"Route 1 Hiker Oltan (Grassy)":{"level":51,"moves":["Swords Dance","Thrash","Superpower","Guillotine"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2112},
+		
+	},	
+	"Piplup":{	
+		"Orphanage Danielle/Ramsey (D, None)":{"level":33,"moves":["Bide","Fury Attack","Brine","Whirlpool"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1217},
+		
+	},	
+	"Plusle":{	
+		"Gym Julia (Electric)":{"level": 13, "moves": ["Nuzzle","Charge Beam","Encore","Quick Attack"], "ability": "Plus", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index":11},
+		
+	},	
+	"Politoed":{	
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Damp Rock", "moves": ["Scald","Protect","Encore","Ice Beam"], "ability": "Drizzle", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":727},
+		"Spirit Fezz (Swamp)":{"level": 95, "item": "Damp Rock", "moves": ["Surf","Psychic","Protect","Icy Wind"], "ability": "Drizzle", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":733},
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Damp Rock", "moves": ["Scald","Toxic","Haze","Ice Beam"], "ability": "Drizzle", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":745},
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "Damp Rock", "moves": ["Scald","Protect","Encore","Ice Beam"], "ability": "Drizzle", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":763},
+		"Subseven Acolyte Angela (Holy)":{"level":62,"moves":["Perish Song","Swagger","Bounce","Hyper Voice"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1417},
+		"Apophyll Grind Ch14 Nathaniel (None)":{"level":75,"moves":["Surf","Focus Blast","Hypnosis","Ice Beam"],"ability":"Drizzle","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1896},
+		"Route 2 Ranger Nick (Rocky)":{"level":67,"moves":["Hyper Voice","Hypnosis","Surf","Bounce"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2160},
+		
+	},	
+	"Poliwag":{	
+		"Onyx Arcade Star Tammy (None)":{"level":17,"moves":["Water Gun","Hypnosis","Bubble","Double Slap"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":2035},
+		
+	},	
+	"Poliwhirl":{	
+		"Apop School Battle Girl Lisa (Ashen Beach)":{"level":38,"moves":["Body Slam","Bubble Beam","Mud Shot","Belly Drum"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2091},
+		
+	},	
+	"Poliwrath":{	
+		"Glitch World PC4SH (Glitch)":{"level":75,"moves":["Bulldoze","Power-Up Punch","Hyper Beam","Focus Blast"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1481},
+		"Apophyll Grind Ch14 Nathaniel (None)":{"level":75,"moves":["Waterfall","Brick Break","Poison Jab","Throat Chop"],"ability":"Swift Swim","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1898},
+		
+	},	
+	"Ponyta":{	
+		"Onyx Arcade Star Jacee (None)":{"level":16,"moves":["Tackle","Tail Whip","Ember","Flame Wheel"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2038},
+		
+	},	
+	"Poochyena":{	
+		"MW Meteor Demian/Antoine (A, Factory)":{"level":12,"moves":["Tackle","Howl","Sand Attack","Bite"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1115},
+		
+	},	
+	"Popplio":{	
+		"Coral Cain (Misty)":{"level": 18, "moves": ["Icy Wind","Aqua Jet","Disarming Voice","Amnesia"], "ability": "Torrent", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index":24},
+	},	
+	"Porygon":{	
+		"Onyx Gym Star Lithi (None)":{"level":17,"moves":["Conversion","Sharpen","Psybeam","Agility"],"ability":"Trace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1147},
+		"Opal Techie Caleb (None)":{"level":34,"moves":["Recover","Magnet Rise","Signal Beam","Recycle"],"ability":"Trace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":2074},
+		
+	},	
+	"Porygon-Z":{	
+		"Gym Noel (Grassy)":{"level": 54, "item": "Elemental Seed", "moves": ["Nasty Plot","Psychic","Hidden Power Fire","Tri Attack"], "ability": "Download", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":216},
+		"Subseven Ace (Holy)":{"level": 60, "moves": ["Tri Attack","Blizzard","Thunderbolt","Recover"], "ability": "Download", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":244},
+		"Labradorra Terra (Glitch)":{"level": 97, "item": "Normalium Z", "moves": ["Psychic","Blizzard","Thunderbolt","Conversion"], "ability": "Adaptability", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 6, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":646},
+		"Spirit Kamina (Chess: King)":{"level": 95, "item": "King's Rock", "moves": ["Tri Attack","Discharge","Dark Pulse","Hidden Power Fighting"], "ability": "Adaptability", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":753},
+		"Devon Meteor Howaya/Callie (H, Factory) Doub":{"level":74,"moves":["Thunderbolt","Ice Beam","Tri Attack","Dark Pulse"],"ability":"Adaptability","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1521},
+		"Agate Meteor Howaya/Christina (H, None) Dub":{"level":89,"moves":["Thunderbolt","Ice Beam","Tri Attack","Dark Pulse"],"ability":"Adaptability","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1624},
+		"Grind Indra 1 Red (None)":{"level":58,"item":"Air Balloon","moves":["Tri Attack","Dark Pulse","Thunderbolt","Ice Beam"],"ability":"Analytic","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1834},
+		"Grind Indra 2 Red (None)":{"level":68,"item":"Choice Specs","moves":["Tri Attack","Dark Pulse","Thunderbolt","Ice Beam"],"ability":"Analytic","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1864},
+		
+	},	
+	"Porygon2":{	
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 93, "item": "Magical Seed", "moves": ["Conversion","Thunderbolt","Tri Attack","Blizzard"], "ability": "Download", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":617},
+		"Spirit Jonathan (Big Top) Doubles":{"level": 95, "item": "Eviolite", "moves": ["Recover","Trick Room","Blizzard","Thunderbolt"], "ability": "Trace", "nature": "Relaxed", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":726},
+		"Spirit Jonah (Fairy Tale) Doubles":{"level": 95, "item": "Eviolite", "moves": ["Recover","Trick Room","Blizzard","Thunderbolt"], "ability": "Trace", "nature": "Relaxed", "ivs": {"hp": 31, "at": 31, "df": 32, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":783},
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Eviolite", "moves": ["Toxic","Thunderbolt","Ice Beam","Recover"], "ability": "Trace", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":795},
+		"Opal Psychic Inuki (None)":{"level":26,"moves":["Psybeam","Agility","Recover","Magnet Rise"],"ability":"Trace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2048},
+		
+	},	
+	"Psyduck":{	
+		"Onyx Youngster Baxter (None)":{"level":16,"moves":["Water Gun","Confusion","Fury Swipes","Water Pulse"],"ability":"Damp","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2032},
+		
+	},	
+	"Primarina":{	
+		"Byxbysion Cain (Wasteland)":{"level": 45, "item": "Zoom Lens", "moves": ["Sparkling Aria","Icy Wind","Moonblast","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":163},
+		"Yureyu Cain (Short Circuit) Doubles":{"level": 45, "item": "Zoom Lens", "moves": ["Water Pledge","Icy Wind","Disarming Voice","Sing"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 67, "at": 67, "df": 67, "sa": 67, "sd": 67, "sp": 67}, "index":169},
+		"Vanhanen Cain (Chess: Bishop)":{"level": 54, "moves": ["Moonblast","Sparkling Aria","Blizzard","Reflect"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":231},
+		"Subseven Ace (Holy)":{"level": 61, "moves": ["Sparkling Aria","Moonblast","Icy Wind","Hyper Voice"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":243},
+		"Circus Alistasia (Big Top)":{"level": 66, "item": "Leftovers", "moves": ["Sparkling Aria","Moonblast","Sing","Ice Beam"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":261},
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 87, "item": "Elemental Seed", "moves": ["Energy Ball","Dazzling Gleam","Surf","Ice Beam"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":453},
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 87, "item": "Elemental Seed", "moves": ["Energy Ball","Dazzling Gleam","Surf","Ice Beam"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":465},
+		"Glass 1 Shelly/Cain (C, Factory) Doubles":{"level": 82, "item": "Mystic Water", "moves": ["Dazzling Gleam","Hyper Voice","Blizzard","Icy Wind"], "ability": "Liquid Voice", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index":483},
+		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Wise Glasses", "moves": ["Energy Ball","Dazzling Gleam","Hydro Pump","Ice Beam"], "ability": "Torrent", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":558},
+		"Azurine Lake Swimmer Leigh (Water Surf)":{"level":73,"item":"Assault Vest","moves":["Surf","Psychic","Moonblast","Ice Beam"],"ability":"Torrent","nature":"Modest","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2201},
+		
+	},	
+	"Primeape":{	
+		"Apop School Black Belt Mason (Ashen Beach)":{"level":38,"moves":["Cross Chop","Assurance","Punishment","Thrash"],"ability":"Vital Spirit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2090},
+		
+	},	
+	"Prinplup":{	
+		"Orphanage Danielle/Ramsey (D, None)":{"level":35,"moves":["Bubble Beam","Bide","Fury Attack","Brine"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1219},
+		
+	},	
+	"Probopass":{	
+		"Devon Meteor Ramsey/Danielle (D, Factory) 2":{"level":76,"moves":["Discharge","Zap Cannon","Rock Slide","Bulldoze"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1534},
+		
+	},	
+	"Pumpkaboo":{	
+		"Opal Psychic Rin (None)":{"level":34,"moves":["Razor Leaf","Leech Seed","Bullet Seed","Shadow Sneak"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":2070},
+		
+	},	
+	"Pupitar":{	
+		"Vanhanen Meteor Christopher (Grassy)":{"level":54,"moves":["Dark Pulse","Payback","Crunch","Earthquake"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1378},
+		"Route 4 Hotshot George (Forest)":{"level":70,"moves":["Sandstorm","Power-Up Punch","Outrage","Crunch"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2176},
+		
+	},	
+	"Purrloin":{	
+		"Peridot Casanova Andy (None)":{"level":8,"moves":["Scratch","Scratch","Scratch","Growl"],"ability":"Limber","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 12,"at": 12,"df": 12,"sa": 12,"sd": 12,"sp": 12},"index":1964},
+		
+	},	
+	"Purugly":{	
+		"Fiore 1 Diana/Kenan (K, None) Doubles":{"level": 68, "moves": ["Hypnosis","Throat Chop","Frustration","Bulldoze"], "ability": "Thick Fat", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":355},
+		"Labradorra Kenan (None)":{"level": 88, "item": "Life Orb", "moves": ["Fake Out","Sucker Punch","Frustration","Play Rough"], "ability": "Thick Fat", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":527},
+		"Route 3 Meteor Kenan/Diana (K, Cave) Doub":{"level":66,"moves":["Hypnosis","Sucker Punch","Frustration","U-turn"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1424},
+		
+	},	
+	"Pyroar":{	
+		"Circus Alistasia (Big Top)":{"level": 64, "item": "Power Herb", "moves": ["Heat Wave","Solar Beam","Snarl","Hyper Voice"], "ability": "Rivalry", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":258},
+		"Somewhere Gym Knight Lancelot (Fairy Tale)":{"level":76,"moves":["Noble Roar","Bulldoze","Flare Blitz","Crunch"],"ability":"Moxie","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1554},
+		"Route 1 Ranger Steve (Grassy)":{"level":48,"moves":["Echoed Voice","Flamethrower","Crunch","Hyper Voice"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":2115},
+		"Circus Clown Leonardo (None)":{"level":66,"item":"Air Balloon","moves":["Work Up","Wild Charge","Flame Charge","Overheat"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2146},
+		
+	},	
+	"Pyukumuku":{	
+		"High King Pyuumuku (Cave)":{"level":100,"item":"Leftovers","moves":["Recover","Soak","Toxic","Block"],"ability":"Unaware","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 0,"df": 100,"sa": 0,"sd": 160,"sp": 0},"index":990},
+		"Coral Fisherman Wade (Misty)":{"level":20,"moves":["Helping Hand","Taunt","Safeguard","Counter"],"ability":"Innards Out","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":2016},
+		"Apop Cave Battle Girl Dillon (Cave)":{"level":40,"item":"Leftovers","moves":["Soak","Toxic","Recover"],"ability":"Unaware","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":2092},
+		"Azurine Lake Swimmer Wilson (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Recover","Toxic","Block","Soak"],"ability":"Unaware","nature":"Calm","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2205},
+		
+	},	
+	"Quagsire":{	
+		"Gym Terra (Glitch)":{"level": 72, "item": "Synthetic Seed", "moves": ["Scald","Amnesia","Blizzard","Recover"], "ability": "Unaware", "nature": "Bold", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":321},
+		"Labradorra Terra (Glitch)":{"level": 97, "item": "Synthetic Seed", "moves": ["Scald","Amnesia","Blizzard","Recover"], "ability": "Unaware", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":645},
+		
+	},	
+	"Quilladin":{	
+		"Yureyu Meteor Hilda/Ricardo (H, Short-Circ)":{"level":42,"moves":["Pin Missile","Take Down","Seed Bomb","Mud Shot"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1281},
+		
+	},	
+	"Quilava":{	
+		"Lapis Cal (Rainbow)":{"level": 32, "moves": ["Nature Power","Flame Burst","Hidden Power Electric","Flame Charge"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48}, "index":74},
+		"Opal Grind Ch2 Fawkes (None)":{"level":21,"moves":["Smokescreen","Ember","Quick Attack","Flame Wheel"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1683},
+		"Opal Grind Ch2 Emile (None)":{"level":21,"moves":["Smokescreen","Ember","Quick Attack","Flame Wheel"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1703},
+		"Opal Grind Ch3.5 Fawkes (None)":{"level":35,"moves":["Flame Wheel","Defense Curl","Swift","Flame Charge"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1717},
+		"Opal Grind Ch3.5 Emile (None)":{"level":35,"moves":["Flame Wheel","Defense Curl","Swift","Flame Charge"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1741},
+		"Lapis Hotshot Cole (None)":{"level":25,"moves":["Ember","Quick Attack","Flame Wheel","Defense Curl"],"ability":"Blaze","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2057},
+		
+	},	
+	"Qwilfish":{	
+		"Gang Intimidation Craudburry (None)":{"level":60,"moves":["Explosion","Waterfall","Destiny Bond","Throat Chop"],"ability":"Poison Point","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 252},"index":957},
+		
+	},	
+	"Raichu":{	
+		"Devon Partner Arclight (Factory) Doubles":{"level": 75, "item": "Wise Glasses", "moves": ["Focus Blast","Thunderbolt","Hidden Power Ice","Nasty Plot"], "ability": "Lightning Rod", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index":395},
+		"Devon VS Arclight (Factory)":{"level": 76, "item": "Wise Glasses", "moves": ["Focus Blast","Thunderbolt","Hidden Power Ice","Nasty Plot"], "ability": "Lightning Rod", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index":406},
+		"Rock Tomb 🅱️indra (Rainbow)":{"level":69,"item":"Magical Seed","moves":["Signal Beam","Hidden Power Electric","Uproar","Brick Break"],"ability":"Lightning Rod","nature":"Naive","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":971},
+		"Devon Meteor Ramsey/Danielle (R, Factory) Doub":{"level":74,"moves":["Nasty Plot","Discharge","Hidden Power Ice","Focus Blast"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1528},
+		
+	},	
+	"Raichu-Alola":{	
+		"Orphanage Connal (None)":{"level": 36, "moves": ["Volt Switch","Psychic","Nuzzle","Fake Out"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 54, "at": 54, "df": 54, "sa": 54, "sd": 54, "sp": 54}, "index":97},
+		"Apophyll Victoria (Ashen Beach)":{"level": 39, "moves": ["Hidden Power Ice","Nasty Plot","Psychic","Thunderbolt"], "ability": "Surge Surfer", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 58, "at": 58, "df": 58, "sa": 58, "sd": 58, "sp": 58}, "index":111},
+		"Pyrous Victoria (Super-Heated)":{"level": 38, "moves": ["Hidden Power Ice","Nasty Plot","Psychic","Thunderbolt"], "ability": "Surge Surfer", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":139},
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 46, "moves": ["Volt Switch","Psychic","Nasty Plot","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":172},
+		"Belrose Connal (None)":{"level": 49, "moves": ["Volt Switch","Psychic","Nasty Plot","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":196},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 74, "moves": ["Nuzzle","Nasty Plot","Psyshock","Discharge"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":389},
+		"Devon VS Victoria (Factory)":{"level": 75, "item": "Synthetic Seed", "moves": ["Nuzzle","Nasty Plot","Psyshock","Discharge"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":400},
+		"Labr. Tag Victoria (None) Doubles":{"level": 91, "item": "Focus Sash", "moves": ["Nuzzle","Nasty Plot","Psyshock","Thunderbolt"], "ability": "Surge Surfer", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":536},
+		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Synthetic Seed", "moves": ["Volt Switch","Psychic","Focus Blast","Discharge"], "ability": "Surge Surfer", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":595},
+		"Apophyll Grind Ch14 Akane (None)":{"level":75,"moves":["Psychic","Thunderbolt","Focus Blast","Hidden Power Ice"],"ability":"Surge Surfer","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1895},
+		"Apop Beach Psychic Juan (Ashen Beach)":{"level":38,"moves":["Thunder Shock","Tail Whip","Quick Attack","Thunderbolt"],"ability":"Surge Surfer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2086},
+		"Neo Coral Fisherman Jacob (Misty)":{"level":72,"moves":["Thunder Shock","Tail Whip","Quick Attack","Thunderbolt"],"ability":"Surge Surfer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2187},
+		"Azurine Lake Swimmer Xerciel (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Surf","Thunderbolt","Psyshock","Nasty Plot"],"ability":"Surge Surfer","nature":"Modest","ivs":{"hp": 0,"at": 0,"df": 0,"sa": 0,"sd": 0,"sp": 0},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2192},
+		"Route 4 Ranger Lena (Forest)":{"level":79,"moves":["Grass Knot","Nasty Plot","Psyshock","Discharge"],"ability":"Surge Surfer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2227},
+		
+	},	
+	"Ralts":{	
+		"Slums Victoria (None)":{"level": 18, "item": "Wise Glasses", "moves": ["Magical Leaf","Confusion","Disarming Voice","Double Team"], "ability": "Synchronize", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "index":14},
+		
+	},	
+	"Rampardos":{	
+		"Agate Partner Hardy (Various) Doubles":{"level": 91, "moves": ["Rock Slide","Iron Head","Fire Punch","Rock Smash"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":509},
+		"Gym Hardy (Rocky) Doubles":{"level": 91, "item": "Choice Scarf", "moves": ["Rock Slide","Iron Head","Fire Punch","Rock Smash"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":523},
+		"Glass Meteor Devin (Factory)":{"level":82,"moves":["Zen Headbutt","Earthquake","Stone Edge","Dragon Tail"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1578},
+		"Agate Gym Guitarist Isaac (Rocky)":{"level":87,"item":"Life Orb","moves":["Rock Slide","Zen Headbutt","Fire Blast","Superpower"],"ability":"Sheer Force","nature":"Naive","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 6,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1645},
+		"Opal Grind Ch4.5 Gibson (None)":{"level":50,"moves":["Assurance","Chip Away","Ancient Power","Zen Headbutt"],"ability":"Mold Breaker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1751},
+		"Opal Grind Ch8 Gibson (None)":{"level":60,"moves":["Ancient Power","Zen Headbutt","Screech","Head Smash"],"ability":"Mold Breaker","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1791},
+		"Opal Grind Ch14 Gibson (None)":{"level":85,"item":"Choice Scarf","moves":["Crunch","Iron Head","Rock Slide","Zen Headbutt"],"ability":"Sheer Force","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1906},
+		
+	},	
+	"Rapidash":{	
+		"Route 1 Ranger Sully (Grassy)":{"level":54,"moves":["Agility","Fire Blast","Bounce","Flare Blitz"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":2128},
+		
+	},	
+	"Raticate-Alola":{	
+		"Jasper Meteor Ray (None)":{"level":22,"moves":["Bite","Pursuit","Hyper Fang","Assurance"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1168},
+		"Ametrine Meteor Bruno/Ray (R, SnowM) 2":{"level":69,"moves":["Super Fang","Sucker Punch","U-turn","Swords Dance"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1445},
+		"Glass Meteor Ray (Factory)":{"level":81,"moves":["Super Fang","Sucker Punch","U-turn","Swords Dance"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1565},
+		
+	},	
+	"Rattata":{	
+		"Onyx Gym Youngster Trey (None)":{"level":17,"moves":["Focus Energy","Bite","Pursuit","Hyper Fang"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1144},
+		
+	},	
+	"Rattata-Alola":{	
+		"MW Meteor Bruno/Ray (R, Factory)":{"level":12,"moves":["Tail Whip","Quick Attack","Focus Energy","Bite"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1109},
+		
+	},	
+	"Relicanth":{	
+		"Magma 3 Aqua Archer (None)":{"level":58,"moves":["Hydro Pump","Head Smash","Double-Edge","Yawn"],"ability":"Rock Head","nature":"Bashful","ivs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":962},
+		
+	},	
+	"Remoraid":{	
+		"Aqua Mannie/Razzy (R, None) Doubles":{"level":31,"moves":["Bubble Beam","Focus Energy","Water Pulse","Signal Beam"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":911},
+		
+	},	
+	"Reshiram":{	
+		"Legendary Reshiram (None)":{"level": 90, "item": "Elemental Seed", "moves": ["Blue Flare","Roost","Dragon Pulse","Solar Beam"], "ability": "Turboblaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "index":437},
+		
+	},	
+	"Reuniclus":{	
+		"Gym Radomus (Chess: Pawn) Doubles":{"level": 57, "item": "Synthetic Seed", "moves": ["Trick Room","Psychic","Focus Blast","Toxic"], "ability": "Magic Guard", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":234},
+		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Psychic","Thunder","Recover","Calm Mind"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":582},
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 94, "item": "Leftovers", "moves": ["Protect","Psyshock","Shadow Ball","Focus Blast"], "ability": "Magic Guard", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 0}, "index":620},
+		"Spirit Franz (Chess: Bishop) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Trick Room","Psychic","Energy Ball","Focus Blast"], "ability": "Magic Guard", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":814},
+		"Devon Meteor Ramsey/Danielle (R, Factory) 2x":{"level":74,"moves":["Energy Ball","Focus Blast","Psyshock","Recover"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1529},
+		"Glass Meteor Techs Deryl/Naoman (D, Factory)":{"level":83,"moves":["Psychic","Thunder","Recover","Calm Mind"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1581},
+		"Opal Grind Ch4.5 Zach/Beau (Z, None)":{"level":51,"moves":["Future Sight","Pain Split","Psychic","Skill Swap"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":1782},
+		"Opal Grind Ch8 Zach/Beau (Z, None)":{"level":61,"moves":["Psychic","Skill Swap","Heal Block","Wonderroom"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1828},
+		"Opal Grind Ch14 Zach/Beau (Z, None)":{"level":85,"item":"Leftovers","moves":["Calm Mind","Psyshock","Focus Blast","Recover"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1940},
+		
+	},	
+	"Rhydon":{	
+		"Byxbysion Fern (Wasteland)":{"level": 43, "item": "Muscle Band", "moves": ["Stone Edge","Drill Run","Chip Away","Fire Fang"], "ability": "Reckless", "nature": "Brave", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index":148},
+		"Route 1 Fern (Grassy)":{"level": 52, "item": "Eviolite", "moves": ["Drill Run","Stone Edge","Hammer Arm","Fire Fang"], "ability": "Lightning Rod", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 78, "at": 78, "df": 78, "sa": 78, "sd": 78, "sp": 78}, "index":222},
+		
+	},	
+	"Rhyhorn":{	
+		"N. Obsidia Fern (None)":{"level": 30, "moves": ["Bulldoze","Rock Blast","Chip Away","Fire Fang"], "ability": "Reckless", "nature": "Brave", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":68},
+		
+	},	
+	"Rhyperior":{	
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "moves": ["Earthquake","Rock Slide","Fire Punch","Megahorn"], "ability": "Solid Rock", "nature": "Brave", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":365},
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Iapapa Berry", "moves": ["Drill Run","Rock Tomb","Stealth Rock","Rock Polish"], "ability": "Solid Rock", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":660},
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Leftovers", "moves": ["Stealth Rock","Stone Edge","Ice Punch","Earthquake"], "ability": "Solid Rock", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":769},
+		"Treecko Street Rat Alphonso (Factory)":{"level":75,"item":"Passho Berry","moves":["Earthquake","Megahorn","Stone Edge","Thunder Punch"],"ability":"Lightning Rod","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1026},
+		"Route 4 Hiker Karim (Forest)":{"level":90,"item":"Assault Vest","moves":["Rock Wrecker","Drill Run","Outrage","Ice Punch"],"ability":"Solid Rock","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1089},
+		"Glass Meteor Ray (Factory)":{"level":81,"moves":["Earthquake","Megahorn","Stone Edge","Poison Jab"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1568},
+		
+	},	
+	"Ribombee":{	
+		"Ametrine Shelly (Various) Doubles":{"level": 70, "item": "Silver Powder", "moves": ["Moonblast","Psychic","Pollen Puff","Quiver Dance"], "ability": "Honey Gather", "nature": "Modest", "ivs": {"hp": 4, "at": 4, "df": 4, "sa": 4, "sd": 4, "sp": 4}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":294},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 81, "item": "Babiri Berry", "moves": ["Dazzling Gleam","Sticky Web","Pollen Puff","Light Screen"], "ability": "Sweet Veil", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":475},
+		"Devon Meteor Allyssa/Bishop (B, Factory) Doub":{"level":75,"moves":["Moonblast","Bug Buzz","Psychic","Quiver Dance"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1516},
+		"Grind Indra 1 Yellow (None)":{"level":58,"item":"Air Balloon","moves":["Quiver Dance","Pollen Puff","Moonblast","Roost"],"ability":"Shield Dust","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1838},
+		"Grind Indra 2 Yellow (None)":{"level":68,"item":"Focus Sash","moves":["Quiver Dance","Pollen Puff","Moonblast","Roost"],"ability":"Shield Dust","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1868},
+		"Route 4 Ranger Lena (Forest)":{"level":79,"moves":["Pollen Puff","Quiver Dance","Moonblast","Psychic"],"ability":"Honey Gather","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2229},
+		
+	},	
+	"Riolu":{	
+		"Apop Beach Nature Girl Minnie (Ashen Beach)":{"level":38,"moves":["Force Palm","Copycat","Screech","Reversal"],"ability":"Steadfast","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2076},
+		
+	},	
+	"Rockruff":{	
+		"Mosswater Aster/Eclipse (Ast, Factory) Doubles":{"level": 16, "moves": ["Thunder Fang","Howl","Bite","Rock Throw"], "ability": "Steadfast", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index":6},
+		"Mosswater Aster/Eclipse (Ecl, Factory) Doubles":{"level": 16, "moves": ["Fire Fang","Howl","Bite","Rock Throw"], "ability": "Vital Spirit", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index":7},
+		
+	},	
+	"Roggenrola":{	
+		"MW Meteor Mary/Coleman (M, Factory)":{"level":13,"moves":["Tackle","Harden","Sand Attack","Headbutt"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1102},
+		
+	},	
+	"Roselia":{	
+		"Onyx Fern (None)":{"level": 24, "moves": ["Leech Seed","Stun Spore","Mega Drain","Poison Sting"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index":28},
+		"Rhodocrine Ace (Forest)":{"level": 26, "item": "Enigma Berry", "moves": ["Giga Drain","Extrasensory","Natural Gift","Leech Seed"], "ability": "Leaf Guard", "nature": "Serious", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":41},
+		
+	},	
+	"Roserade":{	
+		"N. Obsidia Fern (None)":{"level": 33, "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":71},
+		"Byxbysion Fern (Wasteland)":{"level": 44, "item": "Leftovers", "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 66, "at": 66, "df": 66, "sa": 66, "sd": 66, "sp": 66}, "index":152},
+		"Route 1 Fern (Grassy)":{"level": 54, "item": "Leftovers", "moves": ["Sleep Powder","Giga Drain","Extrasensory","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":225},
+		"WTC Ace (Factory)":{"level": 70, "moves": ["Nature Power","Giga Drain","Dazzling Gleam","Toxic Spikes"], "ability": "Technician", "nature": "Rash", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":331},
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 72, "moves": ["Sleep Powder","Giga Drain","Sludge Bomb","Hidden Power Fire"], "ability": "Poison Point", "nature": "Timid", "evs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":368},
+		
+	},	
+	"Rotom":{	
+		"Orphanage Connal (None)":{"level": 35, "moves": ["Volt Switch","Ominous Wind","Thunder Wave","Confuse Ray"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":96},
+		"Gym Shade (Short Circuit)":{"level": 37, "item": "Leftovers", "moves": ["Pain Split","Confuse Ray","Shadow Ball","Discharge"], "ability": "Levitate", "nature": "Bold", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":100},
+		"Yureyu Connal (Short Circuit) Doubles":{"level": 47, "moves": ["Thunderbolt","Hex","Will-O-Wisp","Foul Play"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":174},
+		"Belrose Connal (None)":{"level": 50, "moves": ["Thunderbolt","Hex","Will-O-Wisp","Foul Play"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index":198},
+		"Opal Grind Ch8 Emile (None)":{"level":56,"moves":["Ominous Wind","Substitute","Electro Ball","Hex"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1821},
+		
+	},	
+	"Rotom-Fan":{	
+		"Fiore Julia (None) Doubles":{"level": 67, "item": "Air Balloon", "moves": ["Volt Switch","Air Slash","Shadow Ball","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":345},
+		
+	},	
+	"Rotom-Frost":{	
+		"Calc. Connal/Mime (Con, Short Circ) Doub":{"level": 94, "item": "Icium Z", "moves": ["Discharge","Shadow Ball","Blizzard","Foul Play"], "ability": "Levitate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":596},
+		
+	},	
+	"Rotom-Heat":{	
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 68, "item": "Light Clay", "moves": ["Reflect","Volt Switch","Overheat","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":287},
+		
+	},	
+	"Rotom-Wash":{	
+		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hydro Pump","Discharge","Dark Pulse","Will-O-Wisp"], "ability": "Levitate", "nature": "Modest", "evs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":565},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Magical Seed", "moves": ["Hydro Pump","Thunderbolt","Will-O-Wisp","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":715},
+		"Spirit Jonathan (Big Top) Doubles":{"level": 95, "item": "Wiki Berry", "moves": ["Hydro Pump","Thunderbolt","Will-O-Wisp","Hidden Power Grass"], "ability": "Levitate", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":725},
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Magical Seed", "moves": ["Hydro Pump","Thunderbolt","Rain Dance","Pain Split"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":739},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Wiki Berry", "moves": ["Hydro Pump","Thunderbolt","Will-O-Wisp","Hidden Power Ice"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":799},
+		"Azurine Lake Swimmer Arlo (Water Surf)":{"level":73,"item":"Leftovers","moves":["Thunderbolt","Hydro Pump","Pain Split","Volt Switch"],"ability":"Levitate","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2197},
+		
+	},	
+	"Rowlet":{	
+		"Peridot/Mosswater Fern (None)":{"level": 14, "moves": ["Leafage","Peck","Ominous Wind","Confuse Ray"], "ability": "Overgrow", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 21, "at": 21, "df": 21, "sa": 21, "sd": 21, "sp": 21}, "index":5},
+		
+	},	
+	"Rufflet":{	
+		"Opal Grind Ch1 Anthony (None)":{"level":12,"moves":["Peck","Leer","Fury Attack","Wing Attack"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1670},
+		"Opal Grind Ch2 Anthony (None)":{"level":23,"moves":["Wing Attack","Hone Claws","Scary Face","Aerial Ace"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 34,"at": 34,"df": 34,"sa": 34,"sd": 34,"sp": 34},"index":1699},
+		"Opal Grind Ch3.5 Anthony (None)":{"level":34,"moves":["Scary Face","Aerial Ace","Slash","Defog"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1736},
+		"Opal Grind Ch4.5 Anthony (None)":{"level":49,"moves":["Defog","Tailwind","Air Slash","Crush Claw"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1774},
+		
+	},	
+	"Sableye":{	
+		"Spirit Godot (Burning)":{"level": 95, "item": "Leftovers", "moves": ["Toxic","Confuse Ray","Detect","Taunt"], "ability": "Prankster", "nature": "Impish", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":850},
+		"Celest Cascade Clown Aaron (Rocky)":{"level":64,"item":"Air Balloon","moves":["Quash","Quash","Quash","Quash"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2165},
+		
+	},	
+	"Salamence":{	
+		"Gym Saphira (Dragon's Den)":{"level": 96, "item": "Focus Sash", "moves": ["Dragon Dance","Dragon Claw","Earthquake","Fire Fang"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":637},
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Elemental Seed", "moves": ["Rock Slide","Outrage","Fly","Earthquake"], "ability": "Moxie", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":750},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Elemental Seed", "moves": ["Dragon Dance","Dragon Claw","Earthquake","Flamethrower"], "ability": "Moxie", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":840},
+		"Labr. Gym Knight Kalezis (Dragon's Den)":{"level":87,"item":"Lum Berry","moves":["Dragon Dance","Dragon Claw","Earthquake","Fire Fang"],"ability":"Moxie","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1657},
+		
+	},	
+	"Salamence-Mega":{	
+		"E4 Heather (Mountain, Intimidate)":{"level": 100, "item": "Salamencite", "moves": ["Stone Edge","Roost","Return","Earthquake"], "ability": "Aerilate", "nature": "Jolly", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 252, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":671},
+		
+	},	
+	"Salandit":{	
+		"BW Meteor Diana (Factory)":{"level":34,"moves":["Double Slap","Flame Burst","Toxic","Nasty Plot"],"ability":"Corrosion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1248},
+		"Peridot Street Rat Charlie (None)":{"level":10,"moves":["Scratch","Poison Gas","Ember","Sweet Scent"],"ability":"Corrosion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1989},
+		
+	},	
+	"Salazzle":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 42, "item": "Focus Sash", "moves": ["Nasty Plot","Heat Wave","Sludge Wave","Disable"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":158},
+		"LCCC Aya (Various) Doubles":{"level": 68, "moves": ["Nasty Plot","Flamethrower","Sludge Bomb","Knock Off"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":272},
+		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 69, "moves": ["Sludge Bomb","Flamethrower","Nasty Plot","Dragon Pulse"], "ability": "Corrosion", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":352},
+		"Labradorra Diana (None)":{"level": 89, "item": "Black Sludge", "moves": ["Sludge Bomb","Flamethrower","Nasty Plot","Toxic"], "ability": "Corrosion", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":533},
+		"Tanzan Meteor Kenan/Diana (D, Factory)":{"level":53,"moves":["Nasty Plot","Venoshock","Flamethrower","Venom Drench"],"ability":"Corrosion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1331},
+		"Route 3 Meteor Kenan/Diana (D, Cave) Doub":{"level":66,"moves":["Sludge Bomb","Flamethrower","Nasty Plot","Hidden Power Ice"],"ability":"Corrosion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1429},
+		
+	},	
+	"Samurott":{	
+		"Obsidia Resto Raph/Manwe (R, Forest) Doubles":{"level":75,"item":"Expert Belt","moves":["Cut","Liquidation","Megahorn","Sacred Sword"],"ability":"Torrent","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1048},
+		"Yureyu Meteor Kenneth/Brenna (B, Short-Circ)":{"level":42,"moves":["Water Pulse","Revenge","Aqua Jet","Encore"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1289},
+		"Tanzan Meteor Brenna (Factory)":{"level":53,"moves":["Aqua Jet","Encore","Aqua Tail","Retaliate"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1320},
+		
+	},	
+	"Sandile":{	
+		"Peridot/Mosswater Fern (None)":{"level": 13, "moves": ["Power Trip","Snatch","Rage","Sand Tomb"], "ability": "Moxie", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 19, "at": 19, "df": 19, "sa": 19, "sd": 19, "sp": 19}, "index":4},
+		"Onyx Fern (None)":{"level": 23, "moves": ["Mud-Slap","Bite","Sand Attack","Rage"], "ability": "Moxie", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 34, "at": 34, "df": 34, "sa": 34, "sd": 34, "sp": 34}, "index":27},
+		
+	},	
+	"Sandshrew":{	
+		"Peridot Hotshot Roger (None)":{"level":8,"moves":["Defense Curl","Sand Attack","Poison Sting","Rollout"],"ability":"Sand Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 12,"at": 12,"df": 12,"sa": 12,"sd": 12,"sp": 12},"index":1983},
+		
+	},	
+	"Sandslash":{	
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Focus Sash", "moves": ["Earthquake","Swords Dance","Stone Edge","Knock Off"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":608},
+		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Focus Sash", "moves": ["Earthquake","Swords Dance","Stone Edge","X-Scissor"], "ability": "Sand Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":632},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":76,"moves":["Drill Run","Knock Off","Iron Head","Rock Slide"],"ability":"Sand Rush","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1045},
+		"Magikarp Corin Rouge (Desert)":{"level":83,"item":"Muscle Band","moves":["Earthquake","Swords Dance","Stone Edge","X-Scissor"],"ability":"Sand Rush","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 128,"at": 128,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1082},
+		"Glitch World OPKMN4X PKMN (Glitch)":{"level":75,"moves":["Sandstorm","Earthquake","Stone Edge","Hyper Beam"],"ability":"Sand Rush","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1480},
+		
+	},	
+	"Sandslash-Alola":{	
+		"Gym Serra (Mirror)":{"level": 47, "item": "Wide Lens", "moves": ["Iron Head","Icicle Crash","Brick Break","Swords Dance"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":191},
+		"Ametrine Blake (Snowy Mount)":{"level": 74, "moves": ["Earthquake","Swords Dance","Rock Slide","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "evs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":315},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 73, "moves": ["Earthquake","Swords Dance","Rock Slide","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":363},
+		"Gym Titania (Fairy Tale, Hail)":{"level": 83, "item": "Light Clay", "moves": ["Aurora Veil","Icicle Crash","Earthquake","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 128}, "index":439},
+		"Glass 3 ???/??? (Left, Factory) Doubles":{"level": 82, "item": "Muscle Band", "moves": ["Iron Head","Icicle Crash","Knock Off","Rock Slide"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":494},
+		"VR Blake (Icy)":{"level": 100, "item": "Iapapa Berry", "moves": ["Earthquake","Swords Dance","Icicle Crash","Iron Head"], "ability": "Slush Rush", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":653},
+		
+	},	
+	"Sandygast":{	
+		"Yureyu Meteor Ringo/Rod (Rod, Short-Circ)":{"level":44,"moves":["Hypnosis","Iron Defense","Giga Drain","Shadow Ball"],"ability":"Water Compaction","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":1306},
+		"Apop Beach Hiker Greyson (Ashen Beach)":{"level":38,"moves":["Bulldoze","Hypnosis","Iron Defense","Giga Drain"],"ability":"Water Compaction","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2082},
+		
+	},	
+	"Sawk":{	
+		"Rainbow SAWKONDEEZ (None)":{"level":30,"moves":["Swallow","Seed Bomb","Stockpile","Force Palm"],"ability":"Scrappy","nature":"Hardy","ivs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":888},
+		"Opal Grind Ch2 Gibson (None)":{"level":20,"moves":["Double Kick","Low Sweep","Counter","Karate Chop"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1680},
+		"Opal Grind Ch3.5 Gibson (None)":{"level":37,"moves":["Bulk Up","Retaliate","Endure","Quick Guard"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":1714},
+		"Opal Grind Ch4.5 Gibson (None)":{"level":50,"moves":["Endure","Quick Guard","Close Combat","Reversal"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1752},
+		"Opal Grind Ch8 Gibson (None)":{"level":60,"moves":["Endure","Quick Guard","Close Combat","Reversal"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1792},
+		"Opal Grind Ch14 Gibson (None)":{"level":85,"item":"Muscle Band","moves":["Close Combat","Bulldoze","Throat Chop","Poison Jab"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1907},
+		
+	},	
+	"Sawsbuck":{	
+		"Spirit Owen (Desert) Doubles":{"level": 95, "item": "Choice Band", "moves": ["Return","Wild Charge","Jump Kick","Horn Leech"], "ability": "Chlorophyll", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":774},
+		"Grind Indra 1 Brown (None)":{"level":58,"item":"Air Balloon","moves":["Swords Dance","Double-Edge","Horn Leech","Jump Kick"],"ability":"Chlorophyll","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1849},
+		"Grind Indra 2 Brown (None)":{"level":68,"item":"Life Orb","moves":["Swords Dance","Double-Edge","Horn Leech","Jump Kick"],"ability":"Chlorophyll","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1879},
+		
+	},	
+	"Scatterbug":{	
+		"Peridot Street Rat Reginald (None)":{"level":7,"moves":["Tackle","String Shot","Stun Spore"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"index":1985},
+		
+	},	
+	"Sceptile":{	
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Magical Seed", "moves": ["Acrobatics","Leaf Blade","Rock Slide","Swords Dance"], "ability": "Unburden", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":794},
+		"Spirit Josh (Big Top)":{"level": 95, "item": "Synthetic Seed", "moves": ["Leaf Blade","Swords Dance","Dragon Claw","Earthquake"], "ability": "Overgrow", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":819},
+		"Mega-Z Ring Eustace (None)":{"level":81,"item":"Sitrus Berry","moves":["Swords Dance","Leaf Blade","Earthquake","Rock Slide"],"ability":"Unburden","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1021},
+		"Opal Grind Ch4.5 Will (None)":{"level":49,"moves":["Agility","Slam","Detect","X-Scissor"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1771},
+		"Opal Grind Ch8 Will (None)":{"level":59,"moves":["Detect","X-Scissor","False Swipe","Quick Guard"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1815},
+		"Opal Grind Ch14 Will (None)":{"level":85,"moves":["Swords Dance","Leaf Blade","Drain Punch","X-Scissor"],"ability":"Unburden","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1932},
+		"Route 4 Ace Trainer Simon (Forest)":{"level":82,"moves":["Leaf Storm","Giga Drain","Focus Blast","Dragon Pulse"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2243},
+		
+	},	
+	"Scizor":{	
+		"Fiore 2 Blake/Fern (F, None) Doubles":{"level": 71, "moves": ["Bullet Punch","Bug Bite","Swords Dance","Superpower"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":367},
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 72, "moves": ["Bullet Punch","U-turn","Roost","Superpower"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":375},
+		"Agate Solaris (None)":{"level": 88, "item": "Life Orb", "moves": ["Bullet Punch","U-turn","Superpower","Knock Off"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":514},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Life Orb", "moves": ["Swords Dance","Bullet Punch","Bug Bite","Quick Attack"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":720},
+		"Spirit Lexi (Rainbow)":{"level": 95, "item": "Focus Sash", "moves": ["Bullet Punch","Bug Bite","Swords Dance","Roost"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 100, "df": 0, "sa": 0, "sd": 156, "sp": 0}, "index":729},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Choice Band", "moves": ["U-turn","Bullet Punch","Superpower","Pursuit"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":792},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Flying Gem", "moves": ["Bullet Punch","U-turn","Superpower","Acrobatics"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":802},
+		"Mega-Z Ring Eustace (None)":{"level":83,"moves":["U-turn","Bullet Punch","Superpower","Thief"],"ability":"Technician","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1023},
+		"Obsidia Resto Raph/Manwe (R, Forest) Doubles":{"level":74,"item":"Leftovers","moves":["Cut","Tailwind","Bullet Punch","Bug Bite"],"ability":"Technician","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1047},
+		"Somewhere Gym Knight Darma (Fairy Tale)":{"level":75,"moves":["Bullet Punch","Swords Dance","Bug Bite","Roost"],"ability":"Technician","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1552},
+		"Grind Indra 1 Red (None)":{"level":58,"item":"Air Balloon","moves":["Bullet Punch","U-turn","Superpower","Pursuit"],"ability":"Light Metal","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1832},
+		"Grind Indra 2 Red (None)":{"level":68,"item":"Life Orb","moves":["Bullet Punch","U-turn","Superpower","Pursuit"],"ability":"Light Metal","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1862},
+		"Route 4 Ace Trainer Simon (Forest)":{"level":83,"item":"Iron Plate","moves":["Swords Dance","Bullet Punch","Bug Bite","Superpower"],"ability":"Technician","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2241},
+		
+	},	
+	"Scizor-Mega":{	
+		"Gym Titania (Fairy Tale, Hail)":{"level": 86, "item": "Scizorite", "moves": ["Swords Dance","Roost","Bullet Punch","Bug Bite"], "ability": "Technician", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":443},
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Scizorite", "moves": ["Bullet Punch","Bug Bite","Swords Dance","Roost"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":662},
+		
+	},	
+	"Scolipede":{	
+		"Ametrine Shelly (Various) Doubles":{"level": 69, "item": "Muscle Band", "moves": ["Rock Slide","Throat Chop","Megahorn","Poison Jab"], "ability": "Speed Boost", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":295},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 81, "item": "Muscle Band", "moves": ["Rock Slide","Stomping Tantrum","Steamroller","Poison Jab"], "ability": "Speed Boost", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":477},
+		"Jasper Swarm (None)":{"level":42,"item":"Muscle Band","moves":["Steamroller","Poison Tail","Pursuit","Rollout"],"ability":"Speed Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":892},
+		"Tanzan Meteor Ringo (Factory)":{"level":55,"moves":["Steamroller","Protect","Rock Slide","Poison Jab"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1353},
+		"Vanhanen Meteor Ricardo (Grassy)":{"level":56,"moves":["Toxic","Venom Drench","Rock Climb","Double-Edge"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1374},
+		"Amet. Meteor Ricardo/Hilda (R, SnowM) Doub":{"level":72,"moves":["Megahorn","Rock Slide","Swords Dance","Poison Jab"],"ability":"Speed Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1466},
+		"Agate Meteor Ricardo (None)":{"level":87,"moves":["Megahorn","Rock Slide","Swords Dance","Poison Jab"],"ability":"Speed Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1595},
+		
+	},	
+	"Scrafty":{	
+		"Slums Gang (None) Doubles":{"level": 20, "moves": ["Feint Attack","Swagger","Low Kick","Payback"], "ability": "Moxie", "ivs": {"hp": 12, "at": 12, "df": 12, "sa": 12, "sd": 12, "sp": 12}, "evs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "index":21},
+		"Spirit Josh (Big Top)":{"level": 95, "item": "Leftovers", "moves": ["Drain Punch","Bulk Up","Payback","Ice Punch"], "ability": "Moxie", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":821},
+		
+	},	
+	"Scraggy":{	
+		"Slums Gang (Lv. 15, None) Doubles":{"level": 15, "moves": ["Headbutt","Sand Attack","Feint Attack","Swagger"], "ability": "Intimidate", "iv": "15", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 22, "at": 22, "df": 22, "sa": 22, "sd": 22, "sp": 22}, "index":18},
+		"Slums Gang (Lv. 16, None) Doubles":{"level": 16, "moves": ["Sand Attack","Feint Attack","Swagger","Low Kick"], "ability": "Moxie", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 24, "at": 24, "df": 24, "sa": 24, "sd": 24, "sp": 24}, "index":19},
+		"Slums Gang (Lv. 17, None) Doubles":{"level": 17, "moves": ["Sand Attack","Feint Attack","Swagger","Low Kick"], "ability": "Shed Skin", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "index":20},
+		
+	},	
+	"Scyther":{	
+		"Byxbysion Fern (Wasteland)":{"level": 43, "item": "Muscle Band", "moves": ["X-Scissor","Double Team","Slash","Wing Attack"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 25, "at": 25, "df": 25, "sa": 25, "sd": 25, "sp": 25}, "evs": {"hp": 64, "at": 64, "df": 64, "sa": 64, "sd": 64, "sp": 64}, "index":150},
+		"Route 1 Fern (Grassy)":{"level": 53, "item": "Muscle Band", "moves": ["X-Scissor","Double Team","Wing Attack","Swords Dance"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 79, "at": 79, "df": 79, "sa": 79, "sd": 79, "sp": 79}, "index":224},
+		"Iolia Bennet (Dark Crystal)":{"level": 62, "moves": ["Swords Dance","Night Slash","Wing Attack","Bug Bite"], "ability": "Technician", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":249},
+		"Obsidia Resto Raph/Manwe (M, Forest) Doubles":{"level":77,"item":"Life Orb","moves":["Cut","Knock Off","Bug Bite","Aerial Ace"],"ability":"Technician","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 6,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1054},
+		
+	},	
+	"Seadra":{	
+		"Glitch World u (Glitch)":{"level":75,"moves":["Dragon Dance","Hyper Beam","Focus Energy","Clear Smog"],"ability":"Sniper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1473},
+		
+	},	
+	"Seaking":{	
+		"Magma 3 Aqua Archer (None)":{"level":59,"moves":["Drill Run","Waterfall","Megahorn","Poison Jab"],"ability":"Lightning Rod","nature":"Adamant","ivs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":963},
+		
+	},	
+	"Sealeo":{	
+		"7th Street Hotshot Kellam (None)":{"level":60,"moves":["Snore","Hail","Blizzard","Sheer Cold"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2137},
+		
+	},	
+	"Seedot":{	
+		"Obsidia Street Rat Dax (None)":{"level":17,"moves":["Bide","Harden","Growth","Nature Power"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":2013},
+		
+	},	
+	"Seismitoad":{	
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 86, "item": "Life Orb", "moves": ["Sludge Bomb","Surf","Earthquake","Focus Blast"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index":452},
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 86, "item": "Life Orb", "moves": ["Sludge Bomb","Surf","Earthquake","Focus Blast"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 128, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 128}, "index":464},
+		"Spirit Savage (Water Surf) Doubles":{"level": 95, "item": "Choice Specs", "moves": ["Sludge Wave","Earth Power","Surf","Focus Blast"], "ability": "Swift Swim", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":766},
+		"Museum Devin/Sanchez (S, Cave) Doubles":{"level":46,"moves":["Muddy Water","Rain Dance","Flail","Drain Punch"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":949},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":75,"moves":["Earth Power","Muddy Water","Focus Blast","Sludge Bomb"],"ability":"Swift Swim","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1042},
+		"Glass Meteor Sanchez (Factory)":{"level":82,"moves":["Surf","Drain Punch","Knock Off","Earth Power"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1572},
+		"Agate Meteor Howaya/Christina (C, None) 2x":{"level":89,"item":"Zoom Lens","moves":["Muddy Water","Hyper Voice","Sludge Wave","Earth Power"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1628},
+		
+	},	
+	"Sentret":{	
+		"Opal Grind Ch1 Carol (None)":{"level":10,"moves":["Scratch","Foresight","Defense Curl","Quick Attack"],"ability":"Run Away","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1659},
+		
+	},	
+	"Serperior":{	
+		"VR Fern (Crystal Cavern)":{"level": 100, "item": "Life Orb", "moves": ["Leaf Storm","Nature Power","Dragon Pulse","Hidden Power Fire"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":663},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Assault Vest", "moves": ["Leaf Storm","Dragon Pulse","Hidden Power Fire","Knock Off"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":717},
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Life Orb", "moves": ["Leaf Storm","Dragon Pulse","Hidden Power Fire","Sunny Day"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":742},
+		"Spirit Troy (Mountain) Doubles":{"level": 95, "item": "Life Orb", "moves": ["Leaf Storm","Dragon Pulse","Hidden Power Fire","Sunny Day"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":801},
+		"Spirit Franz (Chess: Pawn) Doubles":{"level": 95, "item": "Light Clay", "moves": ["Leaf Storm","Dragon Pulse","Reflect","Light Screen"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":811},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Life Orb", "moves": ["Leaf Storm","Glare","Hidden Power Fire","Dragon Tail"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":828},
+		"Spirit Tenshi (Grassy)":{"level": 95, "item": "Life Orb", "moves": ["Leaf Storm","Hidden Power Ice","Leech Seed","Substitute"], "ability": "Contrary", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":836},
+		"Pyrous Meteor Regina/Gretchen (R, SupHeat)":{"level":49,"moves":["Mega Drain","Slam","Leaf Blade","Coil"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1277},
+		"Tanzan Meteor Regina (Factory)":{"level":49,"moves":["Slam","Leaf Blade","Coil","Giga Drain"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1326},
+		"Opal Grind Ch4.5 Emile (None)":{"level":46,"moves":["Slam","Leaf Blade","Coil","Giga Drain"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1777},
+		"Opal Grind Ch8 Emile (None)":{"level":56,"moves":["Coil","Giga Drain","Wring Out","Gastro Acid"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1822},
+		
+	},	
+	"Servine":{	
+		"Malchous Meteor Regina/Gretchen (R, Forest)":{"level":21,"moves":["Wrap","Growth","Leaf Tornado","Leech Seed"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1165},
+		"Opal Grind Ch2 Emile (None)":{"level":20,"moves":["Wrap","Growth","Leaf Tornado","Leech Seed"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1701},
+		"Opal Grind Ch3.5 Emile (None)":{"level":31,"moves":["Leaf Tornado","Leech Seed","Mega Drain","Slam"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":1739},
+		
+	},	
+	"Seviper":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 47, "item": "Leftovers", "moves": ["Throat Chop","Poison Jab","Rest","Aqua Tail"], "ability": "Shed Skin", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 70, "at": 70, "df": 70, "sa": 70, "sd": 70, "sp": 70}, "index":180},
+		"Belrose Sirius (None)":{"level": 51, "item": "Leftovers", "moves": ["Throat Chop","Poison Jab","Rest","Aqua Tail"], "ability": "Shed Skin", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 76, "at": 76, "df": 76, "sa": 76, "sd": 76, "sp": 76}, "index":211},
+		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "Flame Orb", "moves": ["Sludge Bomb","Giga Drain","Flamethrower","Sludge Wave"], "ability": "Shed Skin", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":658},
+		
+	},	
+	"Sewaddle":{	
+		"Opal Doxy Elena (None)":{"level":15,"moves":["Tackle","String Shot","Bug Bite","Razor Leaf"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":1995},
+		
+	},	
+	"Sharpedo":{	
+		"Magikarp Aqua Jakob (None)":{"level":38,"moves":["Swagger","Ice Fang","Scary Face","Poison Fang"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":907},
+		"Magma Raid Aqua Archer (None)":{"level":45,"moves":["Aqua Jet","Crunch","Slash","Ice Fang"],"ability":"Speed Boost","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":925},
+		"Magma 3 Aqua Archer (None)":{"level":62,"moves":["Aqua Jet","Crunch","Earthquake","Ice Fang"],"ability":"Speed Boost","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":965},
+		"Mega-Z Ring Eustace (None)":{"level":82,"item":"Life Orb","moves":["Aqua Jet","Waterfall","Crunch","Earthquake"],"ability":"Speed Boost","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1022},
+		"7th Street Aqua Pierce (None)":{"level":54,"moves":["Poison Fang","Crunch","Agility","Skull Bash"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1395},
+		"7th Street Aqua Razzy (None)":{"level":54,"moves":["Poison Fang","Crunch","Agility","Skull Bash"],"ability":"Rough Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1399},
+		
+	},	
+	"Shedinja":{	
+		"Opal Casanova Daniel (None)":{"level":31,"moves":["Spite","Shadow Sneak","Mind Reader","Confuse Ray"],"ability":"Wonder Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":2067},
+		
+	},	
+	"Shelgon":{	
+		"Subseven Acolyte Ezra (Holy)":{"level":62,"moves":["Zen Headbutt","Scary Face","Flamethrower","Double-Edge"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1412},
+		"Route 2 Hiker Marshall (Rocky)":{"level":67,"moves":["Dragon Claw","Brick Break","Dragon Dance","Zen Headbutt"],"ability":"Rock Head","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2155},
+		
+	},	
+	"Shellder":{	
+		"Orphanage Bishop/Roth (R, None)":{"level":34,"moves":["Leer","Clamp","Ice Shard","Razor Shell"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1208},
+		
+	},	
+	"Shellos":{	
+		"Onyx Gym Youngster Trey (None)":{"level":18,"moves":["Harden","Water Pulse","Mud Bomb","Hidden Power"],"ability":"Sticky Hold","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1145},
+		
+	},	
+	"Shelmet":{	
+		"BW Meteor Sanchez (Factory)":{"level":34,"moves":["Mega Drain","Yawn","Protect","Acid Armor"],"ability":"Hydration","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1238},
+		
+	},	
+	"Shiftry":{	
+		"Nuzleaf Tribe (None)":{"level":55,"moves":["Nasty Plot","Leaf Tornado","Hurricane","Leaf Storm"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":936},
+		
+	},	
+	"Shiinotic":{	
+		"Orphanage Allyssa/Stephanie (A, None)":{"level":33,"moves":["Mega Drain","Sleep Powder","Confuse Ray","Giga Drain"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1200},
+		"Devon Meteor Allyssa/Bishop (A, Factory) Doub":{"level":74,"moves":["Spotlight","Strength Sap","Dazzling Gleam","Spore"],"ability":"Effect Spore","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1508},
+		
+	},	
+	"Shinx":{	
+		"Julia Gym Hotshot  Bill (Factory)":{"level":12,"moves":["Tackle","Leer","Charge","Baby-Doll Eyes"],"ability":"Rivalry","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1123},
+		
+	},	
+	"Shroomish":{	
+		"Opal Street Rat Waldon (None)":{"level":24,"moves":["Mega Drain","Headbutt","Poison Powder","Worry Seed"],"ability":"Effect Spore","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":2052},
+		
+	},	
+	"Shuckle":{	
+		"Obsidia Meteor Christopher/Ama (C, Forest)":{"level":17,"moves":["Encore","Wrap","Struggle Bug","Safeguard"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1129},
+		"Lapis Gym Lady Eve (Forest)":{"level":32,"moves":["Rest","Rock Throw","Gastro Acid","Power Trick"],"ability":"Contrary","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1189},
+		"Pyrous Meteor Ama/Christopher (A, SupHeat)":{"level":39,"moves":["Gastro Acid","Power Trick","Shell Smash","Rock Slide"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1259},
+		"Vanhanen Meteor Christopher (Grassy)":{"level":58,"moves":["Bug Bite","Power Split","Guard Split","Stone Edge"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1377},
+		"Agate Meteor Christopher (None)":{"level":88,"moves":["Stealth Rock","Sticky Web","Toxic","Knock Off"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1598},
+		"Apop Cave Battle Girl Dillon (Cave)":{"level":41,"item":"Leftovers","moves":["Shell Smash","Rest","Toxic"],"ability":"Contrary","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":2093},
+		
+	},	
+	"Shuppet":{	
+		"Onyx Gym Elder Landon (None)":{"level":18,"moves":["Night Shade","Spite","Shadow Sneak","Will-O-Wisp"],"ability":"Insomnia","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1140},
+		
+	},	
+	"Sigilyph":{	
+		"Labr. Lumi/Eve (E, Inverse) Doubles":{"level": 93, "item": "Life Orb", "moves": ["Synchronoise","Tailwind","Protect","Energy Ball"], "ability": "Magic Guard", "nature": "Timid", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":618},
+		"Vanhanen Gym Psychic Parsley (Chess: Queen)":{"level":55,"moves":["Cosmic Power","Psychic","Air Slash","Roost"],"ability":"Wonder Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1361},
+		"Devon Meteor Ramsey/Danielle (D, Factory) Dub":{"level":74,"moves":["Psychic","Dazzling Gleam","Ancient Power","Air Slash"],"ability":"Magic Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1533},
+		
+	},	
+	"Silcoon":{	
+		"Obsidia Street Rat Dax (None)":{"level":16,"moves":["Harden","Tackle"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2012},
+		
+	},	
+	"Simipour":{	
+		"Grind Indra 1 Blue (None)":{"level":58,"item":"Air Balloon","moves":["Nasty Plot","Hydro Pump","Ice Beam","Focus Blast"],"ability":"Torrent","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1836},
+		"Grind Indra 2 Blue (None)":{"level":68,"item":"Life Orb","moves":["Nasty Plot","Hydro Pump","Ice Beam","Focus Blast"],"ability":"Torrent","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1866},
+		
+	},	
+	"Simisage":{	
+		"Route 2 Ranger Nick (Rocky)":{"level":67,"moves":["Seed Bomb","Spiky Shield","Low Kick","Covet"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2161},
+		
+	},	
+	"Simisear":{	
+		"Calcenon Gym Elder Iroh (Super-Heated)":{"level":70,"moves":["Nasty Plot","Fire Blast","Focus Blast","Yawn"],"ability":"Gluttony","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1438},
+		
+	},	
+	"Skarmory":{	
+		"Agate Meteor Ama (None)":{"level":87,"moves":["Swords Dance","Roost","Tailwind","Brave Bird"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1633},
+		"Route 1 Hotshot Brian (Grassy)":{"level":50,"moves":["Slash","Metal Sound","Air Slash","Autotomize"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":2126},
+		
+	},	
+	"Skiddo":{	
+		"Lapis Hotshot Cole (None)":{"level":26,"moves":["Worry Seed","Synthesis","Take Down","Bulldoze"],"ability":"Sap Sipper","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2058},
+		
+	},	
+	"Skiploom":{	
+		"Peridot Hotshot Stiles (None)":{"level":16,"moves":["Fairy Wind","Poison Powder","Stun Spore","Sleep Powder"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1101},
+		
+	},	
+	"Skitty":{	
+		"Malchous Meteor Regina/Gretchen (G, Forest)":{"level":20,"moves":["Attract","Disarming Voice","Double Slap","Copycat"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1166},
+		
+	},	
+	"Skrelp":{	
+		"Agent Corey (Corrosive)":{"level": 26, "item": "Focus Sash", "moves": ["Acid","Toxic Spikes","Water Pulse","Venom Drench"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":44},
+		"Agent Borealis (Corrosive Mist)":{"level": 26, "item": "Focus Sash", "moves": ["Acid","Bubble","Smokescreen","Venom Drench"], "ability": "Adaptability", "nature": "Modest", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 39, "at": 39, "df": 39, "sa": 39, "sd": 39, "sp": 39}, "index":50},
+		
+	},	
+	"Skuntank":{	
+		"Agent Corey (Corrosive)":{"level": 27, "moves": ["Pursuit","Flame Burst","Smokescreen","Acid Spray"], "ability": "Aftermath", "nature": "Careful", "ivs": {"hp": 15, "at": 15, "df": 15, "sa": 15, "sd": 15, "sp": 15}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":48},
+		"Agent Borealis (Corrosive Mist)":{"level": 27, "moves": ["Pursuit","Flamethrower","Smokescreen","Acid Spray"], "ability": "Aftermath", "nature": "Careful", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 40, "at": 40, "df": 40, "sa": 40, "sd": 40, "sp": 40}, "index":54},
+		"Pyro Meteor Michaela/Winter (M, SupHeat)":{"level":40,"moves":["Night Slash","Memento","Venom Drench","Sucker Punch"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1271},
+		"Devon Meteor Howaya/Callie (C, Factory) Doub":{"level":74,"moves":["Explosion","Flame Burst","Poison Gas","Smog"],"ability":"Aftermath","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1524},
+		
+	},	
+	"Slaking":{	
+		"Gang Intimidation Craudburry (None)":{"level":63,"item":"Leftovers","moves":["Hammer Arm","Slack Off","Frustration","Night Slash"],"ability":"Truant","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":960},
+		
+	},	
+	"Slakoth":{	
+		"Opal Hotshot Zane (None)":{"level":12,"moves":["Scratch","Yawn","Encore","Slack Off"],"ability":"Truant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1994},
+		
+	},	
+	"Sliggoo":{	
+		"Opal Grind Ch4.5 JB (None)":{"level":49,"moves":["Flail","Body Slam","Muddy Water","Dragon Pulse"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1770},
+		
+	},	
+	"Slowbro":{	
+		"Belrose John/David (J, None) Doubles":{"level":44,"moves":["Water Pulse","Zen Headbutt","Slack Off","Amnesia"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":202},
+		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Leftovers", "moves": ["Icy Wind","Light Screen","Flamethrower","Scald"], "ability": "Own Tempo", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":374},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Weakness Policy", "moves": ["Scald","Psyshock","Ice Beam","Slack Off"], "ability": "Regenerator", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":776},
+		"Spirit Quinn (Inverse)":{"level": 95, "item": "Weakness Policy", "moves": ["Scald","Psychic","Thunder Wave","Slack Off"], "ability": "Regenerator", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":797},
+		"Devon Meteor Ramsey/Danielle (D, Factory) Dub":{"level":74,"moves":["Surf","Psyshock","Flamethrower","Bulldoze"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1532},
+		"Neo Coral Swimmer Aiden (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Ice Beam","Surf","Slack Off","Psyshock"],"ability":"Regenerator","nature":"Calm","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2181},
+		
+	},	
+	"Slowking":{	
+		"Gym Radomus (Chess: Rook) Doubles":{"level": 57, "item": "Wise Glasses", "moves": ["Trick Room","Nasty Plot","Scald","Psychic"], "ability": "Regenerator", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 0}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 0}, "index":237},
+		"Spirit Leo (Chess: Pawn) Doubles":{"level": 95, "item": "Leftovers", "moves": ["Ice Beam","Scald","Trick Room","Psychic"], "ability": "Regenerator", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 128, "sa": 252, "sd": 128, "sp": 0}, "index":757},
+		"Klefki Mattie/Maddie (Mat, None)":{"level":74,"moves":["Scald","Fire Blast","Icy Wind","Slack Off"],"ability":"Regenerator","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":997},
+		
+	},	
+	"Slowpoke":{	
+		"Magma Theft DeFacto (None)":{"level":32,"moves":["Disable","Headbutt","Water Pulse","Zen Headbutt"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":902},
+		"Orphanage John Reborn (None)":{"level":34,"moves":["Charge Beam","Bind","Acid","Discharge"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1184},
+		"Orphanage Charity/John (J, None)":{"level":34,"moves":["Disable","Headbutt","Water Pulse","Zen Headbutt"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1228},
+		
+	},	
+	"Slugma":{	
+		"Magma Nihil/Kriz (N, None) Doubles":{"level":31,"moves":["Clear Smog","Ancient Power","Flame Burst","Rock Slide"],"ability":"Magma Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":894},
+		
+	},	
+	"Slurpuff":{	
+		"Amet. Meteor Ricardo/Hilda (R, SnowM) Doub":{"level":71,"moves":["Play Rough","Wish","Sticky Web","Surf"],"ability":"Unburden","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1464},
+		"Agate Meteor Ricardo (None)":{"level":86,"moves":["Play Rough","Wish","Sticky Web","Surf"],"ability":"Unburden","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1593},
+		
+	},	
+	"Smeargle":{	
+		"Opal Posh Lulu (None)":{"level":43,"moves":["Water Pledge","Thunder Wave","Razor Shell","Boomburst"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":2097},
+		
+	},	
+	"Sneasel":{	
+		"Opal Grind Ch3.5 Silva (None)":{"level":39,"moves":["Hone Claws","Beat Up","Screech","Slash"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1729},
+		
+	},	
+	"Snivy":{	
+		"Obsidia Hotshot Davinson (None)":{"level":16,"moves":["Vine Whip","Wrap","Growth","Leaf Tornado"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1998},
+		
+	},	
+	"Snorlax":{	
+		"Glitch World 94 h (Glitch)":{"level":73,"moves":["Curse","Hyper Beam","Earthquake","Rock Slide"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1476},
+		"Grind Indra 1 Black (None)":{"level":58,"item":"Air Balloon","moves":["Curse","Body Slam","Rest","Earthquake"],"ability":"Gluttony","nature":"Careful","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1846},
+		"Grind Indra 2 Black (None)":{"level":68,"item":"Leftovers","moves":["Curse","Body Slam","Rest","Earthquake"],"ability":"Gluttony","nature":"Careful","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 144,"at": 176,"df": 188,"sa": 0,"sd": 0,"sp": 0},"index":1876},
+		"Route 2 Hiker Ford (Rocky)":{"level":67,"moves":["Metronome","Rest","Sleeptalk","Belly Drum"],"ability":"Immunity","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2163},
+		"Route 4 Hiker Odin (Forest)":{"level":67,"moves":["Rest","Snore","Body Slam","Earthquake"],"ability":"Immunity","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2166},
+		
+	},	
+	"Snorunt":{	
+		"Route 4 Ranger Lassie (Forest)":{"level":83,"moves":["Blizzard","Shadow Ball","Water Pulse","Attract"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2173},
+		
+	},	
+	"Snover":{	
+		"Route 4 Nature Girl Ellen (Forest)":{"level":70,"moves":["Blizzard","Giga Drain","Ice Shard","Protect"],"ability":"Snow Warning","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2169},
+		
+	},	
+	"Snubbull":{	
+		"Opal Arcade Star Akemi (None)":{"level":24,"moves":["Charm","Bite","Lick","Headbutt"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":2050},
+		
+	},	
+	"Solosis":{	
+		"Opal Grind Ch1 Zach/Beau (Z, None)":{"level":12,"moves":["Psywave","Reflect","Rollout","Snatch"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1673},
+		"Opal Grind Ch2 Zach/Beau (Z, None)":{"level":21,"moves":["Snatch","Hidden Power","Light Screen","Charm"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1705},
+		
+	},	
+	"Solrock":{	
+		"Stairs Aster/Eclipse (Ast, Crys Cav) Doub":{"level": 30, "moves": ["Rock Polish","Psywave","Fire Spin","Rock Slide"], "ability": "Levitate", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":60},
+		"Azurine Aster/Eclipse (Ast, Swamp) Doub":{"level": 38, "moves": ["Cosmic Power","Psywave","Fire Spin","Rock Slide"], "ability": "Levitate", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":126},
+		"LCCC Aster/Eclipse (Ast, Factory) Doubles":{"level": 65, "item": "Light Clay", "moves": ["Rock Slide","Reflect","Bulldoze","Will-O-Wisp"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":275},
+		"Ametrine Aster (Icy)":{"level": 68, "item": "Light Clay", "moves": ["Stealth Rock","Reflect","Explosion","Light Screen"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":304},
+		"Glass Aster (Factory)":{"level": 84, "item": "Light Clay", "moves": ["Stealth Rock","Reflect","Explosion","Light Screen"], "ability": "Levitate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":469},
+		"Museum Devin/Sanchez (D, Cave) Doubles":{"level":44,"moves":["Psychic","Heal Block","Stone Edge","Solar Beam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":944},
+		"MW Meteor Rod/Ringo (Rod, Factory)":{"level":13,"moves":["Rock Throw","Fire Spin","Rock Polish","Psywave"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1118},
+		"Malchous Meteor Rod (Forest)":{"level":22,"moves":["Rock Polish","Psywave","Embargo","Rock Slide"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1163},
+		"Yureyu Meteor Ringo/Rod (Rod, Short-Circ)":{"level":43,"moves":["Psychic","Heal Block","Stone Edge","Solar Beam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1305},
+		"Tanzan Meteor Tech Rod (Factory)":{"level":54,"moves":["Stone Edge","Solar Beam","Explosion","Wonderroom"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1357},
+		"Glass Meteor Devin (Factory)":{"level":81,"moves":["Rock Slide","Psychic","Light Screen","Reflect"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1575},
+		"Agate Gym Guitarist Isaac (Rocky)":{"level":87,"item":"Heat Rock","moves":["Zen Headbutt","Sunny Day","Rock Slide","Flare Blitz"],"ability":"Levitate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 0,"sa": 4,"sd": 0,"sp": 0},"index":1642},
+		
+	},	
+	"Spearow":{	
+		"Obsidia Meteor Chad (Forest)":{"level":17,"moves":["Leer","Pursuit","Fury Attack","Aerial Ace"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1126},
+		
+	},	
+	"Spewpa":{	
+		"Jasper Hotshot Ross (None)":{"level":19,"moves":["Tackle","Harden","Protect"],"ability":"Shed Skin","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":2041},
+		
+	},	
+	"Spheal":{	
+		"Opal Elder Yagami (None)":{"level":32,"moves":["Aurora Beam","Body Slam","Rest","Snore"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":2069},
+		
+	},	
+	"Spinarak":{	
+		"Peridot Punk Trill (None)":{"level":9,"moves":["String Shot","Constrict","Absorb","Infestation"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1991},
+		
+	},	
+	"Spinda":{	
+		"Obsidia Street Rat Carter (None)":{"level":16,"moves":["Tackle","Copycat","Feint Attack","Psybeam"],"ability":"Own Tempo","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2018},
+		
+	},	
+	"Spiritomb":{	
+		"Labradorra Zero (None)":{"level": 92, "item": "Black Glasses", "moves": ["Will-O-Wisp","Pursuit","Shadow Sneak","Foul Play"], "ability": "Pressure", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":586},
+		"Tanzan Depths Ranger Will (Cave)":{"level":82,"moves":["Sucker Punch","Nasty Plot","Memento","Dark Pulse"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2225},
+		"Somewhere Gym Knight Darma (Fairy Tale)":{"level":75,"moves":["Foul Play","Destiny Bond","Pain Split","Shadow Ball"],"ability":"Infiltrator","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1553},
+		
+	},	
+	"Spoink":{	
+		"BW Meteor Tech Naoman (Factory)":{"level":35,"moves":["Zen Headbutt","Power Gem","Rest","Snore"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 52,"at": 52,"df": 52,"sa": 52,"sd": 52,"sp": 52},"index":1241},
+		
+	},	
+	"Spritzee":{	
+		"Obsidia Punk Sally (None)":{"level":16,"moves":["Fairy Wind","Sweet Kiss","Odor Sleuth","Echoed Voice"],"ability":"Healer","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2025},
+		
+	},	
+	"Squirtle":{	
+		"Opal Grind Ch1 Jonah (None)":{"level":14,"moves":["Tail Whip","Water Gun","Withdraw","Bubble"],"ability":"Torrent","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1663},
+		"Opal Grind Ch2 Jonah (1, None)":{"level":20,"moves":["Withdraw","Bubble","Bite","Rapid Spin"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1685},
+		"Opal Grind Ch2 Jonah (2, None)":{"level":21,"moves":["Withdraw","Bubble","Bite","Rapid Spin"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1686},
+		"Opal Grind Ch3.5 Jonah (1, None)":{"level":30,"moves":["Rapid Spin","Protect","Water Pulse","Aqua Tail"],"ability":"Torrent","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":1719},
+		"Opal Grind Ch3.5 Jonah (2, None)":{"level":34,"moves":["Water Pulse","Aqua Tail","Skull Bash","Iron Defense"],"ability":"Torrent","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1720},
+		"Opal Grind Ch4.5 Jonah (None)":{"level":45,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":1757},
+		"Opal Grind Ch8 Jonah (None)":{"level":55,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1798},
+		"Opal Grind Ch14 Jonah (None)":{"level":82,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Quirky","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1914},
+		"Obsidia Youngster Terrance (None)":{"level":13,"moves":["Tail Whip","Water Gun","Withdraw","Bubble"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":2021},
+		
+	},	
+	"Stantler":{	
+		"Route 2 Hiker Marshall (Rocky)":{"level":68,"moves":["Thunder Wave","Confuse Ray","Headbutt","Bite"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2156},
+		
+	},	
+	"Staraptor":{	
+		"Agate Solaris (None)":{"level": 89, "item": "Leftovers", "moves": ["Return","Close Combat","U-turn","Brave Bird"], "ability": "Intimidate", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 156, "at": 100, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":513},
+		"Spirit Leo (Chess: Pawn) Doubles":{"level": 95, "item": "Choice Band", "moves": ["Brave Bird","Double-Edge","Close Combat","U-turn"], "ability": "Reckless", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":758},
+		"Mega-Z Ring McKrezzy (None)":{"level":79,"item":"Fightinium Z","moves":["Roost","Brave Bird","Close Combat","Tailwind"],"ability":"Intimidate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1013},
+		
+	},	
+	"Staravia":{	
+		"Lapis Casanova Wiley (None)":{"level":26,"moves":["Wing Attack","Double Team","Endeavor","Whirlwind"],"ability":"Intimidate","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2059},
+		
+	},	
+	"Starly":{	
+		"Onyx Gym Hotshot Terry (None)":{"level":17,"moves":["Quick Attack","Wing Attack","Double Team","Endeavor"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1141},
+		
+	},	
+	"Starmie":{	
+		"Ametrine Blake (Snowy Mount)":{"level": 73, "item": "Icy Rock", "moves": ["Blizzard","Hail","Thunder","Light Screen"], "ability": "Natural Cure", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":313},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 71, "item": "Icy Rock", "moves": ["Blizzard","Hail","Thunder","Light Screen"], "ability": "Natural Cure", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":362},
+		"Flotsam Amaria (H2O Surf)":{"level": 86, "item": "Light Clay", "moves": ["Scald","Thunderbolt","Light Screen","Ice Beam"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":445},
+		"Jetsam Amaria (H2O Surf)":{"level": 86, "item": "Light Clay", "moves": ["Scald","Thunderbolt","Light Screen","Ice Beam"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":457},
+		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 93, "item": "Light Clay", "moves": ["Hydro Pump","Thunder","Light Screen","Reflect"], "ability": "Illuminate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":556},
+		"VR Blake (Icy)":{"level": 96, "item": "Light Clay", "moves": ["Surf","Reflect","Ice Beam","Thunderbolt"], "ability": "Natural Cure", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":648},
+		"E4 Anna (Starlight)":{"level": 100, "item": "Magical Seed", "moves": ["Psychic","Flash Cannon","Scald","Thunderbolt"], "ability": "Illuminate", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":685},
+		"Spirit Trevor (Rainbow)":{"level": 95, "item": "Magical Seed", "moves": ["Ice Beam","Hydro Pump","Thunderbolt","Rapid Spin"], "ability": "Analytic", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":743},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Elemental Seed", "moves": ["Psychic","Surf","Thunderbolt","Rapid Spin"], "ability": "Analytic", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":789},
+		"Mega-Z Ring McKrezzy (None)":{"level":77,"item":"Damp Rock","moves":["Thunder","Rain Dance","Hydro Pump","Ice Beam"],"ability":"Natural Cure","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1009},
+		"Route 1 Hotshot Brian (Grassy)":{"level":50,"moves":["Hydro Pump","Swift","Recover","Confuse Ray"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":2125},
+		"Azurine Lake Swimmer Tsuki (Water Surf)":{"level":73,"item":"Choice Specs","moves":["Surf","Ice Beam","Thunderbolt","Psyshock"],"ability":"Natural Cure","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2190},
+		
+	},	
+	"Staryu":{	
+		"Magma Theft DeFacto (None)":{"level":33,"moves":["Camouflage","Gyro Ball","Brine","Minimize"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":904},
+		
+	},	
+	"Steelix":{	
+		"Tanzan Gargantuan (Rocky)":{"level": 75, "item": "Sitrus Berry", "moves": ["Earthquake","Stone Edge","Crunch","Heavy Slam"], "ability": "Sheer Force", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":213},
+		"Labradorra Gargantuan (Dragon's Den)":{"level": 100, "item": "Assault Vest", "moves": ["Earthquake","Dragon Tail","Fire Fang","Heavy Slam"], "ability": "Sheer Force", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 3252, "at": 252, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":635},
+		
+	},	
+	"Steelix-Mega":{	
+		"Torchic Doxy Murmina (Factory, Sturdy)":{"level":93,"item":"Steelixite","moves":["Curse","Earthquake","Gyro Ball","Nature Power"],"ability":"Sand Force","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 4,"df": 0,"sa": 0,"sd": 252,"sp": 0},"index":1096},
+		
+	},	
+	"Steenee":{	
+		"Malchous Meteor Regina/Gretchen (R, Forest)":{"level":21,"moves":["Rapid Spin","Razor Leaf","Sweet Scent","Magical Leaf"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1164},
+		"Rhodocrine Meteor Coleman (Forest)":{"level":24,"moves":["Rapid Spin","Razor Leaf","Sweet Scent","Magical Leaf"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":1170},
+		
+	},	
+	"Stoutland":{	
+		"Klefki Police Seer (None)":{"level":74,"item":"Sitrus Berry","moves":["Crunch","Play Rough","Yawn","Giga Impact"],"ability":"Intimidate","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":992},
+		"Ametrine Meteor Bruno/Ray (B, SnowM) Doub":{"level":71,"moves":["Play Rough","Reversal","Retaliate","Crunch"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1444},
+		"Glass Meteor Bruno (Factory)":{"level":81,"moves":["Play Rough","Reversal","Retaliate","Crunch"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1563},
+		
+	},	
+	"Stufful":{	
+		"Obsidia Arcade Star Eilee (None)":{"level":16,"moves":["Leer","Bide","Baby-Doll Eyes","Brutal Swing"],"ability":"Fluffy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2030},
+		
+	},	
+	"Stunky":{	
+		"MW Meteor Winter/Michaela (M, Factory)":{"level":12,"moves":["Focus Energy","Poison Gas","Screech","Fury Swipes"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1113},
+		
+	},	
+	"Sudowoodo":{	
+		"Pyrous Meteor Minta/Chad (M, SupHeat)":{"level":39,"moves":["Rock Tomb","Block","Rock Slide","Counter"],"ability":"Sturdy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1266},
+		
+	},	
+	"Sunkern":{	
+		"Lapis Gentleman Murray (None)":{"level":25,"moves":["Razor Leaf","Worry Seed","Giga Drain","Endeavor"],"ability":"Chlorophyll","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2063},
+		
+	},	
+	"Sunflora":{	
+		"Chrys Forest Ranger Elizabeth (Forest)":{"level":45,"moves":["Solar Beam","Double-Edge","Sunny Day","Leaf Storm"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":2100},
+		
+	},	
+	"Surskit":{	
+		"Peridot Youngster Marshall (None)":{"level":12,"moves":["Bubble","Quick Attack","Sweet Scent"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1990},
+		
+	},	
+	"Swablu":{	
+		"Opal Arcade Star Miku (None)":{"level":25,"moves":["Mist","Round","Natural Gift","Take Down"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2049},
+		
+	},	
+	"Swadloon":{	
+		"Lapis Gym Lady Lily (None)":{"level":31,"moves":["Tackle","String Shot","Bug Bite","Razor Leaf"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":1192},
+		
+	},	
+	"Swalot-Pulse":{	
+		"PULSE Swalot (Murkwater)":{"level": 80, "item": "Black Sludge", "moves": ["Sludge Wave","Recover","Infestation","Discharge"], "ability": "Water Absorb", "nature": "Calm", "ivs": {"hp": 27, "at": 27, "df": 27, "sa": 27, "sd": 27, "sp": 27}, "happiness": 0, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":324},
+		
+	},	
+	"Swampert":{	
+		"Flotsam Amaria (H2O Surf)":{"level": 87, "item": "Assault Vest", "moves": ["Dive","Earthquake","Stone Edge","Whirlpool"], "ability": "Torrent", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 252, "sa": 0, "sd": 0, "sp": 0}, "index":448},
+		"Opal Grind Ch8 Will (None)":{"level":58,"moves":["Muddy Water","Take Down","Earthquake","Endeavor"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1814},
+		"Opal Grind Ch14 Will (None)":{"level":85,"item":"Assault Vest","moves":["Hammer Arm","Earthquake","Aqua Tail","Ice Punch"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1931},
+		
+	},	
+	"Swampert-Mega":{	
+		"Jetsam Amaria (H2O Surf, Torrent)":{"level": 87, "item": "Swampertite", "moves": ["Dive","Earthquake","Stone Edge","Whirlpool"], "ability": "Swift Swim", "nature": "Swift Swim", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":460},
+		"Labr. Tag Amaria (Resh, Nil, Tornt) Doub":{"level": 94, "item": "Swampertite", "moves": ["Waterfall","Earthquake","Hammer Arm","Rock Slide"], "ability": "Swift Swim", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":559},
+		"Spirit Fezz (Swamp, Torrent)":{"level": 95, "item": "Swampertite", "moves": ["Ice Punch","Waterfall","Stomping Tantrum","Protect"], "ability": "Swift Swim", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":734},
+		
+	},	
+	"Swanna":{	
+		"Grind Indra 1 White (None)":{"level":58,"item":"Air Balloon","moves":["Scald","Hurricane","Roost","Ice Beam"],"ability":"Big Pecks","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1857},
+		"Grind Indra 2 White (None)":{"level":68,"item":"Life Orb","moves":["Scald","Hurricane","Roost","Ice Beam"],"ability":"Big Pecks","nature":"Timid","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1887},
+		
+	},	
+	"Swellow":{	
+		"Gym Noel (Grassy)":{"level": 54, "item": "Flame Orb", "moves": ["U-turn","Brave Bird","Steel Wing","Facade"], "ability": "Guts", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 81, "at": 81, "df": 81, "sa": 81, "sd": 81, "sp": 81}, "index":219},
+		
+	},	
+	"Swinub":{	
+		"Magikarp Kai (None)":{"level":19,"moves":["Powder Snow","Mud-Slap","Endure","Mud Bomb"],"ability":"Oblivious","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":875},
+		
+	},	
+	"Swirlix":{	
+		"Onyx Gym Youngster Trey (None)":{"level":19,"moves":["Play Nice","Fake Tears","Round","Cotton Spore"],"ability":"Sweet Veil","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 28,"at": 28,"df": 28,"sa": 28,"sd": 28,"sp": 28},"index":1146},
+		
+	},	
+	"Swoobat":{	
+		"Vanhanen Gym Psychic Thyme (Chess: Knight)":{"level":55,"moves":["Air Slash","Future Sight","Psychic","Endeavor"],"ability":"Unaware","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1369},
+		"7th Street Street Rat Chaz (None)":{"level":60,"moves":["Air Slash","Future Sight","Psychic","Endeavor"],"ability":"Unaware","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1391},
+		
+	},	
+	"Sylveon":{	
+		"Lab. Resh Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hyper Voice","Psyshock","Wish","Protect"], "ability": "Pixilate", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":570},
+		"Lab. Zek Arcturus/Angela (Ang, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Hyper Voice","Psyshock","Wish","Protect"], "ability": "Pixilate", "nature": "Bold", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":578},
+		"E4 Anna (Starlight)":{"level": 100, "item": "Leftovers", "moves": ["Swift","Wish","Shadow Ball","Protect"], "ability": "Pixilate", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 4, "sd": 0, "sp": 0}, "index":687},
+		"Magikarp Casanova Crimson (Ashen Beach)":{"level":76,"item":"Wise Glasses","moves":["Hyper Voice","Hidden Power Ground","Wish","Misty Terrain"],"ability":"Pixilate","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":989},
+		"Mega-Z Ring Q Santiago (None)":{"level":80,"moves":["Hyper Voice","Wish","Shadow Ball","Hidden Power Ground"],"ability":"Pixilate","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1006},
+		"WTC Meteor Angela/Wes (A, Factory) Doub":{"level":74,"moves":["Hyper Voice","Psyshock","Shadow Ball","Hidden Power Fire"],"ability":"Pixilate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1487},
+		
+	},	
+	"Taillow":{	
+		"Onyx Gym Trisy/Jojo (J, None)":{"level":17,"moves":["Focus Energy","Quick Attack","Wing Attack","Double Team"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1135},
+		
+	},	
+	"Talonflame":{	
+		"Spirit Jonathan (Big Top) Doubles":{"level":95,"item":"Iapapa Berry","moves":["Brave Bird","Swords Dance","Flare Blitz","Quick Guard"],"ability":"Gale Wings","nature":"Brave","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 0},"evs":{"hp": 0,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":723},
+		"Grind Indra 1 Red (None)":{"level":58,"item":"Air Balloon","moves":["Flare Blitz","Acrobatics","Swords Dance","Roost"],"ability":"Gale Wings","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1833},
+		"Grind Indra 2 Red (None)":{"level":68,"item":"Flying Gem","moves":["Flare Blitz","Acrobatics","Swords Dance","Roost"],"ability":"Gale Wings","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1863},
+		
+	},	
+	"Tangela":{	
+		"Porygon Sticker X C (Glitch)":{"level":76,"moves":["Amnesia","Nature Power","Power Whip","Sleep Powder"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":980},
+		
+	},	
+	"Tangrowth":{	
+		"Fiore Florinia (None) Doubles":{"level": 70, "item": "Assault Vest", "moves": ["Knock Off","Giga Drain","Hidden Power Fire","Sludge Bomb"], "ability": "Regenerator", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":341},
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Assault Vest", "moves": ["Knock Off","Giga Drain","Hidden Power Ice","Sludge Bomb"], "ability": "Regenerator", "nature": "Sassy", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 248, "at": 0, "df": 8, "sa": 0, "sd": 252, "sp": 0}, "index":609},
+		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Synthetic Seed", "moves": ["Hidden Power Ice","Giga Drain","Nature Power","Rock Slide"], "ability": "Regenerator", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":633},
+		"Spirit Leo (Chess: Rook) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Hidden Power Fire","Brick Break","Rock Slide","Power Whip"], "ability": "Regenerator", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 252, "sp": 0}, "index":760},
+		
+	},	
+	"Tangrowth-Pulse-A":{	
+		"Rhodocrine Ace (Forest)":{"level": 29, "item": "Pecha Berry", "moves": ["Growth","Mega Drain","Stored Power","Rock Tomb"], "ability": "Stamina", "nature": "Serious", "ivs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "evs": {"hp": 43, "at": 43, "df": 43, "sa": 43, "sd": 43, "sp": 43}, "index":43},
+		
+	},	
+	"Tangrowth-Pulse-B":{	
+		"Malchous Taka (Rocky)":{"level": 24, "item": "Oran Berry", "moves": ["Leech Seed","Vine Whip","Sand Tomb","Rock Tomb"], "ability": "Arena Trap", "nature": "Impish", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 36, "at": 36, "df": 36, "sa": 36, "sd": 36, "sp": 36}, "index":38},
+		
+	},	
+	"Tangrowth-Pulse-C":{	
+		"Obsidia ZEL (Forest)":{"level": 22, "item": "Occa Berry", "moves": ["Wrap","Vine Whip","Acid Spray","Mega Drain"], "ability": "Filter", "nature": "Calm", "ivs": {"hp": 7, "at": 7, "df": 7, "sa": 7, "sd": 7, "sp": 7}, "happiness": 0, "evs": {"hp": 33, "at": 33, "df": 33, "sa": 33, "sd": 33, "sp": 33}, "index":26},
+		
+	},	
+	"Tauros":{	
+		"Route 1 Hiker Montgomery (Grassy)":{"level":51,"moves":["Work Up","Take Down","Zen Headbutt","Swagger"],"ability":"Intimidate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":2127},
+		
+	},	
+	"Teddiursa":{	
+		"Obsidia Punk Sally (None)":{"level":16,"moves":["Lick","Fake Tears","Fury Swipes","Feint Attack"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2026},
+		
+	},	
+	"Tentacool":{	
+		"Orphanage Allyssa/Stephanie (A, None)":{"level":33,"moves":["Acid Spray","Bubble Beam","Barrier","Poison Jab"],"ability":"Clear Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1199},
+		
+	},	
+	"Tentacruel":{	
+		"Labradorra Audrey (None)":{"level": 88, "item": "Black Sludge", "moves": ["Sludge Wave","Hydro Pump","Giga Drain","Dazzling Gleam"], "ability": "Clear Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":551},
+		"Labr. Tag Amaria (Resh, None) Doubles":{"level": 94, "item": "Choice Specs", "moves": ["Sludge Bomb","Dazzling Gleam","Muddy Water","Blizzard"], "ability": "Clear Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":560},
+		"Spirit Cloud (Underwater)":{"level": 95, "item": "Black Sludge", "moves": ["Scald","Sludge Bomb","Protect","Rapid Spin"], "ability": "Rain Dish", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 128, "sa": 0, "sd": 128, "sp": 0}, "index":746},
+		"Devon Meteor Allyssa/Bishop (A, Factory) Dub":{"level":75,"moves":["Hydro Pump","Sludge Wave","Ice Beam","Dazzling Gleam"],"ability":"Liquid Ooze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1509},
+		"Azurine Lake Swimmer Hubert (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Sludge Wave","Surf","Giga Drain","Dazzling Gleam"],"ability":"Clear Body","nature":"Modest","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2196},
+		
+	},	
+	"Tepig":{	
+		"Obsidia Meteor Chad (Forest)":{"level":16,"moves":["Ember","Odor Sleuth","Defense Curl","Flame Charge"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":1125},
+		
+	},	
+	"Throh":{	
+		"Rainbow DEEPTHROW (None)":{"level":30,"moves":["Bounce","Slam","Rolling Kick","Blaze Kick"],"ability":"No Guard","nature":"Adamant","ivs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":889},
+		"Route 4 Hiker Karim (Forest)":{"level":90,"item":"Leftovers","moves":["Circle Throw","Bulk Up","Stone Edge","Knock Off"],"ability":"Mold Breaker","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1090},
+		"Apop Beach Nature Girl Ici (Ashen Beach)":{"level":38,"moves":["Bulk Up","Circle Throw","Endure","Wide Guard"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":2085},
+		
+	},	
+	"Timburr":{	
+		"Peridot Hotshot Stiles (None)":{"level":15,"moves":["Leer","Focus Energy","Bide","Low Kick"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":1099},
+		"Rhodocrine Meteor Coleman (Forest)":{"level":22,"moves":["Bide","Low Kick","Rock Throw","Wake-Up Slap"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1169},
+		
+	},	
+	"Tirtouga":{	
+		"Tanzan Meteor Hilda (Factory)":{"level":52,"moves":["Aqua Tail","Rock Slide","Rain Dance","Hydro Pump"],"ability":"Solid Rock","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1321},
+		"Obsidia Youngster Terrance (None)":{"level":13,"moves":["Water Gun","Rollout","Bite","Protect"],"ability":"Solid Rock","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":2024},
+		
+	},	
+	"Togedemaru":{	
+		"Obsidia Street Rat Franklin (None)":{"level":13,"moves":["Thunder Shock","Defense Curl","Rollout","Charge"],"ability":"Iron Barbs","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":1997},
+		"Opal Hotshot Mikey (None)":{"level":44,"moves":["Discharge","Zing Zap","Electric Terrain","Wild Charge"],"ability":"Iron Barbs","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 66,"at": 66,"df": 66,"sa": 66,"sd": 66,"sp": 66},"index":2096},
+		
+	},	
+	"Togekiss":{	
+		"Subseven Ace (Holy)":{"level": 60, "item": "Leftovers", "moves": ["Dazzling Gleam","Air Slash","Grass Knot","Roost"], "ability": "Serene Grace", "nature": "Quiet", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":242},
+		"Gym Ciel (Big Top)":{"level": 75, "item": "Leftovers", "moves": ["Roost","Air Slash","Aura Sphere","Thunder Wave"], "ability": "Serene Grace", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":381},
+		"Devon Partner Victoria (Factory) Doubles":{"level": 73, "item": "King's Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":390},
+		"Devon VS Victoria (Factory)":{"level": 74, "item": "King's Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":402},
+		"Gym Adrienn (Misty) Doubles":{"level": 77, "item": "Kebia Berry", "moves": ["Aura Sphere","Dazzling Gleam","Flamethrower","Psyshock"], "ability": "Serene Grace", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":419},
+		"Labr. Tag Victoria (None) Doubles":{"level": 92, "item": "King's Rock", "moves": ["Dazzling Gleam","Air Slash","Aura Sphere","Nasty Plot"], "ability": "Serene Grace", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":538},
+		"Meteor Lin 1 Resh. (None)":{"level": 100, "item": "Leftovers", "moves": ["Nasty Plot","Thunder Wave","Air Slash","Roost"], "ability": "Serene Grace", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 0, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":699},
+		"Spirit Jonathan (Big Top) Doubles":{"level": 95, "item": "Synthetic Seed", "moves": ["Air Slash","Dazzling Gleam","Heat Wave","Defog"], "ability": "Serene Grace", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 0}, "index":721},
+		"Spirit King (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Air Slash","Aura Sphere","Nasty Plot","Roost"], "ability": "Serene Grace", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":810},
+		"Glass Meteor Kaiden (Factory)":{"level":81,"moves":["Air Slash","Dazzling Gleam","Nasty Plot","Roost"],"ability":"Serene Grace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1591},
+		"Opal Grind Ch4.5 Zach/Beau (B, None)":{"level":51,"moves":["Sky Attack","Extreme Speed","Aura Sphere","Air Slash"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 76,"at": 76,"df": 76,"sa": 76,"sd": 76,"sp": 76},"index":1784},
+		"Opal Grind Ch8 Zach/Beau (B, None)":{"level":59,"moves":["Sky Attack","Extreme Speed","Aura Sphere","Air Slash"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1831},
+		"Opal Grind Ch14 Zach/Beau (B, None)":{"level":83,"item":"Leftovers","moves":["Body Slam","Air Slash","Dazzling Gleam","Roost"],"ability":"Serene Grace","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1943},
+		
+	},	
+	"Togepi":{	
+		"Opal Grind Ch1 Zach/Beau (B, None)":{"level":12,"moves":["Growl","Charm","Metronome","Sweet Kiss"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1675},
+		
+	},	
+	"Togetic":{	
+		"Opal Grind Ch2 Zach/Beau (B, None)":{"level":24,"moves":["Yawn","Fairy Wind","Encore","Follow Me"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 36,"at": 36,"df": 36,"sa": 36,"sd": 36,"sp": 36},"index":1708},
+		"Opal Grind Ch3.5 Zach/Beau (B, None)":{"level":36,"moves":["Follow Me","Bestow","Wish","Ancient Power"],"ability":"Hustle","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":1746},
+		
+	},	
+	"Torchic":{	
+		"Onyx Gym Star Lithi (None)":{"level":18,"moves":["Growl","Ember","Sand Attack","Peck"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1148},
+		
+	},	
+	"Torkoal":{	
+		"Lapis Cal (Rainbow)":{"level": 30, "item": "Heat Rock", "moves": ["Stealth Rock","Fire Spin","Nature Power","Hidden Power Electric"], "ability": "Drought", "nature": "Mild", "ivs": {"hp": 5, "at": 5, "df": 5, "sa": 5, "sd": 5, "sp": 5}, "evs": {"hp": 45, "at": 45, "df": 45, "sa": 45, "sd": 45, "sp": 45}, "index":72},
+		"Obsidia Youngster Terrance (None)":{"level":13,"moves":["Smog","Withdraw","Rapid Spin","Fire Spin"],"ability":"White Smoke","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":2022},
+		
+	},	
+	"Torracat":{	
+		"Slums Victoria (None)":{"level": 19, "moves": ["Flame Charge","Dual Chop","Power Trip","Bulk Up"], "ability": "Intimidate", "iv": "30", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 28, "at": 28, "df": 28, "sa": 28, "sd": 28, "sp": 28}, "index":17},
+		"Stairs Tag Victoria (Crys Cav) Doubles":{"level": 33, "moves": ["Bite","Fire Fang","Double Kick","Lick"], "ability": "Intimidate", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":56},
+		"N. Obsidia Victoria (None)":{"level": 33, "moves": ["Bite","Fire Fang","Double Kick","Lick"], "ability": "Intimidate", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":67},
+		
+	},	
+	"Torterra":{	
+		"Fiore Florinia (None) Doubles":{"level": 68, "item": "Yache Berry", "moves": ["Superpower","Wood Hammer","Rock Slide","Crunch"], "ability": "Overgrow", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":338},
+		"Labr. Zek. Tag Florinia (Inverse) Doubles":{"level": 94, "item": "Leftovers", "moves": ["Wood Hammer","Earthquake","Rock Slide","Return"], "ability": "Overgrow", "nature": "Adamant", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 252, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 0}, "index":606},
+		"Labr. VS Florinia (Glitch)":{"level": 94, "item": "Synthetic Seed", "moves": ["Giga Drain","Leaf Storm","Amnesia","Nature Power"], "ability": "Shell Armor", "nature": "Careful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 0, "sa": 4, "sd": 252, "sp": 0}, "index":630},
+		"Obsidia Resto Sandy (Various) Doubles":{"level":76,"item":"Leftovers","moves":["Crunch","Stomping Tantrum","Seed Bomb","Iron Head"],"ability":"Overgrow","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1044},
+		"Obsidia Resto Raph/Manwe (M, Forest) Doubles":{"level":75,"item":"Telluric Seed","moves":["Cut","Rock Polish","Earthquake","Swords Dance"],"ability":"Overgrow","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 6,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1053},
+		
+	},	
+	"Totodile":{	
+		"Aqua Mannie/Razzy (R, None) Doubles":{"level":31,"moves":["Ice Fang","Flail","Crunch","Chip Away"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":912},
+		"Opal Grind Ch1 Carol (None)":{"level":10,"moves":["Scratch","Leer","Water Gun","Rage"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1658},
+		
+	},	
+	"Toucannon":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 46, "moves": ["Beak Blast","Rock Blast","Tailwind","Roost"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":178},
+		"Belrose John/David (J, None) Doubles":{"level":43,"moves":["Fury Attack","Screech","Drill Peck","Bullet Seed"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":200},
+		"Belrose Sirius (None)":{"level": 50, "moves": ["Beak Blast","Rock Blast","Tailwind","Roost"], "ability": "Skill Link", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 75, "at": 75, "df": 75, "sa": 75, "sd": 75, "sp": 75}, "index":209},
+		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 71, "item": "Muscle Band", "moves": ["Beak Blast","Knock Off","Roost","Brick Break"], "ability": "Skill Link", "nature": "Brave", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":373},
+		"Grind Indra 1 Black (None)":{"level":58,"item":"Air Balloon","moves":["Beak Blast","Brick Break","Roost","Swords Dance"],"ability":"Skill Link","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1844},
+		"Grind Indra 2 Black (None)":{"level":68,"item":"Life Orb","moves":["Beak Blast","Brick Break","Roost","Swords Dance"],"ability":"Skill Link","nature":"Adamant","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":1874},
+		
+	},	
+	"Toxapex":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 41, "item": "Black Sludge", "moves": ["Sludge Wave","Recover","Icy Wind","Toxic Spikes"], "ability": "Merciless", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":155},
+		"LCCC Aya (Various) Doubles":{"level": 66, "item": "Rocky Helmet", "moves": ["Sludge Bomb","Icy Wind","Blizzard","Scald"], "ability": "Merciless", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":271},
+		"Magikarp Aqua Jakob (None)":{"level":37,"moves":["Venoshock","Spike Cannon","Recover","Poison Jab"],"ability":"Merciless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":905},
+		"Orphanage Allyssa/Stephanie (S, None)":{"level":33,"moves":["Toxic","Venoshock","Spike Cannon","Recover"],"ability":"Merciless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1204},
+		"Yureyu Meteor Mary/Coleman (M, Short-Circ)":{"level":41,"moves":["Venoshock","Spike Cannon","Recover","Poison Jab"],"ability":"Merciless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 61,"at": 61,"df": 61,"sa": 61,"sd": 61,"sp": 61},"index":1296},
+		"Tanzan Meteor Mary (Factory)":{"level":49,"moves":["Spike Cannon","Recover","Poison Jab","Venom Drench"],"ability":"Merciless","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1343},
+		
+	},	
+	"Toxicroak":{	
+		"Apophyll Kiki (Ashen Beach)":{"level": 41, "moves": ["Meditate","Sucker Punch","Strength","Poison Jab"], "ability": "Dry Skin", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":121},
+		"Klefki Police Seer (None)":{"level":73,"moves":["Sucker Punch","Drain Punch","Poison Jab","Ice Punch"],"ability":"Dry Skin","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":991},
+		"Apophyll Grind Ch14 Nathaniel (None)":{"level":75,"moves":["Sucker Punch","Poison Jab","Meditate","Low Sweep"],"ability":"Dry Skin","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1899},
+		
+	},	
+	"Tranquill":{	
+		"Rhodocrine Ranger Endow (Forest)":{"level":25,"moves":["Quick Attack","Air Cutter","Roost","Detect"],"ability":"Big Pecks","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 37,"at": 37,"df": 37,"sa": 37,"sd": 37,"sp": 37},"index":2046},
+		
+	},	
+	"Trapinch":{	
+		"Obsidia Hotshot Vinny (None)":{"level":17,"moves":["Mud-Slap","Bulldoze","Sand Tomb","Rock Slide"],"ability":"Hyper Cutter","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":2020},
+		
+	},	
+	"Treecko":{	
+		"Opal Grind Ch1 Will (None)":{"level":10,"moves":["Pound","Leer","Absorb","Quick Attack"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1668},
+		
+	},	
+	"Trevenant":{	
+		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 88, "item": "Life Orb", "moves": ["Drain Punch","Horn Leech","Shadow Claw","Rock Slide"], "ability": "Natural Cure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":580},
+		"BW Meteor Tech Deryl (Factory)":{"level":34,"moves":["Feint Attack","Leech Seed","Curse","Will-O-Wisp"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1251},
+		"Tanzan Meteor Tech Deryl (Factory)":{"level":53,"moves":["Forest's Curse","Destiny Bond","Phantom Force","Wood Hammer"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1354},
+		"Glass Meteor Techs Deryl/Naoman (D, Factory)":{"level":82,"moves":["Bulldoze","Horn Leech","Shadow Claw","Nature Power"],"ability":"Natural Cure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1579},
+		
+	},	
+	"Tropius":{	
+		"7th Street Street Rat Austin (None)":{"level":58,"moves":["Body Slam","Bestow","Synthesis","Solar Beam"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1389},
+		
+	},	
+	"Trubbish":{	
+		"Byxbysion Mr. Bigglesworth (1, Wasteland)":{"level":30,"moves":["Toxic Spikes","Sludge Bomb","Self-Destruct","Acid Spray"],"ability":"Aftermath","nature":"Bashful","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":940},
+		"Byxbysion Mr. Bigglesworth (2, Wasteland)":{"level":30,"moves":["Toxic Spikes","Sludge Bomb","Self-Destruct","Acid Spray"],"ability":"Aftermath","nature":"Bashful","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":941},
+		"Opal Youngster Randy (None)":{"level":6,"moves":["Pound","Poison Gas","Recycle"],"ability":"Stench","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 9,"at": 9,"df": 9,"sa": 9,"sd": 9,"sp": 9},"index":1959},
+		
+	},	
+	"Trumbeak":{	
+		"Opal Youngster Bart (None)":{"level":20,"moves":["Echoed Voice","Rock Smash","Supersonic","Pluck"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":2040},
+		
+	},	
+	"Tsareena":{	
+		"Bounsweet Posh Suzy (None)":{"level":45,"moves":["Synthesis","Aromatherapy","Play Rough","Trop Kick"],"ability":"Queenly Majesty","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":880},
+		"Type: Null Nadira (Factory)":{"level":59,"moves":["Power Whip","High Jump Kick","Play Rough","Nature Power"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":952},
+		"Mega-Z Ring Colin/Matthew (M, None) Doubles":{"level":74,"item":"Life Orb","moves":["Play Rough","High Jump Kick","Power Whip","Knock Off"],"ability":"Queenly Majesty","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1018},
+		"Pyrous Meteor Regina/Gretchen (R, SupHeat)":{"level":40,"moves":["Teeter Dance","Stomp","Aromatic Mist","Captivate"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1275},
+		"Yureyu Meteor Mary/Coleman (C, Short-Circ)":{"level":42,"moves":["Stomp","Aromatic Mist","Captivate","Aromatherapy"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1300},
+		"Tanzan Meteor Regina (Factory)":{"level":49,"moves":["Captivate","Aromatherapy","Leaf Storm","High-Jump Kick"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1324},
+		"Tanzan Meteor Coleman (Factory)":{"level":48,"moves":["Aromatic Mist","Captivate","Aromatherapy","Leaf Storm"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 72,"at": 72,"df": 72,"sa": 72,"sd": 72,"sp": 72},"index":1335},
+		"Grind Indra 1 Violet (None)":{"level":58,"item":"Air Balloon","moves":["U-turn","High Jump Kick","Power Whip","Play Rough"],"ability":"Queenly Majesty","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1850},
+		"Grind Indra 2 Violet (None)":{"level":68,"item":"Choice Band","moves":["U-turn","High Jump Kick","Power Whip","Play Rough"],"ability":"Queenly Majesty","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1880},
+		"Route 2 Hiker Ford (Rocky)":{"level":68,"moves":["Power Whip","Knock Off","High Jump Kick","Play Rough"],"ability":"Leaf Guard","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2164},
+		
+	},	
+	"Turtonator":{	
+		"Pyrous Cal (Super-Heated)":{"level": 38, "moves": ["Dragon Pulse","Flamethrower","Head Smash","Revenge"], "ability": "Shell Armor", "nature": "Bashful", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 57, "at": 57, "df": 57, "sa": 57, "sd": 57, "sp": 57}, "index":115},
+		"Magikarp Magma Bunson (None)":{"level":38,"moves":["Iron Defense","Flamethrower","Body Slam","Shell Smash"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":922},
+		"Aqua 3 Magma Maxwell (None)":{"level":59,"item":"Wise Glasses","moves":["Shell Trap","Overheat","Explosion","Dragon Pulse"],"ability":"Shell Armor","nature":"Bashful","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":968},
+		"Somewhere Gym Knight Darma (Fairy Tale)":{"level":75,"moves":["Dragon Pulse","Shell Trap","Flash Cannon","Charge Beam"],"ability":"Shell Armor","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1551},
+		
+	},	
+	"Turtwig":{	
+		"Obsidia Youngster Terrance (None)":{"level":13,"moves":["Tackle","Withdraw","Absorb","Razor Leaf"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 19,"at": 19,"df": 19,"sa": 19,"sd": 19,"sp": 19},"index":2023},
+		
+	},	
+	"Tympole":{	
+		"MW Meteor Sanchez/Devin (S, Factory)":{"level":12,"moves":["Growl","Supersonic","Round","Bubble Beam"],"ability":"Swift Swim","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1106},
+		
+	},	
+	"Tynamo":{	
+		"Julia Gym Techie Yan (Factory)":{"level":14,"moves":["Tackle","Thunder Wave","Spark","Charge Beam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1124},
+		"Orphanage Allyssa/Stephanie (S, None)":{"level":34,"moves":["Tackle","Thunder Wave","Spark","Charge Beam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1203},
+		
+	},	
+	"Typhlosion":{	
+		"Pyrous Cal (Super-Heated)":{"level": 40, "moves": ["Solar Beam","Hidden Power Rock","Sunny Day","Flame Charge"], "ability": "Blaze", "nature": "Modest", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 60, "at": 60, "df": 60, "sa": 60, "sd": 60, "sp": 60}, "index":117},
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 69, "item": "Sitrus Berry", "moves": ["Eruption","Solar Beam","Heat Wave","Hidden Power Rock"], "ability": "Blaze", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":286},
+		"Spirit Godot (Burning)":{"level": 95, "item": "Elemental Seed", "moves": ["Heat Wave","Hidden Power Rock","Focus Blast","Eruption"], "ability": "Flash Fire", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 0, "df": 4, "sa": 252, "sd": 0, "sp": 252}, "index":847},
+		"Klefki Mattie/Maddie (Mat, None)":{"level":76,"item":"Sitrus Berry","moves":["Eruption","Heat Wave","Rock Slide","Extrasensory"],"ability":"Flash Fire","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":998},
+		"Opal Grind Ch4.5 Fawkes (None)":{"level":49,"moves":["Swift","Flame Charge","Lava Plume","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 73,"at": 73,"df": 73,"sa": 73,"sd": 73,"sp": 73},"index":1755},
+		"Opal Grind Ch4.5 Emile (None)":{"level":50,"moves":["Swift","Flame Charge","Lava Plume","Flamethrower"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1779},
+		"Opal Grind Ch8 Fawkes (None)":{"level":59,"moves":["Flame Charge","Lava Plume","Flamethrower","Inferno"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1796},
+		"Opal Grind Ch8 Emile (None)":{"level":60,"moves":["Flame Charge","Lava Plume","Flamethrower","Inferno"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1824},
+		"Opal Grind Ch14 Fawkes (None)":{"level":84,"item":"Sitrus Berry","moves":["Eruption","Heat Wave","Rock Slide","Extrasensory"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1912},
+		"Chrys Forest Lady Aurelia (Forest)":{"level":45,"moves":["Lava Plume","Eruption","Fire Pledge","Nature Power"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":2106},
+		"Route 4 Casanova Fawkes (Forest)":{"level":82,"item":"Choice Scarf","moves":["Eruption","Fire Blast","Focus Blast","Extrasensory"],"ability":"Blaze","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2237},
+		
+	},	
+	"Tyranitar":{	
+		"Gym Luna (Dark Crystal)":{"level": 63, "item": "Magical Seed", "moves": ["Brick Break","Iron Head","Crunch","Stone Edge"], "ability": "Unnerve", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":256},
+		"Fiore 3 Solaris/John (S, None)) Doubles":{"level": 73, "item": "Smooth Rock", "moves": ["Dragon Dance","Earthquake","Superpower","Rock Slide"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":378},
+		"Agate Solaris (None)":{"level": 89, "item": "Smooth Rock", "moves": ["Stone Edge","Earthquake","Crunch","Fire Punch"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":516},
+		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Weakness Policy", "moves": ["Crunch","Rock Slide","Stealth Rock","Aqua Tail"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":546},
+		"Spirit Duster (Big Top)":{"level": 95, "item": "Assault Vest", "moves": ["Fire Punch","Ice Punch","Rock Slide","Earthquake"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 0}, "index":779},
+		"Spirit King (Desert)":{"level": 95, "item": "Life Orb", "moves": ["Dragon Dance","Crunch","Earthquake","Thunder Punch"], "ability": "Sand Stream", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":809},
+		"Spirit Nate (Desert)":{"level": 95, "item": "Telluric Seed", "moves": ["Dragon Dance","Stealth Rock","Earthquake","Thunder Punch"], "ability": "Sand Stream", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "index":823},
+		"Spirit Taro (Ashen Beach)":{"level": 95, "item": "Assault Vest", "moves": ["Crunch","Rock Slide","Earthquake","Ice Punch"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":829},
+		"Spirit Saya (Glitch) Doubles":{"level": 95, "item": "Assault Vest", "moves": ["Earthquake","Stone Edge","Superpower","Crunch"], "ability": "Sand Stream", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":863},
+		"Amet. Meteor Demian/Antoine (A, SnowM) Doub":{"level":73,"moves":["Stone Edge","Crunch","Earthquake","Fire Punch"],"ability":"Sand Stream","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1463},
+		"Agate Meteor Christopher (None)":{"level":86,"moves":["Stone Edge","Crunch","Superpower","Dragon Dance"],"ability":"Sand Stream","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1600},
+		"Agate Meteor Antoine (None)":{"level":88,"moves":["Stone Edge","Crunch","Earthquake","Fire Punch"],"ability":"Sand Stream","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1607},
+		"Agate Gym Guitarist Noivy (Rocky)":{"level":87,"item":"Choice Band","moves":["Stone Edge","Crunch","Earthquake","Fire Punch"],"ability":"Sand Stream","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 80,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 176},"index":1640},
+		"Tanzan Depths Ranger Will (Cave)":{"level":82,"moves":["Earthquake","Stone Edge","Hyper Beam","Giga Impact"],"ability":"Sand Stream","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2222},
+		
+	},	
+	"Tyrantrum":{	
+		"Yureyu Sirius (Short Circuit) Doubles":{"level": 46, "moves": ["Rock Slide","Crunch","Dragon Claw","Dragon Dance"], "ability": "Strong Jaw", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 69, "at": 69, "df": 69, "sa": 69, "sd": 69, "sp": 69}, "index":177},
+		"Belrose Sirius (None)":{"level": 49, "moves": ["Earthquake","Crunch","Dragon Claw","Dragon Dance"], "ability": "Strong Jaw", "nature": "Adamant", "ivs": {"hp": 30, "at": 30, "df": 30, "sa": 30, "sd": 30, "sp": 30}, "evs": {"hp": 73, "at": 73, "df": 73, "sa": 73, "sd": 73, "sp": 73}, "index":208},
+		"VR Sirius (Dragon's Den) Doubles":{"level": 98, "item": "Focus Sash", "moves": ["Superpower","Head Smash","Dragon Claw","Dragon Dance"], "ability": "Rock Head", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":657},
+		"Agate Gym Guitarist Noivy (Rocky)":{"level":88,"item":"Life Orb","moves":["Rock Polish","Head Smash","Outrage","Earthquake"],"ability":"Strong Jaw","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 6},"index":1641},
+		
+	},	
+	"Tyrogue":{	
+		"Apop Beach Black Belt Paul (Ashen Beach)":{"level":34,"moves":["Tackle","Helping Hand","Fake Out","Foresight"],"ability":"Guts","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":2080},
+		
+	},	
+	"Umbreon":{	
+		"Blacksteam ZEL (Factory)":{"level": 37, "item": "Lum Berry", "moves": ["Moonlight","Assurance","Quick Attack","Confuse Ray"], "ability": "Synchronize", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 55, "at": 55, "df": 55, "sa": 55, "sd": 55, "sp": 55}, "index":107},
+		"Gym Luna (Dark Crystal)":{"level": 65, "item": "Leftovers", "moves": ["Moonlight","Dark Pulse","Double Team","Toxic"], "ability": "Synchronize", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":257},
+		"Devon ZEL (Factory)":{"level": 77, "item": "Leftovers", "moves": ["Double Team","Wish","Foul Play","Toxic"], "ability": "Synchronize", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":415},
+		"Glass 2 ??? (Factory)":{"level": 86, "item": "Leftovers", "moves": ["Wish","Foul Play","Protect","Toxic"], "ability": "Synchronize", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "index":492},
+		"Labradorra Zero (None)":{"level": 94, "item": "Leftovers", "moves": ["Wish","Protect","Toxic","Foul Play"], "ability": "Synchronize", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":590},
+		
+	},	
+	"Unfezant":{	
+		"Glass Meteor Devin (Factory)":{"level":80,"moves":["Tailwind","Detect","Hypnosis","Air Slash"],"ability":"Super Luck","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1574},
+		"Circus Clown Arthur (None)":{"level":65,"item":"Air Balloon","moves":["Tailwind","Swagger","U-turn","Air Slash"],"ability":"Big Pecks","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2152},
+		
+	},	
+	"Unown":{	
+		"Vanhanen Gym Psychic Thyme (Chess: Pawn)":{"level":50,"moves":["Hidden Power"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1367},
+		"Vanhanen Gym Psychic Thyme (Chess: King)":{"level":50,"item":"King's Rock","moves":["Hidden Power"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1371},
+		"Vanhanen Gym Psychic Thyme (Chess: Queen)":{"level":50,"moves":["Hidden Power"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1372},
+		"Circus Clown Darko (Big Top)":{"level":85,"item":"Air Balloon","moves":["Hidden Power Psychic","Hidden Power Psychic","Hidden Power Psychic","Hidden Power Psychic"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2153},
+		
+	},	
+	"Ursaring":{	
+		"Grind Indra 1 Brown (None)":{"level":58,"item":"Air Balloon","moves":["Facade","Throat Chop","Close Combat","Protect"],"ability":"Guts","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1847},
+		"Grind Indra 2 Brown (None)":{"level":68,"item":"Toxic Orb","moves":["Facade","Throat Chop","Close Combat","Protect"],"ability":"Guts","nature":"Jolly","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":1877},
+		
+	},	
+	"Vanillish":{	
+		"Spinel Gym Posh Lydia (Mirror)":{"level":46,"moves":["Mirror Shot","Acid Armor","Ice Beam","Hail"],"ability":"Ice Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1308},
+		
+	},	
+	"Vanillite":{	
+		"Spinel Gym Posh Lydia (Mirror)":{"level":45,"moves":["Acid Armor","Ice Beam","Hail","Mirror Coat"],"ability":"Ice Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 67,"at": 67,"df": 67,"sa": 67,"sd": 67,"sp": 67},"index":1307},
+		
+	},	
+	"Vanilluxe":{	
+		"Labradorra Audrey (None)":{"level": 88, "item": "Choice Specs", "moves": ["Blizzard","Signal Beam","Freeze-Dry","Mirror Shot"], "ability": "Ice Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":552},
+		"Amet. Meteor Geoff/Audrey (A, SnowM) Doub":{"level":71,"moves":["Blizzard","Weather Ball","Frost Breath","Mirror Shot"],"ability":"Ice Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1451},
+		
+	},	
+	"Vaporeon":{	
+		"Doubles Zekrom Amaria (H2O Surf)":{"level": 86, "item": "Assault Vest", "moves": ["Shadow Ball","Ice Beam","Dive","Surf"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 100, "sa": 156, "sd": 0, "sp": 0}, "index":451},
+		"Doubles Reshiram Amaria (H2O Surf)":{"level": 86, "item": "Assault Vest", "moves": ["Shadow Ball","Ice Beam","Dive","Surf"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 100, "sa": 156, "sd": 0, "sp": 0}, "index":463},
+		"Lab. Resh Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Surf","Blizzard","Wish","Protect"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":564},
+		"Lab. Zek Arcturus/Angela (Arc, None) Doub":{"level": 89, "item": "Leftovers", "moves": ["Surf","Blizzard","Wish","Protect"], "ability": "Water Absorb", "nature": "Modest", "ivs": {"hp": 0, "at": 0, "df": 0, "sa": 0, "sd": 0, "sp": 0}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":574},
+		"Glitch World 7g (Glitch)":{"level":74,"moves":["Hydro Pump","Blizzard","Body Slam","Yawn"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1478},
+		"WTC Meteor Arcturus (Factory)":{"level":72,"moves":["Surf","Blizzard","Wish","Protect"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1498},
+		"Glass Meteor Arcturus (Factory)":{"level":79,"moves":["Surf","Blizzard","Wish","Protect"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1585},
+		"Labradorra Gym Knight Dan (Dragon's Den)":{"level":87,"item":"Choice Specs","moves":["Scald","Ice Beam","Shadow Ball","Signal Beam"],"ability":"Water Absorb","nature":"Modest","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 0,"at": 0,"df": 4,"sa": 252,"sd": 0,"sp": 252},"index":1647},
+		"Neo Coral Swimmer Aiden (Water Surf)":{"level":73,"item":"Elemental Seed","moves":["Wish","Surf","Ice Beam","Yawn"],"ability":"Water Absorb","nature":"Bold","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2183},
+		"Azurine Lake Ranger Nhadala (Water Surf)":{"level":72,"item":"Assault Vest","moves":["Surf","Ice Beam","Hyper Voice","Shadow Ball"],"ability":"Water Absorb","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2209},
+		
+	},	
+	"Venipede":{	
+		"Jasper Swarm (1, None)":{"level":34,"moves":["Toxic","Protect","Venoshock","Bug Bite"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":890},
+		"Jasper Swarm (2, None)":{"level":34,"moves":["Poison Tail","Pursuit","Rollout","Bug Bite"],"ability":"Swarm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":891},
+		"Jasper Meteor Tara (None)":{"level":20,"moves":["Screech","Pursuit","Protect","Poison Tail"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":1158},
+		"Malchous Meteor Ringo (Forest)":{"level":21,"moves":["Screech","Pursuit","Protect","Poison Tail"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1160},
+		
+	},	
+	"Venomoth":{	
+		"Spinel Bennet (Mirror)":{"level": 48, "moves": ["Quiver Dance","Baton Pass","Sleep Powder","Signal Beam"], "ability": "Shield Dust", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":183},
+		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Leftovers", "moves": ["Quiver Dance","Baton Pass","Sleep Powder","Signal Beam"], "ability": "Shield Dust", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":247},
+		"Rainbow Swarm (None) Doubles":{"level":29,"moves":["Hidden Power Water","Silver Wind","Sleep Powder","Psybeam"],"ability":"Tinted Lens","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 43,"at": 43,"df": 43,"sa": 43,"sd": 43,"sp": 43},"index":885},
+		"Orphanage Charity/John (C, None)":{"level":34,"moves":["Psybeam","Stun Spore","Signal Beam","Sleep Powder"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1225},
+		"Pyrous Meteor Antoine/Demian (D, SupHeat)":{"level":40,"moves":["Stun Spore","Signal Beam","Sleep Powder","Leech Life"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 60,"at": 60,"df": 60,"sa": 60,"sd": 60,"sp": 60},"index":1263},
+		"Pyrous Meteor Minta/Chad (C, SupHeat)":{"level":39,"moves":["Stun Spore","Signal Beam","Sleep Powder","Leech Life"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 58,"at": 58,"df": 58,"sa": 58,"sd": 58,"sp": 58},"index":1268},
+		"Amet. Meteor Demian/Antoine (D, SnowM) Dub":{"level":73,"moves":["Sleep Powder","Quiver Dance","Bug Buzz","Psychic"],"ability":"Tinted Lens","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1457},
+		
+	},	
+	"Venonat":{	
+		"Daycare Grant/Janis (G, None) Doubles":{"level":18,"moves":["Supersonic","Confusion","Poison Powder","Psybeam"],"ability":"Compound Eyes","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":870},
+		"Rainbow Swarm (None) Doubles":{"level":20,"moves":["Supersonic","Confusion","Poison Powder","Psybeam"],"ability":"Tinted Lens","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 30,"at": 30,"df": 30,"sa": 30,"sd": 30,"sp": 30},"index":882},
+		"MW Meteor Demian/Antoine (D, Factory)":{"level":12,"moves":["Disable","Foresight","Supersonic","Confusion"],"ability":"Compound Eyes","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1114},
+		
+	},	
+	"Venusaur":{	
+		"Gym Aya (Wasteland) Doubles":{"level": 42, "moves": ["Stomping Tantrum","Power Whip","Nature Power","Leech Seed"], "ability": "Overgrow", "nature": "Bashful", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 63, "at": 63, "df": 63, "sa": 63, "sd": 63, "sp": 63}, "index":156},
+		"LCCC Aya (Various) Doubles":{"level": 65, "moves": ["Leech Seed","Power Whip","Sludge Bomb","Sleep Powder"], "ability": "Overgrow", "nature": "Calm", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":270},
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Grassium Z", "moves": ["Nature Power","Sleep Powder","Hidden Power Fire","Giga Drain"], "ability": "Chlorophyll", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":674},
+		"Opal Grind Ch4.5 Zach/Beau (Z, None)":{"level":50,"moves":["Double-Edge","Worry Seed","Synthesis","Petal Blizzard"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1781},
+		"Opal Grind Ch8 Zach/Beau (Z, None)":{"level":60,"moves":["Worry Seed","Synthesis","Petal Blizzard","Solar Beam"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1827},
+		"Circus Clown Arthur (None)":{"level":65,"item":"Air Balloon","moves":["Sleep Powder","Leech Seed","Energy Ball","Sludge Bomb"],"ability":"Overgrow","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2151},
+		
+	},	
+	"Venusaur-Mega":{	
+		"Opal Grind Ch14 Zach/Beau (Z, None)":{"level":85,"item":"Venusaurite","moves":["Giga Drain","Sludge Bomb","Hidden Power Fire","Synthesis"],"ability":"Thick Fat","nature":"Modest","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1941},
+		
+	},	
+	"Vespiquen":{	
+		"Route 4 Hiker Rhett (Forest)":{"level":78,"item":"Telluric Seed","moves":["Attack Order","Acrobatics","Bug Buzz","Tailwind"],"ability":"Pressure","nature":"Adamant","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 4,"sa": 0,"sd": 0,"sp": 0},"index":2226},
+		
+	},	
+	"Vibrava":{	
+		"Belrose John/David (D, None) Doubles":{"level":43,"moves":["Earthquake","Sandstorm","Uproar","Hyper Beam"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":205},
+		
+	},	
+	"Victreebel":{	
+		"Gang Intimidation Craudburry (None)":{"level":60,"moves":["Leaf Blade","Strength Sap","Sludge Bomb","Sleep Powder"],"ability":"Gluttony","nature":"Naughty","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":956},
+		
+	},	
+	"Vigoroth":{	
+		"7th Street Street Rat Austin (None)":{"level":58,"moves":["Slash","Chip Away","Counter","Focus Punch"],"ability":"Vital Spirit","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1387},
+		
+	},	
+	"Vikavolt":{	
+		"Labradorra Avril/Steven (S, None) Doubles":{"level": 89, "item": "Choice Specs", "moves": ["Bug Buzz","Energy Ball","Volt Switch","Flash Cannon"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":547},
+		"Labr. Deryl/Naoman (Der, None) Doub":{"level": 89, "item": "Choice Specs", "moves": ["Energy Ball","Thunderbolt","Flash Cannon","Bug Buzz"], "ability": "Levitate", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":581},
+		"Tanzan Meteor Avril/Steven (S, Factory)":{"level":53,"moves":["Bug Buzz","Dig","Zap Cannon","Agility"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1348},
+		"Tanzan Meteor Tech Deryl (Factory)":{"level":53,"moves":["Bug Buzz","Dig","Zap Cannon","Agility"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1355},
+		"Route 3 Meteor Steven/Avril (S, Rocky) Doub":{"level":67,"moves":["Bug Buzz","Zap Cannon","Volt Switch","Flash Cannon"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1432},
+		"Glass Meteor Techs Deryl/Naoman (D, Factory)":{"level":83,"moves":["Zap Cannon","Discharge","Flash Cannon","Bug Buzz"],"ability":"Levitate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1580},
+		
+	},	
+	"Vileplume":{	
+		"LCCC Aster/Eclipse (Ecl, Factory) Doubles":{"level": 66, "moves": ["Sleep Powder","Nature Power","Sludge Bomb","Petal Dance"], "ability": "Effect Spore", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":281},
+		"Fiore 1 Diana/Kenan (D, None) Doubles":{"level": 70, "moves": ["Sludge Bomb","Giga Drain","Sleep Powder","Dazzling Gleam"], "ability": "Effect Spore", "ivs": {"hp": 10, "at": 10, "df": 10, "sa": 10, "sd": 10, "sp": 10}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":353},
+		"Labradorra Diana (None)":{"level": 89, "item": "Black Sludge", "moves": ["Sludge Bomb","Giga Drain","Sleep Powder","Moonblast"], "ability": "Effect Spore", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":534},
+		"Tanzan Meteor Kenan/Diana (D, Factory)":{"level":54,"moves":["Aromatherapy","Stun Spore","Poison Powder","Petal Blizzard"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 81,"at": 81,"df": 81,"sa": 81,"sd": 81,"sp": 81},"index":1332},
+		"Route 3 Meteor Kenan/Diana (D, Cave) Doub":{"level":67,"moves":["Sludge Bomb","Giga Drain","Sleep Powder","Moonlight"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1430},
+		
+	},	
+	"Vivillon":{	
+		"Spinel Bennet (Mirror)":{"level": 48, "item": "Bright Powder", "moves": ["Quiver Dance","Sleep Powder","Draining Kiss","Signal Beam"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 72, "at": 72, "df": 72, "sa": 72, "sd": 72, "sp": 72}, "index":184},
+		"Ametrine Shelly (Various) Doubles":{"level": 71, "moves": ["Bug Buzz","Quiver Dance","Hurricane","Light Screen"], "ability": "Friend Guard", "nature": "Modest", "ivs": {"hp": 16, "at": 16, "df": 16, "sa": 16, "sd": 16, "sp": 16}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":293},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 80, "item": "Synthetic Seed", "moves": ["Signal Beam","Sleep Powder","Hurricane","Giga Drain"], "ability": "Compound Eyes", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":476},
+		
+	},	
+	"Volbeat":{	
+		"Gym Shelly (Forest) Doubles":{"level": 35, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Struggle Bug","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":82},
+		"Orphanage Shelly (None) Doubles":{"level": 35, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Struggle Bug","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 52, "at": 52, "df": 52, "sa": 52, "sd": 52, "sp": 52}, "index":92},
+		"Ametrine Shelly (Various) Doubles":{"level": 70, "item": "Leftovers", "moves": ["Tail Glow","Moonlight","Bug Buzz","Dazzling Gleam"], "ability": "Prankster", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":296},
+		
+	},	
+	"Volcarona":{	
+		"Gym Charlotte (Super-Heated) Doubles":{"level": 70, "item": "Charti Berry", "moves": ["Giga Drain","Quiver Dance","Heat Wave","Hidden Power Rock"], "ability": "Flame Body", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":289},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 82, "item": "Leftovers", "moves": ["Heat Wave","Quiver Dance","Signal Beam","Hurricane"], "ability": "Swarm", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":478},
+		"Labradorra Kenan (None)":{"level": 90, "item": "Wiki Berry", "moves": ["Quiver Dance","Fire Blast","Bug Buzz","Giga Drain"], "ability": "Flame Body", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":529},
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Fiery Dance","Hurricane","Bug Buzz","Quiver Dance"], "ability": "Swarm", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":676},
+		"Spirit Kamina (Chess: Bishop)":{"level": 95, "item": "Synthetic Seed", "moves": ["Quiver Dance","Heat Wave","Bug Buzz","Giga Drain"], "ability": "Swarm", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 0, "sp": 4}, "index":755},
+		"Spirit Josh (Big Top)":{"level": 95, "item": "Wiki Berry", "moves": ["Bug Buzz","Quiver Dance","Fiery Dance","Hurricane"], "ability": "Swarm", "nature": "Timid", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 0, "sp": 4}, "index":822},
+		"Larvesta Fulgor (Dark Crystal)":{"level":100,"item":"Sitrus Berry","moves":["Quiver Dance","Signal Beam","Giga Drain","Heat Wave"],"ability":"Swarm","nature":"Timid","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 252,"at": 252,"df": 252,"sa": 252,"sd": 252,"sp": 252},"index":1085},
+		"Desert Ace Trainer Altimis (Desert)":{"level":75,"moves":["Heat Wave","Quiver Dance","Giga Drain","Bug Buzz"],"ability":"Flame Body","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2216},
+		
+	},	
+	"Voltorb":{	
+		"Gym Julia (Electric)":{"level": 12, "moves": ["Explosion","Rollout","Charge Beam","Sonic Boom"], "ability": "Aftermath", "nature": "Adamant", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 18, "at": 18, "df": 18, "sa": 18, "sd": 18, "sp": 18}, "index":10},
+		"Julia Gym Techie Ivan (1, Factory)":{"level":11,"moves":["Sonic Boom","Eerie Impulse","Spark","Rollout"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1120},
+		"Julia Gym Techie Ivan (2, Factory)":{"level":11,"moves":["Sonic Boom","Eerie Impulse","Spark","Rollout"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 16,"at": 16,"df": 16,"sa": 16,"sd": 16,"sp": 16},"index":1121},
+		
+	},	
+	"Vullaby":{	
+		"Onyx Hotshot Joel (None)":{"level":16,"moves":["Leer","Fury Attack","Pluck","Nasty Plot"],"ability":"Big Pecks","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 24,"at": 24,"df": 24,"sa": 24,"sd": 24,"sp": 24},"index":2034},
+		
+	},	
+	"Vulpix":{	
+		"Magma Nihil/Kriz (N, None) Doubles":{"level":31,"moves":["Feint Attack","Hex","Flame Burst","Extrasensory"],"ability":"Flash Fire","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 46,"at": 46,"df": 46,"sa": 46,"sd": 46,"sp": 46},"index":893},
+		
+	},	
+	"Wailmer":{	
+		"Lapis Lady Anastasia (None)":{"level":26,"moves":["Astonish","Water Pulse","Mist","Brine"],"ability":"Water Veil","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":2062},
+		
+	},	
+	"Wailord":{	
+		"Grind Indra 1 Blue (None)":{"level":58,"item":"Air Balloon","moves":["Water Spout","Hydro Pump","Ice Beam","Hidden Power Grass"],"ability":"Water Veil","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1837},
+		"Grind Indra 2 Blue (None)":{"level":68,"item":"Choice Scarf","moves":["Water Spout","Hydro Pump","Ice Beam","Hidden Power Grass"],"ability":"Water Veil","nature":"Modest","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 4,"at": 0,"df": 0,"sa": 252,"sd": 0,"sp": 252},"index":1867},
+		"Neo Coral Swimmer Owen (Water Surf)":{"level":72,"item":"Leftovers","moves":["Aqua Ring","Protect","Surf","Water Spout"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2178},
+		
+	},	
+	"Walrein":{	
+		"Ametrine Blake (Snowy Mount)":{"level": 74, "item": "Leftovers", "moves": ["Protect","Avalanche","Surf","Stockpile"], "ability": "Ice Body", "nature": "Bold", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":314},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 72, "item": "Leftovers", "moves": ["Protect","Blizzard","Surf","Stockpile"], "ability": "Ice Body", "nature": "Bold", "evs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "index":358},
+		"VR Blake (Icy)":{"level": 97, "item": "Leftovers", "moves": ["Curse","Yawn","Waterfall","Avalanche"], "ability": "Ice Body", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":649},
+		"Neo Coral Swimmer Owen (Water Surf)":{"level":72,"item":"Leftovers","moves":["Surf","Ice Beam","Toxic","Protect"],"ability":"Thick Fat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2179},
+		
+	},	
+	"Wartortle":{	
+		"Opal Grind Ch2 Jonah (None)":{"level":22,"moves":["Withdraw","Bubble","Bite","Rapid Spin"],"ability":"Torrent","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 33,"at": 33,"df": 33,"sa": 33,"sd": 33,"sp": 33},"index":1687},
+		"Opal Grind Ch3.5 Jonah (1, None)":{"level":38,"moves":["Protect","Water Pulse","Aqua Tail","Skull Bash"],"ability":"Torrent","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 57,"at": 57,"df": 57,"sa": 57,"sd": 57,"sp": 57},"index":1721},
+		"Opal Grind Ch3.5 Jonah (2, None)":{"level":42,"moves":["Water Pulse","Aqua Tail","Skull Bash","Iron Defense"],"ability":"Torrent","nature":"Docile","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1722},
+		"Opal Grind Ch4.5 Jonah (1, None)":{"level":47,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Aqua Tail"],"ability":"Torrent","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 70,"at": 70,"df": 70,"sa": 70,"sd": 70,"sp": 70},"index":1758},
+		"Opal Grind Ch4.5 Jonah (2, None)":{"level":50,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Hydro Pump"],"ability":"Torrent","nature":"Bashful","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1759},
+		"Opal Grind Ch8 Jonah (None)":{"level":57,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Aqua Tail"],"ability":"Torrent","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1799},
+		"Opal Grind Ch14 Jonah (None)":{"level":83,"item":"Leftovers","moves":["Skull Bash","Iron Defense","Rain Dance","Aqua Tail"],"ability":"Torrent","nature":"Serious","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1915},
+		
+	},	
+	"Watchog":{	
+		"Opal Grind Ch2 Jace (None)":{"level":21,"moves":["Detect","Sand Attack","Crunch","Hypnosis"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"index":1689},
+		"Opal Grind Ch3.5 Jace (None)":{"level":33,"moves":["Super Fang","After You","Focus Energy","Psych Up"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1724},
+		"Opal Grind Ch4.5 Jace (None)":{"level":46,"moves":["Hyper Fang","Nasty Plot","Mean Look","Baton Pass"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1762},
+		"Opal Grind Ch8 Jace (None)":{"level":56,"moves":["Nasty Plot","Mean Look","Baton Pass","Slam"],"ability":"Illuminate","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1803},
+		"Opal Grind Ch14 Jace (None)":{"level":84,"item":"Choice Band","moves":["Fire Punch","Ice Punch","Seed Bomb","Knock Off"],"ability":"Analytic","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1919},
+		
+	},	
+	"Weavile":{	
+		"Gym Luna (Dark Crystal)":{"level":64,"item":"Focus Sash","moves":["Power-Up Punch","Poison Jab","Ice Shard","Night Slash"],"ability":"Pickpocket","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 4,"at": 252,"df": 0,"sa": 0,"sd": 0,"sp": 252},"index":255},																													
+		"Ametrine Blake (Snowy Mount)":{"level": 73, "moves": ["Night Slash","Power-Up Punch","Ice Shard","Knock Off"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":312},
+		"Fiore 2 Blake/Fern (B, None) Doubles":{"level": 72, "moves": ["Icicle Crash","Poison Jab","Ice Shard","Knock Off"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":361},
+		"Glass 2 ??? (Factory)":{"level": 83, "item": "Focus Sash", "moves": ["Icicle Crash","Poison Jab","Brick Break","Night Slash"], "ability": "Pickpocket", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":487},
+		"Labradorra Zero (None)":{"level": 93, "item": "Life Orb", "moves": ["Knock Off","Icicle Crash","Ice Shard","Brick Break"], "ability": "Pressure", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":589},
+		"VR Blake (Icy)":{"level": 97, "item": "Life Orb", "moves": ["Icicle Crash","Brick Break","Ice Shard","Knock Off"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":652},
+		"Spirit Diana (Holy)":{"level": 95, "item": "Life Orb", "moves": ["Taunt","Ice Punch","Night Slash","Low Kick"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":718},
+		"Spirit Zippo (Icy)":{"level": 95, "item": "Choice Band", "moves": ["Night Slash","Ice Shard","Ice Punch","Brick Break"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":791},
+		"Spirit King (Desert)":{"level": 95, "item": "Choice Band", "moves": ["Pursuit","Ice Shard","Ice Punch","Low Kick"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":807},
+		"Spirit Ikaru (Psychic)":{"level": 95, "item": "Life Orb", "moves": ["Aerial Ace","Ice Punch","Night Slash","Low Kick"], "ability": "Pressure", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "index":843},
+		"Opal Grind Ch4.5 Silva (None)":{"level":50,"item":"Choice Band","moves":["Icicle Crash","Night Slash","Low Kick","Poison Jab"],"ability":"Pressure","nature":"Jolly","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1767},
+		"Opal Grind Ch8 Silva (None)":{"level":60,"item":"Choice Band","moves":["Icicle Crash","Night Slash","Low Kick","Poison Jab"],"ability":"Pressure","nature":"Jolly","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1810},
+		"Opal Grind Ch14 Silva (None)":{"level":86,"item":"Choice Band","moves":["Icicle Crash","Throat Chop","Low Kick","Poison Jab"],"ability":"Pickpocket","nature":"Jolly","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1925},
+		"Desert Ace Trainer Erebus (Desert)":{"level":74,"moves":["Ice Shard","Swords Dance","Throat Chop","Ice Punch"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2212},
+		"Tanzan Depths Ranger Will (Cave)":{"level":82,"moves":["Night Slash","Snatch","Punishment","Dark Pulse"],"ability":"Pressure","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2223},
+		
+	},	
+	"Weedle":{	
+		"Peridot Elder Seacrest (None)":{"level":9,"moves":["Poison Sting","String Shot","Bug Bite"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":867},
+		"Peridot Street Rat Erick (None)":{"level":9,"moves":["Poison Sting","String Shot","Bug Bite"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":1987},
+		
+	},	
+	"Weepinbell":{	
+		"Porygon Sticker 'Ng'Mp (Glitch)":{"level":75,"moves":["Sludge Bomb","Nature Power","Swords Dance","Sleep Powder"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":978},
+		
+	},	
+	"Weezing":{	
+		"Mega-Z Ring Colin/Matthew (C, None) Doubles":{"level":73,"moves":["Destiny Bond","Fire Blast","Sludge Bomb","Infestation"],"ability":"Levitate","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1014},
+		"Magikarp Coral Carmen (Fairy Tale)":{"level":75,"item":"Black Sludge","moves":["Sludge Bomb","Explosion","Clear Smog","Flamethrower"],"ability":"Levitate","nature":"Bold","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1077},
+		
+	},	
+	"Whimsicott":{	
+		"Gym Adrienn (Misty) Doubles":{"level": 76, "item": "Wide Lens", "moves": ["Dazzling Gleam","Tailwind","Hurricane","Nature Power"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":420},
+		"E4 Bennet/Laura (Flower Gard, Rain) Doubles":{"level": 100, "item": "Synthetic Seed", "moves": ["Dazzling Gleam","Giga Drain","Hurricane","Nature Power"], "ability": "Prankster", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":673},
+		"WTC Meteor Ichorus/Lyla (L, Factory) Doub":{"level":74,"moves":["Leech Seed","Dazzling Gleam","Stun Spore","Light Screen"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1505},
+		"Agate Meteor Ezrа/Lyla (L, None) Doub":{"level":87,"moves":["Leech Seed","Dazzling Gleam","Stun Spore","Light Screen"],"ability":"Chlorophyll","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1617},
+		
+	},	
+	"Whirlipede":{	
+		"Yureyu Meteor Hilda/Ricardo (R, Short-Circ)":{"level":42,"moves":["Venoshock","Agility","Steamroller","Toxic"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1283},
+		"Yureyu Meteor Simon/Tara (T, Short-Circ)":{"level":42,"moves":["Venoshock","Agility","Steamroller","Toxic"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 63,"at": 63,"df": 63,"sa": 63,"sd": 63,"sp": 63},"index":1293},
+		"Yureyu Meteor Ringo/Rod (Rin, Short-Circ)":{"level":43,"moves":["Agility","Steamroller","Toxic","Venom Drench"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 64,"at": 64,"df": 64,"sa": 64,"sd": 64,"sp": 64},"index":1301},
+		"Tanzan Meteor Ricardo (Factory)":{"level":52,"moves":["Toxic","Venom Drench","Rock Climb","Double-Edge"],"ability":"Poison Point","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 78,"at": 78,"df": 78,"sa": 78,"sd": 78,"sp": 78},"index":1340},
+		
+	},	
+	"Whiscash":{	
+		"Fiore 3 Solaris/John (J, None)) Doubles":{"level": 70, "item": "Sitrus Berry", "moves": ["Dragon Dance","Rock Slide","Waterfall","Zen Headbutt"], "ability": "Oblivious", "nature": "Adamant", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":370},
+		"Neo Coral Swimmer Owen (Water Surf)":{"level":73,"item":"Leftovers","moves":["Bounce","Dragon Dance","Waterfall","Spark"],"ability":"Hydration","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2180},
+		
+	},	
+	"Whismur":{	
+		"Opal Casanova Elio (None)":{"level":14,"moves":["Pound","Echoed Voice","Astonish","Howl"],"ability":"Soundproof","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 21,"at": 21,"df": 21,"sa": 21,"sd": 21,"sp": 21},"index":1996},
+		
+	},	
+	"Wigglytuff":{	
+		"Subseven Acolyte Lyla (Holy)":{"level":62,"moves":["Disable","Defense Curl","Double Slap","Play Rough"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1407},
+		"WTC Meteor Ichorus/Lyla (L, Factory) Doub":{"level":75,"moves":["Hyper Voice","Dazzling Gleam","Icy Wind","Gyro Ball"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1506},
+		"Agate Meteor Ezrа/Lyla (L, None) Doub":{"level":87,"moves":["Hyper Voice","Dazzling Gleam","Icy Wind","Gyro Ball"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1618},
+		"Opal Grind Ch4.5 Zach/Beau (B, None)":{"level":50,"moves":["Disable","Defense Curl","Double Slap","Play Rough"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 75,"at": 75,"df": 75,"sa": 75,"sd": 75,"sp": 75},"index":1783},
+		"Opal Grind Ch8 Zach/Beau (B, None)":{"level":58,"moves":["Disable","Defense Curl","Double Slap","Play Rough"],"ability":"Cute Charm","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1830},
+		"Opal Grind Ch14 Zach/Beau (B, None)":{"level":85,"item":"Assault Vest","moves":["Dazzling Gleam","Blizzard","Thunder","Psychic"],"ability":"Competitive","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1944},
+		
+	},	
+	"Wimpod":{	
+		"Peridot Hotshot Seth (None)":{"level":10,"moves":["Struggle Bug","Sand Attack"],"ability":"Wimp Out","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1971},
+		
+	},	
+	"Wingull":{	
+		"Onyx Gym Hotshot Blane (None)":{"level":17,"moves":["Supersonic","Wing Attack","Mist","Water Pulse"],"ability":"Keen Eye","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 25,"at": 25,"df": 25,"sa": 25,"sd": 25,"sp": 25},"index":1131},
+		
+	},	
+	"Wishiwashi-School":{	
+		"Flotsam Amaria (H2O Surf)":{"level": 86, "item": "Wiki Berry", "moves": ["Dive","Hidden Power Electric","Ice Beam","Whirlpool"], "ability": "Schooling", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":446},
+		"Jetsam Amaria (H2O Surf)":{"level": 86, "item": "Wiki Berry", "moves": ["Dive","Hidden Power Electric","Ice Beam","Whirlpool"], "ability": "Schooling", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":458},
+		"Apop Beach Fisherman Daniel (Ash Be)":{"level":37,"moves":["Tearful Look","Take Down","Dive","Beat Up"],"ability":"Schooling","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 55,"at": 55,"df": 55,"sa": 55,"sd": 55,"sp": 55},"index":2079},
+		"Azurine Lake Swimmer Hubert (WSurf)":{"level":73,"item":"Elemental Seed","moves":["Surf","Ice Beam","Iron Tail","Dive"],"ability":"Schooling","nature":"Quiet","ivs":{"hp": 20,"at": 20,"df": 20,"sa": 20,"sd": 20,"sp": 20},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":2195},
+		
+	},	
+	"Wobbuffet":{	
+		"Vanhanen Gym Psychic Thyme (Chess: Rook)":{"level":55,"moves":["Counter","Mirror Coat","Safeguard","Destiny Bond"],"ability":"Shadow Tag","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 82,"at": 82,"df": 82,"sa": 82,"sd": 82,"sp": 82},"index":1370},
+		
+	},	
+	"Woobat":{	
+		"7th Street Street Rat Chaz (None)":{"level":59,"moves":["Air Slash","Future Sight","Psychic","Endeavor"],"ability":"Unaware","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1390},
+		
+	},	
+	"Wooper":{	
+		"Onyx Gym Elder Landon (None)":{"level":18,"moves":["Tail Whip","Mud Sport","Mud Shot","Slam"],"ability":"Damp","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 27,"at": 27,"df": 27,"sa": 27,"sd": 27,"sp": 27},"index":1139},
+		
+	},	
+	"Wormadam":{	
+		"Rainbow Swarm (None) Doubles":{"level":26,"moves":["Razor Leaf","Hidden Power Rock","Bug Bite","Confusion"],"ability":"Overcoat","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 39,"at": 39,"df": 39,"sa": 39,"sd": 39,"sp": 39},"index":884},
+		"Lapis Gym Techie Eugene (Forest)":{"level":30,"moves":["Hidden Power","Confusion","Razor Leaf","Growth"],"ability":"Anticipation","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 45,"at": 45,"df": 45,"sa": 45,"sd": 45,"sp": 45},"index":1188},
+		
+	},	
+	"Wurmple":{	
+		"Peridot Elder Seacrest (None)":{"level":9,"moves":["Tackle","String Shot","Poison Sting"],"ability":"Shield Dust","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 13,"at": 13,"df": 13,"sa": 13,"sd": 13,"sp": 13},"index":866},
+		
+	},	
+	"Wynaut":{	
+		"Orphanage Timothy/Chris (T, None)":{"level":32,"moves":["Counter","Mirror Coat","Safeguard","Destiny Bond"],"ability":"Shadow Tag","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 48,"at": 48,"df": 48,"sa": 48,"sd": 48,"sp": 48},"index":1194},
+		
+	},	
+	"Xatu":{	
+		"Opal Grind Ch3.5 Silva (None)":{"level":36,"moves":["Ominous Wind","Confuse Ray","Wish","Psychic"],"ability":"Synchronize","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 54,"at": 54,"df": 54,"sa": 54,"sd": 54,"sp": 54},"index":1728},
+		"Opal Grind Ch4.5 Silva (None)":{"level":46,"item":"Leftovers","moves":["Light Screen","Reflect","Giga Drain","Roost"],"ability":"Magic Bounce","nature":"Bold","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 69,"at": 69,"df": 69,"sa": 69,"sd": 69,"sp": 69},"index":1766},
+		"Opal Grind Ch8 Silva (None)":{"level":56,"item":"Leftovers","moves":["Light Screen","Reflect","Giga Drain","Roost"],"ability":"Magic Bounce","nature":"Bold","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 84,"at": 84,"df": 84,"sa": 84,"sd": 84,"sp": 84},"index":1808},
+		"Opal Grind Ch14 Silva (None)":{"level":84,"item":"Leftovers","moves":["Light Screen","Reflect","Giga Drain","Roost"],"ability":"Magic Bounce","nature":"Bold","ivs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1923},
+		
+	},	
+	"Yamask":{	
+		"Opal Psychic Rin (None)":{"level":34,"moves":["Ominous Wind","Curse","Power Split","Guard Split"],"ability":"Mummy","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":2071},
+		
+	},	
+	"Yanma":{	
+		"Orphanage Charity/John (C, None)":{"level":33,"moves":["V"],"ability":"Speed Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 49,"at": 49,"df": 49,"sa": 49,"sd": 49,"sp": 49},"index":1224},
+		
+	},	
+	"Yanmega":{	
+		"Gym Shelly (Forest) Doubles":{"level": 33, "moves": ["Struggle Bug","Giga Drain","Hidden Power Flying","Ancient Power"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":81},
+		"Orphanage Shelly (None) Doubles":{"level": 33, "moves": ["Struggle Bug","Giga Drain","Hidden Power Flying","Ancient Power"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 49, "at": 49, "df": 49, "sa": 49, "sd": 49, "sp": 49}, "index":87},
+		"Iolia Bennet (Dark Crystal)":{"level": 63, "item": "Life Orb", "moves": ["Protect","Giga Drain","Ancient Power","Signal Beam"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":250},
+		"Ametrine Shelly (Various) Doubles":{"level": 70, "moves": ["Bug Buzz","Giga Drain","Air Slash","Hidden Power Fire"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 2, "at": 2, "df": 2, "sa": 2, "sd": 2, "sp": 2}, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":292},
+		"Glass 1 Shelly/Cain (S, Factory) Doubles":{"level": 83, "item": "Wise Glasses", "moves": ["Signal Beam","Shadow Ball","Air Slash","Giga Drain"], "ability": "Speed Boost", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":479},
+		
+	},	
+	"Yungoos":{	
+		"Opal Techie Jonathan (None)":{"level":4,"moves":["Tackle","Leer"],"ability":"Stakeout","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 6,"at": 6,"df": 6,"sa": 6,"sd": 6,"sp": 6},"index":1952},
+		"Obsidia Street Rat Gregory (None)":{"level":15,"moves":["Leer","Pursuit","Sand Attack","Odor Sleuth"],"ability":"Stakeout","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 22,"at": 22,"df": 22,"sa": 22,"sd": 22,"sp": 22},"index":2007},
+		
+	},	
+	"Zangoose":{	
+		"Mega-Z Ring Colin/Matthew (C, None) Doubles":{"level":76,"item":"Toxic Orb","moves":["Close Combat","Quick Attack","Shadow Claw","Swords Dance"],"ability":"Toxic Boost","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1016},
+		"WTC Meteor Ichorus/Lyla (I, Factory) Doub":{"level":75,"moves":["Facade","Knock Off","Close Combat","Swords Dance"],"ability":"Toxic Boost","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1503},
+		
+	},	
+	"Zebstrika":{	
+		"Devon Meteor Roth (Factory)":{"level":74,"moves":["Thunderbolt","Overheat","Hidden Power Ice","Signal Beam"],"ability":"Sap Sipper","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1539},
+		"Route 1 Ranger Nelly (Grassy)":{"level":53,"moves":["Discharge","Agility","Wild Charge","Thrash"],"ability":"Lightning Rod","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":2113},
+		
+	},	
+	"Zekrom":{	
+		"Legendary Zekrom (None)":{"level": 90, "item": "Groundium Z", "moves": ["Bolt Strike","Roost","Outrage","Earth Power"], "ability": "Teravolt", "nature": "Jolly", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 4, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "index":438},
+		
+	},	
+	"Zigzagoon":{	
+		"Peridot Youngster Jackie (None)":{"level":10,"moves":["Tackle","Growl","Tail Whip","Sand Attack"],"ability":"Pickup","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 15,"at": 15,"df": 15,"sa": 15,"sd": 15,"sp": 15},"index":1980},
+		
+	},	
+	"Zoroark":{	
+		"Byxbysion Ace (Wasteland)":{"level": 41, "moves": ["Swagger","U-turn","Punishment","Low Sweep"], "ability": "Illusion", "nature": "Jolly", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 61, "at": 61, "df": 61, "sa": 61, "sd": 61, "sp": 61}, "index":142},
+		"Subseven Ace (Holy)":{"level": 62, "item": "Black Glasses", "moves": ["Foul Play","Flamethrower","Extrasensory","Grass Knot"], "ability": "Illusion", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 85, "at": 85, "df": 85, "sa": 85, "sd": 85, "sp": 85}, "index":241},
+		"WTC Ace (Factory)":{"level": 72, "item": "Focus Sash", "moves": ["Night Daze","Nasty Plot","Flamethrower","Extrasensory"], "ability": "Illusion", "nature": "Timid", "happinesss": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "happiness": 255, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "index":332},
+		"Labr. Deryl/Naoman (Nao, None) Doub":{"level": 88, "item": "Choice Scarf", "moves": ["Dark Pulse","Shadow Ball","Focus Blast","Trick"], "ability": "Illusion", "nature": "Modest", "ivs": {"hp": 31, "at": 31, "df": 31, "sa": 31, "sd": 31, "sp": 31}, "evs": {"hp": 252, "at": 252, "df": 252, "sa": 252, "sd": 252, "sp": 252}, "index":583},
+		"Magikarp Casanova Claret (Forest)":{"level":74,"item":"Focus Sash","moves":["Dark Pulse","Flamethrower","Focus Blast","Nasty Plot"],"ability":"Illusion","nature":"Jolly","ivs":{"hp": 31,"at": 31,"df": 31,"sa": 31,"sd": 31,"sp": 31},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":984},
+		"Tanzan Meteor Tech Naoman (Factory)":{"level":53,"moves":["Torment","Agility","Embargo","Punishment"],"ability":"Illusion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 79,"at": 79,"df": 79,"sa": 79,"sd": 79,"sp": 79},"index":1359},
+		"Glass Meteor Techs Deryl/Naoman (N, Factory)":{"level":82,"item":"Choice Scarf","moves":["Dark Pulse","Shadow Ball","Focus Blast","Trick"],"ability":"Illusion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 85,"at": 85,"df": 85,"sa": 85,"sd": 85,"sp": 85},"index":1583},
+		
+	},	
+	"Zorua":{	
+		"Rhodocrine Ace (Forest)":{"level": 25, "item": "Telluric Seed", "moves": ["Pursuit","Grass Knot","Feint Attack","Taunt"], "ability": "Illusion", "nature": "Serious", "ivs": {"hp": 20, "at": 20, "df": 20, "sa": 20, "sd": 20, "sp": 20}, "happiness": 255, "evs": {"hp": 37, "at": 37, "df": 37, "sa": 37, "sd": 37, "sp": 37}, "index":39},
+		"BW Meteor Tech Naoman (Factory)":{"level":34,"moves":["Scary Face","Taunt","Foul Play","Torment"],"ability":"Illusion","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 51,"at": 51,"df": 51,"sa": 51,"sd": 51,"sp": 51},"index":1240},
+		
+	},	
+	"Zubat":{	
+		"MW Meteor Hilda/Ricardo (H, Factory)":{"level":12,"moves":["Absorb","Supersonic","Astonish","Bite"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1104},
+		"MW Meteor Simon/Tara (T, Factory)":{"level":12,"moves":["Absorb","Supersonic","Astonish","Bite"],"ability":"Inner Focus","ivs":{"hp": 10,"at": 10,"df": 10,"sa": 10,"sd": 10,"sp": 10},"evs":{"hp": 18,"at": 18,"df": 18,"sa": 18,"sd": 18,"sp": 18},"index":1111},
+		
+	},	
+};	

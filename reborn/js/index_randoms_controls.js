@@ -10,6 +10,9 @@ $("#p2 .item").bind("keyup change", function () {
 lastManualStatus["#p2"] = "Healthy";
 lastAutoStatus["#p1"] = "Healthy";
 
+lastManualChessPiece["#p2"] = "None";
+lastAutoChessPiece["#p1"] = "None";
+
 var resultLocations = [[], [], [], []];
 for (var i = 0; i < 4; i++) {
 	resultLocations[0].push({
@@ -148,9 +151,9 @@ function calculationsColors(p1info, p2) {
 		result = damageResults[0][i];
 		//lowest rolls in %
 		damage = result.damage[0] ? result.damage[0] : result.damage;
-		lowestRoll = damage * p1.moves[i].hits / p2.stats.hp * 100;
+		lowestRoll = damage / p2.stats.hp * 100;
 		damage = result.damage[15] ? result.damage[15] : result.damage;
-		highestRoll = damage * p1.moves[i].hits / p2.stats.hp * 100;
+		highestRoll = damage / p2.stats.hp * 100;
 		if (highestRoll > p1HD) {
 			p1HD = highestRoll;
 		}
@@ -169,9 +172,9 @@ function calculationsColors(p1info, p2) {
 		result = damageResults[1][i];
 		//some damage like sonic boom acts a bit weird.
 		damage = result.damage[0] ? result.damage[0] : result.damage;
-		lowestRoll = damage * p2.moves[i].hits / p1.stats.hp * 100;
+		lowestRoll = damage / p1.stats.hp * 100;
 		damage = result.damage[15] ? result.damage[15] : result.damage;
-		highestRoll = damage * p2.moves[i].hits / p1.stats.hp * 100;
+		highestRoll = damage / p1.stats.hp * 100;
 		if (highestRoll > p2HD) {
 			p2HD = highestRoll;
 		}
@@ -373,30 +376,42 @@ function calcTrigger() {
 		} else {
 			if (monRow1 != activeMon && monRow2 != activeMon) {
 				if (document.querySelectorAll(`[data-id="${activeMon}"]`)[0].parentNode.id=="trainer-pok-list-opposing"){
-					performCalculations();
 					$('.opposing').val(monRow2);
 					$('.opposing').change();
 					$('.opposing .select2-chosen').text(monRow2);
 					performCalculations(false, true);
+					$('.opposing').val(activeMon);
+					$('.opposing').change();
+					$('.opposing .select2-chosen').text(activeMon);
+					performCalculations();
 				} else {
-					performCalculations(false, true);
 					$('.opposing').val(monRow1);
 					$('.opposing').change();
 					$('.opposing .select2-chosen').text(monRow1);
 					performCalculations();
+					$('.opposing').val(activeMon);
+					$('.opposing').change();
+					$('.opposing .select2-chosen').text(activeMon);
+					performCalculations(false, true);
 				}
 			} else if (monRow1 == activeMon) {
-				performCalculations();
 				$('.opposing').val(monRow2);
 				$('.opposing').change();
 				$('.opposing .select2-chosen').text(monRow2);
 				performCalculations(false, true);
+				$('.opposing').val(activeMon);
+				$('.opposing').change();
+				$('.opposing .select2-chosen').text(activeMon);
+				performCalculations();
 			} else if (monRow2 == activeMon) {
-				performCalculations(false, true);
 				$('.opposing').val(monRow1);
 				$('.opposing').change();
 				$('.opposing .select2-chosen').text(monRow1);
 				performCalculations();
+				$('.opposing').val(activeMon);
+				$('.opposing').change();
+				$('.opposing .select2-chosen').text(activeMon);
+				performCalculations(false, true);
 			}
 		}
 		$('.opposing').val(activeMon);

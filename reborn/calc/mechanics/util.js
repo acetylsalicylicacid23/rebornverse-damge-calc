@@ -38,6 +38,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 exports.__esModule = true;
 
 var util_1 = require("../util");
+var items_1 = require("../items");
 var stats_1 = require("../stats");
 var EV_ITEMS = [
     'Macho Brace',
@@ -143,25 +144,28 @@ function getFinalSpeed(gen, pokemon, field, side) {
         (pokemon.hasAbility('Surge Surfer') && field.hasTerrain('Electric', 'Short-Circuit 0.5', 'Short-Circuit 0.8', 'Short-Circuit 1.2', 'Short-Circuit 1.5', 'Short-Circuit 2', 'Murkwater', 'Water', 'Underwater'))) {
         speedMods.push(8192);
     }
-    else if (pokemon.hasAbility('Quick Feet') && pokemon.status) {
+    if (pokemon.hasAbility('Quick Feet') && pokemon.status) {
         speedMods.push(6144);
     }
-    else if (field.hasTerrain('Water', 'Murkwater') && isGrounded(pokemon, field) && !(pokemon.hasAbility('Surge Surfer', 'Swift Swim') || pokemon.hasType('Water')) || (field.hasTerrain('New World') && isGrounded(pokemon, field))) {
+    if ((field.hasTerrain('Water', 'Murkwater') && isGrounded(pokemon, field) && !(pokemon.hasAbility('Surge Surfer', 'Swift Swim') || pokemon.hasType('Water'))) || (field.hasTerrain('New World') && isGrounded(pokemon, field))) {
         speedMods.push(3072);
     }
-    else if (pokemon.hasAbility('Slow Start') && pokemon.abilityOn) {
+    if (field.hasTerrain('Underwater') && !(pokemon.hasAbility('Surge Surfer', 'Swift Swim') || pokemon.hasType('Water'))) {
         speedMods.push(2048);
     }
-    else if (isQPActive(pokemon, field) && getQPBoostedStat(pokemon, gen) === 'spe') {
+    if (pokemon.hasAbility('Slow Start') && pokemon.abilityOn) {
+        speedMods.push(2048);
+    }
+    if (isQPActive(pokemon, field) && getQPBoostedStat(pokemon, gen) === 'spe') {
         speedMods.push(6144);
     }
     if (pokemon.hasItem('Choice Scarf')) {
         speedMods.push(6144);
     }
-    else if (pokemon.hasItem.apply(pokemon, __spreadArray(['Iron Ball'], __read(EV_ITEMS), false))) {
+    if (pokemon.hasItem.apply(pokemon, __spreadArray(['Iron Ball'], __read(EV_ITEMS), false))) {
         speedMods.push(2048);
     }
-    else if (pokemon.hasItem('Quick Powder') && pokemon.named('Ditto')) {
+    if (pokemon.hasItem('Quick Powder') && pokemon.named('Ditto')) {
         speedMods.push(8192);
     }
     speed = OF32(pokeRound((speed * chainMods(speedMods, 1, 131172)) / 4096));
@@ -312,6 +316,12 @@ function checkIntrepidSword(source, gen, field) {
             source.boosts.spa = Math.min(6, source.boosts.spa + 2);
         }
     }
+    else if (field.hasTerrain('Chess Board')) {
+        if (source.hasPiece('B')) {
+            source.boosts.atk = Math.min(6, source.boosts.atk + 1);
+            source.boosts.spa = Math.min(6, source.boosts.spa + 1);
+        }
+    }
 }
 exports.checkIntrepidSword = checkIntrepidSword;
 function checkDauntlessShield(source, gen, field) {
@@ -343,6 +353,12 @@ function checkDauntlessShield(source, gen, field) {
     }
     else if (field.hasTerrain("Dragon's Den")) {
         if (source.hasAbility('Magma Armor')) {
+            source.boosts.def = Math.min(6, source.boosts.def + 1);
+            source.boosts.spd = Math.min(6, source.boosts.spd + 1);
+        }
+    }
+    else if (field.hasTerrain('Chess Board')) {
+        if (source.hasPiece('R', 'Q')) {
             source.boosts.def = Math.min(6, source.boosts.def + 1);
             source.boosts.spd = Math.min(6, source.boosts.spd + 1);
         }
@@ -540,6 +556,30 @@ function checkSeedBoost(pokemon, field) {
     }
 }
 exports.checkSeedBoost = checkSeedBoost;
+function checkTypeChange(pokemon, field) {
+    if (pokemon.hasItem('Synthetic Seed') && field.hasTerrain('Glitch')) {
+        if (!pokemon.hasAbility('Multitype', 'RKS System')) {
+            pokemon.types = ['???'];
+        }
+    }
+    if (pokemon.hasItem('Elemental Seed') && field.hasTerrain('Underwater')) {
+        if (!pokemon.hasAbility('Multitype', 'RKS System')) {
+            pokemon.types = ['Water'];
+        }
+    }
+    if (pokemon.hasAbility('RKS System')) {
+        if (pokemon.item.includes('Memory')) {
+            pokemon.types = [(0, items_1.getMultiAttack)(pokemon.item)]
+        }
+        if (field.hasTerrain('Holy')) {
+            pokemon.types = ['Dark'];
+        }
+        if (field.hasTerrain('Glitch')) {
+            pokemon.types = ['???'];
+        }
+    }
+}
+exports.checkTypeChange = checkTypeChange;
 function checkMultihitBoost(gen, attacker, defender, move, field, desc, attackerUsedItem, defenderUsedItem) {
     if (attackerUsedItem === void 0) { attackerUsedItem = false; }
     if (defenderUsedItem === void 0) { defenderUsedItem = false; }
